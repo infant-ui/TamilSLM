@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-04-05T12:21:59.529814",
+  "model": "llama3.1:8b",
+  "query_original": "அடிப்படை அளவுகள் என்றால் என்ன?",
+  "query_language": "ta",
+  "query_english": "அடிப்படை அளவுகள் என்றால் என்ன?",
+  "primary_label": "Tamil Book",
+  "primary_chunks": [],
+  "web_chunks": [
+    {
+      "source": "add/PHYSICS-LEARNING-MATERIAL",
+      "page": 4,
+      "language": "en",
+      "score": 0.5208,
+      "full_text": "4 Definition of Basic and Supplementary Unit of S.I. 1. Metre (m): The metre is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second. 2. Kilogram (Kg) : The kilogram is the mass of the platinum-iridium prototype which was approved by the ConférenceGénérale des Poids et Mesures, held in Paris in 1889, and kept by the Bureau International des Poids et Mesures. 3. Second (s): The second is the duration of 9192631770 periods of the radiation corresponding to the transition between two hyperfine levels of the ground state of Cesium- 133 atom. 4. Ampere (A) : The ampere is the intensity of a constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 metre apart in vacuum, would produce between these conductors a force equal to 2  10- 7Newton per metre of length. 5. Kelvin (K): Kelvin is the fraction 1/273.16 of the thermodynamic temperature of the triple point of water. 6. Candela (Cd): The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540 x 1012 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian. 7. Mole (mol): The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of Carbon-12. Supplementary units: 1. Radian (rad): It is supplementary unit of plane angle. It is the plane angle subtended at the centre of a circle by an arc of the circle equal to the radius of the circle. It is denoted by 𝜃. 𝜃 = l / r; 𝑙 is length of the arcand 𝑟 is radius of the circle 2. Steradian (Sr): It is supplementary unit of solid angle. It is the angle subtended at the centre of a sphere by a surface area of the sphere having magnitude equal to the square of the radius of the sphere. It is denoted by Ω. Ω = ∆s / r2 SOME IMPORTANT ABBREVIATIONS Symbol Prefix Multiplier Symbol Prefix Multiplier D c m µ n Deci centi milli micro nano 10-1 10-2 10-3 10-6 10-9 da h k M G deca hecto kilo mega giga 101 102 103 106 109",
+      "relevant_text": "4 Definition of Basic and Supplementary Unit of S.I. Metre (m): The metre is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second. Kilogram (Kg) : The kilogram is the mass of the platinum-iridium prototype which was approved by the ConférenceGénérale des Poids et Mesures, held in Paris in 1889, and kept by the Bureau International des Poids et Mesures. Second (s): The second is the duration of 9192631770 periods of the radiation corresponding to the transition between two hyperfine levels of the ground state of Cesium- 133 atom. Ampere (A) : The ampere is the intensity of a constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 metre apart in vacuum, would produce between these conductors a force equal to 2  10- 7Newton per metre of length.",
+      "chunk_id": "add/PHYSICS-LEARNING-MATERIAL_p4_c0"
+    },
+    {
+      "source": "add/PHYSICS-LEARNING-MATERIAL",
+      "page": 10,
+      "language": "en",
+      "score": 0.5152,
+      "full_text": "10 (ii) 𝒕= 𝟐𝝅√𝒍/𝒈 Here, Dimensions of L.H.S, t = [T1] = [M0L0T1] Dimensions of the terms on R.H.S Dimensions of (length) = [L1] Dimensions of g (acc due to gravity) = [L1T-2] 2𝜋 being constant have no dimensions. Hence, the dimensions of terms 2𝜋√𝑙/𝑔 on R.H.S = (L1/ L1T-2] )1/2 = [T1] = [M0L0T1] Thus, the dimensions of the terms on both sides of the relation are the same i.e., [M0L0T1].Therefore, the relation is correct. Example 4. Check the correctness of the following equation on the basis of dimensional analysis, 𝑉= √ 𝐸 𝑑. Here V is the velocity of sound, E is the elasticity and d is the density of the medium. Sol. Here, Dimensions of the term on L.H.S V =[M0L1T-1] Dimensions of elasticity, E = [M1L-1T-2] & Dimensions of density, d = [M1L-3T0] Therefore, Dimensions of the terms on R.H.S √ 𝑬 𝒅 = [M1L-1T-2/ M1L-1T-2]1/2 = [M0L1T-1] Thus, dimensions on both sides are the same, therefore the equation is correct. Example 5. Using Principle of Homogeneity of dimensions, check the correctness of equation, h = 2Td /rgCos𝜃. Sol. The given formula is, h = 2Td /rgCos𝜃. Dimensions of term on L.H.S Height (h) = [M0L1T0] Dimensions of terms on R.H.S T= surface tension = [M1L0T-2] D= density = [M1L-3T0] r =radius = [M0L1T0] g=acc.due to gravity = [M0L1T-2] Cos𝜃 = [M0L0T0]= no dimensions So, Dimensions of 2Td/rgCos𝜃 = [M1L0T-2] x [M1L-3T0] / [M0L1T0] x [M0L1T-2] = [M2L-5T0]",
+      "relevant_text": "10 (ii) 𝒕= 𝟐𝝅√𝒍/𝒈 Here, Dimensions of L.H.S, t = [T1] = [M0L0T1] Dimensions of the terms on R.H.S Dimensions of (length) = [L1] Dimensions of g (acc due to gravity) = [L1T-2] 2𝜋 being constant have no dimensions. Hence, the dimensions of terms 2𝜋√𝑙/𝑔 on R.H.S = (L1/ L1T-2] )1/2 = [T1] = [M0L0T1] Thus, the dimensions of the terms on both sides of the relation are the same i.e., [M0L0T1].Therefore, the relation is correct. Check the correctness of the following equation on the basis of dimensional analysis, 𝑉= √ 𝐸 𝑑. Here V is the velocity of sound, E is the elasticity and d is the density of the medium. Here, Dimensions of the term on L.H.S V =[M0L1T-1] Dimensions of elasticity, E = [M1L-1T-2] & Dimensions of density, d = [M1L-3T0] Therefore, Dimensions of the terms on R.H.S √ 𝑬 𝒅 = [M1L-1T-2/ M1L-1T-2]1/2 = [M0L1T-1] Thus, dimensions on both sides are the same, therefore the equation is correct.",
+      "chunk_id": "add/PHYSICS-LEARNING-MATERIAL_p10_c0"
+    },
+    {
+      "source": "add/PHYSICS-LEARNING-MATERIAL",
+      "page": 15,
+      "language": "en",
+      "score": 0.4912,
+      "full_text": "15 (A) Decibel (B) Coulomb (C) Hum (D) Cycles 5. The displacement of particle moving along x-axis with respect to time is x=at+bt2-ct3. The dimension of c is (A) LT-2 (B) T-3 (C) LT-3 (D) T-3 Short Answer Questions 1. Define Physics. 2. What do you mean by physical quantity? 3. Differentiate between fundamental and derived unit. 4. Write full form of the following system of unit (i) CGS (ii) FPS (iii) MKS 5. Write definition of Dimensions. 6. What is the suitable unit for measuring distance between sun and earth? 7. Write the dimensional formula of the following physical quantity - (i) Momentum (ii) Power (iii) Surface Tension (iv) Strain 8. What is the principle of Homogeneity of Dimensions? 9. Write the S.I & C.G.S units of the following physical quantities- (a) Force (b) Work 10. What are the uses of dimensions? Long Answer Questions 1. Check the correctness of the relation 𝜆 = h /mv; where𝜆is wavelength, h- Planck’s constant, m is mass of the particle and v - velocity of the particle. 2. Explain different types of system of units. 3. Check the correctness of the following relation by using method of dimensions (i) v = u + at (ii) F = mv / r2 (iii) v2 – u2 = 2as 4. What are the limitations of Dimensional analysis? 5. Convert an acceleration of 100 m/s2 into km/hr2. Answers to multiple choice questions: 1 (C) 2 (C) 3 (B) 4 (A) 5 (C)",
+      "relevant_text": "15 (A) Decibel (B) Coulomb (C) Hum (D) Cycles 5. The displacement of particle moving along x-axis with respect to time is x=at+bt2-ct3. The dimension of c is (A) LT-2 (B) T-3 (C) LT-3 (D) T-3 Short Answer Questions 1. Define Physics. What do you mean by physical quantity?",
+      "chunk_id": "add/PHYSICS-LEARNING-MATERIAL_p15_c0"
+    }
+  ],
+  "answer_english": "The basic units are the fundamental quantities that make up all other physical measurements. In S.I., there are seven base units: metre for length, kilogram for mass, second for time, ampere for electric current, kelvin for temperature, mole for amount of substance and candela for luminous intensity. These base units serve as a reference point to define more complex quantities in physics. The definition of each basic unit is based on specific physical phenomena or objects that are universally accepted standards.",
+  "answer_final": "⚠️ தமிழ் மொழிபெயர்ப்பு கிடைக்கவில்லை.\n\n**English answer:**\nThe basic units are the fundamental quantities that make up all other physical measurements. In S.I., there are seven base units: metre for length, kilogram for mass, second for time, ampere for electric current, kelvin for temperature, mole for amount of substance and candela for luminous intensity. These base units serve as a reference point to define more complex quantities in physics. The definition of each basic unit is based on specific physical phenomena or objects that are universally accepted standards.\n\n_ANTHROPIC_API_KEY சேர்க்கவும் அல்லது இணைய இணைப்பை சரிபார்க்கவும்._",
+  "session_file": null,
+  "new_seen_ids": [
+    "add/PHYSICS-LEARNING-MATERIAL_p15_c0",
+    "add/PHYSICS-LEARNING-MATERIAL_p4_c0",
+    "add/PHYSICS-LEARNING-MATERIAL_p10_c0"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-04-05T12:36:28.756470",
+  "model": "llama3.1:8b",
+  "query_original": "what is hepatitis virus?",
+  "query_language": "en",
+  "query_english": "what is hepatitis virus?",
+  "primary_label": "English Book",
+  "primary_chunks": [
+    {
+      "source": "english_bookk",
+      "page": 85,
+      "language": "en",
+      "score": 0.6266,
+      "full_text": "81 b. Diseases caused by Virus Viral diseases are extremely widespread infections caused by many type of viruses. Some diseases caused by viruses are hepatitis, chickenpox and rabies. 1. Hepatitis Hepatitis is one of the most dangerous and fatal diseases caused by Hepatitis virus- A, B, C, D, E. Its mode of transmission is contaminated water, sharing of needles and blood transfusion. The symptoms of hepatitis is loss of appetite (anorexia), vomiting, eyes and urine turning to yellow colour. Prevention and treatment ¾ Drinking boiled water ¾ Proper cleaning of hands 2. Chickenpox Chickenpox also known as varicella is a highly contagious infection caused by the varicella zoster virus. This disease spreads through air and contact with an infected person. Its symptoms are appearance of rashes on the whole body, fever, headache and tiredness. Prevention and treatment ¾ The chickenpox (varicella) vaccine is the best way to prevent chickenpox ¾ Special attention should be given to the infected persons. c. Rabies Rabies is a fatal disease which is transmitted by the bite of the infected dog, rabbit, monkey, cat etc. The virus present in the saliva of dog enters the brain via neurons. The symptoms of rabies are hydrophobia (extreme fear for water), fever for 2 – 12 weeks and exaggerations in behaviour. Prevention and treatment ¾ In early stages rabies is very difficult to detect. ¾ After an animal is bitten it usually takes two to twelve weeks to show any symptoms and it may take as long as two years also. ¾ Fatality can be prevented by timely vaccination before the onset of symptoms. ACTIVITY 4 Visit a nearby Primary Health Centre and collect information about vaccination given to children of 0-15 years. Meet a doctor or a health worker in the hospital and enquire about the following. • The types of vaccines available there. • Can disease be prevented by their usage? • The age at which it should be given.",
+      "relevant_text": "Diseases caused by Virus Viral diseases are extremely widespread infections caused by many type of viruses. Some diseases caused by viruses are hepatitis, chickenpox and rabies. Hepatitis Hepatitis is one of the most dangerous and fatal diseases caused by Hepatitis virus- A, B, C, D, E. Its mode of transmission is contaminated water, sharing of needles and blood transfusion. The symptoms of hepatitis is loss of appetite (anorexia), vomiting, eyes and urine turning to yellow colour. Prevention and treatment ¾ Drinking boiled water ¾ Proper cleaning of hands 2.",
+      "chunk_id": "english_bookk_p85_c0"
+    },
+    {
+      "source": "english_bookk",
+      "page": 89,
+      "language": "en",
+      "score": 0.4536,
+      "full_text": "Cholera Yellow Urine Tuberculosis Cramps in legs Hepatitis Hydrophobia Typhoid Mycobacterium",
+      "relevant_text": "Cholera Yellow Urine Tuberculosis Cramps in legs Hepatitis Hydrophobia Typhoid Mycobacterium",
+      "chunk_id": "english_bookk_p89_c1"
+    },
+    {
+      "source": "english_bookk",
+      "page": 86,
+      "language": "en",
+      "score": 0.3674,
+      "full_text": "82 5. Brain infected 4. Virus replicates in dorsal root ganglion and travels up spinal cord to brain 6. Virus travels from brain via nerves to other tissues such as eye, kidneys, salivary glands 3. Virus infects nerve in peripheral nervous system. Moves by retrograde transport 2. Virus replicates in muscle at site of bite 1. Virus enters via animal bite Rabies Vaccine Vaccine is a biological preparation that provides active acquired immunity to a particular disease. Vaccines like (BCG, Polio, MMR) are given at early childhood to protect from other diseases. 6.3.2 Non-communicable diseases Non-communicable diseases do not spread from person to person. They are caused by other factors. Therefore, it is important to know which diseases are communicable and which are not. They are never caused by germs, bacteria, or other living organisms that infect the body. Antibiotics or medicines that fight against germs do not help to cure non-communicable diseases. Some of the non-communicable diseases are explained below. a. Wearing out of body parts Rheumatism, heart attack, epileptic seizures, stroke, migraine headache, cataract and cancer. b. External harmful agents entering the body Allergies, asthma, poisons, snakebite, cough from smoking, stomach ulcer, alcoholism. c. Lack of trace elements in the body Anemia, pellagra, night blindness and xerophthalmia, goiter and hypothyroidism. d Malnutrition Nutritious food is needed for a person to grow well, work hard, and stay healthy. Many common sicknesses are caused by malnutrition.",
+      "relevant_text": "Virus replicates in muscle at site of bite 1. Virus enters via animal bite Rabies Vaccine Vaccine is a biological preparation that provides active acquired immunity to a particular disease. Vaccines like (BCG, Polio, MMR) are given at early childhood to protect from other diseases. 6.3.2 Non-communicable diseases Non-communicable diseases do not spread from person to person. They are caused by other factors. Therefore, it is important to know which diseases are communicable and which are not.",
+      "chunk_id": "english_bookk_p86_c0"
+    }
+  ],
+  "web_chunks": [
+    {
+      "source": "add/gecu109",
+      "page": 9,
+      "language": "en",
+      "score": 0.3094,
+      "full_text": "While a lot of the dust is ﬁ ltered out from the inhaled air, often small infectious particles can get through the lungs. For example, during the COVID-19 pandemic, the SARS-CoV-2 virus aﬀ ected the respiratory system, leading to breathing diﬃ culties and often causing serious lung problems. Reprint 2026-27",
+      "relevant_text": "While a lot of the dust is ﬁ ltered out from the inhaled air, often small infectious particles can get through the lungs. For example, during the COVID-19 pandemic, the SARS-CoV-2 virus aﬀ ected the respiratory system, leading to breathing diﬃ culties and often causing serious lung problems. Reprint 2026-27",
+      "chunk_id": "add/gecu109_p9_c1"
+    }
+  ],
+  "answer_english": "Hepatitis virus refers specifically to a type of viral disease that affects the liver. It comes in five different forms - A, B, C, D and E viruses are all types of Hepatitis virus. These diseases can be transmitted through contaminated water or by sharing needles with an infected person as well as during blood transfusions.",
+  "answer_final": "Hepatitis virus refers specifically to a type of viral disease that affects the liver. It comes in five different forms - A, B, C, D and E viruses are all types of Hepatitis virus. These diseases can be transmitted through contaminated water or by sharing needles with an infected person as well as during blood transfusions.",
+  "session_file": null,
+  "new_seen_ids": [
+    "english_bookk_p89_c1",
+    "add/gecu109_p9_c1",
+    "english_bookk_p85_c0",
+    "english_bookk_p86_c0"
+  ]
+}

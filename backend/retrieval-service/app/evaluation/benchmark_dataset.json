@@ -1,0 +1,62 @@
+[
+  {
+    "question_id": "VAL_SCI_7_T1_001",
+    "language": "tamil",
+    "class": 7,
+    "subject": "science",
+    "term": 1,
+    "chapter": "அளவீட்டியல்",
+    "expected_pages": [2, 3],
+    "expected_section": "1.1.2",
+    "ground_truth_answer": "வழி அலகுகள் என்பவை அடிப்படை அலகுகளால் பெருக்கப்பட்டோ அல்லது வகுக்கப்பட்டோ பெறப்படும் அலகுகள் ஆகும். (எ.கா: பரப்பளவு, கனஅளவு).",
+    "book_type": "textbook",
+    "difficulty_level": "medium",
+    "question_type": "definition",
+    "question": "வழி அலகுகள் என்றால் என்ன? உதாரணம் தருக."
+  },
+  {
+    "question_id": "VAL_SCI_7_T1_002",
+    "language": "english",
+    "class": 7,
+    "subject": "science",
+    "term": 1,
+    "chapter": "Measurement",
+    "expected_pages": [1, 2],
+    "expected_section": "1.1.1",
+    "ground_truth_answer": "Fundamental quantities are physical quantities which cannot be expressed in terms of any other physical quantities. (e.g., Length, Mass, Time).",
+    "book_type": "textbook",
+    "difficulty_level": "easy",
+    "question_type": "definition",
+    "question": "What are fundamental quantities? Give examples."
+  },
+  {
+    "question_id": "VAL_SCI_6_T1_001",
+    "language": "tamil",
+    "class": 6,
+    "subject": "science",
+    "term": 1,
+    "chapter": "தாவரங்கள் வாழும் உலகம்",
+    "expected_pages": [48, 49],
+    "expected_section": "4.2",
+    "ground_truth_answer": "ஒளிச்சேர்க்கையின் போது தாவரங்கள் கார்பன் டை ஆக்சைடை உட்கொண்டு ஆக்சிஜனை வெளியிடுகின்றன.",
+    "book_type": "textbook",
+    "difficulty_level": "easy",
+    "question_type": "conceptual",
+    "question": "தாவரங்கள் ஒளிச்சேர்க்கையின் போது வெளியிடும் வாயு எது?"
+  },
+  {
+    "question_id": "VAL_SCI_8_FY_001",
+    "language": "english",
+    "class": 8,
+    "subject": "science",
+    "term": 0,
+    "chapter": "Forces and Pressure",
+    "expected_pages": [12, 13],
+    "expected_section": "2.2.1",
+    "ground_truth_answer": "Pressure is defined as the force acting perpendicularly on a unit area of a surface. Formula: P = F / A.",
+    "book_type": "textbook",
+    "difficulty_level": "hard",
+    "question_type": "formula",
+    "question": "Define pressure and state its mathematical formula."
+  }
+]

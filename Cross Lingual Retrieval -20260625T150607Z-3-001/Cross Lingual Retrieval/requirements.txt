@@ -1,0 +1,36 @@
+# ── Document loading ──────────────────────────────────────────────────────
+pymupdf==1.24.5
+
+# ── Embeddings & vector search ────────────────────────────────────────────
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0
+
+# ── Language detection ────────────────────────────────────────────────────
+langdetect==1.0.9
+
+# ── Translation (Tamil <-> English) ───────────────────────────────────────
+# Priority 1: Anthropic Claude API  — set ANTHROPIC_API_KEY in .env
+#             Uses claude-haiku for fast, accurate EN→TA translation.
+anthropic>=0.112.0
+#
+# Priority 2: Google Translate (needs internet)
+deep-translator==1.11.4
+#
+# Priority 3: Offline fallback
+argostranslate==1.9.6      # run install_language_packages() once after install
+
+# ── Local LLM via Ollama ─────────────────────────────────────────────────
+# Install Ollama from https://ollama.com, then:
+#   ollama pull llama3.1:8b    ← RECOMMENDED (best Tamil reasoning)
+#   ollama pull mistral         ← good fallback
+#   ollama pull phi3            ← last resort (English-only, no Tamil)
+ollama>=0.6.2
+requests==2.32.3
+
+# ── Web UI ────────────────────────────────────────────────────────────────
+gradio==4.44.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+numpy==1.26.4
+tqdm==4.66.5
+python-dotenv==1.0.1

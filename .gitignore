@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node/JavaScript dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS and IDE settings
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Huge binary installers and executables
+OllamaSetup (1).exe
+*.exe
+*.msi
+
+# Large model files / weights (often used in SLM/LLM pipelines)
+*.gguf
+*.ggml
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.model
+*.h5
+*.ckpt
+
+# Output/temp files
+temp_jobs/

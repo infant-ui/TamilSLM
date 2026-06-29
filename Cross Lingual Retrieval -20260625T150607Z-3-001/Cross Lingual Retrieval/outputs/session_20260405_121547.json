@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-05T12:15:47.841313",
+  "model": "llama3.1:8b",
+  "query_original": "what is fundamental qunatity?",
+  "query_language": "en",
+  "query_english": "what is fundamental qunatity?",
+  "primary_label": "English Book",
+  "primary_chunks": [
+    {
+      "source": "english_bookk",
+      "page": 6,
+      "language": "en",
+      "score": 0.4262,
+      "full_text": "is a physical quantity. In this lesson, we are going to study about fundamental quantities, derived quantities such as area, volume and density, and measurement of larger quantities. 1.1 Fundamental Quantities and Derived Quantities Generally, physical quantities are classified into two types. They are: fundamental quantities and derived quantities. 1.1.1 Fundamental Quantities A set of physical quantities which cannot be expressed in terms of any other quantities are known as fundamental quantities. Eg. Length, Mass, Time. Their corresponding units are called fundamental units. There are seven fundamental physical quantities in SI Units (System of International Units). They are given in Table 1.1. Table 1.1 Fundamental quantities and their units Fundamental quantity Fundamental unit Length metre (m) Mass kilogram (kg) Time second (s) Temperature Kelvin (K) Electric current Ampere (A) Amount of substance mole (Mol) Luminous intensity Candela (cd) VII Std Science Term-1 EM Unit 1.indd 2 06/01/2022 01:49:55",
+      "relevant_text": "is a physical quantity. In this lesson, we are going to study about fundamental quantities, derived quantities such as area, volume and density, and measurement of larger quantities. 1.1 Fundamental Quantities and Derived Quantities Generally, physical quantities are classified into two types. They are: fundamental quantities and derived quantities. 1.1.1 Fundamental Quantities A set of physical quantities which cannot be expressed in terms of any other quantities are known as fundamental quantities. Length, Mass, Time.",
+      "chunk_id": "english_bookk_p6_c1"
+    },
+    {
+      "source": "english_bookk",
+      "page": 74,
+      "language": "en",
+      "score": 0.3913,
+      "full_text": "70 4. Traps Plants that grow in nitrogen deficient places adapt themselves well to get it. In Nepenthes, the leaves are modified into a flask like structure, which is used to attract insects and other tiny animals. The inner wall of the leaf secretes digestive enzymes that help to digest the insects and extract the nitrogen needed for the plant. Nepenthes Points to Remember  Reproduction is an essential function of living organisms. In plants there are two types of reproduction – asexual reproduction and sexual reproduction.  In flowering plants, flowers are the reproductive organs. They produce fruits and seeds through pollination and fertilization.  The male reproductive organ of a flower is androecium and the female reproductive organ of a flower is gynoecium.  Transfer of pollen grains from the anther to stigma is called pollination. There are two types of pollination - self pollination and cross pollination. 1. Spines Leaves are reduced to spines, and the stem is modified into green succulent part to perform photosynthesis. Eg. Opuntia Opuntia 2. Tendrils In climbers, the leaf of plant are modified into elongated structure to help the plants climb efficiently. • Gloriosa superba – Leaf tips are modified into tendrils. • Pisum sativum (Pea) –Terminal leaflets are modified into tendrils. Pisum sativum 3. Phyllode In Acacia auriculiformis, petioles expand to form leaf like structure. They carry out the function of leaf (Photosynthesis). Acacia",
+      "relevant_text": "Traps Plants that grow in nitrogen deficient places adapt themselves well to get it. In Nepenthes, the leaves are modified into a flask like structure, which is used to attract insects and other tiny animals. The inner wall of the leaf secretes digestive enzymes that help to digest the insects and extract the nitrogen needed for the plant. Nepenthes Points to Remember  Reproduction is an essential function of living organisms. In plants there are two types of reproduction – asexual reproduction and sexual reproduction.  In flowering plants, flowers are the reproductive organs.",
+      "chunk_id": "english_bookk_p74_c0"
+    },
+    {
+      "source": "english_bookk",
+      "page": 46,
+      "language": "en",
+      "score": 0.3617,
+      "full_text": "42 After studying this unit, students will be able to:  know the structure of an atom.  know the position of the sub-atomic particles.  understand and compare the properties of sub-atomic particles.  understand the terms atomic number and mass number.  calculate the number of protons, electrons and neutrons in an atom from the symbols given in the periodic table.  understand the term valency. Learning Objectives Unit 4 Atomic Structure Gluon Proton Quark Up Atom Molecule Matter Atomic Nucleus Neutron Quark Down Strings Electron Form the Matter Molecule Atom to the Quark to the Strings VII Std Science Term-1 EM Unit 4.indd 42 12/2/2022 2:36:53 PM",
+      "relevant_text": "42 After studying this unit, students will be able to:  know the structure of an atom.  know the position of the sub-atomic particles.  understand and compare the properties of sub-atomic particles.  understand the terms atomic number and mass number.  calculate the number of protons, electrons and neutrons in an atom from the symbols given in the periodic table.",
+      "chunk_id": "english_bookk_p46_c0"
+    }
+  ],
+  "web_chunks": [
+    {
+      "source": "add/fundamental_quantities_detailed",
+      "page": 1,
+      "language": "en",
+      "score": 0.4131,
+      "full_text": "FUNDAMENTAL QUANTITIES (DETAILED NOTES) 1. Definition: Fundamental quantities are the basic physical quantities that do not depend on any other quantities. They form the foundation of all physical measurements and are used to derive other quantities. 2. Importance: - Provide a standard system of measurement (SI system) - Used to express all physical laws - Help avoid confusion in measurements worldwide 3. The Seven Fundamental Quantities: 1) Length (meter, m) Definition: Distance between two points. Examples: height of a person, distance between cities. 2) Mass (kilogram, kg) Definition: Amount of matter in a body. Note: Mass remains constant everywhere. Examples: mass of a book, rice, or any object. 3) Time (second, s) Definition: Duration between two events. Examples: time taken to travel, cooking time. 4) Electric Current (ampere, A) Definition: Flow of electric charge. Examples: current in wires, charging devices. 5) Temperature (kelvin, K) Definition: Measure of hotness or coldness. Concept: Indicates kinetic energy of particles. 6) Amount of Substance (mole, mol)",
+      "relevant_text": "FUNDAMENTAL QUANTITIES (DETAILED NOTES) 1. Definition: Fundamental quantities are the basic physical quantities that do not depend on any other quantities. They form the foundation of all physical measurements and are used to derive other quantities. Importance: - Provide a standard system of measurement (SI system) - Used to express all physical laws - Help avoid confusion in measurements worldwide 3. The Seven Fundamental Quantities: 1) Length (meter, m) Definition: Distance between two points. Examples: height of a person, distance between cities.",
+      "chunk_id": "add/fundamental_quantities_detailed_p1_c0"
+    },
+    {
+      "source": "add/PHYSICS-LEARNING-MATERIAL",
+      "page": 15,
+      "language": "en",
+      "score": 0.3692,
+      "full_text": "15 (A) Decibel (B) Coulomb (C) Hum (D) Cycles 5. The displacement of particle moving along x-axis with respect to time is x=at+bt2-ct3. The dimension of c is (A) LT-2 (B) T-3 (C) LT-3 (D) T-3 Short Answer Questions 1. Define Physics. 2. What do you mean by physical quantity? 3. Differentiate between fundamental and derived unit. 4. Write full form of the following system of unit (i) CGS (ii) FPS (iii) MKS 5. Write definition of Dimensions. 6. What is the suitable unit for measuring distance between sun and earth? 7. Write the dimensional formula of the following physical quantity - (i) Momentum (ii) Power (iii) Surface Tension (iv) Strain 8. What is the principle of Homogeneity of Dimensions? 9. Write the S.I & C.G.S units of the following physical quantities- (a) Force (b) Work 10. What are the uses of dimensions? Long Answer Questions 1. Check the correctness of the relation 𝜆 = h /mv; where𝜆is wavelength, h- Planck’s constant, m is mass of the particle and v - velocity of the particle. 2. Explain different types of system of units. 3. Check the correctness of the following relation by using method of dimensions (i) v = u + at (ii) F = mv / r2 (iii) v2 – u2 = 2as 4. What are the limitations of Dimensional analysis? 5. Convert an acceleration of 100 m/s2 into km/hr2. Answers to multiple choice questions: 1 (C) 2 (C) 3 (B) 4 (A) 5 (C)",
+      "relevant_text": "What do you mean by physical quantity? Differentiate between fundamental and derived unit. Write full form of the following system of unit (i) CGS (ii) FPS (iii) MKS 5. Write definition of Dimensions. What is the suitable unit for measuring distance between sun and earth? Write the dimensional formula of the following physical quantity - (i) Momentum (ii) Power (iii) Surface Tension (iv) Strain 8.",
+      "chunk_id": "add/PHYSICS-LEARNING-MATERIAL_p15_c0"
+    },
+    {
+      "source": "add/web",
+      "page": 5,
+      "language": "en",
+      "score": 0.3374,
+      "full_text": "Nature of Science Science is a way of thinking and exploring, not just memorizing facts. Materials and Changes Everyday materials have properties; changes around us can be reversible or irreversible. Life Processes All living things carry out essential life processes such as breathing, eating, and growing. Measurement of Time Time can be measured using shadows and movements of celestial objects. Curiosity & Questions Forming good questions is as important as answering them; always stay curious. ​ ​ www.vedantu.com ​ 5",
+      "relevant_text": "Nature of Science Science is a way of thinking and exploring, not just memorizing facts. Materials and Changes Everyday materials have properties; changes around us can be reversible or irreversible. Life Processes All living things carry out essential life processes such as breathing, eating, and growing. Measurement of Time Time can be measured using shadows and movements of celestial objects. Curiosity & Questions Forming good questions is as important as answering them; always stay curious.",
+      "chunk_id": "add/web_p5_c0"
+    }
+  ],
+  "answer_english": "A set of physical quantities that cannot be expressed in terms of any other quantity are known as fundamental quantities. These basic units form the foundation for all physical measurements and serve to derive other quantities. Examples include length, mass, time which provide a standard system of measurement such as SI unit. Fundamental quantities help avoid confusion worldwide by providing an international framework for expressing laws governing physics. They also enable us to express various physical phenomena in terms that are universally understood.",
+  "answer_final": "A set of physical quantities that cannot be expressed in terms of any other quantity are known as fundamental quantities. These basic units form the foundation for all physical measurements and serve to derive other quantities. Examples include length, mass, time which provide a standard system of measurement such as SI unit. Fundamental quantities help avoid confusion worldwide by providing an international framework for expressing laws governing physics. They also enable us to express various physical phenomena in terms that are universally understood.",
+  "session_file": null,
+  "new_seen_ids": [
+    "english_bookk_p6_c1",
+    "add/PHYSICS-LEARNING-MATERIAL_p15_c0",
+    "english_bookk_p46_c0",
+    "add/fundamental_quantities_detailed_p1_c0",
+    "english_bookk_p74_c0",
+    "add/web_p5_c0"
+  ]
+}
