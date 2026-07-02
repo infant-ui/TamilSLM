@@ -37,7 +37,7 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000 ^| findstr LISTENING') 
 :: 5. Stop Redis container
 echo stopping Redis container...
 docker stop tamiledu-redis >nul 2>&1
-if %errorlevel% eq 0 (
+if %errorlevel% EQU 0 (
     echo ✓ Stopped Docker Redis container.
 )
 

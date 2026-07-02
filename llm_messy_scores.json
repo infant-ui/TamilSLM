@@ -1,0 +1,52 @@
+[
+  {
+    "id": 101,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term '(Hardware)' but it is inside the English parentheses instead of being next to the Tamil word, which would be ideal as per the guidelines. However, since it's not a direct English loan word inside the Tamil sentence grammar without brackets, I'm giving it a score of 4."
+  },
+  {
+    "id": 102,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term ('அச்சு இயந்திரம்') with an English technical term in brackets '[Printer]', which is highly acceptable according to the guidelines."
+  },
+  {
+    "id": 103,
+    "judge_score": 2,
+    "justification": "The answer uses direct English loan word 'science' without brackets or parentheses, but it is used within the Tamil sentence structure. It would be better to provide the correct Tamil term 'அறிவியல்' (Science) instead of using English."
+  },
+  {
+    "id": 104,
+    "judge_score": 2,
+    "justification": "The answer uses the English loan word 'mouse' directly inside the Tamil sentence grammar without brackets. This is a moderate mixing of languages."
+  },
+  {
+    "id": 105,
+    "judge_score": 4,
+    "justification": "The answer uses the English term directly inside the Tamil sentence grammar without brackets."
+  },
+  {
+    "id": 106,
+    "judge_score": 2,
+    "justification": "The answer uses raw English loan words ('computer') directly inside the Tamil sentence grammar without brackets, which is a common issue in many responses. While it's not entirely unacceptable to use English terms, providing them within parentheses or brackets next to the Tamil term would have earned a higher score."
+  },
+  {
+    "id": 107,
+    "judge_score": 5,
+    "justification": "The answer correctly uses the Tamil term \"திசைவேகம்\" to refer to velocity."
+  },
+  {
+    "id": 108,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for acceleration, முடுக்கம். However, it also includes the English term, திசைவேக மாற்ற வீதம், which is not enclosed in brackets or parentheses. The mixing of English and Tamil terminology, although minor, warrants a score of 4."
+  },
+  {
+    "id": 109,
+    "judge_score": 2,
+    "justification": "The answer uses the English loan word directly inside the Tamil sentence grammar without brackets, but it is at least attempting to translate the concept with a bracketed English term. However, the bracketed term contains a typo and should be 'hardware'."
+  },
+  {
+    "id": 110,
+    "judge_score": 4,
+    "justification": "The answer uses the English loan word 'science' directly inside the Tamil sentence grammar without brackets, but it's not entirely incorrect as 'அறிவு' is a Tamil equivalent for general knowledge. However, using 'science' in this context is slightly inappropriate and scores 4."
+  }
+]

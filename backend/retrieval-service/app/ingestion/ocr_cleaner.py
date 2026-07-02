@@ -3,6 +3,7 @@ import re
 import logging
 import unicodedata
 import pytesseract
+import numpy as np
 from PIL import Image
 import fitz  # PyMuPDF
 from typing import Tuple, Optional
@@ -64,14 +65,13 @@ class OCRCleaner:
         - English: photosyn-\nthesis -> photosynthesis
         - Tamil: ஒளிச்சேர்க்-\nகை -> ஒளிச்சேர்க்கை
         """
-        # Reconnect words split across lines by a hyphen followed by a newline and whitespace
-        text = re.sub(r"(\w+)-\s*\n\s*(\w+)", r"\1\2", text)
+        # Reconnect words split across lines by a hyphen: English letters only, no digits
+        text = re.sub(r"\b([a-zA-Z]+)-\s*\n\s*([a-zA-Z]+)\b", r"\1\2", text)
         
-        # Tamil specific line splits (often doesn't use standard hyphens, but splits mid-word)
-        # If the line ends with a Tamil consonant character lacking a vowel (ends with pulli ்)
-        # and the next line begins with a Tamil letter, check if they should be joined.
-        # We can also handle simple newline cleanups by replacing single newlines with spaces,
-        # unless they are paragraph breaks (indicated by double newlines).
+        # Tamil specific line splits: Tamil letters only
+        text = re.sub(r"([\u0b80-\u0bff]+)-\s*\n\s*([\u0b80-\u0bff]+)", r"\1\2", text)
+        
+        # Join lines in a paragraph with a space, preserving double newlines
         lines = text.split("\n")
         cleaned_lines = []
         for i, line in enumerate(lines):
@@ -80,16 +80,10 @@ class OCRCleaner:
                 cleaned_lines.append("")
                 continue
                 
-            # If this is not the last line, and the next line exists
             if i < len(lines) - 1:
                 next_line_strip = lines[i+1].strip()
                 if next_line_strip:
-                    # If this line ends with a Tamil word fragment (e.g. ending in a consonant or non-punctuation)
-                    # and the next line starts with a lowercase letter or Tamil modifier vowel, merge them.
-                    # In school textbooks, it's safest to merge lines in a paragraph with a space,
-                    # unless a hyphen was present.
                     if line_strip.endswith("-"):
-                        # Already handled by regex or we strip it here
                         line_strip = line_strip[:-1]
                         cleaned_lines.append(line_strip)
                     else:
@@ -100,7 +94,6 @@ class OCRCleaner:
                 cleaned_lines.append(line_strip)
                 
         joined = "".join(cleaned_lines)
-        # Replace multiple spaces with a single space
         joined = re.sub(r" {2,}", " ", joined)
         return joined.strip()
 
@@ -117,9 +110,15 @@ class OCRCleaner:
         if total_chars < 5:
             return text
             
-        # Count non-alphanumeric characters, ignoring standard spaces, punctuation, and Tamil character blocks
-        # Tamil unicode range is \u0b80-\u0bff
-        noise_chars = len(re.findall(r"[^\w\s\u0b80-\u0bff\.,\?\!\-\(\)]", text))
+        # Count non-alphanumeric characters, ignoring:
+        # - standard spaces, punctuation, parentheses
+        # - Tamil character block (\u0b80-\u0bff)
+        # - Greek letters (\u0370-\u03ff)
+        # - Math operators/symbols (\u2200-\u22ff, \u25a0-\u25ff, \u00b0)
+        # - Vulgar fractions (\u00bc-\u00be) and subscripts/superscripts (\u2070-\u209f)
+        # - Basic mathematical ASCII symbols (+, =, *, /, <, >, %, ^, \, {, }, [, ])
+        allowed_pattern = r"[\w\s\u0b80-\u0bff\.,\?\!\-\(\)\+\=\*\/\÷\<\>\≤\≥\^\√\%\±\×\≠\≈\≡\∝\∞\∠\⊥\∥\△\θ\π\∑\μ\σ\λ\α\β\γ\δ\e\phi\psi\omega\Delta\u0370-\u03ff\u2200-\u22ff\u25a0-\u25ff\u00b0\u00bc-\u00be\u2070-\u209f\\\{\}\[\]]"
+        noise_chars = len(re.sub(allowed_pattern, "", text))
         noise_ratio = noise_chars / total_chars
         
         if noise_ratio > 0.15:

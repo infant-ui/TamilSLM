@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What is a computer mouse?",
+    "model_answer": "Mouse என்பது கம்ப்யூட்டரின் ஒரு hardware சாதனம்."
+  },
+  {
+    "id": 2,
+    "question": "How do you define force?",
+    "model_answer": "விசை (Force) என்பது ஒரு பொருளை நகர்த்தும் ஆற்றல்."
+  },
+  {
+    "id": 3,
+    "question": "What is a printer?",
+    "model_answer": "Printer என்பது அச்சிடும் இயந்திரம்."
+  },
+  {
+    "id": 4,
+    "question": "What is a microscope?",
+    "model_answer": "நுண்ணோக்கி (Microscope) என்பது சிறிய பொருட்களை பெரிதாக்கி காட்டும் கருவி."
+  },
+  {
+    "id": 5,
+    "question": "Explain general science.",
+    "model_answer": "பொது அறிவியல் (General science) என்பது இயற்கையை பற்றிய படிப்பு."
+  },
+  {
+    "id": 6,
+    "question": "What is an ounce?",
+    "model_answer": "Ounce என்பது எடையை குறிக்கும் ஒரு அளவு."
+  },
+  {
+    "id": 7,
+    "question": "What is aestivation?",
+    "model_answer": "கோடைகால உறக்கம் (Aestivation) என்பது சில விலங்குகள் கோடையில் தூங்குவது."
+  },
+  {
+    "id": 8,
+    "question": "What is an analogue computer?",
+    "model_answer": "Analogue computer என்பது பழைய கால கணினி வகை."
+  },
+  {
+    "id": 9,
+    "question": "What is hardware?",
+    "model_answer": "வன்பொருள் (Hardware) என்பது கணினியின் பாகங்கள்."
+  },
+  {
+    "id": 10,
+    "question": "How does a microscope work?",
+    "model_answer": "Microscope மூலம் நாம் பாக்டீரியாக்களை பார்க்கலாம்."
+  }
+]

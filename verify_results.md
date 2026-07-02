@@ -1,0 +1,24 @@
+--- 15 RANDOM SPOT CHECKS ---
+1. Class 8 Science Tamil: மினகடத்தாப் ப�ொருள் <-> Bad conductor
+2. Class 6 Maths Tamil: இணை க�ோடுககள் <-> Parallel lines
+3. Class 6 Maths Tamil: குறுங்கோணம் <-> Acute angle
+4. Class 8 Science Tamil: கபாலம் <-> Skull
+5. Class 7 Maths English: கோ>ோணங்்கள் <-> Alternate interior angle
+6. Class 6 Maths Tamil: நீளம் <-> Length
+7. Class 6 Maths Tamil: சமச்சீர் <-> Symmetry
+8. Class 6 Maths Tamil: அளவு <-> Volume
+9. Class 8 Science Tamil: உவர் நீர் <-> Saline water
+10. Class 6 Maths Tamil: அணு ககடிகாரம் <-> Atomic clock
+11. Class 8 Science Tamil: மினனாறபகுத்தல் <-> Electrolysis
+12. Class 8 Science Tamil: எலும்புக் கூடு <-> Skeleton
+13. Class 8 Science English: இலையில் தெளிப்பு <-> Foliar spray
+14. Class 6 Maths Tamil: வெட்டும் கோ>ோடுகள் <-> Intersecting lines
+15. Class 8 Science English: எரிப�ொருள் <-> Propellant
+
+--- 5 MEDIUM-MISMATCH SPOT CHECKS (English Medium) ---
+1. Class 8 Science English: உறைநிலை <-> Freezing point
+2. Class 7 Maths English: ஒத்்த கோ>ோணங்்கள் <-> Diagonal
+3. Class 7 Maths English: மாறிலி <-> Corresponding angles
+4. Class 7 Maths English: காட்சிப்்பபேழை <-> Substitution
+5. Class 7 Maths English: கூட்டுச் சராசரி) <-> Average
+

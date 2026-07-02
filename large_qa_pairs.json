@@ -1,0 +1,152 @@
+[
+  {
+    "id": 101,
+    "question": "What is hardware?",
+    "model_answer": "இது கணினியின் ( Hardware ) பாகம்."
+  },
+  {
+    "id": 102,
+    "question": "What is a printer?",
+    "model_answer": "கணினியின் அச்சு இயந்திரம் [Printer] ஆகும்."
+  },
+  {
+    "id": 103,
+    "question": "What is science?",
+    "model_answer": "இயற்கையை பற்றிய படிப்பு science , ஆகும்."
+  },
+  {
+    "id": 104,
+    "question": "What is a mouse?",
+    "model_answer": "திரையில் நகர்த்த உதவும் கருவி mouse."
+  },
+  {
+    "id": 105,
+    "question": "What is a microscope?",
+    "model_answer": "சிறிய பொருளை காண மைக்ரோஸ்கோப் (microscope) பயன்படுகிறது."
+  },
+  {
+    "id": 106,
+    "question": "What is a computer network?",
+    "model_answer": "இது ஒரு computer-based தொழில்நுட்பம்."
+  },
+  {
+    "id": 107,
+    "question": "What is velocity?",
+    "model_answer": "திசைவேகம் என்பது ஒரு பொருளின் வேகம்."
+  },
+  {
+    "id": 108,
+    "question": "What is acceleration?",
+    "model_answer": "முடுக்கம் என்பது திசைவேக மாற்ற வீதம்."
+  },
+  {
+    "id": 109,
+    "question": "What is hardware?",
+    "model_answer": "இது கணினியின் (hardwaer) பாகம்."
+  },
+  {
+    "id": 110,
+    "question": "Explain general science.",
+    "model_answer": "பொது அறிவு science எனப்படுகிறது."
+  },
+  {
+    "id": 111,
+    "question": "What is force?",
+    "model_answer": "விசை (Force) என்பது ஒரு பொருளை நகர்த்தும் ஆற்றல்."
+  },
+  {
+    "id": 112,
+    "question": "What is momentum?",
+    "model_answer": "உந்தம் ( Momentum ) என்பது நிறை மற்றும் திசைவேகத்தின் பெருக்கற்பலன்."
+  },
+  {
+    "id": 113,
+    "question": "What is gravity?",
+    "model_answer": "புவியீர்ப்பு விசை [Gravity] பொருட்களை கீழே இழுக்கிறது."
+  },
+  {
+    "id": 114,
+    "question": "What is an atom?",
+    "model_answer": "Atom என்பது பருப்பொருளின் அடிப்படை."
+  },
+  {
+    "id": 115,
+    "question": "What is energy?",
+    "model_answer": "ஆற்றல் (energy) வேலை செய்ய தேவை."
+  },
+  {
+    "id": 116,
+    "question": "What is a molecule?",
+    "model_answer": "மூலக்கூறு என்பது அணுக்களின் சேர்க்கை."
+  },
+  {
+    "id": 117,
+    "question": "What is a chemical bond?",
+    "model_answer": "வேதி பிணைப்பு (Chemical bond) அணுக்களை சேர்க்கிறது."
+  },
+  {
+    "id": 118,
+    "question": "What is an acid?",
+    "model_answer": "அமிலம் என்பது புளிப்பு சுவை கொண்டது."
+  },
+  {
+    "id": 119,
+    "question": "What is a base?",
+    "model_answer": "காரம் Base கசப்பு சுவை கொண்டது."
+  },
+  {
+    "id": 120,
+    "question": "What is a solvent?",
+    "model_answer": "கரைப்பான் (solvent) பொருளை கரைக்கிறது."
+  },
+  {
+    "id": 121,
+    "question": "What is a solute?",
+    "model_answer": "கரைபொருள் (solut) கரைகிறது."
+  },
+  {
+    "id": 122,
+    "question": "What is a mixture?",
+    "model_answer": "கலவை (mixture) என்பது பல பொருட்கள் சேர்ந்தது."
+  },
+  {
+    "id": 123,
+    "question": "What is a compound?",
+    "model_answer": "சேர்மம் [compound] என்பது வேதியியல் ரீதியாக சேர்ந்தது."
+  },
+  {
+    "id": 124,
+    "question": "What is a solution?",
+    "model_answer": "கரைசல் solution ஆகும்."
+  },
+  {
+    "id": 125,
+    "question": "What is a reaction?",
+    "model_answer": "வேதி வினை (Reaction) நடக்கிறது."
+  },
+  {
+    "id": 126,
+    "question": "What is a catalyst?",
+    "model_answer": "வினையூக்கி (Catalyst) வேகத்தை கூட்டுகிறது."
+  },
+  {
+    "id": 127,
+    "question": "What is temperature?",
+    "model_answer": "வெப்பநிலை என்பது சூட்டின் அளவு."
+  },
+  {
+    "id": 128,
+    "question": "What is heat?",
+    "model_answer": "வெப்பம் (Heat) ஒரு ஆற்றல்."
+  },
+  {
+    "id": 129,
+    "question": "What is light?",
+    "model_answer": "ஒளி light கண்ணுக்கு தெரியும்."
+  },
+  {
+    "id": 130,
+    "question": "What is sound?",
+    "model_answer": "ஒலி (Sound) காதுக்கு கேட்கும்."
+  }
+]

@@ -18,7 +18,7 @@ from app.ingestion.chapter_parser import ChapterParser
 from app.ingestion.section_parser import SectionParser
 from app.ingestion.logical_block_builder import LogicalBlockBuilder
 from app.ingestion.chunk_validator import ChunkValidator
-from app.ingestion.chunker import ScienceChunker
+from app.ingestion.chunker import CurriculumChunker, ChunkUnit, ScienceChunker
 
 # Set UTF-8 encoding for stdout/stderr to prevent charmap encoding errors under Windows
 try:
@@ -29,7 +29,7 @@ except AttributeError:
 
 def process_book_pipeline(pdf_path: str, book_metadata: dict, cleaner: PDFCleaner, 
                           analyzer: LayoutAnalyzer, ocr: OCRCleaner, validator: ChunkValidator, 
-                          chunker: ScienceChunker) -> tuple[list, bool]:
+                          chunker: CurriculumChunker) -> tuple[list, bool]:
     """
     Complete end-to-end Document Intelligence pipeline for a single book.
     """
@@ -79,16 +79,59 @@ def process_book_pipeline(pdf_path: str, book_metadata: dict, cleaner: PDFCleane
                         "bbox_type": l_block.type
                     })
         
+        # 2. Extract Figures and Tables (Multimodal Roadmap)
+        try:
+            figures_and_tables = cleaner.extract_figures_and_tables(page, page_idx + 1)
+            for item in figures_and_tables:
+                if item["type"] == "table":
+                    table_text = f"[Table Reference (Page {page_idx+1})]\n\n{item['content']}"
+                    chunk_metadata = {
+                        **book_metadata,
+                        "page_number": page_idx + 1,
+                        "chapter_no": "0",
+                        "chapter_title": "Tables and Diagrams",
+                        "ocr_processed": not is_searchable,
+                        "content_role": "table",
+                        "bbox": list(item["bbox"]),
+                        "source": book_metadata.get("content_type", "textbook")
+                    }
+                    all_chunks.append(ChunkUnit(
+                        chunk_id=f"{book_metadata.get('document_id', 'unknown')}_tbl_{page_idx+1}_{len(all_chunks)}",
+                        text=table_text,
+                        metadata=chunk_metadata
+                    ))
+                elif item["type"] == "figure":
+                    fig_ocr_text, _ = ocr.perform_ocr_on_bbox(page, item["bbox"], lang=ocr_lang)
+                    fig_text = f"[Figure Reference (Page {page_idx+1}) Caption: {item['caption']}]\n[Diagram Text: {fig_ocr_text}]"
+                    chunk_metadata = {
+                        **book_metadata,
+                        "page_number": page_idx + 1,
+                        "chapter_no": "0",
+                        "chapter_title": "Tables and Diagrams",
+                        "ocr_processed": True,
+                        "content_role": "figure",
+                        "bbox": list(item["bbox"]),
+                        "image_path": item["image_path"],
+                        "source": book_metadata.get("content_type", "textbook")
+                    }
+                    all_chunks.append(ChunkUnit(
+                        chunk_id=f"{book_metadata.get('document_id', 'unknown')}_fig_{page_idx+1}_{len(all_chunks)}",
+                        text=fig_text,
+                        metadata=chunk_metadata
+                    ))
+        except Exception as e:
+            print(f"⚠️ Warning: Failed to extract tables/figures on Page {page_idx+1}: {e}")
+
         if not page_text_blocks:
             continue
             
-        # 2. Layout Analysis (Column sorting & reading order resolution)
+        # 3. Layout Analysis (Column sorting & reading order resolution)
         sorted_layout_blocks = analyzer.segment_page(page, page_text_blocks)
         
-        # 3. Chapter & Section parsing
+        # 4. Chapter & Section parsing
         chapters = chapter_parser.split_by_chapters(sorted_layout_blocks)
         
-        # 4. Logical Block & Contextual Chunking
+        # 5. Logical Block & Contextual Chunking
         for chap in chapters:
             chap_no = chap["chapter_no"]
             chap_title = chap["chapter_title"]
@@ -112,6 +155,7 @@ def process_book_pipeline(pdf_path: str, book_metadata: dict, cleaner: PDFCleane
                 chunk.metadata["chapter_no"] = chap_no
                 chunk.metadata["chapter_title"] = chap_title
                 chunk.metadata["ocr_processed"] = not is_searchable
+                chunk.metadata["source"] = book_metadata.get("content_type", "textbook")
                 
                 is_valid, reason = validator.validate_chunk(chunk.text, chunk.metadata)
                 if is_valid:

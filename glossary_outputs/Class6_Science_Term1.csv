@@ -1,0 +1,159 @@
+Class,Subject,Term,Medium,Tamil_Term,English_Term,Needs_Human_Review
+Class 6,Science,Term 1,English,(அபாகஸ்),Abacus,False
+Class 6,Science,Term 1,English,(கம்ப்யூட்டர்),Computer,False
+Class 6,Science,Term 1,English,கணினி,Architecture,True
+Class 6,Science,Term 1,English,"கட்டமைப்பு, வடிவமைப்பு",Command,True
+Class 6,Science,Term 1,English,கட்டளை,Calculator,True
+Class 6,Science,Term 1,English,(செல்போன்),"Cell Phone, Mobile",False
+Class 6,Science,Term 1,English,(டேப்லட்),Tablet,False
+Class 6,Science,Term 1,English,"தரவு, முறைப்படுததபடட வேண்டிய",Data,True
+Class 6,Science,Term 1,English,விவரஙகள்,Information,True
+Class 6,Science,Term 1,English,"மின்னணு இயந்திரம், மின்சாரத்தால்",Electronic Machine,True
+Class 6,Science,Term 1,English,(அனலாக் கம்ப்யூட்டர்),Analog computer,False
+Class 6,Science,Term 1,English,(ஸ்மார்ட் ப�ோன்),Smart phone,False
+Class 6,Science,Term 1,English,திறன் பேசி,Post Office,True
+Class 6,Science,Term 1,English,தபால் நிலையம்,Automated Teller Machine (ATM),True
+Class 6,Science,Term 1,English,தானியங்கி பண எந்திரம்,Keyboard,True
+Class 6,Science,Term 1,English,விசைப்பலகை,Software,True
+Class 6,Science,Term 1,English,மென்பொருள்,Hardware,True
+Class 6,Science,Term 1,English,வன்பொருள்,Printer,True
+Class 6,Science,Term 1,English,அச்சுப் ப�ொறி,Mouse,True
+Class 6,Science,Term 1,English,சுட்டி,Program,True
+Class 6,Science,Term 1,English,நிரல்,Programmer,True
+Class 6,Science,Term 1,English,நிரலர்,6th Science_EM_Unit 7.indd 101,True
+Class 6,Science,Term 1,English,அளவு நாடா,Measuring Tape,False
+Class 6,Science,Term 1,English,பகுதிப்பொ,Components,True
+Class 6,Science,Term 1,English,ருட்கள்,Stop clock,True
+Class 6,Science,Term 1,English,நிறுத்துக் கடிகாரம்,Proportion,True
+Class 6,Science,Term 1,English,அளவுசாடி,Measuring jar,False
+Class 6,Science,Term 1,English,பிரித்தெடுத்தல்,Extraction,True
+Class 6,Science,Term 1,English,அலகு,Unit,True
+Class 6,Science,Term 1,English,வடிகட்டி,Strainer,True
+Class 6,Science,Term 1,English,இடமாறு,Parallax error,True
+Class 6,Science,Term 1,English,கடைதல்,Churning,True
+Class 6,Science,Term 1,English,தEோற்றப்பிழை,Threshing,True
+Class 6,Science,Term 1,English,கதிரடித்தல்,Mass,True
+Class 6,Science,Term 1,English,நிறை,Winnowing,True
+Class 6,Science,Term 1,English,தூற்றுதல்,Weight,True
+Class 6,Science,Term 1,English,எடை,Sedimentation,True
+Class 6,Science,Term 1,English,உயிருளள,Animate factors,False
+Class 6,Science,Term 1,English,தெளியவைத்து,Decantation,True
+Class 6,Science,Term 1,English,இறுத்தல்,Inanimate,True
+Class 6,Science,Term 1,English,உயிரற்ற காரணிகள்,Filtrate,True
+Class 6,Science,Term 1,English,வடிநீர்,factors,True
+Class 6,Science,Term 1,English,வினை,Reaction,True
+Class 6,Science,Term 1,English,தEொடு விசைகள்,Non-contact,True
+Class 6,Science,Term 1,English,கரைத்தல்,Dissolution,True
+Class 6,Science,Term 1,English,தEொடா விசைகள்,forces,True
+Class 6,Science,Term 1,English,பதஙகமாதல்,Sublimation,True
+Class 6,Science,Term 1,English,நேர்கோட்டு,Linear motion,False
+Class 6,Science,Term 1,English,உருகுதல்,Melting,True
+Class 6,Science,Term 1,English,இயக்கம்,Vaporization,True
+Class 6,Science,Term 1,English,ஆவியாக்குதல்,Curvilinear,True
+Class 6,Science,Term 1,English,ஆவி சுருஙகல்,Condensation,False
+Class 6,Science,Term 1,English,இயக்கம்,­motion,True
+Class 6,Science,Term 1,English,உறைதல்,Freezing,True
+Class 6,Science,Term 1,English,வட்டப்பாதை,Circular motion,False
+Class 6,Science,Term 1,English,இயக்கம்,Terminal bud,True
+Class 6,Science,Term 1,English,சுழற்சி இயக்கம்,Rotatory motion,False
+Class 6,Science,Term 1,English,க�ோணண ம�ொட்டு,Auxiliary buds,False
+Class 6,Science,Term 1,English,அலைவு இயக்கம்,Oscillatory,True
+Class 6,Science,Term 1,English,இலைக் கணு,Nodes,True
+Class 6,Science,Term 1,English,பற்றுக்கம்பி,Tendril,True
+Class 6,Science,Term 1,English,தழுவுக�ொடி,Twiners,True
+Class 6,Science,Term 1,English,ஒழுஙகற்ற இயக்கம்,motion,True
+Class 6,Science,Term 1,English,முள்,Thorns,True
+Class 6,Science,Term 1,English,சராசரி வேகம்,Average speed,False
+Class 6,Science,Term 1,English,தகவமைப்பு,Adaptation,True
+Class 6,Science,Term 1,English,கால ஒழுங்கு,Periodic motion,False
+Class 6,Science,Term 1,English,இயக்கம்,Bio diversity,True
+Class 6,Science,Term 1,English,பல்லுயிர் தன்மை,Non-periodic,True
+Class 6,Science,Term 1,English,கால ஒழுஙகற்ற,Eco system,True
+Class 6,Science,Term 1,English,சூழியல் மணடலம்,motion,True
+Class 6,Science,Term 1,English,இயக்கம்,Migration,True
+Class 6,Science,Term 1,English,சீரான இயக்கம்,Uniform motion,False
+Class 6,Science,Term 1,English,உயிருளள சமூகம்,Abiotic,True
+Class 6,Science,Term 1,English,சீரற்ற இயக்கம்,Non-uniform,True
+Class 6,Science,Term 1,English,உயிரைச் சார்ந்த,Biotic,True
+Class 6,Science,Term 1,English,செயற்கை,Artificial,True
+Class 6,Science,Term 1,English,சமூகம்,community,True
+Class 6,Science,Term 1,English,நுண்ணறிவு,­Intelligence,True
+Class 6,Science,Term 1,English,ஊட்டச்சத்துக்,Malnutrition,True
+Class 6,Science,Term 1,English,நான�ோ,Nano robotics,False
+Class 6,Science,Term 1,English,எந்திரனியல்,Deficiency,True
+Class 6,Science,Term 1,English,குறைபாட்டு,Diffusion,True
+Class 6,Science,Term 1,English,"விரவுதல், பரவுதல்",diseases,True
+Class 6,Science,Term 1,English,ந�ோய்கள்,Liquefaction,True
+Class 6,Science,Term 1,English,நீரமாக்கல்,Hygiene,True
+Class 6,Science,Term 1,English,சுகாதாரம்,Compressible,True
+Class 6,Science,Term 1,English,அழுத்தப்படக்கூடிய,Personal,True
+Class 6,Science,Term 1,English,தன் சுத்தம்,Hygiene,True
+Class 6,Science,Term 1,English,கலப்படமற்ற,Unadulterated,False
+Class 6,Science,Term 1,Tamil,வாய்வழி நீரேற்றக் கரைசசல்,(Oral Rehydration,False
+Class 6,Science,Term 1,Tamil,ORS) என்றார். ORS என்றால்,Solution,False
+Class 6,Science,Term 1,Tamil,தீவிர உடல் பிரச்சினைகளை,"(Dehydration),",False
+Class 6,Science,Term 1,Tamil,உருவாக்கும். கரைசலை,ORS,False
+Class 6,Science,Term 1,Tamil,நிறுவனத்தின்,(WHO),False
+Class 6,Science,Term 1,Tamil,அ) வைட்்டமின் ஆ) வைட்்டமின்,A B,False
+Class 6,Science,Term 1,Tamil,இ) வைட்்டமின் ஈ) வைட்்டமின்,C D,False
+Class 6,Science,Term 1,Tamil,பின்வரும் ஒப்புமைகளைப் பூர்த்தி செய்க.,IV.,False
+Class 6,Science,Term 1,Tamil,வைட்்டமின் ரிக்்ககெட்ஸ் வைட்்டமின்,D C,False
+Class 6,Science,Term 1,Tamil,பொ�ொருத்துக.,V.,False
+Class 6,Science,Term 1,Tamil,அ. ரிக்்ககெட்ஸ்,1 வைட்்டமின் A,False
+Class 6,Science,Term 1,Tamil,ஆ. மாலைக் கண் நோ�ோய்,2 வைட்்டமின் B,False
+Class 6,Science,Term 1,Tamil,இ. மலட்டுத்்தன்்மமை,3 வைட்்டமின் C,False
+Class 6,Science,Term 1,Tamil,ஈ. பெரி பெரி,4 வைட்்டமின் D,False
+Class 6,Science,Term 1,Tamil,உ. ஸ்கர்வி,5 வைட்்டமின் E,False
+Class 6,Science,Term 1,Tamil,கோ�ோடிட்்ட இடடத்்ததை நிரப்புக.,II.,False
+Class 6,Science,Term 1,Tamil,நிரப்புக.,VI.,False
+Class 6,Science,Term 1,Tamil,சுருக்கமாக விடையளி.,VII.,False
+Class 6,Science,Term 1,Tamil,சசரியா அல்லது ததவறா எனக் கூறுக. ததவறாக,III.,False
+Class 6,Science,Term 1,Tamil,விரிவாக விடையளி.,VIII.,False
+Class 6,Science,Term 1,Tamil,விளையாடி பார்்பப்்பபோமா...,Pyramid game,True
+Class 6,Science,Term 1,Tamil,தேடு பொ�ொறியில் என்று ததட்்டச்சு செய்யவும்,Google ninindia.org,False
+Class 6,Science,Term 1,Tamil,ஐ சொ�ொடுக்கவும்.,Pyramid game,False
+Class 6,Science,Term 1,Tamil,கொ�ொடுக்கப்்பட்்ட பபல்்வவேறு உணவுகளை ஒவ்வொன்றாக இழுத்து யில் விடவும்,pyramid,False
+Class 6,Science,Term 1,Tamil,உரலி:,http://ninindia.org/Amulya%20Nutrition%20Games/index.html,True
+Class 6,Science,Term 1,Tamil,பயன்படுத்தும் திறன்்பபேசியிலும்,(Smartphone),False
+Class 6,Science,Term 1,Tamil,பகுப்்பபாய்வுப் பொ�ொறியை,(Analogue Computer),False
+Class 6,Science,Term 1,Tamil,என அவர் போ�ோற்்றப்படுகிறார்.,(Programmer),False
+Class 6,Science,Term 1,Tamil,சிவா: அப்படியெனில் தகவல் என்்றறால் என்்ன,Intelligence,True
+Class 6,Science,Term 1,Tamil,சிவா: மென்பொருள் மற்றும்,(Software),False
+Class 6,Science,Term 1,Tamil,வன்பொருள் என்று சொ�ொல்கிறார்்களே!,(Hardware),False
+Class 6,Science,Term 1,Tamil,கட்்டளைகள் அல்லது நிரல்களின்,(command),False
+Class 6,Science,Term 1,Tamil,இருக்கக்கூடிய,(program),True
+Class 6,Science,Term 1,Tamil,கருவிகள்,(Indput,True
+Class 6,Science,Term 1,Tamil,ஆகும்.,device),True
+Class 6,Science,Term 1,Tamil,எடுத்துக்்ககாட்டு: விசைப்பலகை,"(Keyboard),",True
+Class 6,Science,Term 1,Tamil,உங்கள் அனைவருக்கும்,"“Windows”, “Linux”",False
+Class 6,Science,Term 1,Tamil,சுட்டி போ�ோன்்றவை நாம் உள்ளீடு,(Mouse),False
+Class 6,Science,Term 1,Tamil,எனப்படும். எடுத்துக்்ககாட்டு:,(Output device),False
+Class 6,Science,Term 1,Tamil,அச்சுப்பொறி கணினித் திரை,"(Printer), (monitor)",False
+Class 6,Science,Term 1,Tamil,நான்சி: என்்றறால் என்்ன அய்்யயா?,CPU,False
+Class 6,Science,Term 1,Tamil,ஆசிரியர்: இது மையச் செயலகம்,(Central,False
+Class 6,Science,Term 1,Tamil,எனப்படும். இது தொ�ொடர்்பபான,Processing Unit),False
+Class 6,Science,Term 1,Tamil,மேலும் பல்்வவேறு விவரங்்களை உங்கள்,Computer),True
+Class 6,Science,Term 1,Tamil,பின்வரும் வினாக்்களுக்கு விடையளி,IV.,False
+Class 6,Science,Term 1,Tamil,பின்வரும் வினாக்்களுக்கு விரிவான விடையளி,V.,False
+Class 6,Science,Term 1,Tamil,செய்முறைகக ள் மற்றும் செயல்பாடுககள்,VI.,False
+Class 6,Science,Term 1,Tamil,பொ�ொருத்துகக,II.,False
+Class 6,Science,Term 1,Tamil,உயர் சிந்்தனை வினா,VII.,False
+Class 6,Science,Term 1,Tamil,வாழ்வியல் திறறன்,VIII.,False
+Class 6,Science,Term 1,Tamil,இணை ய வளங்்கள்,http://www.ncsc.nic.in/,True
+Class 6,Science,Term 1,Tamil,கோ�ோடிட்ட இடங்்களை நிரப்புகக,III.,False
+Class 6,Science,Term 1,Tamil,________ என்்பது மற்றவர்்களைப் பற்றி,(The National Commission for Scheduled,True
+Class 6,Science,Term 1,Tamil,எதிர்்மறையாக அல்்லது தாழ்வான முறையில்,http://ncst.nic.in/,True
+Class 6,Science,Term 1,Tamil,கருதுவதாகும்.,(The National Commission for Scheduled Tribes),True
+Class 6,Science,Term 1,Tamil,________ ஆம் ஆண்டு ஏ.பி.ஜே. அப்துல்்கலாம்,http://www.ncw.nic.in/,True
+Class 6,Science,Term 1,Tamil,பிறந்தார்.,(The National Commission for Women),True
+Class 6,Science,Term 1,Tamil,முனைவர். மணிகுமார்,K.A,False
+Class 6,Science,Term 1,Tamil,முனைவர் சுந்தர்,G.,False
+Class 6,Science,Term 1,Tamil,சங்கரன்,K R,False
+Class 6,Science,Term 1,Tamil,"வரலாற்று உதவிப் பேராசிரியர், கல்லூரி (தன்னாட்சி)",A.V.C,False
+Class 6,Science,Term 1,Tamil,"நுங்கம்பாக்கம், சென்்னனை-6","TNTB ESC,",False
+Class 6,Science,Term 1,Tamil,"உதவிப் பேராசிரியர், கல்வியியல் கல்லூரி",NKT,False
+Class 6,Science,Term 1,Tamil,காந்திராஜன்,K T,False
+Class 6,Science,Term 1,Tamil,ஒருங்கிணைப்பாளர்,ICT,False
+Class 6,Science,Term 1,Tamil,இணையச் செயல்பாடு ஒருங்கிணைப்பாளர்,In-House - QC,True
+Class 6,Science,Term 1,Tamil,ரமேஷ் முனிசாமி,Image Courtesy,True
+Class 6,Science,Term 1,Tamil,இந்நூல் 80 ஜி.எஸ்.எம் எலிகண்ட் மேப்லித்தோ தாளில்,"Tamil Virtual Academy, Chennai.",True

@@ -82,8 +82,7 @@ def generate_process_map(text):
         with_labels=True,
         node_color="lightblue",
         node_size=4000,
-        font_size=11,
-        arrows=True
+        font_size=11
     )
     folder = "tamil_process"
     os.makedirs(folder, exist_ok=True)

@@ -4,11 +4,18 @@ const { exec, execFile } = require("child_process");
 const path = require("path");
 const Redis = require("ioredis");
 const fs = require("fs");
+const multer = require("multer");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+// Serve textbook PDF files statically from the data directory
+app.use("/pdf", express.static(path.join(__dirname, "..", "..", "data")));
+
+// Setup Multer for memory upload handling
+const upload = multer({ storage: multer.memoryStorage() });
 
 // ── REDIS CONNECTION (WITH RESILIENT FALLBACK) ──
 const redis = new Redis({
@@ -50,21 +57,94 @@ app.post("/query/stream", async (req, res) => {
         allowed_content_types,
         include_previous_years,
         fallback_language_allowed,
-        top_k 
+        top_k,
+        explicit_intent 
     } = req.body;
 
     if (!query || !language || !sessionId) {
         return res.status(400).json({ error: "Missing query, language, or sessionId" });
     }
 
-    // Default Fallbacks
-    const activeClassId = (class_id !== undefined && class_id !== null) ? parseInt(class_id) : null;
-    const activeTerm = (term !== undefined && term !== null) ? parseInt(term) : null;
-    const activeMedium = preferred_medium || (language.toLowerCase() === "tamil" ? "tamil" : "english");
+    // A. Session-level filters memory using Redis or In-Memory fallback
+    let activeClassId = null;
+    let activeTerm = null;
+    let activeMedium = null;
+    let activeSubject = null;
+
+    const sessionFilterKey = `session:filters:${sessionId}`;
+
+    const reqClass = (class_id !== undefined && class_id !== null) ? parseInt(class_id) : null;
+    const reqTerm = (term !== undefined && term !== null) ? parseInt(term) : null;
+    const reqMedium = preferred_medium || null;
+    const reqSubject = req.body.subject || null;
+
+    // If any filter is explicitly specified, store it in session memory
+    if (reqClass !== null || reqTerm !== null || reqMedium !== null || reqSubject !== null) {
+        activeClassId = reqClass;
+        activeTerm = reqTerm;
+        activeMedium = reqMedium || (language.toLowerCase() === "tamil" ? "tamil" : "english");
+        activeSubject = reqSubject || "auto";
+
+        const filterData = {
+            class_id: activeClassId,
+            term: activeTerm,
+            preferred_medium: activeMedium,
+            subject: activeSubject
+        };
+
+        if (isRedisConnected) {
+            await redis.set(sessionFilterKey, JSON.stringify(filterData), "EX", 1800); // Expires in 30 mins
+        } else {
+            memoryCache.set(sessionFilterKey, filterData);
+        }
+    } else {
+        // Otherwise, reload filters from session memory
+        let cachedFilters = null;
+        if (isRedisConnected) {
+            const raw = await redis.get(sessionFilterKey);
+            if (raw) cachedFilters = JSON.parse(raw);
+        } else {
+            cachedFilters = memoryCache.get(sessionFilterKey);
+        }
+
+        if (cachedFilters) {
+            activeClassId = cachedFilters.class_id;
+            activeTerm = cachedFilters.term;
+            activeMedium = cachedFilters.preferred_medium;
+            activeSubject = cachedFilters.subject;
+            console.log("🔄 Restored session filters:", cachedFilters);
+        } else {
+            activeClassId = null;
+            activeTerm = null;
+            activeMedium = language.toLowerCase() === "tamil" ? "tamil" : "english";
+            activeSubject = "auto";
+        }
+    }
+
     const activeContentTypes = allowed_content_types || ["textbook", "guide"];
     const activeIncludePrevYears = include_previous_years !== undefined ? !!include_previous_years : false;
     const activeFallbackAllowed = fallback_language_allowed !== undefined ? !!fallback_language_allowed : false;
     const activeTopK = top_k !== undefined ? parseInt(top_k) : 3;
+
+    // A.5 Intent Routing
+    let intent = "Chat";
+    if (explicit_intent === "image") {
+        intent = "Image";
+    } else {
+        try {
+            const intentRes = await fetch("http://localhost:8001/router/intent", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ query })
+            });
+            if (intentRes.ok) {
+                const data = await intentRes.json();
+                intent = data.intent || "Chat";
+            }
+        } catch (err) {
+            console.error("❌ Intent Router failed:", err.message);
+        }
+    }
 
     // Set SSE headers
     res.setHeader("Content-Type", "text/event-stream");
@@ -72,11 +152,37 @@ app.post("/query/stream", async (req, res) => {
     res.setHeader("Connection", "keep-alive");
     res.flushHeaders();
 
-    // Cache key incorporates all retrieval filters to avoid conflicts
-    const cacheKey = `cache:query:${activeClassId}:${activeTerm}:${activeMedium}:${activeIncludePrevYears}:${activeFallbackAllowed}:${query.trim().toLowerCase()}`;
+    if (intent === "Image") {
+        res.write(`data: ${JSON.stringify({ intent: "Image" })}\n\n`);
+        try {
+            const imgRes = await fetch("http://localhost:8001/generate/image", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "x-generation-service-admin-key": "dev-generation-secret-key-123"
+                },
+                body: JSON.stringify({ prompt: query, medium: language })
+            });
+            const data = await imgRes.json();
+            if (data.success && data.image_path) {
+                const parts = data.image_path.replace(/\\/g, "/").split("generated-images/");
+                const imageUrl = parts.length > 1 ? `http://localhost:8001/images/${parts[1]}` : "";
+                res.write(`data: ${JSON.stringify({ image_url: imageUrl })}\n\n`);
+            } else {
+                res.write(`data: ${JSON.stringify({ error: data.message || "Image generation failed" })}\n\n`);
+            }
+        } catch (err) {
+            res.write(`data: ${JSON.stringify({ error: "Image service unreachable" })}\n\n`);
+        }
+        res.write("data: [DONE]\n\n");
+        return res.end();
+    }
+
+    // Cache key incorporates all filters to avoid conflicts
+    const cacheKey = `cache:query:${activeClassId}:${activeTerm}:${activeMedium}:${activeSubject}:${activeIncludePrevYears}:${activeFallbackAllowed}:${query.trim().toLowerCase()}`;
 
     try {
-        // A. Check Cache
+        // B. Check Cache
         let cachedAnswer = null;
         if (isRedisConnected) {
             cachedAnswer = await redis.get(cacheKey);
@@ -91,17 +197,27 @@ app.post("/query/stream", async (req, res) => {
             return res.end();
         }
 
-        // B. Fetch session history summary
+        // C. Fetch session history summary
         let historySummary = "";
         if (isRedisConnected) {
-            historySummary = (await redis.get(`session:summary:${sessionId}`)) || "";
+            const rawHist = await redis.lrange(`session:history:${sessionId}`, 0, -1);
+            if (rawHist && rawHist.length > 0) {
+                historySummary = rawHist.map(item => {
+                    try {
+                        const parsed = JSON.parse(item);
+                        return `${parsed.role}: ${parsed.text}`;
+                    } catch (e) {
+                        return "";
+                    }
+                }).filter(Boolean).join("\n");
+            }
         } else {
             const hist = memoryHistory.get(sessionId) || [];
             historySummary = hist.map(h => `${h.role}: ${h.text}`).join("\n");
         }
 
-        // C. Fetch context from Retrieval Service
-        console.log("🔍 Querying Retrieval Service with options...");
+        // D. Fetch context and system prompt from Retrieval Service
+        console.log("🔍 Querying Retrieval Service...");
         let retrievalData = null;
         try {
             const retrieveRes = await fetch(RETRIEVAL_URL, {
@@ -111,7 +227,7 @@ app.post("/query/stream", async (req, res) => {
                     question: query,
                     detected_language: language,
                     class_id: activeClassId,
-                    subject: "science",
+                    subject: activeSubject,
                     term: activeTerm,
                     preferred_medium: activeMedium,
                     allowed_content_types: activeContentTypes,
@@ -132,6 +248,9 @@ app.post("/query/stream", async (req, res) => {
         const chunks = (retrievalData && retrievalData.results) ? retrievalData.results : [];
         const contextText = chunks.map(c => c.text).join("\n");
         const resolvedMedium = (retrievalData && retrievalData.medium) ? retrievalData.medium : activeMedium;
+        const systemPrompt = (retrievalData && retrievalData.diagnostics && retrievalData.diagnostics.system_prompt)
+            ? retrievalData.diagnostics.system_prompt
+            : null;
 
         // Write retrieved source citations back to client immediately
         res.write(`data: ${JSON.stringify({ 
@@ -140,7 +259,7 @@ app.post("/query/stream", async (req, res) => {
             resolved_medium: resolvedMedium
         })}\n\n`);
 
-        // D. Call Generation Service for streaming
+        // E. Call Generation Service for streaming
         console.log("🧠 Querying Generation Service stream...");
         const genRes = await fetch(GENERATION_STREAM_URL, {
             method: "POST",
@@ -149,7 +268,8 @@ app.post("/query/stream", async (req, res) => {
                 query,
                 context: contextText,
                 language: resolvedMedium === "tamil" ? "tamil" : "english",
-                history_summary: historySummary
+                history_summary: historySummary,
+                system_prompt: systemPrompt // Dynamic tutor prompt
             })
         });
 
@@ -193,7 +313,7 @@ app.post("/query/stream", async (req, res) => {
         res.write("data: [DONE]\n\n");
         res.end();
 
-        // E. Save to Cache and history (Asynchronously in background)
+        // F. Save to Cache and history (Asynchronously in background)
         if (completeAnswer.trim()) {
             if (isRedisConnected) {
                 await redis.set(cacheKey, completeAnswer, "EX", 86400); // Cache for 24h
@@ -244,6 +364,7 @@ app.post("/query", async (req, res) => {
     const activeIncludePrevYears = include_previous_years !== undefined ? !!include_previous_years : false;
     const activeFallbackAllowed = fallback_language_allowed !== undefined ? !!fallback_language_allowed : false;
     const activeTopK = top_k !== undefined ? parseInt(top_k) : 3;
+    const activeSubject = req.body.subject || "auto";
 
     try {
         // Fetch context
@@ -256,7 +377,7 @@ app.post("/query", async (req, res) => {
                     question: query,
                     detected_language: language,
                     class_id: activeClassId,
-                    subject: "science",
+                    subject: activeSubject,
                     term: activeTerm,
                     preferred_medium: activeMedium,
                     allowed_content_types: activeContentTypes,
@@ -275,6 +396,9 @@ app.post("/query", async (req, res) => {
         const chunks = (retrievalData && retrievalData.results) ? retrievalData.results : [];
         const contextText = chunks.map(c => c.text).join("\n");
         const resolvedMedium = (retrievalData && retrievalData.medium) ? retrievalData.medium : activeMedium;
+        const systemPrompt = (retrievalData && retrievalData.diagnostics && retrievalData.diagnostics.system_prompt)
+            ? retrievalData.diagnostics.system_prompt
+            : null;
 
         // Query stream and consolidate it
         const genRes = await fetch(GENERATION_STREAM_URL, {
@@ -284,7 +408,8 @@ app.post("/query", async (req, res) => {
                 query,
                 context: contextText,
                 language: resolvedMedium === "tamil" ? "tamil" : "english",
-                history_summary: ""
+                history_summary: "",
+                system_prompt: systemPrompt
             })
         });
 
@@ -453,6 +578,78 @@ app.get("/mindmap/status/:jobId", async (req, res) => {
 
     } catch (err) {
         console.error("Error retrieving job status:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// ── 5. PROXIED RESOURCE UPLOAD ENDPOINT ──
+app.post("/api/upload", upload.single("file"), async (req, res) => {
+    console.log("📥 Upload proxy request received.");
+    try {
+        if (!req.file) {
+            return res.status(400).json({ error: "No file uploaded" });
+        }
+        
+        const formData = new FormData();
+        const blob = new Blob([req.file.buffer], { type: req.file.mimetype });
+        formData.append("file", blob, req.file.originalname);
+        
+        if (req.body.class_id) formData.append("class_id", req.body.class_id);
+        if (req.body.subject) formData.append("subject", req.body.subject);
+        if (req.body.medium) formData.append("medium", req.body.medium);
+        if (req.body.content_type) formData.append("content_type", req.body.content_type);
+        if (req.body.term) formData.append("term", req.body.term);
+
+        const response = await fetch("http://127.0.0.1:8000/upload", {
+            method: "POST",
+            body: formData
+        });
+        
+        const data = await response.json();
+        if (response.ok) {
+            res.json(data);
+        } else {
+            res.status(response.status).json(data);
+        }
+    } catch (err) {
+        console.error("Proxy upload error:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// ── 6. PROXIED TEACHER FEEDBACK ENDPOINT ──
+app.post("/api/feedback", async (req, res) => {
+    console.log("📥 Feedback proxy request received.");
+    try {
+        const response = await fetch("http://127.0.0.1:8000/feedback", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(req.body)
+        });
+        const data = await response.json();
+        if (response.ok) {
+            res.json(data);
+        } else {
+            res.status(response.status).json(data);
+        }
+    } catch (err) {
+        console.error("Proxy feedback error:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// ── 7. PROXIED EVALUATION DASHBOARD ENDPOINT ──
+app.get("/api/evaluation/dashboard", async (req, res) => {
+    try {
+        const response = await fetch("http://127.0.0.1:8000/evaluation/dashboard");
+        const data = await response.json();
+        if (response.ok) {
+            res.json(data);
+        } else {
+            res.status(response.status).json(data);
+        }
+    } catch (err) {
+        console.error("Proxy dashboard error:", err);
         res.status(500).json({ error: err.message });
     }
 });

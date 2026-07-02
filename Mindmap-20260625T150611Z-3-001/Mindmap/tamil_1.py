@@ -155,8 +155,7 @@ def draw_mindmap(data):
         node_size=4000,
         node_color="lightblue",
         font_size=10,
-        font_weight="bold",
-        arrows=True
+        font_weight="bold"
     )
 
     plt.title("Tamil Hierarchical Mind Map")

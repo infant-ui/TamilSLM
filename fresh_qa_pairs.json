@@ -1,0 +1,52 @@
+[
+  {
+    "id": 11,
+    "question": "What is a keyboard?",
+    "model_answer": "Keyboard மூலம் நாம் கணினியில் டைப் செய்யலாம்."
+  },
+  {
+    "id": 12,
+    "question": "What is velocity?",
+    "model_answer": "திசைவேகம் (Velocity) என்பது ஒரு பொருளின் வேகத்தை குறிக்கிறது."
+  },
+  {
+    "id": 13,
+    "question": "What is a monitor?",
+    "model_answer": "Monitor என்பது கணினியின் திரை."
+  },
+  {
+    "id": 14,
+    "question": "Explain acceleration.",
+    "model_answer": "முடுக்கம் (Acceleration) என்பது திசைவேகம் மாறும் வீதம்."
+  },
+  {
+    "id": 15,
+    "question": "What is software?",
+    "model_answer": "மென்பொருள் (Software) என்பது கணினி நிரல்களின் தொகுப்பு."
+  },
+  {
+    "id": 16,
+    "question": "What is gravity?",
+    "model_answer": "Gravity என்பது பூமியின் ஈர்ப்பு விசை."
+  },
+  {
+    "id": 17,
+    "question": "What is an atom?",
+    "model_answer": "அணு (Atom) என்பது பருப்பொருளின் அடிப்படை அலகு."
+  },
+  {
+    "id": 18,
+    "question": "What is a network?",
+    "model_answer": "Network என்பது கணினிகளை இணைக்கும் ஒரு அமைப்பு."
+  },
+  {
+    "id": 19,
+    "question": "Define momentum.",
+    "model_answer": "உந்தம் (Momentum) என்பது ஒரு பொருளின் நிறை மற்றும் திசைவேகத்தின் பெருக்கற்பலன்."
+  },
+  {
+    "id": 20,
+    "question": "What is memory?",
+    "model_answer": "Memory என்பது தகவல்களை சேமிக்கும் இடம்."
+  }
+]

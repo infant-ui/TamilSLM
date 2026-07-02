@@ -90,21 +90,47 @@ def compile_offline():
                 ta_chunks.extend(file_chunks)
                 ta_embeddings_list.append(file_embeds)
 
-            # Build fake manifest entry
+            # Build dynamic manifest entry
             doc_id = "doc_" + file.replace("_chunks.json", "")
+            filename = f"{clean_rel_path.split(os.sep)[-1]}.pdf"
+            pdf_rel_path = f"{clean_rel_path.replace(os.sep, '/')}.pdf"
+            if not pdf_rel_path.startswith("books/"):
+                pdf_rel_path = "books/" + pdf_rel_path
+                
+            from app.ingestion.metadata_parser import MetadataParser
+            parser = MetadataParser()
+            meta = parser.parse_from_filename(filename, pdf_rel_path)
+            
+            if meta:
+                meta_dict = meta.model_dump()
+            else:
+                meta_dict = {
+                    "class_level": 6,
+                    "subject": "science",
+                    "language": "en" if medium == "english" else "ta",
+                    "medium": medium,
+                    "content_type": "textbook",
+                    "term": 1,
+                    "year": 2024,
+                    "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+                    "edition": "2024 Edition"
+                }
+
             documents_manifest[doc_id] = {
                 "document_id": doc_id,
-                "file_path": f"books/{clean_rel_path}.pdf",
-                "filename": f"{clean_rel_path.split(os.sep)[-1]}.pdf",
+                "file_path": pdf_rel_path,
+                "filename": filename,
                 "file_hash": doc_id,
                 "modified_time": datetime.utcnow().isoformat(),
-                "class_level": 6,
-                "subject": "science",
-                "language": "en" if medium == "english" else "ta",
-                "medium": medium,
-                "content_type": "textbook",
-                "term": 1,
-                "year": 2024,
+                "class_level": meta_dict["class_level"],
+                "subject": meta_dict["subject"],
+                "language": meta_dict["language"],
+                "medium": meta_dict["medium"],
+                "content_type": meta_dict["content_type"],
+                "term": meta_dict["term"],
+                "year": meta_dict["year"],
+                "publisher": meta_dict["publisher"],
+                "edition": meta_dict["edition"],
                 "indexed_status": "indexed",
                 "last_indexed_timestamp": datetime.utcnow().isoformat(),
                 "chunk_count": len(file_chunks),
@@ -112,7 +138,7 @@ def compile_offline():
                 "ocr_used": False,
                 "errors": None
             }
-            print(f"[FOUND] {len(file_chunks)} chunks for {file} ({medium})")
+            print(f"[FOUND] {len(file_chunks)} chunks for {file} ({medium}, Subject: {meta_dict['subject']})")
 
     # Save aggregated caches
     en_chunks_path = os.path.join(cache_dir, "english_chunks.pkl")

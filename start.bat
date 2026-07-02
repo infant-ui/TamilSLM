@@ -37,18 +37,18 @@ if %errorlevel% neq 0 (
 echo [4/5] Starting Python FastAPI Microservices...
 
 echo -- Starting Retrieval Service on http://127.0.0.1:8000...
-start "TamilEdu-SLM: Retrieval Service [8000]" /D "backend\retrieval-service" cmd /c "..\..\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000"
+start /B "TamilEdu-SLM: Retrieval Service [8000]" /D "backend\retrieval-service" cmd /c "..\..\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000 --env-file .env"
 
 echo -- Starting Generation Service on http://127.0.0.1:8001...
-start "TamilEdu-SLM: Generation Service [8001]" /D "backend\generation-service" cmd /c "..\..\.venv\Scripts\python.exe -m uvicorn app:app --host 127.0.0.1 --port 8001"
+start /B "TamilEdu-SLM: Generation Service [8001]" /D "backend\generation-service" cmd /c "..\..\.venv\Scripts\python.exe -m uvicorn app:app --host 127.0.0.1 --port 8001 --env-file .env"
 
 echo -- Starting Node.js Express Gateway on http://127.0.0.1:5000...
-start "TamilEdu-SLM: Express Gateway [5000]" /D "backend\gateway" cmd /c "npm start"
+start /B "TamilEdu-SLM: Express Gateway [5000]" /D "backend\gateway" cmd /c "npm start"
 echo.
 
 :: 5. Start React Frontend
 echo [5/5] Starting React Frontend Client on http://localhost:3000...
-start "TamilEdu-SLM: React Frontend [3000]" /D "frontend" cmd /c "npm start"
+start /B "TamilEdu-SLM: React Frontend [3000]" /D "frontend" cmd /c "npm start"
 echo.
 
 echo ==============================================================

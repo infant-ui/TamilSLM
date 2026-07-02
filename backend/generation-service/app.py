@@ -2,9 +2,13 @@ import os
 import sys
 import json
 import requests
-from fastapi import FastAPI, HTTPException
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from fastapi import FastAPI, HTTPException, Header, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, FileResponse
 from pydantic import BaseModel
 
 # Set UTF-8 encoding for stdout/stderr to prevent charmap encoding errors under Windows
@@ -14,11 +18,14 @@ try:
 except AttributeError:
     pass
 
+from typing import Optional
+
 class GenerateStreamRequest(BaseModel):
     query: str
     context: str
     language: str
     history_summary: str = ""
+    system_prompt: Optional[str] = None
 
 app = FastAPI()
 
@@ -37,26 +44,39 @@ OLLAMA_MODEL = "qwen2.5:7b-instruct-q4_k_m"
 def get_system_prompt(lang: str, context: str, history_summary: str) -> str:
     if lang.lower() == "tamil":
         return (
-            f"நீ ஒரு சிறந்த அறிவியல் ஆசிரியர். கொடுக்கப்பட்டுள்ள அறிவியல் பாடப் புத்தகப் பகுதியின் அடிப்படியில் மட்டுமே கேள்விக்கு பதில் அளிக்கவும்.\n"
-            f"விவரங்களின் சுருக்கம்: {history_summary}\n"
+            f"நீங்கள் TamilEdu-SLM, ஒரு புத்திசாலித்தனமான கல்வி கற்பிக்கும் AI ஆசிரியர். கொடுக்கப்பட்டுள்ள பாடப்புத்தகப் பகுதியின் அடிப்படையில் மட்டுமே மாணவரின் கேள்விக்கு எளிய தமிழில் விளக்கவும்.\n"
+            f"உரையாடல் சுருக்கம்: {history_summary}\n"
             f"பாடப் புத்தகப் பகுதி:\n{context}\n\n"
             f"விதிமுறைகள்:\n"
-            f"1. உனக்கு தெரிந்த பொது அறிவை பயன்படுத்தாமல், மேலே கொடுக்கப்பட்டுள்ள விவரங்களை மட்டுமே பயன்படுத்தி கேள்விக்கு தமிழில் சுருக்கமாக பதிலளிக்கவும்.\n"
-            f"2. பதில் தமிழில் தெளிவாகவும் பிழையின்றியும் இருக்க வேண்டும்."
+            f"1. உனக்கு தெரிந்த பொது அறிவை பயன்படுத்தாமல், மேலே கொடுக்கப்பட்டுள்ள விவரங்களை மட்டுமே பயன்படுத்தி கேள்விக்குத் தமிழில் படிப்படியாக பதிலளிக்கவும்.\n"
+            f"2. பதில் தமிழில் தெளிவாகவும், நேர்த்தியாகவும், பிழையின்றியும் இருக்க வேண்டும்."
         )
     else:
         return (
-            f"You are a science tutoring assistant. Answer the user's question concisely using only the provided textbook context.\n"
+            f"You are TamilEdu-SLM, an intelligent educational AI tutor. Answer the student's question concisely using only the provided textbook context.\n"
             f"Conversation Summary: {history_summary}\n"
             f"Textbook Context:\n{context}\n\n"
             f"Rules:\n"
             f"1. Rely only on the textbook context provided above. Do not use outside knowledge.\n"
-            f"2. Answer the question directly and keep it concise. Use bullet points if helpful."
+            f"2. Explain concepts step by step in simple, age-appropriate language."
         )
 
 @app.post("/generate/stream")
 async def generate_stream(req: GenerateStreamRequest):
-    system_prompt = get_system_prompt(req.language, req.context, req.history_summary)
+    if req.system_prompt:
+        system_prompt = req.system_prompt
+        # Safe check: if context text is missing from the incoming system_prompt, append it
+        if "Textbook Context" not in system_prompt and "பாடப் புத்தகப் பகுதி" not in system_prompt:
+            if req.language.lower() == "tamil":
+                system_prompt = f"{system_prompt}\n\nபாடப் புத்தகப் பகுதி (Textbook Context):\n{req.context}"
+            else:
+                system_prompt = f"{system_prompt}\n\nTextbook Context:\n{req.context}"
+        
+        # Append history summary if provided
+        if req.history_summary:
+            system_prompt = f"{system_prompt}\n\nConversation Summary:\n{req.history_summary}"
+    else:
+        system_prompt = get_system_prompt(req.language, req.context, req.history_summary)
     
     # Use unified Ollama model configured globally
     model = OLLAMA_MODEL
@@ -69,7 +89,7 @@ async def generate_stream(req: GenerateStreamRequest):
         ],
         "options": {
             "temperature": 0.2,
-            "num_predict": 300,
+            "num_predict": 1000,
             "num_ctx": 4096
         },
         "stream": True
@@ -128,3 +148,114 @@ async def summarize_session(history_text: str):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8001)
+
+# --- Image Generation Integration ---
+import time
+from image.db import get_cached_image, log_image_generation
+from image.safety_checker import is_safe_prompt
+from image.prompt_enhancer import enhance_prompt
+from image.image_service import generate_image
+
+GENERATION_ADMIN_KEYS = {
+    os.environ.get("GENERATION_ADMIN_KEY", "dev-generation-secret-key-123"): "Admin"
+}
+
+def verify_generation_admin_key(x_generation_service_admin_key: str = Header(None)):
+    if not x_generation_service_admin_key or x_generation_service_admin_key not in GENERATION_ADMIN_KEYS:
+        raise HTTPException(status_code=401, detail="Unauthorized - Invalid or missing admin key")
+    return GENERATION_ADMIN_KEYS[x_generation_service_admin_key]
+
+class ImageGenerateRequest(BaseModel):
+    prompt: str
+    medium: str = "english"
+
+@app.post("/generate/image")
+async def generate_image_endpoint(req: ImageGenerateRequest, user: str = Depends(verify_generation_admin_key)):
+    start_time = time.time()
+    
+    # 1. Safety Check
+    if not is_safe_prompt(req.prompt):
+        log_image_generation(req.prompt, "", req.medium, "", int((time.time() - start_time) * 1000), "rejected_safety")
+        raise HTTPException(status_code=400, detail="Prompt rejected for safety or irrelevance.")
+        
+    # 2. Check Cache
+    cached_path = get_cached_image(req.prompt, req.medium)
+    if cached_path:
+        log_image_generation(req.prompt, "", req.medium, cached_path, int((time.time() - start_time) * 1000), "cache_hit")
+        return {"success": True, "image_path": cached_path, "cached": True}
+        
+    # 3. Enhance Prompt
+    enhanced, labels = enhance_prompt(req.prompt, req.medium)
+    
+    # 4. Generate Image
+    try:
+        # Placeholder for actual generation which is pending NVIDIA schema
+        image_path = generate_image(enhanced, labels)
+        log_image_generation(req.prompt, enhanced, req.medium, image_path, int((time.time() - start_time) * 1000), "success")
+        return {"success": True, "image_path": image_path, "cached": False, "enhanced_prompt": enhanced, "labels": labels}
+    except NotImplementedError as e:
+        log_image_generation(req.prompt, enhanced, req.medium, "", int((time.time() - start_time) * 1000), "pending_schema")
+        return {"success": False, "message": str(e), "enhanced_prompt": enhanced}
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        log_image_generation(req.prompt, enhanced, req.medium, "", int((time.time() - start_time) * 1000), "error")
+        raise HTTPException(status_code=500, detail=f"Image generation failed: {e}")
+
+@app.get("/images/{year}/{month}/{day}/{filename}")
+async def serve_generated_image(year: str, month: str, day: str, filename: str):
+    file_path = os.path.join(os.path.dirname(__file__), "generated-images", year, month, day, filename)
+    if os.path.exists(file_path):
+        return FileResponse(file_path)
+    raise HTTPException(status_code=404, detail="Image not found")
+
+class IntentRequest(BaseModel):
+    query: str
+
+@app.post("/router/intent")
+async def route_intent(req: IntentRequest):
+    # Quick keyword fallback for speed, but proper LLM classification is requested
+    prompt_lower = req.query.lower()
+    
+    # Use Ollama to classify intent
+    system_instruction = """
+    You are an Intent Router for an educational platform.
+    Classify the following user query into exactly ONE of these categories:
+    - Chat (general questions, math problems, explanations)
+    - Image (requests to draw, generate, or show a picture/diagram)
+    - OCR (requests to read text from an image)
+    - Voice (requests to speak or dictate)
+    - Future Services (anything else)
+    
+    Reply ONLY with the category name, nothing else.
+    """
+    
+    payload = {
+        "model": os.environ.get("OLLAMA_MODEL", "qwen2.5:7b-instruct-q4_k_m"),
+        "messages": [
+            {"role": "system", "content": system_instruction},
+            {"role": "user", "content": req.query}
+        ],
+        "stream": False,
+        "temperature": 0.0
+    }
+    
+    try:
+        ollama_url = os.environ.get("OLLAMA_API_URL", "http://localhost:11434/api/chat")
+        resp = requests.post(ollama_url, json=payload, timeout=5)
+        if resp.status_code == 200:
+            content = resp.json().get("message", {}).get("content", "").strip()
+            # Normalize response
+            for valid_intent in ["Image", "OCR", "Voice", "Future Services", "Chat"]:
+                if valid_intent.lower() in content.lower():
+                    return {"intent": valid_intent}
+    except Exception as e:
+        print(f"Intent routing LLM failed: {e}")
+        pass
+    
+    # Fallback to keyword if LLM fails
+    if any(word in prompt_lower for word in ["draw", "generate image", "picture", "show me a diagram"]):
+        return {"intent": "Image"}
+    
+    return {"intent": "Chat"}
+

@@ -9,14 +9,16 @@ class ChunkUnit(BaseModel):
     text: str
     metadata: Dict[str, Any]
 
-class ScienceChunker:
+class CurriculumChunker:
     def __init__(self, target_word_size: int = 500, overlap_word_size: int = 75):
         self.target_word_size = target_word_size
         self.overlap_word_size = overlap_word_size
 
     def clean_text(self, text: str) -> str:
-        # Standard cleanups
-        text = re.sub(r'\s+', ' ', text)
+        # Clean multiple horizontal spaces but preserve newlines
+        text = re.sub(r'[ \t\r\f\v]+', ' ', text)
+        # Standardize multiple newlines
+        text = re.sub(r'\n+', '\n\n', text)
         return text.strip()
 
     def get_word_count(self, text: str) -> int:
@@ -29,10 +31,63 @@ class ScienceChunker:
         prefix = f"[Context: {path}]" if path else ""
         return f"{prefix}\n\n{content}".strip()
 
+    def split_large_block(self, text: str) -> List[str]:
+        """
+        Splits a large text block into smaller chunks based on line/sentence boundaries,
+        preventing equations or numbered steps from being split.
+        """
+        lines = [line.strip() for line in text.split("\n") if line.strip()]
+        
+        chunks_text = []
+        current_lines = []
+        current_words = 0
+        
+        for line in lines:
+            line_words = len(line.split())
+            
+            # If a single line is larger than target_word_size, split by sentence boundary
+            if line_words > self.target_word_size:
+                if current_lines:
+                    chunks_text.append("\n".join(current_lines))
+                    current_lines = []
+                    current_words = 0
+                
+                # Split by sentence markers (e.g. dot/question mark followed by space)
+                sentences = re.split(r'(?<=[.!?])\s+', line)
+                for sentence in sentences:
+                    sentence_words = len(sentence.split())
+                    if current_words + sentence_words > self.target_word_size:
+                        if current_lines:
+                            chunks_text.append("\n".join(current_lines))
+                        current_lines = [sentence]
+                        current_words = sentence_words
+                    else:
+                        current_lines.append(sentence)
+                        current_words += sentence_words
+                continue
+                
+            if current_words + line_words > self.target_word_size:
+                if current_lines:
+                    chunks_text.append("\n".join(current_lines))
+                # Add overlap using the last line if small enough
+                if current_lines and len(current_lines[-1].split()) < self.overlap_word_size:
+                    current_lines = [current_lines[-1], line]
+                    current_words = len(current_lines[0].split()) + line_words
+                else:
+                    current_lines = [line]
+                    current_words = line_words
+            else:
+                current_lines.append(line)
+                current_words += line_words
+                
+        if current_lines:
+            chunks_text.append("\n".join(current_lines))
+            
+        return chunks_text
+
     def chunk_textbook_blocks(self, logical_blocks: List[LogicalBlock], doc_metadata: Dict[str, Any]) -> List[ChunkUnit]:
         """
-        Textbook chunking logic. Iterates through logical blocks, grouping them
-        until the word limit is reached. Prepends context headers.
+        Textbook chunking logic. Group logical blocks together until the word limit is reached.
         """
         chunks = []
         doc_id = doc_metadata.get("document_id", "unknown")
@@ -45,8 +100,6 @@ class ScienceChunker:
         for l_block in logical_blocks:
             block_words = self.get_word_count(l_block.text)
             
-            # If a single logical block (e.g. a huge table or activity) is larger than target_word_size,
-            # we write out whatever was in the accumulator first, then split the huge block itself.
             if block_words > self.target_word_size:
                 if current_blocks:
                     # Flush accumulated blocks
@@ -61,22 +114,16 @@ class ScienceChunker:
                     current_blocks = []
                     current_words = 0
 
-                # Split the large block using overlap window
-                words = l_block.text.split()
-                idx = 0
-                step = self.target_word_size - self.overlap_word_size
-                while idx < len(words):
-                    sub_words = words[idx : idx + self.target_word_size]
-                    sub_text = " ".join(sub_words)
+                # Formula-Aware splitter for large block
+                sub_texts = self.split_large_block(l_block.text)
+                for sub_text in sub_texts:
                     formatted_sub = self.format_chunk_text(l_block.section_path, sub_text)
-                    
                     chunks.append(ChunkUnit(
                         chunk_id=f"{doc_id}_tb_{chunk_count}",
                         text=formatted_sub,
                         metadata={**doc_metadata, "section_path": l_block.section_path, "content_role": l_block.role}
                     ))
                     chunk_count += 1
-                    idx += step
                 continue
 
             # Check if adding this block exceeds target size or if section path changed
@@ -94,7 +141,6 @@ class ScienceChunker:
                 
                 # Apply overlap from the tail of current_blocks if path is same
                 if l_block.section_path == current_path:
-                    # Keep the last block as overlap if it is small enough
                     last_block = current_blocks[-1] if current_blocks else None
                     if last_block and self.get_word_count(last_block.text) < self.overlap_word_size:
                         current_blocks = [last_block, l_block]
@@ -130,7 +176,6 @@ class ScienceChunker:
         Guide chunking logic. Splitting is done strictly on Q&A block boundaries
         to preserve complete question and answer pairs.
         """
-        # Split on typical guide Q&A markers
         qa_pattern = re.compile(
             r"(?=(?:Question|Q\d+|கேள்வி|\d+\.\s+)\s*:?)", 
             re.IGNORECASE
@@ -147,19 +192,13 @@ class ScienceChunker:
                 
             block_words = self.get_word_count(cleaned)
             
-            # If Q&A block exceeds target size, split recursively but prefix question
             if block_words > self.target_word_size:
-                # Extract the question prefix (usually the first sentence/line)
                 lines = cleaned.split("\n")
                 question_prefix = lines[0] if lines else "Question"
                 
-                words = cleaned.split()
-                sub_idx = 0
-                step = self.target_word_size - self.overlap_word_size
-                while sub_idx < len(words):
-                    sub_words = words[sub_idx : sub_idx + self.target_word_size]
-                    sub_text = " ".join(sub_words)
-                    
+                # Formula-Aware splitter for large block
+                sub_texts = self.split_large_block(cleaned)
+                for sub_idx, sub_text in enumerate(sub_texts):
                     if sub_idx > 0:
                         sub_text = f"[Parent Question: {question_prefix}]\n\n(Continued) {sub_text}"
                         
@@ -169,7 +208,6 @@ class ScienceChunker:
                         metadata={**doc_metadata, "content_role": "exercise"}
                     ))
                     chunk_count += 1
-                    sub_idx += step
             else:
                 chunks.append(ChunkUnit(
                     chunk_id=f"{doc_id}_gd_{chunk_count}",
@@ -179,3 +217,6 @@ class ScienceChunker:
                 chunk_count += 1
 
         return chunks
+
+# Backwards compatible alias
+ScienceChunker = CurriculumChunker

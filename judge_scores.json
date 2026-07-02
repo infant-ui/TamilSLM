@@ -1,0 +1,52 @@
+[
+  {
+    "id": 11,
+    "judge_score": 3,
+    "justification": "Used the English loan word 'keyboard' directly in the sentence instead of the Tamil term."
+  },
+  {
+    "id": 12,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term (or provides the English term correctly in parentheses)."
+  },
+  {
+    "id": 13,
+    "judge_score": 3,
+    "justification": "Used the English loan word 'monitor' directly in the sentence instead of the Tamil term."
+  },
+  {
+    "id": 14,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term (or provides the English term correctly in parentheses)."
+  },
+  {
+    "id": 15,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term (or provides the English term correctly in parentheses)."
+  },
+  {
+    "id": 16,
+    "judge_score": 3,
+    "justification": "Used the English loan word 'gravity' directly in the sentence instead of the Tamil term."
+  },
+  {
+    "id": 17,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term (or provides the English term correctly in parentheses)."
+  },
+  {
+    "id": 18,
+    "judge_score": 3,
+    "justification": "Used the English loan word 'network' directly in the sentence instead of the Tamil term."
+  },
+  {
+    "id": 19,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term (or provides the English term correctly in parentheses)."
+  },
+  {
+    "id": 20,
+    "judge_score": 3,
+    "justification": "Used the English loan word 'memory' directly in the sentence instead of the Tamil term."
+  }
+]

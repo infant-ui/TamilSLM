@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dagre": "^0.8.5",
+    "lucide-react": "^1.23.0",
+    "prismjs": "^1.30.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-markdown": "^10.1.0",
     "react-scripts": "5.0.1",
+    "reactflow": "^11.11.4",
+    "recharts": "^3.9.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

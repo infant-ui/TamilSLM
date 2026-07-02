@@ -1,0 +1,3 @@
+cp437: கணிதக்
+latin-1 failed: 'latin-1' codec can't encode character '\u03b1' in position 0: ordinal not in range(256)
+cp1252 failed: 'charmap' codec can't encode character '\u03b1' in position 0: character maps to <undefined>

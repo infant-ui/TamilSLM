@@ -76,8 +76,7 @@ def generate_concept_map(text):
         with_labels=True,
         node_color="lightblue",
         node_size=3500,
-        font_size=10,
-        arrows=True
+        font_size=10
     )
 
     edge_labels = nx.get_edge_attributes(G, "label")

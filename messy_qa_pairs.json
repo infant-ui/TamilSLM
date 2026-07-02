@@ -1,0 +1,52 @@
+[
+  {
+    "id": 101,
+    "question": "What is hardware?",
+    "model_answer": "இது கணினியின் ( Hardware ) பாகம்."
+  },
+  {
+    "id": 102,
+    "question": "What is a printer?",
+    "model_answer": "கணினியின் அச்சு இயந்திரம் [Printer] ஆகும்."
+  },
+  {
+    "id": 103,
+    "question": "What is science?",
+    "model_answer": "இயற்கையை பற்றிய படிப்பு science , ஆகும்."
+  },
+  {
+    "id": 104,
+    "question": "What is a mouse?",
+    "model_answer": "திரையில் நகர்த்த உதவும் கருவி mouse."
+  },
+  {
+    "id": 105,
+    "question": "What is a microscope?",
+    "model_answer": "சிறிய பொருளை காண மைக்ரோஸ்கோப் (microscope) பயன்படுகிறது."
+  },
+  {
+    "id": 106,
+    "question": "What is a computer network?",
+    "model_answer": "இது ஒரு computer-based தொழில்நுட்பம்."
+  },
+  {
+    "id": 107,
+    "question": "What is velocity?",
+    "model_answer": "திசைவேகம் என்பது ஒரு பொருளின் வேகம்."
+  },
+  {
+    "id": 108,
+    "question": "What is acceleration?",
+    "model_answer": "முடுக்கம் என்பது திசைவேக மாற்ற வீதம்."
+  },
+  {
+    "id": 109,
+    "question": "What is hardware?",
+    "model_answer": "இது கணினியின் (hardwaer) பாகம்."
+  },
+  {
+    "id": 110,
+    "question": "Explain general science.",
+    "model_answer": "பொது அறிவு science எனப்படுகிறது."
+  }
+]

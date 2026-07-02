@@ -1,0 +1,792 @@
+Class,Subject,Term,Medium,Tamil_Term,English_Term
+Class 6,Maths,Term 1,Tamil,அடைவு பண்பு,Closure
+Class 6,Maths,Term 1,Tamil,அமைப்பு,Pattern
+Class 6,Maths,Term 1,Tamil,அலகு முறை,Unitary method
+Class 6,Maths,Term 1,Tamil,அளவீடு,Measure
+Class 6,Maths,Term 1,Tamil,அளவுகோ>ோல்,Ruler
+Class 6,Maths,Term 1,Tamil,அளவுத்திட்்டம்,Scaling
+Class 6,Maths,Term 1,Tamil,இடமதிப்பு அட்்டவணை,Place Value Chart
+Class 6,Maths,Term 1,Tamil,இணை கோ>ோடுகள்,Parallel lines
+Class 6,Maths,Term 1,Tamil,இயல் எண்்கள்,Natural Numbers
+Class 6,Maths,Term 1,Tamil,இயற்்கணித கூற்று,Algebraic Statement
+Class 6,Maths,Term 1,Tamil,இயற்்கணித கோ>ோவைகள்,Algebraic Expressions
+Class 6,Maths,Term 1,Tamil,இரண்்டடாம் நிலை தகவல்,Secondary data
+Class 6,Maths,Term 1,Tamil,இலக்்கங்்களின் இடமாற்்றம்,Interchanging Digits
+Class 6,Maths,Term 1,Tamil,இலட்்சம்,Lakh
+Class 6,Maths,Term 1,Tamil,இறங்குவரிசை,Descending order
+Class 6,Maths,Term 1,Tamil,ஈவு,Quotient
+Class 6,Maths,Term 1,Tamil,உண்்மமைகள்,Facts
+Class 6,Maths,Term 1,Tamil,எண் அமைப்புகள்,Number patterns
+Class 6,Maths,Term 1,Tamil,எதிர்்மமாறாக,Vice-versa
+Class 6,Maths,Term 1,Tamil,ஏறுவரிசை,Ascending order
+Class 6,Maths,Term 1,Tamil,ஒரு கோ>ோடமை புள்ளிகள்,Collinear points
+Class 6,Maths,Term 1,Tamil,ஒருங்்கமை புள்ளிகள்,Points of concurrency
+Class 6,Maths,Term 1,Tamil,கதிர்்கள்,Rays
+Class 6,Maths,Term 1,Tamil,கிடைமட்்ட பட்்டடைகள்,Horizontal bars
+Class 6,Maths,Term 1,Tamil,குறியீடு,Notation
+Class 6,Maths,Term 1,Tamil,குறுங்கோணம்,Acute angle
+Class 6,Maths,Term 1,Tamil,கோ>ோடி,Crore
+Class 6,Maths,Term 1,Tamil,கோ>ோடுகள்,Lines
+Class 6,Maths,Term 1,Tamil,கோ>ோட்டுத்துண்டு,Line segment
+Class 6,Maths,Term 1,Tamil,கோ>ோணம்,Angle
+Class 6,Maths,Term 1,Tamil,தளம்,Planes
+Class 6,Maths,Term 1,Tamil,ன்்பபாடு,Equation
+Class 6,Maths,Term 1,Tamil,சமான விகிதம்,Equivalent Ratio
+Class 6,Maths,Term 1,Tamil,சுடோ�ோகு,Sudoku
+Class 6,Maths,Term 1,Tamil,செங்குத்து பட்்டடைகள்,Vertical bars
+Class 6,Maths,Term 1,Tamil,ோணம்,Right angle
+Class 6,Maths,Term 1,Tamil,செவ்்வக வரைபடம்,Bar diagram
+Class 6,Maths,Term 1,Tamil,சேர்ப்பு பண்பு,Associative
+Class 6,Maths,Term 1,Tamil,ர் கூற்று,Verbal statements
+Class 6,Maths,Term 1,Tamil,தகவல் ஒருங்கிணைப்பு,Organizing data
+Class 6,Maths,Term 1,Tamil,திட்்ட வடிவம்,Standard form
+Class 6,Maths,Term 1,Tamil,தீர்வு காணல்,Solve
+Class 6,Maths,Term 1,Tamil,தொ�ொகுதி,Numerator
+Class 6,Maths,Term 1,Tamil,தொ�ொடரி,Successor
+Class 6,Maths,Term 1,Tamil,தொ�ொடர்்கள்,Sequence
+Class 6,Maths,Term 1,Tamil,தொ�ொடர்ச்சியற்்ற,Discrete
+Class 6,Maths,Term 1,Tamil,தோ�ோராய மதிப்பு,Estimated Value
+Class 6,Maths,Term 1,Tamil,தோ�ோராயம்,Estimation
+Class 6,Maths,Term 1,Tamil,நிகழ்்வவெண்,Frequency
+Class 6,Maths,Term 1,Tamil,நிரப்புக் கோ>ோணங்்கள்,Complementary angles
+Class 6,Maths,Term 1,Tamil,நிழலிடப்்படாத பகுதி,Unshaded portion
+Class 6,Maths,Term 1,Tamil,நிழலிடப்பட்்டபகுதி,Shaded portion
+Class 6,Maths,Term 1,Tamil,நேர்கோட்டு குறிகள்,Tally mark
+Class 6,Maths,Term 1,Tamil,நேர்கோணம்,Straight angle
+Class 6,Maths,Term 1,Tamil,பகுதி,Denominator
+Class 6,Maths,Term 1,Tamil,பங்கீட்டு பண்பு,Distributive
+Class 6,Maths,Term 1,Tamil,பட்டியலிடுதல்,Tabulation
+Class 6,Maths,Term 1,Tamil,பண்புகள்,Properties
+Class 6,Maths,Term 1,Tamil,பரிமாற்று,Commutative
+Class 6,Maths,Term 1,Tamil,பாகைமானி,Protractor
+Class 6,Maths,Term 1,Tamil,பின்னங்்கள்,Fractions
+Class 6,Maths,Term 1,Tamil,புள்ளிகள்,Points
+Class 6,Maths,Term 1,Tamil,பெருக்்கற்பலன்,Product
+Class 6,Maths,Term 1,Tamil,மாய முக்கோணம்,Magic triangle
+Class 6,Maths,Term 1,Tamil,மாறல்,Variation
+Class 6,Maths,Term 1,Tamil,மாறிகள்,Variables
+Class 6,Maths,Term 1,Tamil,மாறிகள் மீதான செயல்்பபாடு,Operation on Variables
+Class 6,Maths,Term 1,Tamil,மிகை நிரப்புக் கோ>ோணங்்கள்,Supplementary angles
+Class 6,Maths,Term 1,Tamil,முக்கோணமானிகள்,Set Square
+Class 6,Maths,Term 1,Tamil,முதல்நிலை விவரம்,First hand information
+Class 6,Maths,Term 1,Tamil,/நேரடி தகவல்,Primary data
+Class 6,Maths,Term 1,Tamil,முழு எண்்கள்,Whole Numbers
+Class 6,Maths,Term 1,Tamil,முழுக்்கள்,Integers
+Class 6,Maths,Term 1,Tamil,முழுமையாக்்கல்,Rounding off
+Class 6,Maths,Term 1,Tamil,முறையான பட்டியல்,Systematic listing
+Class 6,Maths,Term 1,Tamil,முனை,Vertex
+Class 6,Maths,Term 1,Tamil,முன்னி,Predecessor
+Class 6,Maths,Term 1,Tamil,வகைப்படுத்துதல்,Classification
+Class 6,Maths,Term 1,Tamil,வகைப்படுத்துதல்,Sorting
+Class 6,Maths,Term 1,Tamil,வரைமுறை,Construction
+Class 6,Maths,Term 1,Tamil,விதி,Proportionality law
+Class 6,Maths,Term 1,Tamil,விகிதம்,Ratio
+Class 6,Maths,Term 1,Tamil,விரிகோ>ோணம்,Obtuse angle
+Class 6,Maths,Term 1,Tamil,விரிவாக்்கம்,Expanded form
+Class 6,Maths,Term 1,Tamil,விவரங்்களைச் சேகரித்தல்,Collecting data
+Class 6,Maths,Term 1,Tamil,விவரம் / தரவு,Data/Information
+Class 6,Maths,Term 1,Tamil,விவரித்தல்,Interpret
+Class 6,Maths,Term 1,Tamil,விளக்்கப்்படம்,Pictograph
+Class 6,Maths,Term 1,Tamil,வெட்டுதல் /சசந்தித்தல்,Coincide
+Class 6,Maths,Term 1,Tamil,வெட்டும் கோ>ோடுகள்,Intersecting lines
+Class 6,Maths,Term 1,Tamil,வெட்டும் புள்ளி,Point of Intersectionகக
+Class 6,Maths,Term 1,Tamil,ச்சொற்்கள்,6th_Maths_TM_Term1_Answer.indd   131
+Class 6,Maths,Term 1,Tamil,முனைவர் மு.பப. ஜெயராாமன்,"உததவிப் பேராாசிரியர், L.N. அரசு கல்லூரி"
+Class 6,Maths,Term 1,Tamil,"முனைவர் நாா. கீதாதா, உததவி பேராாசிரியர்","L.N. அரசு கல்லூரி, பொ�ொன்்னனேரி-601204"
+Class 6,Maths,Term 1,Tamil,"சீ. காார்த்திகேயன், துணை பேராாசிரியர்","L.N. அரசு கல்லூரி, பொ�ொன்்னனேரி-601204"
+Class 6,Maths,Term 1,Tamil,சென்்னனை.,In-House - QC
+Class 6,Maths,Term 1,Tamil,"ம், சென்்னனை",EMIS தொ�ொழில்நுட்்பக் குழு
+Class 6,Maths,Term 1,Tamil,ஒருங்கிணைந்்த பபள்ளிக்்கல்வி இயக்்ககம்,6th_Maths_TM_Term1_Answer.indd   132
+Class 6,Maths,Term 2,Tamil,அசமபக்க முக்ககோணம்,Scalene triangle
+Class 6,Maths,Term 2,Tamil,செவ்விய எண் / நிறைவு எண்,Perfect Number
+Class 6,Maths,Term 2,Tamil,அடக்க விலை,Cost price
+Class 6,Maths,Term 2,Tamil,தள்ளுபடி,Discount
+Class 6,Maths,Term 2,Tamil,அடி,Foot
+Class 6,Maths,Term 2,Tamil,தன்னைத் தானே சுற்றுவது,Rotate
+Class 6,Maths,Term 2,Tamil,அணு ககடிகாரம்,Atomic clock
+Class 6,Maths,Term 2,Tamil,திடட அலகுககள்,Standard Units
+Class 6,Maths,Term 2,Tamil,னை விலை,Maximum retail price
+Class 6,Maths,Term 2,Tamil,திடட அளவைககள்,Standardised measure
+Class 6,Maths,Term 2,Tamil,அளவைககள்,Measurement
+Class 6,Maths,Term 2,Tamil,நடடம் / இழப்புத் ெதாகை,Loss
+Class 6,Maths,Term 2,Tamil,ஆயிரம் ஆண்டுககள்,Millennium
+Class 6,Maths,Term 2,Tamil,நள்ளிரவு,Midnight
+Class 6,Maths,Term 2,Tamil,எண்கள்,Amicable numbers
+Class 6,Maths,Term 2,Tamil,நிமிட முள்,Minute hand
+Class 6,Maths,Term 2,Tamil,இணை க�ோடுககள்,Parallel lines
+Class 6,Maths,Term 2,Tamil,நீர் ககடிகாரம்,Water clock
+Class 6,Maths,Term 2,Tamil,இயற்கணித க�ோவை,Algebraic expression
+Class 6,Maths,Term 2,Tamil,ண்டு,Century
+Class 6,Maths,Term 2,Tamil,இரட்டை எண்,Even number
+Class 6,Maths,Term 2,Tamil,நேர இடைவெளி,Duration
+Class 6,Maths,Term 2,Tamil,இரட்டை பகா எண்கள்,Twin primes
+Class 6,Maths,Term 2,Tamil,ந�ொடிமுள்,Seconds  hand
+Class 6,Maths,Term 2,Tamil,இரயில்வே நேரம்,Railway time
+Class 6,Maths,Term 2,Tamil,பகா எண்,Prime number
+Class 6,Maths,Term 2,Tamil,இருசமபக்க முக்ககோணம்,Isosceles triangle
+Class 6,Maths,Term 2,Tamil,பகு எண்,Composite number
+Class 6,Maths,Term 2,Tamil,இலக்க முறை ககடிகாரம்,Digital clock
+Class 6,Maths,Term 2,Tamil,பக்கம்,Side
+Class 6,Maths,Term 2,Tamil,பட்டியல்,Bill
+Class 6,Maths,Term 2,Tamil,உற்பத்தியாளர்,Manufacturer
+Class 6,Maths,Term 2,Tamil,புறப்ப்படும் நேரம்,Departure time
+Class 6,Maths,Term 2,Tamil,ஊசல் ககடிகாரம்,Pendulum clock
+Class 6,Maths,Term 2,Tamil,பிற்பகல்,Post meridiam
+Class 6,Maths,Term 2,Tamil,எண்கணித க�ோவை,Numerical expression
+Class 6,Maths,Term 2,Tamil,மடங்கு,Multiple
+Class 6,Maths,Term 2,Tamil,ஒளியாண்டு,Light year
+Class 6,Maths,Term 2,Tamil,மணற்கடிகாரம்,Sand clock
+Class 6,Maths,Term 2,Tamil,ஒற்றை எண்,Odd number
+Class 6,Maths,Term 2,Tamil,மணி முள்,Hour hand
+Class 6,Maths,Term 2,Tamil,கடைக்காரர்,Shopkeeper
+Class 6,Maths,Term 2,Tamil,வரைபடம்,Tree diagramகக
+Class 6,Maths,Term 2,Tamil,மீச்சிறு ப�ொது மடங்கு,Least Common Multiple
+Class 6,Maths,Term 2,Tamil,அளவு,Volume
+Class 6,Maths,Term 2,Tamil,ரு ப�ொது காரணி,Highest Common Factor
+Class 6,Maths,Term 2,Tamil,காரணி,Factor
+Class 6,Maths,Term 2,Tamil,முக்ககோணச் சமனின்மை,Triangle Inequality
+Class 6,Maths,Term 2,Tamil,பற்றிய படிப்பு,Horology
+Class 6,Maths,Term 2,Tamil,மூலை மடடம்,Set square
+Class 6,Maths,Term 2,Tamil,கிளைககள்,Branches
+Class 6,Maths,Term 2,Tamil,முக்ககோணம்,Triangle
+Class 6,Maths,Term 2,Tamil,கீழின அலகுககள்,Lower units
+Class 6,Maths,Term 2,Tamil,முககவர்,Dealer
+Class 6,Maths,Term 2,Tamil,கீழ் பாககம்,Bottom
+Class 6,Maths,Term 2,Tamil,முழம்,Cubit
+Class 6,Maths,Term 2,Tamil,குவார்ட்ஸ் ககடிகாரம்,Quartz clock
+Class 6,Maths,Term 2,Tamil,முற்பகல்,Ante meridiam
+Class 6,Maths,Term 2,Tamil,குறித்த விலை,Marked price
+Class 6,Maths,Term 2,Tamil,மூன்றன் த�ொகுதி,Triplet
+Class 6,Maths,Term 2,Tamil,குறுங்ககோண முக்ககோணம்,Acute angled triangle
+Class 6,Maths,Term 2,Tamil,மெட்ரிக் அளவைககள்,Metric units
+Class 6,Maths,Term 2,Tamil,க�ொள்ளள்ளளவு,Capacity
+Class 6,Maths,Term 2,Tamil,மெழுகுவர்த்தி ககடிகாரம்,Candle clock
+Class 6,Maths,Term 2,Tamil,க�ோட்டுத்துண்டு,Line segment
+Class 6,Maths,Term 2,Tamil,மேலின அலகுககள்,Higher units
+Class 6,Maths,Term 2,Tamil,க�ோணங்கள்,Angles
+Class 6,Maths,Term 2,Tamil,லாபம் / ஈட்டுத் ெதாைகக,Profit
+Class 6,Maths,Term 2,Tamil,சமபக்க முக்ககோணம்,Equilateral triangle
+Class 6,Maths,Term 2,Tamil,லீப் ஆண்டு / ெநட்டாண்டு,Leap year
+Class 6,Maths,Term 2,Tamil,சாண்,Span
+Class 6,Maths,Term 2,Tamil,வந்து சேரும் நேரம்,Arrival time
+Class 6,Maths,Term 2,Tamil,சாதாரண நேரம்,Ordinary time
+Class 6,Maths,Term 2,Tamil,வானவியல் அலகு,Astronomical units
+Class 6,Maths,Term 2,Tamil,சார் பகா எண்கள்,Co-prime numbers
+Class 6,Maths,Term 2,Tamil,விரிக�ோண முக்ககோணம்,Obtuse angled triangle
+Class 6,Maths,Term 2,Tamil,சுற்றி வருவது,Revolves
+Class 6,Maths,Term 2,Tamil,விளிம்பு,Edge
+Class 6,Maths,Term 2,Tamil,செங்குத்துக் க�ோடுககள்,Perpendicular lines
+Class 6,Maths,Term 2,Tamil,விற்ற விலை,Selling price
+Class 6,Maths,Term 2,Tamil,செங்ககோண முக்ககோணம்,Right angled triangle
+Class 6,Maths,Term 2,Tamil,வெற்றிடம்,Vacuum
+Class 6,Maths,Term 2,Tamil,"சி. பிரசாந்த், செஞ்சி.",In-House - QC
+Class 6,Maths,Term 2,Tamil,துணை பேராசிரியர்,L.N. அரசு கலைக் கல்லூரி
+Class 6,Maths,Term 2,Tamil,பட்டதாரி ஆசிரியர் (ஓய்வு),EMIS த�ொழில்நுடபக் குழு
+Class 6,Maths,Term 2,Tamil,ஒருங்கிணைந்தந்த பள்ளிக்கல்வி இயக்ககம்.,6th_Maths_Term2_TM_Answers.indd   98
+Class 6,Maths,Term 2,Tamil,குறிப்பு,6th_Maths_Term2_TM_Answers.indd   99
+Class 6,Maths,Term 2,Tamil,குறிப்பு,6th_Maths_Term2_TM_Answers.indd   100
+Class 6,Maths,Term 3,Tamil,கணிதக் கலைச்சொற்கற்கள்,MATHEMATICAL TERMSகக
+Class 6,Maths,Term 3,Tamil,அகலம்,Breadth
+Class 6,Maths,Term 3,Tamil,அடிப்பககம்,Base
+Class 6,Maths,Term 3,Tamil,அடுத்தடுத்த,Consecutive
+Class 6,Maths,Term 3,Tamil,அரை சதுரஙகள்,Half squares
+Class 6,Maths,Term 3,Tamil,அளவு மாற்றம்,Resize
+Class 6,Maths,Term 3,Tamil,அளவை,Measure
+Class 6,Maths,Term 3,Tamil,அறிவுறுத்துததல்,Instruction
+Class 6,Maths,Term 3,Tamil,இடப்ெபபயர்வு,Translation
+Class 6,Maths,Term 3,Tamil,இடப்ெபபயர்வுச் சமச்சீர்,Translational
+Class 6,Maths,Term 3,Tamil,இயல் எண்,symmetry
+Class 6,Maths,Term 3,Tamil,இறங்குவரிசை,Natural number
+Class 6,Maths,Term 3,Tamil,உட்புறற எல்லை,Descending order
+Class 6,Maths,Term 3,Tamil,உத்தேச மதிப்பு,Inner boundary
+Class 6,Maths,Term 3,Tamil,உயரம்,Estimated value
+Class 6,Maths,Term 3,Tamil,உருமாற்றம்,Height
+Class 6,Maths,Term 3,Tamil,எண் க�ோடு,Reshape
+Class 6,Maths,Term 3,Tamil,எதிரெண்,Number line
+Class 6,Maths,Term 3,Tamil,எதிர�ொளிப்பு,Opposite number
+Class 6,Maths,Term 3,Tamil,எதிர�ொளிப்பு சமச்சீர்,Reflection
+Class 6,Maths,Term 3,Tamil,எதிர்மறை,Reflection symmetry
+Class 6,Maths,Term 3,Tamil,/ நேர்மாறு,Inverse
+Class 6,Maths,Term 3,Tamil,எல்லை,Boundary
+Class 6,Maths,Term 3,Tamil,ஏறுவரிசை,Ascending order
+Class 6,Maths,Term 3,Tamil,ஒழுஙகற்ற வடிவஙகள்,Irregular shapes
+Class 6,Maths,Term 3,Tamil,ஒழுங்கு அறுங்கோணம்,Regular hexagon
+Class 6,Maths,Term 3,Tamil,ஒழுங்கு ஐங்கோணம்,Regular pentagon
+Class 6,Maths,Term 3,Tamil,ஒழுங்கு வடிவம்,Regular shapes
+Class 6,Maths,Term 3,Tamil,ஓரலகுச் சதுரம்,Unit square
+Class 6,Maths,Term 3,Tamil,ஓரலகுப் பின்னம்,Unit fraction
+Class 6,Maths,Term 3,Tamil,ஓரினப் பின்னம்,Like fraction
+Class 6,Maths,Term 3,Tamil,கலப்பு பின்னம்,Mixed fraction
+Class 6,Maths,Term 3,Tamil,கிடைமட்டக் ேகாடு,Horizontal line
+Class 6,Maths,Term 3,Tamil,குத்துக் க�ோடு,Vertical line
+Class 6,Maths,Term 3,Tamil,குறியீட்டு எண்,Signed number
+Class 6,Maths,Term 3,Tamil,குறை எண்,Negative number
+Class 6,Maths,Term 3,Tamil,குறை முழுககள்,Negative integers
+Class 6,Maths,Term 3,Tamil,குறையற்ற முழுககள்,Non-negative integers
+Class 6,Maths,Term 3,Tamil,கூட்டு வடிவஙகள்,Combined shapes
+Class 6,Maths,Term 3,Tamil,சதுர அலகுகள்,Square units
+Class 6,Maths,Term 3,Tamil,சதுரம்,Square
+Class 6,Maths,Term 3,Tamil,சமச்சீரற்ற,Asymmetrical
+Class 6,Maths,Term 3,Tamil,சமச்சீர்,Symmetry
+Class 6,Maths,Term 3,Tamil,சமச்சீர் அச்சு,Axis of symmetry
+Class 6,Maths,Term 3,Tamil,சமச்சீர்க் க�ோடு,Line of symmetry
+Class 6,Maths,Term 3,Tamil,சமபபகக முக்கோணம்,Equilateral triangle
+Class 6,Maths,Term 3,Tamil,பின்னம்,Equivalent fraction
+Class 6,Maths,Term 3,Tamil,சாயசதுரம்,Rhombus
+Class 6,Maths,Term 3,Tamil,சாய்வாக,Slant
+Class 6,Maths,Term 3,Tamil,சுழல் சமச்சீர்,Rotational symmetry
+Class 6,Maths,Term 3,Tamil,சுழற்சி,Rotation
+Class 6,Maths,Term 3,Tamil,சுற்றளவு,Perimeter
+Class 6,Maths,Term 3,Tamil,செங்கோண முக்கோணம்,Right angled triangle
+Class 6,Maths,Term 3,Tamil,செவ்வகம்,Rectangleதத
+Class 6,Maths,Term 3,Tamil,கா பின்னம்,Improper fractionதத
+Class 6,Maths,Term 3,Tamil,கு பின்னம்,Proper fractionதத
+Class 6,Maths,Term 3,Tamil,ஙக விகிததம்,Golden ratio
+Class 6,Maths,Term 3,Tamil,கீழி,Reciprocal
+Class 6,Maths,Term 3,Tamil,திசை எண்,Directed number
+Class 6,Maths,Term 3,Tamil,த�ொடரி,Successor
+Class 6,Maths,Term 3,Tamil,த�ொடர் வரிசை,Sequence
+Class 6,Maths,Term 3,Tamil,த�ொடர் வளர் அமைப்பு,Iterative pattern
+Class 6,Maths,Term 3,Tamil,த�ொடர் வளர் செயல்முறை,Iterative process
+Class 6,Maths,Term 3,Tamil,த�ோராயமாக,Approximate
+Class 6,Maths,Term 3,Tamil,நீளம்,Length
+Class 6,Maths,Term 3,Tamil,நீள் வடிவம்,Oval shapeபப
+Class 6,Maths,Term 3,Tamil,ககம்,Side
+Class 6,Maths,Term 3,Tamil,பரப்பளவு,Area
+Class 6,Maths,Term 3,Tamil,பின்னப் பட்டைகள்,Fraction bars
+Class 6,Maths,Term 3,Tamil,பின்னம்,Fraction
+Class 6,Maths,Term 3,Tamil,மிகச்சிறிய,Smallest
+Class 6,Maths,Term 3,Tamil,மிகப் பெரிய,Largest
+Class 6,Maths,Term 3,Tamil,மிகை எண்,Positive number
+Class 6,Maths,Term 3,Tamil,மிகை முழுககள்,Positive integers
+Class 6,Maths,Term 3,Tamil,முக்கோணம்,Triangle
+Class 6,Maths,Term 3,Tamil,முழு எண்,Whole number
+Class 6,Maths,Term 3,Tamil,முழுககள்,Integers
+Class 6,Maths,Term 3,Tamil,முன்னி,Predecessor
+Class 6,Maths,Term 3,Tamil,மூடிய உருவம்,Closed figure
+Class 6,Maths,Term 3,Tamil,மேற்பகுதி / ததளம்,Surface
+Class 6,Maths,Term 3,Tamil,முறைப்படுத்துததல்,Sorting
+Class 6,Maths,Term 3,Tamil,வழிமுறை / பபடிமுறை,Algorithm
+Class 6,Maths,Term 3,Tamil,வெளிப்புறற எல்லை,Outer boundary
+Class 6,Maths,Term 3,Tamil,பின்னம்,Unlike fraction
+Class 6,Maths,Term 3,Tamil,சந்தியாவு ஸ்டீபன்,In-House - QC
+Class 6,Maths,Term 3,Tamil,உதவிப் பேராசிரியர்,L.N. அரசு கலைக் கல்லூரி
+Class 6,Maths,Term 3,Tamil,பட்டதாரி ஆசிரியர் (ஓய்வு),EMIS த�ொழில்நுட்பக் குழு
+Class 6,Maths,Term 3,Tamil,. ப. சத்தியநாராயணா,6th_ Maths _Tamil_Term_III_Answers.indd   98
+Class 6,Maths,Term 3,Tamil,குறிப்பு,6th_ Maths _Tamil_Term_III_Answers.indd   99
+Class 6,Maths,Term 3,Tamil,குறிப்பு,6th_ Maths _Tamil_Term_III_Answers.indd   100
+Class 7,Maths,Term 1,English,கூட்்டல் சமனி,Additive Identity
+Class 7,Maths,Term 1,English,கூட்்டல் எதிர்மறை,Additive Inverse
+Class 7,Maths,Term 1,English,அடுத்துள்்ள கோ>ோணங்்கள்,Adjacent angle
+Class 7,Maths,Term 1,English,அடுத்துள்்ள பக்்கங்்கள்,Adjacent sides
+Class 7,Maths,Term 1,English,ஒன்றுவிட்்ட வெளி,angle
+Class 7,Maths,Term 1,English,கோ>ோணங்்கள்,Alternate interior angle
+Class 7,Maths,Term 1,English,ஒன்றுவிட்்ட உட்கோணங்்கள்,Alternate
+Class 7,Maths,Term 1,English,ஒன்றுவிட்்ட,Angle bisector
+Class 7,Maths,Term 1,English,கோ>ோண இருசமவெட்டி,Associative property
+Class 7,Maths,Term 1,English,சேர்ப்புப் பண்பு,Base
+Class 7,Maths,Term 1,English,அடிப்பக்்கம்,Closure property
+Class 7,Maths,Term 1,English,அடைவு பண்பு,Co-efficient
+Class 7,Maths,Term 1,English,கெழு,Commutative property
+Class 7,Maths,Term 1,English,பரிமாற்றுப் பண்பு,Compare
+Class 7,Maths,Term 1,English,ஒப்பீடு,Constant
+Class 7,Maths,Term 1,English,மாறிலி,Corresponding angles
+Class 7,Maths,Term 1,English,ஒத்்த கோ>ோணங்்கள்,Diagonal
+Class 7,Maths,Term 1,English,மூலைவிட்்டம்,Distributive property
+Class 7,Maths,Term 1,English,பங்கீட்டுப் பண்பு,Equation
+Class 7,Maths,Term 1,English,சமன்்பபாடு,Formation
+Class 7,Maths,Term 1,English,உருவாக்குததல்,Generalize
+Class 7,Maths,Term 1,English,பொ�ொதுமைப்படுத்து,Height
+Class 7,Maths,Term 1,English,உயரம்,Horizontal
+Class 7,Maths,Term 1,English,கிடைமட்்டம்,Integers
+Class 7,Maths,Term 1,English,முழுக்்கள்,Interior of an angle
+Class 7,Maths,Term 1,English,கோ>ோணத்தின் உட்பகுதி,Isosceles trapezium
+Class 7,Maths,Term 1,English,இரு சமபக்்கசரிவகம்,Like terms
+Class 7,Maths,Term 1,English,ஒத்்த உறுப்புகள்,Linear equations
+Class 7,Maths,Term 1,English,நேரியச் சமன்்பபாடுகள்,Linear pair of angle
+Class 7,Maths,Term 1,English,நேரிய கோ>ோண இணைகள்,Multiplicative Identity
+Class 7,Maths,Term 1,English,பெருக்்கல் சமனி,Negative Integers
+Class 7,Maths,Term 1,English,குறை முழுக்்கள்,Non-adjacent angle
+Class 7,Maths,Term 1,English,கோ>ோணங்்கள்,Numerical value
+Class 7,Maths,Term 1,English,எண் மதிப்பு,Numerical co-efficient
+Class 7,Maths,Term 1,English,எண் கெழு,Parallel sides
+Class 7,Maths,Term 1,English,இணை பக்்கங்்கள்,Parallelogram
+Class 7,Maths,Term 1,English,இணைகரம்,Pattern
+Class 7,Maths,Term 1,English,அமைப்பு,Perpendicular
+Class 7,Maths,Term 1,English,செங்குத்து,Perpendicular bisector
+Class 7,Maths,Term 1,English,செங்குத்துச் சமவெட்டி,Positive Integers
+Class 7,Maths,Term 1,English,மிகை முழுக்்கள்,Properties
+Class 7,Maths,Term 1,English,பண்புகள்,Puzzle
+Class 7,Maths,Term 1,English,புதிர்,Recall
+Class 7,Maths,Term 1,English,நினைவுகூர்்தல்,Regulation
+Class 7,Maths,Term 1,English,ஒழுங்குமுறை,Rhombus
+Class 7,Maths,Term 1,English,சாய்சதுரம்,Sequence
+Class 7,Maths,Term 1,English,தொ�ொடடர்்வரிசை,Showcase
+Class 7,Maths,Term 1,English,காட்சிப்்பபேழை,Substitution
+Class 7,Maths,Term 1,English,பிரதியிடுததல்,Terms
+Class 7,Maths,Term 1,English,உறுப்புகள்,Tetromino
+Class 7,Maths,Term 1,English,இணைக்்கப்பட்்ட வடிவம்,Tokens
+Class 7,Maths,Term 1,English,வில்்லலைகள்,Traffic
+Class 7,Maths,Term 1,English,போ�ோக்குவரத்து,Transversal
+Class 7,Maths,Term 1,English,குறுக்குவெட்டி,Trapezium
+Class 7,Maths,Term 1,English,சரிவகம்,Undefined
+Class 7,Maths,Term 1,English,து.,Unlike terms
+Class 7,Maths,Term 1,English,மாறுபட்்ட உறுப்புகள்,Variable
+Class 7,Maths,Term 1,English,மாறி,Vertex
+Class 7,Maths,Term 1,English,முனை (அ) உச்சி,Vertically
+Class 7,Maths,Term 1,English,செங்குத்்ததாக,Vertically opposite
+Class 7,Maths,Term 1,English,குத்்ததெதிர் கோ>ோணங்்கள்,angles
+Class 7,Maths,Term 2,English,பரபபளவு,Area
+Class 7,Maths,Term 2,English,அடிமானம்,Base
+Class 7,Maths,Term 2,English,வான் ப�ொருட்கள்,Celestial bodies
+Class 7,Maths,Term 2,English,வட்டம்,Circle
+Class 7,Maths,Term 2,English,வட்டவளையம்,Circular ring
+Class 7,Maths,Term 2,English,பரிதி,Circumference
+Class 7,Maths,Term 2,English,சரவசமம்,Congruence
+Class 7,Maths,Term 2,English,சரவசம தன்மை,Congruency
+Class 7,Maths,Term 2,English,சரவசம முக்கோணம்,Congruent triangle
+Class 7,Maths,Term 2,English,அடுததடுதத உறுப்புககள்,Consecutive terms
+Class 7,Maths,Term 2,English,ஒதத பக்கம்,Corresponding side
+Class 7,Maths,Term 2,English,க�ொள்கை,Criterion
+Class 7,Maths,Term 2,English,மாறியின் ககனம்,Cube of a variable
+Class 7,Maths,Term 2,English,தசம எண்,Decimal number
+Class 7,Maths,Term 2,English,தசமப் பகுதி,Decimal part
+Class 7,Maths,Term 2,English,தசமப் புள்ளி,Decimal point
+Class 7,Maths,Term 2,English,படி,Degree
+Class 7,Maths,Term 2,English,விட்டம்,Diameter
+Class 7,Maths,Term 2,English,"அடுக்குக் குறி, படிக் குறி",Exponent
+Class 7,Maths,Term 2,English,அடுக்கு எண்,Exponent number
+Class 7,Maths,Term 2,English,அடுக்கு வடிவம்,Exponential form
+Class 7,Maths,Term 2,English,வெளிக்கோணம்,Exterior angle
+Class 7,Maths,Term 2,English,வேலியிடுதல்,Fencing
+Class 7,Maths,Term 2,English,நூறில் ஒன்று,Hundredth
+Class 7,Maths,Term 2,English,ரணம்,Hypotenuseகக
+Class 7,Maths,Term 2,English,முழு எண் பகுதி,Integral part
+Class 7,Maths,Term 2,English,உள்ளெ,angle
+Class 7,Maths,Term 2,English,திர் க�ோணம்,Leading Coefficient
+Class 7,Maths,Term 2,English,தலையாயக் கெழு,Notation
+Class 7,Maths,Term 2,English,குறியீடு,Pathway
+Class 7,Maths,Term 2,English,பாதை,Polygon
+Class 7,Maths,Term 2,English,பலக�ோணம்,Power
+Class 7,Maths,Term 2,English,அடுக்கு,Quadrantகக
+Class 7,Maths,Term 2,English,ால்வட்டம்,Radius
+Class 7,Maths,Term 2,English,ஆரம்,Semi-circle
+Class 7,Maths,Term 2,English,அரைவட்டம்,Slanting row
+Class 7,Maths,Term 2,English,சாய்வு வரிசை,Snow flakes
+Class 7,Maths,Term 2,English,பனித்திவலைககள்,Square of a variable
+Class 7,Maths,Term 2,English,மாறியின் வரக்கம்,Standard form
+Class 7,Maths,Term 2,English,திட்ட வடிவம்,Superposition
+Class 7,Maths,Term 2,English,மேற்பொருந்துதல் முறை,method
+Class 7,Maths,Term 2,English,பத்தில் ஒன்று,Tenth
+Class 7,Maths,Term 2,English,பல்வண்ணக் ககட்டமைப்பு,Tessellations
+Class 7,Maths,Term 2,English,ஆயிரத்தில் ஒன்று,Thousandth
+Class 7,Maths,Term 2,English,முக்கோண எண்கள்,Traingular number
+Class 7,Maths,Term 2,English,ஒன்றின் இலக்கம்,Unit digit
+Class 7,Maths,Term 2,English,அகலம்,Width
+Class 7,Maths,Term 3,English,கூட்டுத் தEொகை,Amount
+Class 7,Maths,Term 3,English,சுழற்சிக்கோணம்,Angle of rotation
+Class 7,Maths,Term 3,English,எண்கணித சராசரி,Arithmetic Mean
+Class 7,Maths,Term 3,English,கூட்டுச் சராசரி),Average
+Class 7,Maths,Term 3,English,சராசரி,Beads
+Class 7,Maths,Term 3,English,மணிகள்,Bimodal
+Class 7,Maths,Term 3,English,இருமுகடுகள்,Borrower
+Class 7,Maths,Term 3,English,கடன் வாங்குபவர்,Central tendency
+Class 7,Maths,Term 3,English,(மையப்போக்கு),Chord
+Class 7,Maths,Term 3,English,நாண்,Circular ring
+Class 7,Maths,Term 3,English,வட்டவலயம்,Cutouts
+Class 7,Maths,Term 3,English,வெட்டுத் துண்டுகள்,Data
+Class 7,Maths,Term 3,English,தரவு,Decimal
+Class 7,Maths,Term 3,English,பத்தின் கூரான,Decimal point
+Class 7,Maths,Term 3,English,தசம புள்ளி,Dimension
+Class 7,Maths,Term 3,English,பரிமாணம்,Discrete data
+Class 7,Maths,Term 3,English,வெவ்வேறான தரவுகள்,(தEொடர்ச்சியற்ற)
+Class 7,Maths,Term 3,English,வகுபடும் எண்,Dividend
+Class 7,Maths,Term 3,English,வகுக்கும் எண்,Divisor
+Class 7,Maths,Term 3,English,மதிப்பிடுதல்,Estimation
+Class 7,Maths,Term 3,English,காரணிபபடுத்துதல்,Factorisation
+Class 7,Maths,Term 3,English,காரணிகள்,Factors
+Class 7,Maths,Term 3,English,திருபபம்,Flip Turn
+Class 7,Maths,Term 3,English,நிகழ்வெண்,Frequency
+Class 7,Maths,Term 3,English,வரைபடம்,Graph
+Class 7,Maths,Term 3,English,நூறில் ஒரு பங்கு,Hundredths
+Class 7,Maths,Term 3,English,முற்றொருமை,Identity
+Class 7,Maths,Term 3,English,அசமத்தன்மை,Inequality
+Class 7,Maths,Term 3,English,அசமன்பாடுகள்,Inequations
+Class 7,Maths,Term 3,English,கடன் அளிபபவர்,Lender
+Class 7,Maths,Term 3,English,சுழறசிமையம்,center of rotation
+Class 7,Maths,Term 3,English,இடைநிலை,Median
+Class 7,Maths,Term 3,English,முகடு,Mode
+Class 7,Maths,Term 3,English,ஓருறுப்புக் க�ோவை,Monomials
+Class 7,Maths,Term 3,English,எண்கோடு,Number line
+Class 7,Maths,Term 3,English,ஓர் ஆண்டுக்கு,Per annum
+Class 7,Maths,Term 3,English,சதவீதம்,Percentage
+Class 7,Maths,Term 3,English,இட மதிப்பு,Place Value
+Class 7,Maths,Term 3,English,அசல்,Principal
+Class 7,Maths,Term 3,English,வீச்சு,Range
+Class 7,Maths,Term 3,English,வட்டிவிகிதம்,Rate of Interest
+Class 7,Maths,Term 3,English,பிரதியிடும் கணம்,Replacement set
+Class 7,Maths,Term 3,English,தேர்ந்தெடுக்கபபட்ட,value
+Class 7,Maths,Term 3,English,மதிப்பு (பிரதிநிதி),Simple interest
+Class 7,Maths,Term 3,English,தனிவட்டி,Solution set
+Class 7,Maths,Term 3,English,தீர்வு கணம்,Tally Marks
+Class 7,Maths,Term 3,English,நேர்க்கோட்டு குறிகள்,Tenths
+Class 7,Maths,Term 3,English,வதாக,Thousandths
+Class 7,Maths,Term 3,English,ஆயிரத்தில் ஒரு பங்கு,Transformation
+Class 7,Maths,Term 1,Tamil,அடிப்்பக்்கம்,Base
+Class 7,Maths,Term 1,Tamil,அடுத்்தடுத்்தமையாக் கோ�ோணங்்கள்,Non-adjacent angle
+Class 7,Maths,Term 1,Tamil,அடுத்துள்்ள கோ�ோணங்்கள்,Adjacent angle
+Class 7,Maths,Term 1,Tamil,அடுத்துள்்ள பபக்்கங்்கள்,Adjacent sides
+Class 7,Maths,Term 1,Tamil,அடைவு பபண்பு,Closure property
+Class 7,Maths,Term 1,Tamil,அமைப்பு,Pattern
+Class 7,Maths,Term 1,Tamil,இணை பபக்்கங்்கள்,Parallel sides
+Class 7,Maths,Term 1,Tamil,இணைககரம்,Parallelogram
+Class 7,Maths,Term 1,Tamil,இரு சமபபக்்கசரிவககம்,Isosceles trapezium
+Class 7,Maths,Term 1,Tamil,உயரம்,Height
+Class 7,Maths,Term 1,Tamil,உருவாக்குததல்,Formation
+Class 7,Maths,Term 1,Tamil,உறுப்புககள்,Terms
+Class 7,Maths,Term 1,Tamil,எண் கெழு,Numerical co-efficient
+Class 7,Maths,Term 1,Tamil,எண் மதிப்பு,Numerical value
+Class 7,Maths,Term 1,Tamil,ஒத்்த உறுப்புககள்,Like terms
+Class 7,Maths,Term 1,Tamil,ஒத்்த கோ�ோணங்்கள்,Corresponding angles
+Class 7,Maths,Term 1,Tamil,ஒப்பீடு,Compare
+Class 7,Maths,Term 1,Tamil,மாறுபபட்்ட உறுப்புககள்,Unlike terms
+Class 7,Maths,Term 1,Tamil,ஒழுங்குமுறை,Regulation
+Class 7,Maths,Term 1,Tamil,ஒன்றுவிட்்ட,Alternate
+Class 7,Maths,Term 1,Tamil,ணங்்கள்,Alternate interior
+Class 7,Maths,Term 1,Tamil,ஒன்றுவிட்்ட வெளி கோ�ோணங்்கள்,angle
+Class 7,Maths,Term 1,Tamil,angleகக,Alternate exterior
+Class 7,Maths,Term 1,Tamil,ாட்சிப்்பபேழை,Showcase
+Class 7,Maths,Term 1,Tamil,கிடைமட்்டம்,Horizontal
+Class 7,Maths,Term 1,Tamil,குத்்ததெதிர் கோ�ோணங்்கள்,Vertically opposite
+Class 7,Maths,Term 1,Tamil,குறுக்குவெட்டி,angles
+Class 7,Maths,Term 1,Tamil,குறை முழுக்்கள்,Transversal
+Class 7,Maths,Term 1,Tamil,கூட்்டல் எதிர்்மறை,Negative Integers
+Class 7,Maths,Term 1,Tamil,கூட்்டல் சமனி,Additive Inverse
+Class 7,Maths,Term 1,Tamil,கெழு,Additive Identity
+Class 7,Maths,Term 1,Tamil,கோ�ோண இருசமவெட்டி,Co-efficient
+Class 7,Maths,Term 1,Tamil,கோ�ோணத்தின் உட்்பகுதி,Angle bisector
+Class 7,Maths,Term 1,Tamil,சமன்்பாடு,Interior of an angle
+Class 7,Maths,Term 1,Tamil,சரிவககம்,Equation
+Class 7,Maths,Term 1,Tamil,சாய்சதுரம்,Trapezium
+Class 7,Maths,Term 1,Tamil,செங்குத்்ததாகக,Rhombus
+Class 7,Maths,Term 1,Tamil,செங்குத்து,Vertically
+Class 7,Maths,Term 1,Tamil,செங்குத்துச் சமவெட்டி,Perpendicular
+Class 7,Maths,Term 1,Tamil,சேர்ப்புப் பபண்பு,bisector
+Class 7,Maths,Term 1,Tamil,தொ�ொடர்வரிசை,Associative property
+Class 7,Maths,Term 1,Tamil,நாற்சதுர இணை,Sequence
+Class 7,Maths,Term 1,Tamil,நினைவுகூர்்தல்,Tetromino
+Class 7,Maths,Term 1,Tamil,நேரிய கோ�ோண இணைககள்,Recall
+Class 7,Maths,Term 1,Tamil,நேரியச் சமன்்பாடுககள்,Linear pair of angle
+Class 7,Maths,Term 1,Tamil,ங்கீட்டுப் பபண்பு,Linear equationsபப
+Class 7,Maths,Term 1,Tamil,ண்புககள்,Distributive propertyபப
+Class 7,Maths,Term 1,Tamil,ரிமாற்றுப் பபண்பு,Propertiesபப
+Class 7,Maths,Term 1,Tamil,பிரதியிடுததல்,property
+Class 7,Maths,Term 1,Tamil,புதிர்,Substitution
+Class 7,Maths,Term 1,Tamil,பெருக்்கல் சமனி,Puzzle
+Class 7,Maths,Term 1,Tamil,பொ�ொதுமைப்்படுத்து,Multiplicative Identity
+Class 7,Maths,Term 1,Tamil,போ�ோக்குவரத்து,Generalize
+Class 7,Maths,Term 1,Tamil,மாறி,Traffic
+Class 7,Maths,Term 1,Tamil,மாறிலி,Variable
+Class 7,Maths,Term 1,Tamil,மிகை முழுக்்கள்,Constant
+Class 7,Maths,Term 1,Tamil,முழுக்்கள்,Positive Integers
+Class 7,Maths,Term 1,Tamil,முனை (அ) உச்சி,Integers
+Class 7,Maths,Term 1,Tamil,மூலைவிட்்டம்,Vertex
+Class 7,Maths,Term 1,Tamil,வரையறுக்்க படாததது.,Diagonal
+Class 7,Maths,Term 1,Tamil,வில்்லலைககள்,Undefined
+Class 7,Maths,Term 1,Tamil,கலைச்சொற்கள்,Tokens
+Class 7,Maths,Term 1,Tamil,"ர். இரா. இராமானுஜம்,","போHோராசிரியர்,"
+Class 7,Maths,Term 1,Tamil,"துணைப் பேராசிரியர்,","L.N. அரசுகலைக் கல்லூரி, பொHொன்்னனேரி."
+Class 7,Maths,Term 1,Tamil,"நாதன், இ.நி.ஆ,","ஊ.ஒ.ந.நி.பள்ளி, கணேசபுரம், போHோளூர்,"
+Class 7,Maths,Term 1,Tamil,"•  ராஜ் கிராஃபிக்ஸ், தேனி மாவட்்டம்.",In House QC
+Class 7,Maths,Term 1,Tamil,ோர்:,VII_Glosary TM_T-I.indd   140
+Class 8,Science,Full Year,English,அமிலம்,GLOSSARY
+Class 8,Science,Full Year,English,அமிலமழை,Acid
+Class 8,Science,Full Year,English,வளர் இளம் பருவம்,Acid rain
+Class 8,Science,Full Year,English,காடுவளர்ப்பு,Adolescence
+Class 8,Science,Full Year,English,வேளாண்மை,Afforestation
+Class 8,Science,Full Year,English,உழவியல்,Agriculture
+Class 8,Science,Full Year,English,உணவுப் பாதை,Agronomy
+Class 8,Science,Full Year,English,வீச்சு,Alimentary canal
+Class 8,Science,Full Year,English,நேர்மினவாய்,Amplitude
+Class 8,Science,Full Year,English,அமிலநீக்கி,Anode
+Class 8,Science,Full Year,English,செயற்கை நிறஙகாட்டி,Antacid
+Class 8,Science,Full Year,English,செயற்கை சுவாசம்,Artificial Indicator
+Class 8,Science,Full Year,English,விண்வெளி வீரர்,Artificial respiration
+Class 8,Science,Full Year,English,மினகடத்தாப் ப�ொருள்,Astronaut
+Class 8,Science,Full Year,English,சரிவிகித உணவு,Bad conductor
+Class 8,Science,Full Year,English,காரம்,Balanced diet
+Class 8,Science,Full Year,English,உயிரி டீசல்,Base
+Class 8,Science,Full Year,English,உயிர்உரம்,Bio Diesel
+Class 8,Science,Full Year,English,உயிரி பூச்சிக்கொல்லி,Bio fertilizer
+Class 8,Science,Full Year,English,உயிரி க�ொன்றுண்ணிகள் -  Bio pradators,Bio pesticide
+Class 8,Science,Full Year,English,ளம்,Biosphere
+Class 8,Science,Full Year,English,க�ொதிநிலை,Boiling point
+Class 8,Science,Full Year,English,எலும்பு மஜ்ைஜ,Bone marrow
+Class 8,Science,Full Year,English,தாவரவியல் பூஙகா,Botanical garden
+Class 8,Science,Full Year,English,குருத்தெலும்பு,Cartilages
+Class 8,Science,Full Year,English,எதிர்மினவாய்,Cathode
+Class 8,Science,Full Year,English,மின்துகள்,Charge
+Class 8,Science,Full Year,English,வேதிச்சமனபாடு,Chemical equation
+Class 8,Science,Full Year,English,வேதிவாய்பாடு,Chemical formula
+Class 8,Science,Full Year,English,நுண் கேசஙகள்,Cilia
+Class 8,Science,Full Year,English,அழுத்தப்பட்ட ப்பட்ட இயற்கைவாயு,CNG
+Class 8,Science,Full Year,English,நிலக்கரி வாயு,Coal gas
+Class 8,Science,Full Year,English,கல�ோரிமானி,Colorimeter
+Class 8,Science,Full Year,English,இறுக்கஙகள்,Compressions
+Class 8,Science,Full Year,English,ஒடுக்குதல்,Condensation
+Class 8,Science,Full Year,English,கடத்துதல்,Conduction
+Class 8,Science,Full Year,English,பாதுகாப்பு,Conservation
+Class 8,Science,Full Year,English,வெப்பச்சலனம்,Convection
+Class 8,Science,Full Year,English,பள்ளஙகள்,Craters
+Class 8,Science,Full Year,English,பயிர்ப் பெருக்கம்,Crop production
+Class 8,Science,Full Year,English,எரிதல்,Cumbustion
+Class 8,Science,Full Year,English,வளைவான அமைப்பு,Curved pattern
+Class 8,Science,Full Year,English,காடு அழிப்பு,Deforestation
+Class 8,Science,Full Year,English,அடர்த்தி,Density
+Class 8,Science,Full Year,English,படிதல்,Deposition
+Class 8,Science,Full Year,English,பரிமாணஙகள்,Dimensions
+Class 8,Science,Full Year,English,மின்னிறக்கக்குழாய்,Discharge tube
+Class 8,Science,Full Year,English,புவித்தொடுப்பு,Earthing
+Class 8,Science,Full Year,English,மின்புலம்,Electric field
+Class 8,Science,Full Year,English,மினனழுத்தம்,Electric potential
+Class 8,Science,Full Year,English,மின்னிறக்கம்,Electrical discharge
+Class 8,Science,Full Year,English,மினனாறபகுத்தல்,Electrolysis
+Class 8,Science,Full Year,English,மின்முலாம் பூசுதல்,Electroplating
+Class 8,Science,Full Year,English,ஆபத்தான இனஙகள்,Endangered species
+Class 8,Science,Full Year,English,நாளமில்லா சுரப்பிகள்,Endocrine glands
+Class 8,Science,Full Year,English,உள் எலும்புக்கூடு,Endoskeleton
+Class 8,Science,Full Year,English,உரம்,Fertilizer
+Class 8,Science,Full Year,English,கசையிைழ,Flagellum
+Class 8,Science,Full Year,English,இலையில் தெளிப்பு,Foliar spray
+Class 8,Science,Full Year,English,உறைநிலை,Freezing point
+Class 8,Science,Full Year,English,உராய்வு,Friction
+Class 8,Science,Full Year,English,எரிப�ொருள்,Fuel
+Class 8,Science,Full Year,English,மின்உருகு இழை,Fuse
+Class 8,Science,Full Year,English,விண்மீன்திரள்,Galaxy
+Class 8,Science,Full Year,English,புவி வடமுனை,Geographic north
+Class 8,Science,Full Year,English,புவியியல்,Geological
+Class 8,Science,Full Year,English,ப்பமயமாதல்,Global warming
+Class 8,Science,Full Year,English,உலக வெப்ப,ப்பமயமாதல் -  Global warming
+Class 8,Science,Full Year,English,நறகடத்தி,Good conductor
+Class 8,Science,Full Year,English,பசுமை இல்ல விளைவு,Green house effect
+Class 8,Science,Full Year,English,கடின நீர்,Hard water
+Class 8,Science,Full Year,English,பாரம்பரியவிதை,Heirloom seed
+Class 8,Science,Full Year,English,கிடைமட்டம்,Horizontal
+Class 8,Science,Full Year,English,பிளக்க முடியாத,Indestructible
+Class 8,Science,Full Year,English,நிறஙகாட்டி,Indicator
+Class 8,Science,Full Year,English,தூணடல்,Induction
+Class 8,Science,Full Year,English,குற்றொலி,Infrasonic
+Class 8,Science,Full Year,English,கனிம அமிலம்,Inorganic acid
+Class 8,Science,Full Year,English,இரும்புத் தாதுக்கள்,Iron ores
+Class 8,Science,Full Year,English,நீர்ப் பாசனம்,Irrigation
+Class 8,Science,Full Year,English,குரல் வளை,Larynx
+Class 8,Science,Full Year,English,உள்ளுறை வெப்ப்பம்,Latent heat
+Class 8,Science,Full Year,English,சுணணாம்பு நீர்,Lime water
+Class 8,Science,Full Year,English,நெட்டலை,Glossary
+Class 8,Science,Full Year,English,காந்தப்புலம்,longitudinal wave
+Class 8,Science,Full Year,English,காந்தப்புலம்,Magnetic field
+Class 8,Science,Full Year,English,காந்தத்திறன்,Magnetic Field
+Class 8,Science,Full Year,English,உரமிடுதல்,Magnetic power
+Class 8,Science,Full Year,English,எந்திரவியல்,Manuring
+Class 8,Science,Full Year,English,மாதவிடைவு,Mechanical wave
+Class 8,Science,Full Year,English,மாதவிடாய்,Menopause
+Class 8,Science,Full Year,English,உல�ோகஙகள்,Menstruation
+Class 8,Science,Full Year,English,கணிமவியல்,Metals
+Class 8,Science,Full Year,English,தேசியபூஙகா,Mineralogy
+Class 8,Science,Full Year,English,இயற்கைவாயு,National park
+Class 8,Science,Full Year,English,இயற்கை நிறஙகாட்டி,Natural gas
+Class 8,Science,Full Year,English,நடுநிலையாக்கல்,Natural Indicator
+Class 8,Science,Full Year,English,கரிமஅமிலம்,Neutralisation
+Class 8,Science,Full Year,English,அலைவுறுதல்,Organic Acid
+Class 8,Science,Full Year,English,எலும்பு மென்மையாதல் -  Osteoporosis,Oscillate
+Class 8,Science,Full Year,English,அணடம் விடுபடுதல்,Ovulation
+Class 8,Science,Full Year,English,உழுதல்,Ploughing
+Class 8,Science,Full Year,English,கு உகந்தநீர்,Potable water
+Class 8,Science,Full Year,English,கர்ப்பமடைதல்,Pregnancy
+Class 8,Science,Full Year,English,எரிப�ொருள்,Propellant
+Class 8,Science,Full Year,English,உந்துவிசை,Propulsion
+Class 8,Science,Full Year,English,பருவமடைதல்,Puberty
+Class 8,Science,Full Year,English,வெப்பக்கப்பக்கதிர்வீச்சு,Radiation
+Class 8,Science,Full Year,English,தளர்ச்சிகள்,Rarefactions
+Class 8,Science,Full Year,English,சிவப்பு தரவுப் புத்தகம்,Red Data Book
+Class 8,Science,Full Year,English,சுத்திகரிப்பு,Refining
+Class 8,Science,Full Year,English,ட்டி,Refrigerator
+Class 8,Science,Full Year,English,மின்தடை,Resistance
+Class 8,Science,Full Year,English,உவர் நீர்,Saline water
+Class 8,Science,Full Year,English,இரணடாம்நிலை,Secondary sex
+Class 8,Science,Full Year,English,பால் பண்புகள்,characters
+Class 8,Science,Full Year,English,துண்டு,Segment
+Class 8,Science,Full Year,English,எலும்புக் கூடு,Skeleton
+Class 8,Science,Full Year,English,கபாலம்,Skull
+Class 8,Science,Full Year,English,வழவழப்புத்தன்மை,Soapy touch
+Class 8,Science,Full Year,English,சூரிய ஆறறல்,Solar energy
+Class 8,Science,Full Year,English,புளிப்புச்சுவை,Sour Taste
+Class 8,Science,Full Year,English,விதைத்தல்,Sowing
+Class 8,Science,Full Year,English,விண்வெளி ஆய்வுக்கலம்,Space probe
+Class 8,Science,Full Year,English,தன்வெப்ப்பம்,Specific heat
+Class 8,Science,Full Year,English,தன் வெப்ப ப்ப ஏற்புத்திறன்,Specific heat capacity
+Class 8,Science,Full Year,English,பதஙகமாதல்,Sublimation
+Class 8,Science,Full Year,English,த�ொஙகவிடப்பட்ட,Suspended
+Class 8,Science,Full Year,English,மீய�ொலி,Ultrasonic
+Class 8,Science,Full Year,English,மாறறஇயலாத,Unaltered
+Class 8,Science,Full Year,English,அணடம் (ம) பேரணடம்,Universe
+Class 8,Science,Full Year,English,வெற்றிடக்குடுவை,Vacuum flask
+Class 8,Science,Full Year,English,மாறும் இணைதிறன்,Variable valency
+Class 8,Science,Full Year,English,செங்குத்து,Vertical
+Class 8,Science,Full Year,English,அதிர்வுகள்,Vibrations
+Class 8,Science,Full Year,English,உள்ளுறுப்பு,Visceral organ
+Class 8,Science,Full Year,English,நீர்வாயு,Water gas
+Class 8,Science,Full Year,English,அலைநீளம்,Wave Length
+Class 8,Science,Full Year,English,களை,Weed
+Class 8,Science,Full Year,English,வனஉயிரி,Wildlife
+Class 8,Science,Full Year,English,காறறாறறல்,Wind energy
+Class 8,Science,Full Year,Tamil,அமிலம்,Acid
+Class 8,Science,Full Year,Tamil,அமிலமழை,Acid rain
+Class 8,Science,Full Year,Tamil,வளர் இளம் பருவம்,Adolescence
+Class 8,Science,Full Year,Tamil,காடுவளர்ப்பு,Afforestation
+Class 8,Science,Full Year,Tamil,வேளாண்மை,Agriculture
+Class 8,Science,Full Year,Tamil,உழவியல்,Agronomy
+Class 8,Science,Full Year,Tamil,உணவுப் பாதை,Alimentary canal
+Class 8,Science,Full Year,Tamil,வீச்சு,Amplitude
+Class 8,Science,Full Year,Tamil,நேர்மினவாய்,Anode
+Class 8,Science,Full Year,Tamil,அமிலநீக்கி,Antacid
+Class 8,Science,Full Year,Tamil,செயற்கை நிறஙகாட்டி,Artificial Indicator
+Class 8,Science,Full Year,Tamil,செயற்கை சுவாசம்,Artificial respiration
+Class 8,Science,Full Year,Tamil,விண்வெளி வீரர்,Astronaut
+Class 8,Science,Full Year,Tamil,மினகடத்தாப் ப�ொருள்,Bad conductor
+Class 8,Science,Full Year,Tamil,சரிவிகித உணவு,Balanced diet
+Class 8,Science,Full Year,Tamil,காரம்,Base
+Class 8,Science,Full Year,Tamil,உயிரி டீசல்,Bio Diesel
+Class 8,Science,Full Year,Tamil,உயிர்உரம்,Bio fertilizer
+Class 8,Science,Full Year,Tamil,உயிரி பூச்சிக்கொல்லி,Bio pesticide
+Class 8,Science,Full Year,Tamil,உயிரி க�ொன்றுண்ணிகள்,Bio pradators
+Class 8,Science,Full Year,Tamil,ளம்,Biosphere
+Class 8,Science,Full Year,Tamil,க�ொதிநிலை,Boiling point
+Class 8,Science,Full Year,Tamil,எலும்பு மஜ்ைஜ,Bone marrow
+Class 8,Science,Full Year,Tamil,தாவரவியல் பூஙகா,Botanical garden
+Class 8,Science,Full Year,Tamil,குருத்தெலும்பு,Cartilages
+Class 8,Science,Full Year,Tamil,எதிர்மினவாய்,Cathode
+Class 8,Science,Full Year,Tamil,மின்துகள்,Charge
+Class 8,Science,Full Year,Tamil,வேதிச்சமனபாடு,Chemical equation
+Class 8,Science,Full Year,Tamil,வேதிவாய்பாடு,Chemical formula
+Class 8,Science,Full Year,Tamil,நுண் கேசஙகள்,Cilia
+Class 8,Science,Full Year,Tamil,அழுத்தப்பட்ட ப்பட்ட இயற்கைவாயு,CNG
+Class 8,Science,Full Year,Tamil,நிலக்கரி வாயு,Coal gas
+Class 8,Science,Full Year,Tamil,கல�ோரிமானி,Colorimeter
+Class 8,Science,Full Year,Tamil,இறுக்கஙகள்,Compressions
+Class 8,Science,Full Year,Tamil,ஒடுக்குதல்,Condensation
+Class 8,Science,Full Year,Tamil,கடத்துதல்,Conduction
+Class 8,Science,Full Year,Tamil,பாதுகாப்பு,Conservation
+Class 8,Science,Full Year,Tamil,வெப்பச்சலனம்,Convection
+Class 8,Science,Full Year,Tamil,பள்ளஙகள்,Craters
+Class 8,Science,Full Year,Tamil,பயிர்ப் பெருக்கம்,Crop production
+Class 8,Science,Full Year,Tamil,எரிதல்,Cumbustion
+Class 8,Science,Full Year,Tamil,வளைவான அமைப்பு,Curved pattern
+Class 8,Science,Full Year,Tamil,காடு அழிப்பு,Deforestation
+Class 8,Science,Full Year,Tamil,அடர்த்தி,Density
+Class 8,Science,Full Year,Tamil,படிதல்,Deposition
+Class 8,Science,Full Year,Tamil,பரிமாணஙகள்,Dimensions
+Class 8,Science,Full Year,Tamil,மின்னிறக்கக்குழாய்,Discharge tube
+Class 8,Science,Full Year,Tamil,புவித்தொடுப்பு,Earthing
+Class 8,Science,Full Year,Tamil,மின்புலம்,Electric field
+Class 8,Science,Full Year,Tamil,மினனழுத்தம்,Electric potential
+Class 8,Science,Full Year,Tamil,மின்னிறக்கம்,Electrical discharge
+Class 8,Science,Full Year,Tamil,மினனாறபகுத்தல்,Electrolysis
+Class 8,Science,Full Year,Tamil,மின்முலாம் பூசுதல்,Electroplating
+Class 8,Science,Full Year,Tamil,ஆபத்தான இனஙகள்,Endangered species
+Class 8,Science,Full Year,Tamil,நாளமில்லா சுரப்பிகள்,Endocrine glands
+Class 8,Science,Full Year,Tamil,உள் எலும்புக்கூடு,Endoskeleton
+Class 8,Science,Full Year,Tamil,உரம்,Fertilizer
+Class 8,Science,Full Year,Tamil,கசையிைழ,Flagellum
+Class 8,Science,Full Year,Tamil,இலையில் தெளிப்பு,Foliar spray
+Class 8,Science,Full Year,Tamil,உறைநிலை,Freezing point
+Class 8,Science,Full Year,Tamil,உராய்வு,Friction
+Class 8,Science,Full Year,Tamil,எரிப�ொருள்,Fuel
+Class 8,Science,Full Year,Tamil,மின்உருகு இழை,Fuse
+Class 8,Science,Full Year,Tamil,விண்மீன்திரள்,Galaxy
+Class 8,Science,Full Year,Tamil,புவி வடமுனை,Geographic north
+Class 8,Science,Full Year,Tamil,புவியியல்,Geological
+Class 8,Science,Full Year,Tamil,ப்பமயமாதல்,Global warming
+Class 8,Science,Full Year,Tamil,உலக வெப்ப,ப்பமயமாதல் -  Global warming
+Class 8,Science,Full Year,Tamil,நறகடத்தி,Good conductor
+Class 8,Science,Full Year,Tamil,பசுமை இல்ல விளைவு,Green house effect
+Class 8,Science,Full Year,Tamil,கடின நீர்,Hard water
+Class 8,Science,Full Year,Tamil,பாரம்பரியவிதை,Heirloom seed
+Class 8,Science,Full Year,Tamil,கிடைமட்டம்,Horizontal
+Class 8,Science,Full Year,Tamil,பிளக்க முடியாத,Indestructible
+Class 8,Science,Full Year,Tamil,நிறஙகாட்டி,Indicator
+Class 8,Science,Full Year,Tamil,தூணடல்,Induction
+Class 8,Science,Full Year,Tamil,குற்றொலி,Infrasonic
+Class 8,Science,Full Year,Tamil,கனிம அமிலம்,Inorganic acid
+Class 8,Science,Full Year,Tamil,இரும்புத் தாதுக்கள்,Iron ores
+Class 8,Science,Full Year,Tamil,நீர்ப் பாசனம்,Irrigation
+Class 8,Science,Full Year,Tamil,குரல் வளை,Larynx
+Class 8,Science,Full Year,Tamil,உள்ளுறை வெப்ப்பம்,Latent heat
+Class 8,Science,Full Year,Tamil,சுணணாம்பு நீர்,Lime water
+Class 8,Science,Full Year,Tamil,நெட்டலை,longitudinal wave
+Class 8,Science,Full Year,Tamil,காந்தப்புலம்,Magnetic field
+Class 8,Science,Full Year,Tamil,காந்தப்புலம்,Magnetic Field
+Class 8,Science,Full Year,Tamil,காந்தத்திறன்,Magnetic power
+Class 8,Science,Full Year,Tamil,உரமிடுதல்,Manuring
+Class 8,Science,Full Year,Tamil,எந்திரவியல்,Mechanical wave
+Class 8,Science,Full Year,Tamil,மாதவிடைவு,Menopause
+Class 8,Science,Full Year,Tamil,மாதவிடாய்,Menstruation
+Class 8,Science,Full Year,Tamil,உல�ோகஙகள்,Metals
+Class 8,Science,Full Year,Tamil,கணிமவியல்,Mineralogy
+Class 8,Science,Full Year,Tamil,தேசியபூஙகா,National park
+Class 8,Science,Full Year,Tamil,இயற்கைவாயு,Natural gas
+Class 8,Science,Full Year,Tamil,இயற்கை நிறஙகாட்டி,Natural Indicator
+Class 8,Science,Full Year,Tamil,நடுநிலையாக்கல்,Neutralisation
+Class 8,Science,Full Year,Tamil,கரிமஅமிலம்,Organic Acid
+Class 8,Science,Full Year,Tamil,அலைவுறுதல்,Oscillate
+Class 8,Science,Full Year,Tamil,எலும்பு மென்மையாதல்,Osteoporosis
+Class 8,Science,Full Year,Tamil,அணடம் விடுபடுதல்,Ovulation
+Class 8,Science,Full Year,Tamil,உழுதல்,Ploughing
+Class 8,Science,Full Year,Tamil,கு உகந்தநீர்,Potable water
+Class 8,Science,Full Year,Tamil,கர்ப்பமடைதல்,Pregnancy
+Class 8,Science,Full Year,Tamil,எரிப�ொருள்,Propellant
+Class 8,Science,Full Year,Tamil,உந்துவிசை,Propulsion
+Class 8,Science,Full Year,Tamil,பருவமடைதல்,Puberty
+Class 8,Science,Full Year,Tamil,வெப்பக்கப்பக்கதிர்வீச்சு,Radiation
+Class 8,Science,Full Year,Tamil,தளர்ச்சிகள்,Rarefactions
+Class 8,Science,Full Year,Tamil,சிவப்பு தரவுப் புத்தகம்,Red Data Book
+Class 8,Science,Full Year,Tamil,சுத்திகரிப்பு,Refining
+Class 8,Science,Full Year,Tamil,ட்டி,Refrigerator
+Class 8,Science,Full Year,Tamil,மின்தடை,Resistance
+Class 8,Science,Full Year,Tamil,உவர் நீர்,Saline water
+Class 8,Science,Full Year,Tamil,இரணடாம்நிலை,Secondary sex
+Class 8,Science,Full Year,Tamil,பால் பண்புகள்,characters
+Class 8,Science,Full Year,Tamil,துண்டு,Segment
+Class 8,Science,Full Year,Tamil,எலும்புக் கூடு,Skeleton
+Class 8,Science,Full Year,Tamil,கபாலம்,Skull
+Class 8,Science,Full Year,Tamil,வழவழப்புத்தன்மை,Soapy touch
+Class 8,Science,Full Year,Tamil,சூரிய ஆறறல்,Solar energy
+Class 8,Science,Full Year,Tamil,புளிப்புச்சுவை,Sour Taste
+Class 8,Science,Full Year,Tamil,விதைத்தல்,Sowing
+Class 8,Science,Full Year,Tamil,விண்வெளி ஆய்வுக்கலம்,Space probe
+Class 8,Science,Full Year,Tamil,தன்வெப்ப்பம்,Specific heat
+Class 8,Science,Full Year,Tamil,தன் வெப்ப ப்ப ஏற்புத்திறன்,Specific heat capacity
+Class 8,Science,Full Year,Tamil,பதஙகமாதல்,Sublimation
+Class 8,Science,Full Year,Tamil,த�ொஙகவிடப்பட்ட,Suspended
+Class 8,Science,Full Year,Tamil,மீய�ொலி,Ultrasonic
+Class 8,Science,Full Year,Tamil,மாறறஇயலாத,Unaltered
+Class 8,Science,Full Year,Tamil,அணடம் (ம) பேரணடம்,Universe
+Class 8,Science,Full Year,Tamil,வெற்றிடக்குடுவை,Vacuum flask
+Class 8,Science,Full Year,Tamil,மாறும் இணைதிறன்,Variable valency
+Class 8,Science,Full Year,Tamil,செங்குத்து,Vertical
+Class 8,Science,Full Year,Tamil,அதிர்வுகள்,Vibrations
+Class 8,Science,Full Year,Tamil,உள்ளுறுப்பு,Visceral organ
+Class 8,Science,Full Year,Tamil,நீர்வாயு,Water gas
+Class 8,Science,Full Year,Tamil,அலைநீளம்,Wave Length
+Class 8,Science,Full Year,Tamil,களை,Weed
+Class 8,Science,Full Year,Tamil,வனஉயிரி,Wildlife
+Class 8,Science,Full Year,Tamil,காறறாறறல்,Wind energy
+Class 8,Science,Full Year,Tamil,"மககளிர் கிருத்துவக் ககல்லூரி, சென்்னை","முனைவவர் T.S ரேணுககாதேவி, உதவி பேராசிரியர்,"
+Class 8,Science,Full Year,Tamil,"அ.மே.நி.பள்ளி, பைங்்ககாநாடு, திருவாரூர்.","S. பாலசுப்பிரமணியன், முதுகலை ஆசிரியர்,"
+Class 8,Science,Full Year,Tamil,ாஞ்சிபுரம்.,ICT ஒருங்கிணைப்பாளர்
+Class 8,Science,Full Year,Tamil,திர் ஆறுமுககம்,In-House - QC
+Class 8,Science,Full Year,Tamil,"அ.மே.நி.பள்ளி, வருசநாடு, தேனி.","மு. பூமிநாதன், பட்்டதாரி ஆசிரியர், S.K.T. ககாந்தி"
+Class 8,Science,Full Year,Tamil,ர்:,EMIS தொ�ொழில்நுட்பக் குழு
+Class 8,Science,Full Year,Tamil,நூலாசிரியர்்கள்,8th_Science_Author Page.indd   298
+Class 8,Science,Full Year,Tamil,குறிப்பு,8th_Science_Author Page.indd   299
+Class 8,Science,Full Year,Tamil,குறிப்பு,8th_Science_Author Page.indd   300

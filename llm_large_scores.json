@@ -1,0 +1,152 @@
+[
+  {
+    "id": 101,
+    "judge_score": 4,
+    "justification": "The answer uses the English term 'Hardware' directly in a Tamil sentence without brackets, which is not entirely incorrect but mixing can be minimized."
+  },
+  {
+    "id": 102,
+    "judge_score": 4,
+    "justification": "The answer uses a bracket to set off the English term 'Printer', but it is not clear whether it's being used as a direct translation or if there's an equivalent Tamil word available."
+  },
+  {
+    "id": 103,
+    "judge_score": 2,
+    "justification": "The answer uses the raw English loan word 'science' directly inside the Tamil sentence grammar without brackets, indicating a moderate level of mixing."
+  },
+  {
+    "id": 104,
+    "judge_score": 2,
+    "justification": "The answer uses raw English loan word 'mouse' directly inside the Tamil sentence grammar without brackets, which is a moderate level of mixing."
+  },
+  {
+    "id": 105,
+    "judge_score": 4,
+    "justification": "The answer uses raw English loan word directly inside the Tamil sentence grammar without brackets, but it is close to being correct. A perfect score would be achieved if the English term was provided in parentheses or brackets next to the Tamil term."
+  },
+  {
+    "id": 106,
+    "judge_score": 2,
+    "justification": "The answer uses the English loan word 'computer-based' directly inside the Tamil sentence grammar without brackets, which is a deviation from ideal practice."
+  },
+  {
+    "id": 107,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term, 'திசைவேகம்', which is a widely accepted and standardized term in Tamil. The correct grammar of the sentence also supports this score."
+  },
+  {
+    "id": 108,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term \"முடுக்கம்\" along with the technically-correct English term in parentheses, \"திசைவேக மாற்ற வீதம் (acceleration)\""
+  },
+  {
+    "id": 109,
+    "judge_score": 2,
+    "justification": "The answer uses the correct Tamil term (அைத், hardware's part), but fails to provide English technical terms in brackets or parentheses."
+  },
+  {
+    "id": 110,
+    "judge_score": 4,
+    "justification": "The answer uses English loan word 'science' directly inside the Tamil sentence grammar without brackets, which is not ideal. However, since it's a general term with no specific technical connotation, and there isn't a direct Tamil equivalent for such a broad concept, I'm giving it a score of 4."
+  },
+  {
+    "id": 111,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term, “ப்உைழ்மான்கெஙோ (Force)”, and correctly defines it in Tamil. No English loan words are used inside the sentence grammar."
+  },
+  {
+    "id": 112,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term for momentum, \"உந்தம்\". It also provides a correct definition with technical terms in both Tamil and English."
+  },
+  {
+    "id": 113,
+    "judge_score": 4,
+    "justification": "The answer uses raw English loan word 'Gravity' directly inside the Tamil sentence grammar without brackets, which is a deviation from ideal practice."
+  },
+  {
+    "id": 114,
+    "judge_score": 4,
+    "justification": "The answer uses the Tamil term \"Atom\" correctly, but it is not accompanied by its English equivalent in parentheses or brackets."
+  },
+  {
+    "id": 115,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for energy, but it does not follow the guidelines to provide English technical terms in parentheses or brackets next to the Tamil term. The phrase 'வேலை செய்ய' is an English loan word directly used inside the Tamil sentence grammar."
+  },
+  {
+    "id": 116,
+    "judge_score": 4,
+    "justification": "The answer correctly uses the Tamil term \"மூலக்கூறு\" for a molecule, but still uses an English loan word \"சேர்க்கை\" (joining, combining), which is not a commonly used technical term in Tamil. A more accurate translation would be to use the Tamil term \"ஆவி மாற்றம்\" or simply \"அணுக்களின் சேர்தல்\" (combination of atoms) with a bracketed English explanation if necessary."
+  },
+  {
+    "id": 117,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for chemical bond, but it also includes the English word 'அணுக்களை', which is a direct loan word. The score would be higher if only வேதி பிணைப்பு (Chemical bond) were used."
+  },
+  {
+    "id": 118,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for acid, அமிலம். However, it is followed by a descriptive phrase in English, 'புளிப்பு சுவை கொண்டது', which could be rephrased to maintain consistency and clarity using Tamil."
+  },
+  {
+    "id": 119,
+    "judge_score": 2,
+    "justification": "The answer uses the correct Tamil term for base ('காரம்'), but incorrectly mixes it with raw English loan word 'Base'. The two terms seem to be used as if they are synonymous, which is not the case. A score of 2 because while there's some effort to use a Tamil term, the mixing is still significant."
+  },
+  {
+    "id": 120,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for 'solvent', but it also includes the English loan word '(solvent)' in parentheses, which is not necessary. A score of 5 would be given if only the Tamil term was used or if the English term was provided in parentheses without the raw loan word."
+  },
+  {
+    "id": 121,
+    "judge_score": 2,
+    "justification": "The answer uses the correct Tamil term \"கரைபொருள்\" but incorrectly leaves the English loan word \"solut\" inside the sentence. It should be enclosed in brackets or parentheses for correctness."
+  },
+  {
+    "id": 122,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for 'mixture', but it is followed by an English description. A more accurate representation would be: கலவை (mixture)"
+  },
+  {
+    "id": 123,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term, சேர்மம், but it is enclosed in brackets. It would be more accurate to use only the Tamil term."
+  },
+  {
+    "id": 124,
+    "judge_score": 3,
+    "justification": "The answer uses the correct Tamil term \"கரைசல்\" but combines it with an English loan word \"solution\" without brackets, which is a mild mixing."
+  },
+  {
+    "id": 125,
+    "judge_score": 5,
+    "justification": "The answer uses the correct Tamil term for Reaction, வேதி வினை, with an English term in parentheses to provide additional clarity."
+  },
+  {
+    "id": 126,
+    "judge_score": 5,
+    "justification": ""
+  },
+  {
+    "id": 127,
+    "judge_score": 4,
+    "justification": "The answer uses raw English loan word ('சூட்டின்') directly inside the Tamil sentence grammar without brackets."
+  },
+  {
+    "id": 128,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for heat, but includes an English loan word directly inside the sentence grammar without brackets or parentheses."
+  },
+  {
+    "id": 129,
+    "judge_score": 2,
+    "justification": "The answer uses the correct Tamil term 'ஒளி' but also mixes it directly with English loan word 'light', which is not enclosed in brackets or parentheses. The mixing of languages within the sentence structure is moderate, hence a score of 2."
+  },
+  {
+    "id": 130,
+    "judge_score": 4,
+    "justification": "The answer uses the correct Tamil term for sound, but also includes the raw English word 'sound' which is not bracketed. This is an acceptable mistake since the English term can be seen as a direct translation, however it's better to use only ஒலி."
+  }
+]

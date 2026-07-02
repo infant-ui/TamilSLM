@@ -1,0 +1,680 @@
+Class,Subject,Term,Medium,Tamil_Term,English_Term,Needs_Human_Review
+Class 6,Science,Term 1,English,(அபாகஸ்),Abacus,False
+Class 6,Science,Term 1,English,(கம்ப்யூட்டர்),Computer,False
+Class 6,Science,Term 1,English,கணினி,Architecture,True
+Class 6,Science,Term 1,English,"கட்டமைப்பு, வடிவமைப்பு",Command,True
+Class 6,Science,Term 1,English,கட்டளை,Calculator,True
+Class 6,Science,Term 1,English,(செல்போன்),"Cell Phone, Mobile",False
+Class 6,Science,Term 1,English,(டேப்லட்),Tablet,False
+Class 6,Science,Term 1,English,"தரவு, முறைப்படுததபடட வேண்டிய",Data,True
+Class 6,Science,Term 1,English,விவரஙகள்,Information,True
+Class 6,Science,Term 1,English,"மின்னணு இயந்திரம், மின்சாரத்தால்",Electronic Machine,True
+Class 6,Science,Term 1,English,(அனலாக் கம்ப்யூட்டர்),Analog computer,False
+Class 6,Science,Term 1,English,(ஸ்மார்ட் ப�ோன்),Smart phone,False
+Class 6,Science,Term 1,English,திறன் பேசி,Post Office,True
+Class 6,Science,Term 1,English,தபால் நிலையம்,Automated Teller Machine (ATM),True
+Class 6,Science,Term 1,English,தானியங்கி பண எந்திரம்,Keyboard,True
+Class 6,Science,Term 1,English,விசைப்பலகை,Software,True
+Class 6,Science,Term 1,English,மென்பொருள்,Hardware,True
+Class 6,Science,Term 1,English,வன்பொருள்,Printer,True
+Class 6,Science,Term 1,English,அச்சுப் ப�ொறி,Mouse,True
+Class 6,Science,Term 1,English,சுட்டி,Program,True
+Class 6,Science,Term 1,English,நிரல்,Programmer,True
+Class 6,Science,Term 1,English,நிரலர்,6th Science_EM_Unit 7.indd 101,True
+Class 6,Science,Term 1,English,அளவு நாடா,Measuring Tape,False
+Class 6,Science,Term 1,English,பகுதிப்பொ,Components,True
+Class 6,Science,Term 1,English,ருட்கள்,Stop clock,True
+Class 6,Science,Term 1,English,நிறுத்துக் கடிகாரம்,Proportion,True
+Class 6,Science,Term 1,English,அளவுசாடி,Measuring jar,False
+Class 6,Science,Term 1,English,பிரித்தெடுத்தல்,Extraction,True
+Class 6,Science,Term 1,English,அலகு,Unit,True
+Class 6,Science,Term 1,English,வடிகட்டி,Strainer,True
+Class 6,Science,Term 1,English,இடமாறு,Parallax error,True
+Class 6,Science,Term 1,English,கடைதல்,Churning,True
+Class 6,Science,Term 1,English,தEோற்றப்பிழை,Threshing,True
+Class 6,Science,Term 1,English,கதிரடித்தல்,Mass,True
+Class 6,Science,Term 1,English,நிறை,Winnowing,True
+Class 6,Science,Term 1,English,தூற்றுதல்,Weight,True
+Class 6,Science,Term 1,English,எடை,Sedimentation,True
+Class 6,Science,Term 1,English,உயிருளள,Animate factors,False
+Class 6,Science,Term 1,English,தெளியவைத்து,Decantation,True
+Class 6,Science,Term 1,English,இறுத்தல்,Inanimate,True
+Class 6,Science,Term 1,English,உயிரற்ற காரணிகள்,Filtrate,True
+Class 6,Science,Term 1,English,வடிநீர்,factors,True
+Class 6,Science,Term 1,English,வினை,Reaction,True
+Class 6,Science,Term 1,English,தEொடு விசைகள்,Non-contact,True
+Class 6,Science,Term 1,English,கரைத்தல்,Dissolution,True
+Class 6,Science,Term 1,English,தEொடா விசைகள்,forces,True
+Class 6,Science,Term 1,English,பதஙகமாதல்,Sublimation,True
+Class 6,Science,Term 1,English,நேர்கோட்டு,Linear motion,False
+Class 6,Science,Term 1,English,உருகுதல்,Melting,True
+Class 6,Science,Term 1,English,இயக்கம்,Vaporization,True
+Class 6,Science,Term 1,English,ஆவியாக்குதல்,Curvilinear,True
+Class 6,Science,Term 1,English,ஆவி சுருஙகல்,Condensation,False
+Class 6,Science,Term 1,English,இயக்கம்,­motion,True
+Class 6,Science,Term 1,English,உறைதல்,Freezing,True
+Class 6,Science,Term 1,English,வட்டப்பாதை,Circular motion,False
+Class 6,Science,Term 1,English,இயக்கம்,Terminal bud,True
+Class 6,Science,Term 1,English,சுழற்சி இயக்கம்,Rotatory motion,False
+Class 6,Science,Term 1,English,க�ோணண ம�ொட்டு,Auxiliary buds,False
+Class 6,Science,Term 1,English,அலைவு இயக்கம்,Oscillatory,True
+Class 6,Science,Term 1,English,இலைக் கணு,Nodes,True
+Class 6,Science,Term 1,English,பற்றுக்கம்பி,Tendril,True
+Class 6,Science,Term 1,English,தழுவுக�ொடி,Twiners,True
+Class 6,Science,Term 1,English,ஒழுஙகற்ற இயக்கம்,motion,True
+Class 6,Science,Term 1,English,முள்,Thorns,True
+Class 6,Science,Term 1,English,சராசரி வேகம்,Average speed,False
+Class 6,Science,Term 1,English,தகவமைப்பு,Adaptation,True
+Class 6,Science,Term 1,English,கால ஒழுங்கு,Periodic motion,False
+Class 6,Science,Term 1,English,இயக்கம்,Bio diversity,True
+Class 6,Science,Term 1,English,பல்லுயிர் தன்மை,Non-periodic,True
+Class 6,Science,Term 1,English,கால ஒழுஙகற்ற,Eco system,True
+Class 6,Science,Term 1,English,சூழியல் மணடலம்,motion,True
+Class 6,Science,Term 1,English,இயக்கம்,Migration,True
+Class 6,Science,Term 1,English,சீரான இயக்கம்,Uniform motion,False
+Class 6,Science,Term 1,English,உயிருளள சமூகம்,Abiotic,True
+Class 6,Science,Term 1,English,சீரற்ற இயக்கம்,Non-uniform,True
+Class 6,Science,Term 1,English,உயிரைச் சார்ந்த,Biotic,True
+Class 6,Science,Term 1,English,செயற்கை,Artificial,True
+Class 6,Science,Term 1,English,சமூகம்,community,True
+Class 6,Science,Term 1,English,நுண்ணறிவு,­Intelligence,True
+Class 6,Science,Term 1,English,ஊட்டச்சத்துக்,Malnutrition,True
+Class 6,Science,Term 1,English,நான�ோ,Nano robotics,False
+Class 6,Science,Term 1,English,எந்திரனியல்,Deficiency,True
+Class 6,Science,Term 1,English,குறைபாட்டு,Diffusion,True
+Class 6,Science,Term 1,English,"விரவுதல், பரவுதல்",diseases,True
+Class 6,Science,Term 1,English,ந�ோய்கள்,Liquefaction,True
+Class 6,Science,Term 1,English,நீரமாக்கல்,Hygiene,True
+Class 6,Science,Term 1,English,சுகாதாரம்,Compressible,True
+Class 6,Science,Term 1,English,அழுத்தப்படக்கூடிய,Personal,True
+Class 6,Science,Term 1,English,தன் சுத்தம்,Hygiene,True
+Class 6,Science,Term 1,English,கலப்படமற்ற,Unadulterated,False
+Class 6,Science,Term 2,English,கட்டுப்்பபாட்்டகம்,Con trol U n it,False
+Class 6,Science,Term 2,English,குறுவட்டு,Compact D isk,False
+Class 6,Science,Term 2,English,கம்பி,Cord/cable,True
+Class 6,Science,Term 2,English,செரிமபான மண்்டலம்,D igestive,True
+Class 6,Science,Term 2,English,வளிமண்்டலம்,A tmosph ere,True
+Class 6,Science,Term 2,English,தரவுக்கம்பி,D ata cable,True
+Class 6,Science,Term 2,English,மின் ஆற்்றல்,Electrical energy,False
+Class 6,Science,Term 2,English,கணிதத்தருக்கச் செயலகம்,U n it,True
+Class 6,Science,Term 2,English,மின் சுற்று,Electrical circuit,False
+Class 6,Science,Term 2,English,உண்ணமயபான உட்கரு,A u dio jack,True
+Class 6,Science,Term 2,English,ஒலி இணைப்்பபான்,Eukaryotic cell,True
+Class 6,Science,Term 2,English,உண்டய செல்,Battery,True
+Class 6,Science,Term 2,English,மின் கல அடுக்கு,Excretory,True
+Class 6,Science,Term 2,English,கழிவு நீக்க மண்்டலம்,sy stem,True
+Class 6,Science,Term 2,English,அடிப்்பண்ட அலகு,Basic U n it,True
+Class 6,Science,Term 2,English,நபாளமில்லபாசுரப்பி மண்்டலம்.,En docrin e,True
+Class 6,Science,Term 2,English,்பட்ண்டகுறியீடு ்படிப்்பபான்,Barcode Read er,False
+Class 6,Science,Term 2,English,உரபாய்வு,Friction,True
+Class 6,Science,Term 2,English,ஊ்டணல,Blu etooth,True
+Class 6,Science,Term 2,English,எரிச்பபாருள்,Fu el,True
+Class 6,Science,Term 2,English,எரிதல்,Combu stion,True
+Class 6,Science,Term 2,English,சு்டர்,Flame,True
+Class 6,Science,Term 2,English,சுருங்குதல்,Con traction,True
+Class 6,Science,Term 2,English,உண்றதல்,Freez in g,True
+Class 6,Science,Term 2,English,கணெஇணை,Flagella,True
+Class 6,Science,Term 2,English,்பரும விரிவு,Expan sion,True
+Class 6,Science,Term 2,English,உைவு உற்்பத்தி,Food production,False
+Class 6,Science,Term 2,English,விரிெல்,Crack in g,True
+Class 6,Science,Term 2,English,சவப்்பம்,H eat,True
+Class 6,Science,Term 2,English,மின்கலன்,Cell,True
+Class 6,Science,Term 2,English,சவப்்பம் க்டத்தல்,H eat tran sfer,False
+Class 6,Science,Term 2,English,வவதி ஆற்்றல்,Chemical energy,False
+Class 6,Science,Term 2,English,மின்க்டத்தபா ச்பபாருள்,I n su lators,True
+Class 6,Science,Term 2,English,மின் க்டத்திகள்,Con du ctors,True
+Class 6,Science,Term 2,English,எளிதில் எரியக்கூடிய,I n fl ammable,True
+Class 6,Science,Term 2,English,இணயபு,Composition,True
+Class 6,Science,Term 2,English,உள்ளீட்்டகம்,I n pu t u n it,True
+Class 6,Science,Term 2,English,அழுத்தப்்பட்்ட கபாற்று,Compressed air,False
+Class 6,Science,Term 2,English,இயக்க ஆற்்றல்,Kinetic energy,False
+Class 6,Science,Term 2,English,்பசுங்கணிகம்,Ch loroplast,True
+Class 6,Science,Term 2,English,நீள் விரிவு,Lin ear,True
+Class 6,Science,Term 2,English,்பச்ணெயம்,Ch lorophy ll,True
+Class 6,Science,Term 2,English,சவண்கணிகம்,Leu coplast,True
+Class 6,Science,Term 2,English,கூட்டு நுண்வைபாக்கி,microscope,True
+Class 6,Science,Term 2,English,ஒளிப்வ்பனபா,Ligh t Pen,True
+Class 6,Science,Term 2,English,செல் உறுப்புகள்,Cell organelles,False
+Class 6,Science,Term 2,English,இரத்த ஓட்்ட மண்்டலம்,Circu latory,True
+Class 6,Science,Term 2,English,மடிக்கணினி,Laptop,True
+Class 6,Science,Term 2,English,மூலக்கூறுகள்,Molecu les,True
+Class 6,Science,Term 2,English,ஒளிவீழ்த்தி,Projector,True
+Class 6,Science,Term 2,English,மணலவயறு்பவர்,Mou n tain eer,False
+Class 6,Science,Term 2,English,இரும்பு துருப்பிடித்தல்,Rusting of iron,False
+Class 6,Science,Term 2,English,தணெ மண்்டலம்,Muscular system,False
+Class 6,Science,Term 2,English,சுவபாெம்,Respiration,True
+Class 6,Science,Term 2,English,ஒலிவபாங்கி,Respiratory,True
+Class 6,Science,Term 2,English,சுவபாெ மண்்டலம்,Microph on e,True
+Class 6,Science,Term 2,English,நிணனவகம்,Memory U n it,True
+Class 6,Science,Term 2,English,துணை மின்கலன்,Secondary cell,True
+Class 6,Science,Term 2,English,திணரயகம்,Mon itor,True
+Class 6,Science,Term 2,English,சதபா்டர் மின் சுற்று,S eries circu it,False
+Class 6,Science,Term 2,English,கணரப்்பபான்,Main frame,True
+Class 6,Science,Term 2,English,ச்பருமுகக்கணினி,Compu ter,True
+Class 6,Science,Term 2,English,கணரச்பபாருள்,S olu te,True
+Class 6,Science,Term 2,English,குறுமுகக்கணினி,Min i Compu ter,False
+Class 6,Science,Term 2,English,்பதங்கமபாதல்,S u blimation,True
+Class 6,Science,Term 2,English,நுண்கணினி,Micro computer,False
+Class 6,Science,Term 2,English,எலும்பு மண்்டலம்,Skeletal system,True
+Class 6,Science,Term 2,English,நரம்புச் செல்,N erve cell,True
+Class 6,Science,Term 2,English,உைர்வு உறுப்புகள்,S en se organ s,True
+Class 6,Science,Term 2,English,உட்கரு,N u cleu s,True
+Class 6,Science,Term 2,English,ஒலிப்ச்பருக்கி,S peak er,True
+Class 6,Science,Term 2,English,நரம்பு மண்்டலம்,Nervous system,False
+Class 6,Science,Term 2,English,மீக்கணினி,Super Computer,True
+Class 6,Science,Term 2,English,சவளியீட்்டகம்,Ou tpu t u n it,True
+Class 6,Science,Term 2,English,வருடி,S can n er,True
+Class 6,Science,Term 2,English,அரிதிற் க்டத்தி,Poor conductor,False
+Class 6,Science,Term 2,English,சவப்்பநிணல,Temperatu re,True
+Class 6,Science,Term 2,English,ஒளிச்வெர்க்ணக,Photosynthesis,False
+Class 6,Science,Term 2,English,சவப்்பநிணலமபானி,Th ermometer,True
+Class 6,Science,Term 2,English,ண்பரக்ஸ் கண்ைபாடி,Py rex glass,True
+Class 6,Science,Term 2,English,சவப்்பச் ெமநிணல,Th ermal,True
+Class 6,Science,Term 2,English,முதன்ணம மின் கலன்,Primary cell,True
+Class 6,Science,Term 2,English,சவப்்ப விரிவு,Th ermal,True
+Class 6,Science,Term 2,English,பிளபாஸ்மபா ெவ்வு,Expan sion,True
+Class 6,Science,Term 2,English,ஆவியபாதல்,Vapourization,False
+Class 6,Science,Term 2,English,உட்கரு முதலில் வதபான்றிய,Prokaryotic cells,True
+Class 6,Science,Term 2,English,செல்,Vacu oles,True
+Class 6,Science,Term 2,English,இணை மின் சுற்று,Parallel circuit,False
+Class 6,Science,Term 2,English,கபாற்்றபாணலகள்,W in d Mills,True
+Class 6,Science,Term 2,English,வணரவி,Plotter,True
+Class 6,Science,Term 2,English,அருகணல,W i-Fi,True
+Class 6,Science,Term 2,English,விரலி,Pen drive,True
+Class 6,Science,Term 3,English,தொசையற்்ச> >ோந்தம்,Artificial magnet,True
+Class 6,Science,Term 3,English,>ோந்த ஈர்ப்பு,Magnetic attraction,True
+Class 6,Science,Term 3,English,ஒட்டும்தொபோருள்>ள்,Adhesives,True
+Class 6,Science,Term 3,English,>ோந்த விM>ல்,Magnetic repulsion,True
+Class 6,Science,Term 3,English,கோசைோற்று >ற்்றோ்சழ,Aloe,True
+Class 6,Science,Term 3,English,>ோந்த தன்்சமயற்்ற,Non – Magnetic,True
+Class 6,Science,Term 3,English,தொபோருள்>ள்,substances,True
+Class 6,Science,Term 3,English,உயிரி்னச் சி்சதவிற்கு,Bio degradable,True
+Class 6,Science,Term 3,English,உள்ளோகும் >ழிவு>ள்,waste,True
+Class 6,Science,Term 3,English,ெ்ட துருெம்,North pole,True
+Class 6,Science,Term 3,English,உயிரி எரிதொபோருள்,Bio - fuel,True
+Class 6,Science,Term 3,English,தொதன் துருெம்,South pole,True
+Class 6,Science,Term 3,English,நு>ர்கோெோர்>ள்,Consumers,True
+Class 6,Science,Term 3,English,இயற்்ச> நி்றங்>ோட்டி,Natural Indicator,True
+Class 6,Science,Term 3,English,மட்கிய உரம்,Compost,True
+Class 6,Science,Term 3,English,உயிரி்னச் சி்சதவிற்கு,Non Bio degradable,True
+Class 6,Science,Term 3,English,உள்ளோ>ோத >ழிவு>ள்,waste,True
+Class 6,Science,Term 3,English,தோனியம்,Cereal,True
+Class 6,Science,Term 3,English,இயற்்ச>,Natural pesticides,True
+Class 6,Science,Term 3,English,சி்சதப்போன்>ள்,Decomposers,True
+Class 6,Science,Term 3,English,>்சளக்தொ>ோல்லி,Disinfectant,True
+Class 6,Science,Term 3,English,கிருமி நோசினி,Organic fertilizer,True
+Class 6,Science,Term 3,English,>ரிம உரம்,Electromagnet,True
+Class 6,Science,Term 3,English,மின் >ோந்தம்,Ornamental Plant,True
+Class 6,Science,Term 3,English,தோெரங்>ள்,Estuary,True
+Class 6,Science,Term 3,English,மு>ததுெோரம்,Producers,True
+Class 6,Science,Term 3,English,தயோரிப்போளர்>ள்,Ecosystem,True
+Class 6,Science,Term 3,English,சூழ்நி்சM மண்்டMம்,Pollution,True
+Class 6,Science,Term 3,English,மோசுபோடு,Food Chain,True
+Class 6,Science,Term 3,English,உணவுச் சைங்கிலி,Pulses,True
+Class 6,Science,Term 3,English,பருப்பு ெ்ச>>ள்,Food web,True
+Class 6,Science,Term 3,English,உணவு ெ்சM,Pollinators,True
+Class 6,Science,Term 3,English,ம>ரந்தச்,Ground water,True
+Class 6,Science,Term 3,English,கோசைர்க்்ச>யோளர்>ள்,Herbivore,True
+Class 6,Science,Term 3,English,தோெர உண்ணி,Surface water,True
+Class 6,Science,Term 3,English,கோமற்பரப்பு நீர்,Hard wood,True
+Class 6,Science,Term 3,English,ென்>ட்்ச்ட,Synthetic,True
+Class 6,Science,Term 3,English,தொசையற்்ச>,Incinerate,True
+Class 6,Science,Term 3,English,எரிததுச்,Swamp,True
+Class 6,Science,Term 3,English,சைோம்பMோக்குதல்,Soft wood,True
+Class 6,Science,Term 3,English,தொமன்>ட்்ச்ட,Inorganic fertilizer,True
+Class 6,Science,Term 3,English,>னிம உரம்,Spices,True
+Class 6,Science,Term 3,English,மசைோMோப் தொபோருள்>ள்,Land Fill,True
+Class 6,Science,Term 3,English,நிMததில் நிரப்புதல்,Turmeric Powder,True
+Class 6,Science,Term 3,English,மஞ்சைள் தூள்,Like poles,True
+Class 6,Science,Term 3,English,ஒதத துருெங்>ள்,Timber,True
+Class 6,Science,Term 3,English,மரக்>ட்்ச்ட>ள்,Magnet,True
+Class 6,Science,Term 3,English,>ோந்தம்,Unlike poles,True
+Class 6,Science,Term 3,English,எதிதொரதிர் துருெங்>ள்,Magnetic Material,True
+Class 6,Science,Term 3,English,தொபோருள்,Vermi Compost,True
+Class 6,Science,Term 3,English,மண்புழுஉரம்,Magnetic Compass,True
+Class 6,Science,Term 3,English,>ோந்த ஊசிப்தொபட்டி,Water cycle,True
+Class 6,Science,Term 3,English,நீர் சுழற்சி,Magnetization,True
+Class 6,Science,Term 3,English,>ோந்தமோக்>ல்,Water treatment,True
+Class 6,Science,Term 3,English,நீர் சுததி>ரிப்பு,plant,True
+Class 6,Science,Term 3,English,நி்சMயம்,6th 6th Science_IIIrd Science_IIIrd Term Term English English Book_Unit_6.indd Book_Unit_6.indd 83 83,True
+Class 6,Science,Term 1,Tamil,வாய்வழி நீரேற்றக் கரைசசல்,(Oral Rehydration,False
+Class 6,Science,Term 1,Tamil,ORS) என்றார். ORS என்றால்,Solution,False
+Class 6,Science,Term 1,Tamil,தீவிர உடல் பிரச்சினைகளை,"(Dehydration),",False
+Class 6,Science,Term 1,Tamil,உருவாக்கும். கரைசலை,ORS,False
+Class 6,Science,Term 1,Tamil,நிறுவனத்தின்,(WHO),False
+Class 6,Science,Term 1,Tamil,அ) வைட்்டமின் ஆ) வைட்்டமின்,A B,False
+Class 6,Science,Term 1,Tamil,இ) வைட்்டமின் ஈ) வைட்்டமின்,C D,False
+Class 6,Science,Term 1,Tamil,பின்வரும் ஒப்புமைகளைப் பூர்த்தி செய்க.,IV.,False
+Class 6,Science,Term 1,Tamil,வைட்்டமின் ரிக்்ககெட்ஸ் வைட்்டமின்,D C,False
+Class 6,Science,Term 1,Tamil,பொ�ொருத்துக.,V.,False
+Class 6,Science,Term 1,Tamil,அ. ரிக்்ககெட்ஸ்,1 வைட்்டமின் A,False
+Class 6,Science,Term 1,Tamil,ஆ. மாலைக் கண் நோ�ோய்,2 வைட்்டமின் B,False
+Class 6,Science,Term 1,Tamil,இ. மலட்டுத்்தன்்மமை,3 வைட்்டமின் C,False
+Class 6,Science,Term 1,Tamil,ஈ. பெரி பெரி,4 வைட்்டமின் D,False
+Class 6,Science,Term 1,Tamil,உ. ஸ்கர்வி,5 வைட்்டமின் E,False
+Class 6,Science,Term 1,Tamil,கோ�ோடிட்்ட இடடத்்ததை நிரப்புக.,II.,False
+Class 6,Science,Term 1,Tamil,நிரப்புக.,VI.,False
+Class 6,Science,Term 1,Tamil,சுருக்கமாக விடையளி.,VII.,False
+Class 6,Science,Term 1,Tamil,சசரியா அல்லது ததவறா எனக் கூறுக. ததவறாக,III.,False
+Class 6,Science,Term 1,Tamil,விரிவாக விடையளி.,VIII.,False
+Class 6,Science,Term 1,Tamil,விளையாடி பார்்பப்்பபோமா...,Pyramid game,True
+Class 6,Science,Term 1,Tamil,தேடு பொ�ொறியில் என்று ததட்்டச்சு செய்யவும்,Google ninindia.org,False
+Class 6,Science,Term 1,Tamil,ஐ சொ�ொடுக்கவும்.,Pyramid game,False
+Class 6,Science,Term 1,Tamil,கொ�ொடுக்கப்்பட்்ட பபல்்வவேறு உணவுகளை ஒவ்வொன்றாக இழுத்து யில் விடவும்,pyramid,False
+Class 6,Science,Term 1,Tamil,உரலி:,http://ninindia.org/Amulya%20Nutrition%20Games/index.html,True
+Class 6,Science,Term 1,Tamil,பயன்படுத்தும் திறன்்பபேசியிலும்,(Smartphone),False
+Class 6,Science,Term 1,Tamil,பகுப்்பபாய்வுப் பொ�ொறியை,(Analogue Computer),False
+Class 6,Science,Term 1,Tamil,என அவர் போ�ோற்்றப்படுகிறார்.,(Programmer),False
+Class 6,Science,Term 1,Tamil,சிவா: அப்படியெனில் தகவல் என்்றறால் என்்ன,Intelligence,True
+Class 6,Science,Term 1,Tamil,சிவா: மென்பொருள் மற்றும்,(Software),False
+Class 6,Science,Term 1,Tamil,வன்பொருள் என்று சொ�ொல்கிறார்்களே!,(Hardware),False
+Class 6,Science,Term 1,Tamil,கட்்டளைகள் அல்லது நிரல்களின்,(command),False
+Class 6,Science,Term 1,Tamil,இருக்கக்கூடிய,(program),True
+Class 6,Science,Term 1,Tamil,கருவிகள்,(Indput,True
+Class 6,Science,Term 1,Tamil,ஆகும்.,device),True
+Class 6,Science,Term 1,Tamil,எடுத்துக்்ககாட்டு: விசைப்பலகை,"(Keyboard),",True
+Class 6,Science,Term 1,Tamil,உங்கள் அனைவருக்கும்,"“Windows”, “Linux”",False
+Class 6,Science,Term 1,Tamil,சுட்டி போ�ோன்்றவை நாம் உள்ளீடு,(Mouse),False
+Class 6,Science,Term 1,Tamil,எனப்படும். எடுத்துக்்ககாட்டு:,(Output device),False
+Class 6,Science,Term 1,Tamil,அச்சுப்பொறி கணினித் திரை,"(Printer), (monitor)",False
+Class 6,Science,Term 1,Tamil,நான்சி: என்்றறால் என்்ன அய்்யயா?,CPU,False
+Class 6,Science,Term 1,Tamil,ஆசிரியர்: இது மையச் செயலகம்,(Central,False
+Class 6,Science,Term 1,Tamil,எனப்படும். இது தொ�ொடர்்பபான,Processing Unit),False
+Class 6,Science,Term 1,Tamil,மேலும் பல்்வவேறு விவரங்்களை உங்கள்,Computer),True
+Class 6,Science,Term 1,Tamil,பின்வரும் வினாக்்களுக்கு விடையளி,IV.,False
+Class 6,Science,Term 1,Tamil,பின்வரும் வினாக்்களுக்கு விரிவான விடையளி,V.,False
+Class 6,Science,Term 1,Tamil,செய்முறைகக ள் மற்றும் செயல்பாடுககள்,VI.,False
+Class 6,Science,Term 1,Tamil,பொ�ொருத்துகக,II.,False
+Class 6,Science,Term 1,Tamil,உயர் சிந்்தனை வினா,VII.,False
+Class 6,Science,Term 1,Tamil,வாழ்வியல் திறறன்,VIII.,False
+Class 6,Science,Term 1,Tamil,இணை ய வளங்்கள்,http://www.ncsc.nic.in/,True
+Class 6,Science,Term 1,Tamil,கோ�ோடிட்ட இடங்்களை நிரப்புகக,III.,False
+Class 6,Science,Term 1,Tamil,________ என்்பது மற்றவர்்களைப் பற்றி,(The National Commission for Scheduled,True
+Class 6,Science,Term 1,Tamil,எதிர்்மறையாக அல்்லது தாழ்வான முறையில்,http://ncst.nic.in/,True
+Class 6,Science,Term 1,Tamil,கருதுவதாகும்.,(The National Commission for Scheduled Tribes),True
+Class 6,Science,Term 1,Tamil,________ ஆம் ஆண்டு ஏ.பி.ஜே. அப்துல்்கலாம்,http://www.ncw.nic.in/,True
+Class 6,Science,Term 1,Tamil,பிறந்தார்.,(The National Commission for Women),True
+Class 6,Science,Term 1,Tamil,முனைவர். மணிகுமார்,K.A,False
+Class 6,Science,Term 1,Tamil,முனைவர் சுந்தர்,G.,False
+Class 6,Science,Term 1,Tamil,சங்கரன்,K R,False
+Class 6,Science,Term 1,Tamil,"வரலாற்று உதவிப் பேராசிரியர், கல்லூரி (தன்னாட்சி)",A.V.C,False
+Class 6,Science,Term 1,Tamil,"நுங்கம்பாக்கம், சென்்னனை-6","TNTB ESC,",False
+Class 6,Science,Term 1,Tamil,"உதவிப் பேராசிரியர், கல்வியியல் கல்லூரி",NKT,False
+Class 6,Science,Term 1,Tamil,காந்திராஜன்,K T,False
+Class 6,Science,Term 1,Tamil,ஒருங்கிணைப்பாளர்,ICT,False
+Class 6,Science,Term 1,Tamil,இணையச் செயல்பாடு ஒருங்கிணைப்பாளர்,In-House - QC,True
+Class 6,Science,Term 1,Tamil,ரமேஷ் முனிசாமி,Image Courtesy,True
+Class 6,Science,Term 1,Tamil,இந்நூல் 80 ஜி.எஸ்.எம் எலிகண்ட் மேப்லித்தோ தாளில்,"Tamil Virtual Academy, Chennai.",True
+Class 6,Science,Term 2,Tamil,்ள்தால் ஆகும்.,6th Science_IInd Term Tamil_Book_Unit_6.indd 89,True
+Class 6,Science,Term 2,Tamil,படி கீழ்க்்காணும் உரலி வி்தரவுக் குறியீட்்தடப் பேன்படுத்தி,‘The human body systems’,False
+Class 6,Science,Term 2,Tamil,"படி என்னும் Fழுவலில் உள்ளே வட்டத்்த்த F்கர்த்தி, உடல் உறுப்பின் பல்்ளவறு",‘Layers’,False
+Class 6,Science,Term 2,Tamil,உரலி:,https://www.healthline.com/health/human-body-maps,True
+Class 6,Science,Term 2,Tamil,*படங்்கள் அ்தடோளேத்திற்்கா்க மட்டு்ளம.,6th Science_IInd Term Tamil_Book_Unit_6.indd 90,True
+Class 6,Science,Term 2,Tamil,சபாருத்தைாை விச்டசயத்,I.,False
+Class 6,Science,Term 2,Tamil,ைரியா (அ) தவைா எைக் கூறுக. தவைாக,III.,False
+Class 6,Science,Term 2,Tamil,சபாருத்துக,IV.,False
+Class 6,Science,Term 2,Tamil,தகாடிட்்ட இ்டத்சத நிரப்புக,II.,False
+Class 6,Science,Term 2,Tamil,கீழுள்ளவற்சை முசைபடுத்தி எழுதுக,V.,False
+Class 6,Science,Term 2,Tamil,சிறுநீர்ப்்தப  சிறு நீர்கம்.,6th Science_IInd Term Tamil_Book_Unit_6.indd 91,True
+Class 6,Science,Term 2,Tamil,ஒப்புசை தருக,VI.,False
+Class 6,Science,Term 2,Tamil,மிகக் குறுகிய விச்டயளி,VII.,False
+Class 6,Science,Term 2,Tamil,குறுகிய விச்டயளி,VIII.,False
+Class 6,Science,Term 2,Tamil,உயர் சி்நதசைத்திைன் விைாக்களுக்கு,X.,False
+Class 6,Science,Term 2,Tamil,விரிவாை விச்டயளி,IX.,False
+Class 6,Science,Term 2,Tamil,ஏற்படுவது ஏன்?,6th Science_IInd Term Tamil_Book_Unit_6.indd 92,True
+Class 6,Science,Term 2,Tamil,அறிந்து்்காள்ளு்தல்,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 93 93,True
+Class 6,Science,Term 2,Tamil,வி்தசப்பல்த்க சுட்டி,"(Keyboard), (Mouse),",False
+Class 6,Science,Term 2,Tamil,வருடி பட்்தடக் குறியீடு படிப்பான்,"(Scanner),",False
+Class 6,Science,Term 2,Tamil,ஒலிவாங்கி,"(Barcode reader), (Microphone",False
+Class 6,Science,Term 2,Tamil,இ்தணேப் படக்்கருவி,"Mic.), (Web Camera),",False
+Class 6,Science,Term 2,Tamil,ஒளி ்ளபனா ்ளபான்ற்தவ்தான்,(Light Pen),False
+Class 6,Science,Term 2,Tamil,உள்ளீட்ட்கம்,(Input Unit),False
+Class 6,Science,Term 2,Tamil,்தமேச்்சேல்கம்,(CPU),False
+Class 6,Science,Term 2,Tamil,்வளியீட்ட்கம்,(Output Unit),False
+Class 6,Science,Term 2,Tamil,உள்ளீட்்டகம்,(Input Unit),False
+Class 6,Science,Term 2,Tamil,உள்ளீட்ட்கம்,(input,True
+Class 6,Science,Term 2,Tamil,எண்்க்தளேக் ்்காண்ட வி்தச்க்தளே எண்வி்தச,Unit).,True
+Class 6,Science,Term 2,Tamil,"என்றும், எழுத்து்க்தளேக் ்்காண்ட",(Number Key),False
+Class 6,Science,Term 2,Tamil,வி்தச்க்தளே எழுத்து வி்தச,(alphabet key),False
+Class 6,Science,Term 2,Tamil,நி்தனவ்கம்,(Memory Unit),False
+Class 6,Science,Term 2,Tamil,்கணி்தத் ்தருக்்கச் ்சேல்கம்,(ALU-Arithmetic Logic Unit),True
+Class 6,Science,Term 2,Tamil,்கட்டுப்பாட்ட்கம்(,Control Unit),False
+Class 6,Science,Term 2,Tamil,கட்டுப்பாட்்டகம்,(Control Unit),False
+Class 6,Science,Term 2,Tamil,கணிதத் தருக்கச் சையலகம்,(ALU),False
+Class 6,Science,Term 2,Tamil,்பாத்்தா்தனயும் ்ள்காப்பு்க்தளேத்,"(right button),",False
+Class 6,Science,Term 2,Tamil,நிசைவகம்,(Memory Unit),False
+Class 6,Science,Term 2,Tamil,்பாத்்தா்தனயும் பேன்படுத்்த,(left button),False
+Class 6,Science,Term 2,Tamil,உரு்தளே்தேயும் பேன்படுத்்தலாம்.,(scroll ball),False
+Class 6,Science,Term 2,Tamil,சையச் சையலகம்,(CPU Central Processing,False
+Class 6,Science,Term 2,Tamil,மு்தன்்தம நி்தனவ்கம்,Unit),True
+Class 6,Science,Term 2,Tamil,இரண்டாம் நி்தனவ்கம்,"(Primary Memory),",False
+Class 6,Science,Term 2,Tamil,இேக்கும்,(Secondary Memory),True
+Class 6,Science,Term 2,Tamil,குறுவட்டு விரலி,"(compact disk), (pen drive)",False
+Class 6,Science,Term 2,Tamil,விரிவுபடுத்்தலாம்.,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 95 95,True
+Class 6,Science,Term 2,Tamil,சவளியீட்்டகம்,(Output Unit),False
+Class 6,Science,Term 2,Tamil,குறிப்பு்கள் ்பறப்படுகின்றன.,(Binary signals),False
+Class 6,Science,Term 2,Tamil,குறுவட்டில் ்ளசமிக்கும்,(CD),False
+Class 6,Science,Term 2,Tamil,தி்தர,CRT Cathode Ray Tube),False
+Class 6,Science,Term 2,Tamil,தி்தர,TFT Thin Film Transistor),False
+Class 6,Science,Term 2,Tamil,அதி்கமா்க ்தட்டில்,DVD,False
+Class 6,Science,Term 2,Tamil,தி்தர்க்தளேக் ்காட்டிலும்,CRT TFT,False
+Class 6,Science,Term 2,Tamil,்கணினித்தி்தர அச்சுப்்பாறி,"(Monitor),",False
+Class 6,Science,Term 2,Tamil,ஒலி்பருக்கி வ்தரவி(Plotter),"(Printer), (Speaker),",False
+Class 6,Science,Term 2,Tamil,ஆ்த்கோல் ்தற்்ளபாதுள்ளே ்கணினி்களில்,TFT,False
+Class 6,Science,Term 2,Tamil,்தரவு்கள் பிட் என்ற அல்கால்,(Bit),False
+Class 6,Science,Term 2,Tamil,தி்தர ்ளபான்்ளற இருக்கும். சுட்டி்தே,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 96 96,True
+Class 6,Science,Term 2,Tamil,நுண்்கணினி,(Micro,True
+Class 6,Science,Term 2,Tamil,என்ற்தழக்்கப்பட்ட ்கணினி்தே்ளே ்தற்்ளபாது,Computer),True
+Class 6,Science,Term 2,Tamil,"இருப்ப்தால், பேனாளேர்்கள்",(user friendly),False
+Class 6,Science,Term 2,Tamil,்ளம்தசக்்கணினி,(Desktop),False
+Class 6,Science,Term 2,Tamil,மடிக்்கணினி,(Laptop),False
+Class 6,Science,Term 2,Tamil, பல்த்கக் ்கணினி (வ்தரப்பட்டி்த்க),(Tablet),True
+Class 6,Science,Term 2,Tamil,மீக்்கணினி,(Super Computer),False
+Class 6,Science,Term 2,Tamil,்பருமு்கக்்கணினி,(Mainframe Computer),False
+Class 6,Science,Term 2,Tamil,இ்தணப்புவடம் மூலம்,(connecting cable),False
+Class 6,Science,Term 2,Tamil,"மின்சா்தன ்பாருள்்கள் ்ளபால் அன்றி,",(Micro or Personal Computer),True
+Class 6,Science,Term 2,Tamil,குறுமு்கக்்கணினி என்று,(Mini Computer),False
+Class 6,Science,Term 2,Tamil,தனியாள் கணினியின் வசககள்,(Personal,False
+Class 6,Science,Term 2,Tamil,வரப்படுகிறது. இவ்வாறு ஒருங்கி்தணந்து,computers - Types),True
+Class 6,Science,Term 2,Tamil,சிஸ்டம் என்று,(System),False
+Class 6,Science,Term 2,Tamil,பல்த்கக் ்கணினி,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 97 97,True
+Class 6,Science,Term 2,Tamil,்கா்ணாளிப் பட வரி்தச,VGA),False
+Class 6,Science,Term 2,Tamil,மிகுதிறன் பல்லூட்க இ்தடமு்கப்பு,(HDMI),False
+Class 6,Science,Term 2,Tamil,இ்தடமு்கப்பு,(HDMI),False
+Class 6,Science,Term 2,Tamil,்பாதுவரி்தச இ்தணப்பு,(USB),False
+Class 6,Science,Term 2,Tamil,்தரவுக்்கம்பி,(Data cable),False
+Class 6,Science,Term 2,Tamil,ஒலி வடம்,(Audio Cable),False
+Class 6,Science,Term 2,Tamil,மின் இ்தணப்புக் ்கம்பி,(Power cord),False
+Class 6,Science,Term 2,Tamil,ஒளிவீழ்த்தி,"(projector),",False
+Class 6,Science,Term 2,Tamil,ஒலி வாங்கி இ்தணப்புக்்கம்பி,(Mic cable),False
+Class 6,Science,Term 2,Tamil,ஈ்தர் வ்தல இ்தணப்புக்்கம்பி,(Ethernet,False
+Class 6,Science,Term 2,Tamil,்கணினியுடன்,cable),True
+Class 6,Science,Term 2,Tamil,இ்தணக்்க,HDMI,False
+Class 6,Science,Term 2,Tamil,பேன்படுகிறது.,( VGA),True
+Class 6,Science,Term 2,Tamil,்கணினியின் ்தமேச்,(Data cable),True
+Class 6,Science,Term 2,Tamil,்கணினி,(Tablet),False
+Class 6,Science,Term 2,Tamil,அச்சுப்்பாறி,"(printer),",False
+Class 6,Science,Term 2,Tamil,வருடி,"(scanner),",False
+Class 6,Science,Term 2,Tamil,ஒலி வடம் ்கணினி்தே,(Audio cable),False
+Class 6,Science,Term 2,Tamil,விரலி,"(pen drive),",False
+Class 6,Science,Term 2,Tamil,சுட்டி,"(mouse),",False
+Class 6,Science,Term 2,Tamil,பேன்படுகிறது.,(USB),True
+Class 6,Science,Term 2,Tamil,மின் இ்தணப்புவடம்,"(keyboard),",True
+Class 6,Science,Term 2,Tamil,"்தமேச்்சேல்கம்,",(Power Cord),True
+Class 6,Science,Term 2,Tamil,"்கணினித்தி்தர,","(web camera),",True
+Class 6,Science,Term 2,Tamil,ஆகிேவற்றிற்கு,"(smart phone),",True
+Class 6,Science,Term 2,Tamil,ஒலி வாங்கி,(Mic),False
+Class 6,Science,Term 2,Tamil,உ்தவுகிறது.,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 98 98,True
+Class 6,Science,Term 2,Tamil,ஈ்தர் வ்தல,(Ethernet),False
+Class 6,Science,Term 2,Tamil,ஈதர் வசல,(Ethernet),False
+Class 6,Science,Term 2,Tamil,ஊட்தல மற்றும் அரு்க்தல,(Blue tooth) (Wi,False
+Class 6,Science,Term 2,Tamil,"வாயிலா்க, இ்தணப்புவடம் ஏதுமின்றிக்",Fi),False
+Class 6,Science,Term 2,Tamil,ஊ்டசல,(Bluetooth),False
+Class 6,Science,Term 2,Tamil,அ. ஈ்தர்வ ்தல ஆ. வி.ஜி.ஏ.,(Ethernet) (VGA),False
+Class 6,Science,Term 2,Tamil,இ. எச்.டி.எம்.ஐ. ஈ. யு.எஸ்.பி.,(HDMI) (USB),False
+Class 6,Science,Term 2,Tamil,அருகசல (Wi,Fi),False
+Class 6,Science,Term 2,Tamil,இ. வி.ஜி.ஏ.,(VGA),False
+Class 6,Science,Term 2,Tamil,ஈ. யு.எஸ்.பி.,(USB),False
+Class 6,Science,Term 2,Tamil,ஈ. இ்தணப்புக்்கம்பி,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 99 99,True
+Class 6,Science,Term 2,Tamil,சபாருத்துக,II.,False
+Class 6,Science,Term 2,Tamil,்கா்ணாலிப் பட வரி்தச,(VGA),False
+Class 6,Science,Term 2,Tamil,எல்.இ.டி. ்்தா்தலக்்காட்சி,(LED),False
+Class 6,Science,Term 2,Tamil,குறுகிய விச்டயளி,III.,False
+Class 6,Science,Term 2,Tamil,வரி்தச ்பாதுவரி்தச இ்தணப்பு ்பாதுவரி்தச இ்தணப்பு,(VGA),False
+Class 6,Science,Term 2,Tamil,இ்தணப்புக்்கம்பி இ்தணப்புக்்கம்பி,(USB),False
+Class 6,Science,Term 2,Tamil,(்கணினித்தி்தர),(USB),True
+Class 6,Science,Term 2,Tamil,முழு்தமோன ்கணினி,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 100 100,True
+Class 6,Science,Term 2,Tamil,எளிதில் எரிேக்கூடிே,Inflammable,True
+Class 6,Science,Term 2,Tamil,ஒலிஇ்தணப்பான்,Audio jack,True
+Class 6,Science,Term 2,Tamil,ஒலிப்்பருக்கி,Speaker,True
+Class 6,Science,Term 2,Tamil,ஒலி வடம்,Audio Cable,True
+Class 6,Science,Term 2,Tamil,அடிப்ப்தட அலகு,Basic Unit,True
+Class 6,Science,Term 2,Tamil,ஒலிவாங்கி,Microphone,True
+Class 6,Science,Term 2,Tamil,ஒலிவாங்கி,Poor conductor,True
+Class 6,Science,Term 2,Tamil,இ்தணப்புக்்கம்பி,Mic cable,True
+Class 6,Science,Term 2,Tamil,அரு்க்தல,Wi-Fi,True
+Class 6,Science,Term 2,Tamil,ஒளிச்்ளசர்க்்த்க,Photosynthesis,True
+Class 6,Science,Term 2,Tamil,அழுத்்தப்பட்ட ்காற்று,Compressed air,True
+Class 6,Science,Term 2,Tamil,ஒளிப்்ளபனா,Light Pen,True
+Class 6,Science,Term 2,Tamil,ஆவிோ்தல்,Vapourization,True
+Class 6,Science,Term 2,Tamil,ஒளிவீழ்த்தி,Projector,True
+Class 6,Science,Term 2,Tamil,இ்தண மின் சுற்று,Parallel circuit,True
+Class 6,Science,Term 2,Tamil,்க்தசஇ்தழ,Flagella,True
+Class 6,Science,Term 2,Tamil,இேக்்க ஆற்றல்,Kinetic energy,True
+Class 6,Science,Term 2,Tamil,்கட்டுப்பாட்ட்கம்,Control Unit,True
+Class 6,Science,Term 2,Tamil,இ்தேபு,Composition,True
+Class 6,Science,Term 2,Tamil,்கணி்த,Arithmetic Logic,True
+Class 6,Science,Term 2,Tamil,்தருக்்கச்்சேல்கம்,Unit,True
+Class 6,Science,Term 2,Tamil,இரத்்த ஓட்ட மண்டலம்,Circulatory,True
+Class 6,Science,Term 2,Tamil,்கம்பி,system,True
+Class 6,Science,Term 2,Tamil,இரும்பு துருப்பிடித்்தல்,Cord/cable,True
+Class 6,Science,Term 2,Tamil,்க்தர்பாருள்,Rusting of iron,True
+Class 6,Science,Term 2,Tamil,ஈ்தர் வ்தல,Solute,True
+Class 6,Science,Term 2,Tamil,இ்தணப்புக்்கம்பி,Ethernet cable,True
+Class 6,Science,Term 2,Tamil,்க்தரப்பான்,Solvent,True
+Class 6,Science,Term 2,Tamil,உட்்கரு மு்தலில்,Excretory,True
+Class 6,Science,Term 2,Tamil,்கழிவு நீக்்க மண்டலம்,Prokaryotic cells,True
+Class 6,Science,Term 2,Tamil,்ள்தான்றிே ்சல்,system,True
+Class 6,Science,Term 2,Tamil,உட்்கரு,Nucleus,True
+Class 6,Science,Term 2,Tamil,்கா்ணாளிப் பட வரி்தச,VGA,True
+Class 6,Science,Term 2,Tamil,உணர்வு உறுப்பு்கள்,Sense organs,True
+Class 6,Science,Term 2,Tamil,்காற்றா்தல்கள்,Wind Mills,True
+Class 6,Science,Term 2,Tamil,உணவு உற்பத்தி,Food production,True
+Class 6,Science,Term 2,Tamil,குமிழ்்கள்,Vacuoles,True
+Class 6,Science,Term 2,Tamil,குறுமு்கக்்கணினி,Eukaryotic cell,True
+Class 6,Science,Term 2,Tamil,உ்தடே ்சல்,Mini Computer,True
+Class 6,Science,Term 2,Tamil,குறுவட்டு,Compact Disk,True
+Class 6,Science,Term 2,Tamil,உராய்வு,Friction,True
+Class 6,Science,Term 2,Tamil,உள்ளீட்ட்கம்,Compound,True
+Class 6,Science,Term 2,Tamil,கூட்டு நுண்்ளணாக்கி,Input unit,True
+Class 6,Science,Term 2,Tamil,உ்தற்தல்,microscope,True
+Class 6,Science,Term 2,Tamil,சுடர்,Freezing,True
+Class 6,Science,Term 2,Tamil,ஊட்தல,Flame,True
+Class 6,Science,Term 2,Tamil,சுருங்கு்தல்,Bluetooth,True
+Class 6,Science,Term 2,Tamil,எரி்தல்,Respiratory,True
+Class 6,Science,Term 2,Tamil,சுவாச மண்டலம்,Combustion,True
+Class 6,Science,Term 2,Tamil,எரி்பாருள்,system,True
+Class 6,Science,Term 2,Tamil,சுவாசம்,Fuel,True
+Class 6,Science,Term 2,Tamil,எலும்பு மண்டலம்,Digestive,True
+Class 6,Science,Term 2,Tamil,்சரிமான மண்டலம்,Skeletal system,True
+Class 6,Science,Term 2,Tamil,்சல் உறுப்பு்கள்,Cell organelles,True
+Class 6,Science,Term 2,Tamil,மின் ்கல அடுக்கு,Battery,True
+Class 6,Science,Term 2,Tamil,்த்தச மண்டலம்,Muscular system,True
+Class 6,Science,Term 2,Tamil,மின் சுற்று,Electrical circuit,True
+Class 6,Science,Term 2,Tamil,்தரவுக்்கம்பி,Data cable,True
+Class 6,Science,Term 2,Tamil,மின்்கடத்்தா ்பாருள்,Insulators,True
+Class 6,Science,Term 2,Tamil,தி்தரே்கம்,Monitor,True
+Class 6,Science,Term 2,Tamil,மின்்கலன்,Cell,True
+Class 6,Science,Term 2,Tamil,து்தண மின்்கலன்,Secondary cell,True
+Class 6,Science,Term 2,Tamil,மிகுதிறன் பல்லூட்க,HDMI,True
+Class 6,Science,Term 2,Tamil,்்தாடர் மின் சுற்று,Series circuit,True
+Class 6,Science,Term 2,Tamil,மீக்்கணினி,Super Computer,True
+Class 6,Science,Term 2,Tamil,Fரம்பு மண்டலம்,Nervous system,True
+Class 6,Science,Term 2,Tamil,மு்தன்்தம மின் ்கலன்,Primary cell,True
+Class 6,Science,Term 2,Tamil,Fரம்புச் ்சல்,Nerve cell,True
+Class 6,Science,Term 2,Tamil,மூலக்கூறு்கள்,Molecules,True
+Class 6,Science,Term 2,Tamil,Fாளேமில்லாசுரப்பி,Endocrine system,True
+Class 6,Science,Term 2,Tamil,மூழ்குபவர்,Diver,True
+Class 6,Science,Term 2,Tamil,நி்தனவ்கம்,Memory Unit,True
+Class 6,Science,Term 2,Tamil,்ளம்தசக்்கணினி,Desktop,True
+Class 6,Science,Term 2,Tamil,நீள் விரிவு,Linear Expansion,True
+Class 6,Science,Term 2,Tamil,வருடி,Scanner,True
+Class 6,Science,Term 2,Tamil,நுண்்கணினி,Micro computer,True
+Class 6,Science,Term 2,Tamil,வ்தரவி,Plotter,True
+Class 6,Science,Term 2,Tamil,பசுங்்கணி்கம்,Chloroplast,True
+Class 6,Science,Term 2,Tamil,வளிமண்டலம்,Atmosphere,True
+Class 6,Science,Term 2,Tamil,பச்்தசேம்,Chlorophyll,True
+Class 6,Science,Term 2,Tamil,விரலி,Pen drive,True
+Class 6,Science,Term 2,Tamil,பட்்தடக் குறியீடு,Barcode Reader,True
+Class 6,Science,Term 2,Tamil,படிப்பான்,Cracking,True
+Class 6,Science,Term 2,Tamil,ப்தங்்கமா்தல்,Sublimation,True
+Class 6,Science,Term 2,Tamil,்வண்்கணி்கம்,Leucoplast,True
+Class 6,Science,Term 2,Tamil,பரும விரிவு,Cortical Expansion,True
+Class 6,Science,Term 2,Tamil,்வப்ப விரிவு,Thermal Expansion,True
+Class 6,Science,Term 2,Tamil,பிளோஸ்மா சவ்வு,Plasma membrane,True
+Class 6,Science,Term 2,Tamil,்வப்பச் சமநி்தல,Thermal,True
+Class 6,Science,Term 2,Tamil,்பருமு்கக்்கணினி,Mainframe,True
+Class 6,Science,Term 2,Tamil,்வப்பநி்தல,Computer,True
+Class 6,Science,Term 2,Tamil,்தபரக்ஸ் ்கண்ணாடி,Temperature,True
+Class 6,Science,Term 2,Tamil,்வப்பநி்தலமானி,Pyrex glass,True
+Class 6,Science,Term 2,Tamil,்பாதுவரி்தச இ்தணப்பு,USB,False
+Class 6,Science,Term 2,Tamil,்வப்பம் ்கடத்்தல்,Heat transfer,True
+Class 6,Science,Term 2,Tamil,மடிக்்கணினி,Laptop,True
+Class 6,Science,Term 2,Tamil,்வப்பம்,Heat,True
+Class 6,Science,Term 2,Tamil,ம்தல்ளேறுபவர்,Mountaineer,True
+Class 6,Science,Term 2,Tamil,்வளியீட்ட்கம்,Output unit,True
+Class 6,Science,Term 2,Tamil,மின் ஆற்றல்,Electrical energy,True
+Class 6,Science,Term 2,Tamil,்ளவதி ஆற்றல்,Chemical energy,True
+Class 6,Science,Term 2,Tamil,மின் இ்தணப்புக் ்கம்பி,Power cord,False
+Class 6,Science,Term 2,Tamil,மின் ்கடத்தி்கள்,Conductors,True
+Class 6,Science,Term 2,Tamil,்சன்்தன.,"SCERT,",False
+Class 6,Science,Term 2,Tamil,"ஆடுது்தற, ்தஞ்சாவூர்.","DIET,",False
+Class 6,Science,Term 2,Tamil,"முதுநி்தல விரிவு்தரோளேர், திரூர்.","DIET,",False
+Class 6,Science,Term 2,Tamil,"சபா. சின்ைத்துசர,",QC,True
+Class 6,Science,Term 2,Tamil,"சானார்பா்தளேேம், திருப்பூர்.","ஊ.ஒ.்்தா.ப., T",False
+Class 6,Science,Term 2,Tamil,்்தாழில்நுட்பக் குழு,EMIS,False
+Class 6,Science,Term 2,Tamil,ஒருங்கி்தணந்்த பள்ளிக்்கல்வி இேக்்க்கம்.,6th 6th Science_IInd Science_IInd Term Term Tamil_Book_Unit_7.indd Tamil_Book_Unit_7.indd 103 103,True
+Class 6,Science,Term 3,Tamil,குணப்படுத்தை,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 78 78,True
+Class 6,Science,Term 3,Tamil,50 விழுக்காடு உற்பத்தி கொசய்கிைது.,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 79 79,True
+Class 6,Science,Term 3,Tamil,ஒட்டுப்பைலக ஆகும். இது,(Ply wood),False
+Class 6,Science,Term 3,Tamil,ஒருவலகக் கூட்டு மரப்,(composite wood),False
+Class 6,Science,Term 3,Tamil,மைர் வ்ளர்ப்பு,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 80 80,True
+Class 6,Science,Term 3,Tamil,ஓசனிச்சிட்டு,(Humming Bird),False
+Class 6,Science,Term 3,Tamil,மற்றும் பழங்கள் உருவாகின்ைன.,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 81 81,True
+Class 6,Science,Term 3,Tamil,நிறுவன (CDRI,Central Drug Research,False
+Class 6,Science,Term 3,Tamil,விஞ்ஞானிகள் நாபோனா,Institute Lucknow),False
+Class 6,Science,Term 3,Tamil,உருவாக்கத்தின் மூைம்,(nano formulation),False
+Class 6,Science,Term 3,Tamil,கொபருக்க யூரியாவிலன உரமாகப் பயன்படுத்தி,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 82 82,True
+Class 6,Science,Term 3,Tamil,ஏற்படுகின்ைன.,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 83 83,True
+Class 6,Science,Term 3,Tamil,படி கீழ்க்காணும் உரலி விலரவுக் குறியீட்லடப் பயன்படுத்தி கொசயல்பாட்டின்,‘Kill? or Cure?’,False
+Class 6,Science,Term 3,Tamil,படி இச்கொசயல்பாட்டிலனத் கொதைாடங்க என்னும் கொபாத்தைாலன கொசாடுக்கவும். பின்பு,‘PLAY’,False
+Class 6,Science,Term 3,Tamil,என்பலதை கொசாடுக்கவும்.,‘START’,False
+Class 6,Science,Term 3,Tamil,மருந்ொ? நஞ்சா? உரலி:,http://www.rigb.org/education/games/natural-world/kill-or-cure,True
+Class 6,Science,Term 3,Tamil,*படங்கள் அலடயா்ளத்திற்காக மட்டுபோம.,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 84 84,True
+Class 6,Science,Term 3,Tamil,"சரியா, ெவ்றா? ெவ்றாக இருந்ொல் சரியான",III.,False
+Class 6,Science,Term 3,Tamil,பின்வருவனவற்றுள் எது லவட்டமின்,‘C’,False
+Class 6,Science,Term 3,Tamil,பின்வருவனவற்ல்றப் தபாருத்துக.,IV.,False
+Class 6,Science,Term 3,Tamil,போகாடிட்்ட இ்டங்கல்ள நிரப்புக,II.,False
+Class 6,Science,Term 3,Tamil,ஒப்பிடுக,V.,False
+Class 6,Science,Term 3,Tamil,: : மண்புழு :,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 85 85,True
+Class 6,Science,Term 3,Tamil,மிகக் குறுகிய வில்ட ெருக,VI.,False
+Class 6,Science,Term 3,Tamil,குறுகிய வில்ட ெருக,VII.,False
+Class 6,Science,Term 3,Tamil,விரிவான வில்ட ெருக,VIII.,False
+Class 6,Science,Term 3,Tamil,உயர் சிந்ெலனத்தி்றன் வினாவிற்கு,IX.,False
+Class 6,Science,Term 3,Tamil,எதுவாயினும் ஏன் என்பலதை எழுதுக?,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_5.indd Book_Unit_5.indd 86 86,True
+Class 6,Science,Term 3,Tamil,மனிதை,(HARDWARE),True
+Class 6,Science,Term 3,Tamil,ஆகிய இரு கொபரும் பகுதிகல்ள,(SOFTWARE),False
+Class 6,Science,Term 3,Tamil,கொகாடுக்கும்,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_6.indd Book_Unit_6.indd 87 87,True
+Class 6,Science,Term 3,Tamil,வன்தபாருள்,(HARDWARE),False
+Class 6,Science,Term 3,Tamil,உள்ளீட்டு,"(INPUT),",True
+Class 6,Science,Term 3,Tamil,கொவளியீட்டு கருவிகள் மற்றும்,(OUTPUT),False
+Class 6,Science,Term 3,Tamil,அலமந்திருக்கும் நிலனவகம்,(CPU Cabinet),False
+Class 6,Science,Term 3,Tamil,கொமன்கொபாருள்,(SYSTEM,True
+Class 6,Science,Term 3,Tamil,தைாய்ப்பைலக,"(Hard Disk), (MOTHER BOARD),",False
+Class 6,Science,Term 3,Tamil,பயன்பாட்டு கொமன்கொபாருள்,(APPLICATION,False
+Class 6,Science,Term 3,Tamil,இதில் அடங்கும்.,CARD,False
+Class 6,Science,Term 3,Tamil,தமன்தபாருள்,(SOFTWARE),False
+Class 6,Science,Term 3,Tamil,3.1 இயக்க தமன்தபாருள்,(OPERATING SYSTEM-OS),True
+Class 6,Science,Term 3,Tamil,"தைரவுகல்ளக் கொகாண்ட கொமன்கொபாருல்ள,",(Data),False
+Class 6,Science,Term 3,Tamil,கொமன்கொபாருள் இன்றி கணினிலயப்,(OS),False
+Class 6,Science,Term 3,Tamil,பயன்படுத்தை இயைாது. (எ.கா.),"Linux, Windows,",False
+Class 6,Science,Term 3,Tamil,தமன்தபாருள்,"Mac, Android.",True
+Class 6,Science,Term 3,Tamil,3.2. பயன்பாட்டு தமன்தபாருள்,(APPLICATION SOFTWARE),True
+Class 6,Science,Term 3,Tamil,கொமன்கொபாருள்கபோ்ள,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_6.indd Book_Unit_6.indd 88 88,True
+Class 6,Science,Term 3,Tamil,எ.கா,"Video players, Audio players, Word processing softwares, Drawing tools, Editing software’s, etc.",False
+Class 6,Science,Term 3,Tamil,பய பா ெம ெபா,(System Software),True
+Class 6,Science,Term 3,Tamil,ேதைவயான,(Application Software),True
+Class 6,Science,Term 3,Tamil,றிபி ட,(System Management Program),True
+Class 6,Science,Term 3,Tamil,கணினி,(Linker),True
+Class 6,Science,Term 3,Tamil,வைரப,(Loader)…,True
+Class 6,Science,Term 3,Tamil,கட்டற்ை மற்றும் திைந்தை மூை கொமன்கொபாருள்,(FREE AND OPEN SOURCE),False
+Class 6,Science,Term 3,Tamil,கட்டண மற்றும் தைனியுரிலம கொமன்கொபாருள்,(PAID AND PROPRIETARY SOFTWARE),False
+Class 6,Science,Term 3,Tamil,தமன்தபாருள்,(FREE AND OPEN,False
+Class 6,Science,Term 3,Tamil,மதிப்பீடு,SOURCE SOFTWARE),True
+Class 6,Science,Term 3,Tamil,சரியான வில்டலயத்,I.,False
+Class 6,Science,Term 3,Tamil,நிரல்கல்ளத்,(Coding’s),True
+Class 6,Science,Term 3,Tamil,அ. தைாய்ப்பைலக ஆ.,SMPS,False
+Class 6,Science,Term 3,Tamil,இ.,RAM,False
+Class 6,Science,Term 3,Tamil,ஈ.,MOUSE,False
+Class 6,Science,Term 3,Tamil,இ. இயக்கமில்ைா கொமன்கொபாருள் மற்றும்,Open Source Initiative.,True
+Class 6,Science,Term 3,Tamil,லினக்ஸ்,(LINUX),False
+Class 6,Science,Term 3,Tamil,என்பது,LINUX,False
+Class 6,Science,Term 3,Tamil,ஓபன் ஆபீஸ்,(Open Office),False
+Class 6,Science,Term 3,Tamil,இயக்க கொமன்கொபாருள்,(Operating System),False
+Class 6,Science,Term 3,Tamil,ஜிபோயாஜீப்ரா,"(Geogebra), etc",False
+Class 6,Science,Term 3,Tamil,தமன்தபாருள்,(PAID AND,False
+Class 6,Science,Term 3,Tamil,கொமன்கொபாருள்,PROPRIETARY SOFTWARE),True
+Class 6,Science,Term 3,Tamil,அ.,WINDOWS,False
+Class 6,Science,Term 3,Tamil,ஆ.,MAC OS,False
+Class 6,Science,Term 3,Tamil,இ.,Adobe Photoshop,False
+Class 6,Science,Term 3,Tamil,விண்போடாஸ்,(Windows),False
+Class 6,Science,Term 3,Tamil,லமக்போராசாப்ட் ஆபீஸ்,(Microsoft office),False
+Class 6,Science,Term 3,Tamil,அ.,ANDROID,False
+Class 6,Science,Term 3,Tamil,ஆ.,Chrome,False
+Class 6,Science,Term 3,Tamil,ஃபோபாட்போடாஷாப்,(Adobe,True
+Class 6,Science,Term 3,Tamil,இ.,Internet,False
+Class 6,Science,Term 3,Tamil,ஈ.,Pendrive,False
+Class 6,Science,Term 3,Tamil,தபாருத்துக,II.,False
+Class 6,Science,Term 3,Tamil,சிறுவினா,III.,False
+Class 6,Science,Term 3,Tamil,இைவச மற்றும் கட்டற்ை,MAC OS,False
+Class 6,Science,Term 3,Tamil,கட்டண மற்றும் தைனி,Software,False
+Class 6,Science,Term 3,Tamil,உள்ளீட்டு கருவி,Hardware,False
+Class 6,Science,Term 3,Tamil,கொமன்கொபாருள்கள் என்ைால் என்ன?,Keyboard - RAM,True
+Class 6,Science,Term 3,Tamil,இரண்டு உதைாரணங்கள் தைருக?,LINUX,True
+Class 6,Science,Term 3,Tamil,அைங்காரத் தைாவரங்கள்,Geogebra,True
+Class 6,Science,Term 3,Tamil,போசாற்றுக் கற்ைாலழ,Aloe,True
+Class 6,Science,Term 3,Tamil,சூழ்நிலை மண்டைம்,Ornamental Plants,True
+Class 6,Science,Term 3,Tamil,இயற்லக கல்ளக்கொகால்லி,Ecosystem,True
+Class 6,Science,Term 3,Tamil,தையாரிப்பா்ளர்கள்,Natural pesticides,True
+Class 6,Science,Term 3,Tamil,இயற்லக நிைங்காட்டி,Producers,True
+Class 6,Science,Term 3,Tamil,தைானியம்,Cereal,True
+Class 6,Science,Term 3,Tamil,தைாவர உண்ணி,Natural Indicator,True
+Class 6,Science,Term 3,Tamil,உணவுச் சங்கிலி,Food Chain,True
+Class 6,Science,Term 3,Tamil,உணவு வலை,Herbivore,True
+Class 6,Science,Term 3,Tamil,கொதைன் துருவம்,Food web,True
+Class 6,Science,Term 3,Tamil,உயிரினச் சிலதைவிற்கு,South pole,True
+Class 6,Science,Term 3,Tamil,நிைத்தைடி நீர்,Bio degradable waste,True
+Class 6,Science,Term 3,Tamil,உள்்ளாகும் கழிவுகள்,Ground water,True
+Class 6,Science,Term 3,Tamil,நிைத்தில் நிரப்புதைல்,Non Bio degradable waste,True
+Class 6,Science,Term 3,Tamil,உள்்ளாகாதை கழிவுகள்,Land Fill,True
+Class 6,Science,Term 3,Tamil,உயிரி எரிகொபாருள்,Bio - fuel,True
+Class 6,Science,Term 3,Tamil,நீர் சுழற்சி,Water cycle,True
+Class 6,Science,Term 3,Tamil,எரித்துச் சாம்பைாக்குதைல்,Incinerate,True
+Class 6,Science,Term 3,Tamil,நீர் சுத்திகரிப்பு நிலையம்,Water treatment plant,True
+Class 6,Science,Term 3,Tamil,ஒத்தை துருவங்கள்,Like poles,True
+Class 6,Science,Term 3,Tamil,நுகர்போவார்கள்,Consumers,True
+Class 6,Science,Term 3,Tamil,கனிம உரம்,Inorganic Fertilizer,True
+Class 6,Science,Term 3,Tamil,ஒட்டும் கொபாருள்கள்,Adhesives,True
+Class 6,Science,Term 3,Tamil,கரிம உரம்,Organic Fertilizer,True
+Class 6,Science,Term 3,Tamil,பருப்பு வலககள்,Pulses,True
+Class 6,Science,Term 3,Tamil,காந்தைம்,Magnet,True
+Class 6,Science,Term 3,Tamil,மரக்கட்லடகள்,Timber,True
+Class 6,Science,Term 3,Tamil,மஞ்சள் தூள்,Magnetic Material,True
+Class 6,Science,Term 3,Tamil,காந்தை தைன்லமயற்ை கொபாருள்கள்,Non – Magnetic substances,False
+Class 6,Science,Term 3,Tamil,மண்புழுஉரம்,Vermi compost,True
+Class 6,Science,Term 3,Tamil,மட்கிய உரம்,Magnetization,True
+Class 6,Science,Term 3,Tamil,காந்தை ஊசிப்கொபட்டி,Compost,True
+Class 6,Science,Term 3,Tamil,மசாைாப் கொபாருள்கள்,Magnetic compass,True
+Class 6,Science,Term 3,Tamil,காந்தை ஈர்ப்பு,Spices,True
+Class 6,Science,Term 3,Tamil,மகரந்தைச் போசர்க்லகயா்ளர்கள்,Magnetic attraction,True
+Class 6,Science,Term 3,Tamil,காந்தை விைகல்,Pollinators,True
+Class 6,Science,Term 3,Tamil,மாசுபாடு,Magnetic repulsion,True
+Class 6,Science,Term 3,Tamil,காந்தைம்,Pollution,True
+Class 6,Science,Term 3,Tamil,மின் காந்தைம்,Electromagnet,True
+Class 6,Science,Term 3,Tamil,கொமன்கட்லட,Magnet,True
+Class 6,Science,Term 3,Tamil,கிருமி நாசினி,Soft wood,True
+Class 6,Science,Term 3,Tamil,முகத்துவாரம்,Disinfectant,True
+Class 6,Science,Term 3,Tamil,சதுப்பு,Estuary,True
+Class 6,Science,Term 3,Tamil,போமற்பரப்பு நீர்,Swamp,True
+Class 6,Science,Term 3,Tamil,சிலதைப்பான்கள்,Surface water,True
+Class 6,Science,Term 3,Tamil,வன்கட்லட,Hard wood,True
+Class 6,Science,Term 3,Tamil,வட துருவம்,Decomposers,True
+Class 6,Science,Term 3,Tamil,கொசயற்லக காந்தைம்,North pole,True
+Class 6,Science,Term 3,Tamil,எதிகொரதிர் துருவங்கள்,Artificial magnet,True
+Class 6,Science,Term 3,Tamil,கொசயற்லக,Unlike poles,True
+Class 6,Science,Term 3,Tamil,கொசன்லன.,"SCERT,",False
+Class 6,Science,Term 3,Tamil,"விரிவுலரயா்ளர் ஆடுதுலை, தைஞ்சாவூர்.","DIET,",False
+Class 6,Science,Term 3,Tamil,"முதுநிலை விரிவுலரயா்ளர், திரூர்.","DIET,",False
+Class 6,Science,Term 3,Tamil,கொதைாழில்நுட்பக் குழு,EMIS,False
+Class 6,Science,Term 3,Tamil,"கல்வி போமைாண்லம தைகவல் முலைலம,",QC,True
+Class 6,Science,Term 3,Tamil,ஒருங்கிலணந்தை பள்ளிக்கல்வி இயக்ககம்.,6th 6th Science_IIIrd Science_IIIrd Term Term Tamil Tamil Book_Unit_6.indd Book_Unit_6.indd 92 92,True
