@@ -1,0 +1,24 @@
+# Changelog: graphify-out/cache/ast/v0.9.5/948ad90aa138d6a37d090c05caa482f0b32d3d222390683f3c8e1a14744d9488.json
+**Date:** 2026-07-03_10-29-56
+**Type:** Added
+
+## Summary of Changes
+### Structural Changes Detected (Best-Effort)
+- None detected
+
+## Diff
+```diff
+diff --git a/graphify-out/cache/ast/v0.9.5/948ad90aa138d6a37d090c05caa482f0b32d3d222390683f3c8e1a14744d9488.json b/graphify-out/cache/ast/v0.9.5/948ad90aa138d6a37d090c05caa482f0b32d3d222390683f3c8e1a14744d9488.json
+new file mode 100644
+index 0000000..90024bb
+--- /dev/null
++++ b/graphify-out/cache/ast/v0.9.5/948ad90aa138d6a37d090c05caa482f0b32d3d222390683f3c8e1a14744d9488.json
+@@ -0,0 +1 @@
++{"nodes": [{"id": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_xaml", "label": "ExplicitMainWindow.xaml", "file_type": "code", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L1"}, {"id": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_window", "label": "Window", "file_type": "code", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L1"}, {"id": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_mainwindow", "label": "MainWindow", "file_type": "code", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L1"}, {"id": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_viewmodels_mainviewmodel_demo_viewmodels_mainviewmodel", "label": "MainViewModel", "file_type": "code", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/ViewModels/MainViewModel.cs", "source_location": "L3", "metadata": {"namespace": "Demo.ViewModels", "scope_chain": ["s0"]}, "_callable": true}], "edges": [{"source": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_xaml", "target": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_window", "relation": "contains", "confidence": "EXTRACTED", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L1", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_window", "target": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_mainwindow", "relation": "references", "confidence": "EXTRACTED", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L1", "weight": 1.0, "context": "x_class"}, {"source": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_views_explicitmainwindow_window", "target": "d_project_assistan_graphify_repo_tests_fixtures_xaml_viewmodel_viewmodels_mainviewmodel_demo_viewmodels_mainviewmodel", "relation": "references", "confidence": "EXTRACTED", "source_file": "graphify-repo/tests/fixtures/xaml_viewmodel/Views/ExplicitMainWindow.xaml", "source_location": "L6", "weight": 1.0, "context": "view_model"}]}
+\ No newline at end of file  # Truncated to 5000 chars for readability if huge
+```
+
+## Related Links
+- [[Graphify-out]]
+- [[Home]]
+- [[Changelog Index]]

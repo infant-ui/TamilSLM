@@ -1,0 +1,57 @@
+{
+  "admin_review_app.py": {
+    "mtime": 1782971004.1445985,
+    "ast_hash": "c78dc7f6c31b05d5367743eaa3712e69",
+    "semantic_hash": "c78dc7f6c31b05d5367743eaa3712e69"
+  },
+  "package.json": {
+    "mtime": 1782977272.0053105,
+    "ast_hash": "5151d859516c91d2137b721f4df844c8",
+    "semantic_hash": "5151d859516c91d2137b721f4df844c8"
+  },
+  "public/manifest.json": {
+    "mtime": 1782745693.0610902,
+    "ast_hash": "89be60895176466398d53bd4a693d9f6",
+    "semantic_hash": "89be60895176466398d53bd4a693d9f6"
+  },
+  "src/App.js": {
+    "mtime": 1782978031.675515,
+    "ast_hash": "6fc0664bed45eb477389eae5c20dbebc",
+    "semantic_hash": "6fc0664bed45eb477389eae5c20dbebc"
+  },
+  "src/App.test.js": {
+    "mtime": 1782745693.0644722,
+    "ast_hash": "83ca979af0e840672a4aa673b0c7be01",
+    "semantic_hash": "83ca979af0e840672a4aa673b0c7be01"
+  },
+  "src/components/MindmapGraph.js": {
+    "mtime": 1782977284.890471,
+    "ast_hash": "70c66f3add7ab025303536207780b424",
+    "semantic_hash": "70c66f3add7ab025303536207780b424"
+  },
+  "src/features/image-generation/api/imageApi.js": {
+    "mtime": 1782971490.918265,
+    "ast_hash": "96adb5f34ca4cc5861de2bba4c4a420b",
+    "semantic_hash": "96adb5f34ca4cc5861de2bba4c4a420b"
+  },
+  "src/features/image-generation/utils/promptUtils.js": {
+    "mtime": 1782971499.6344306,
+    "ast_hash": "faabc1c6d7367a38d292658430275867",
+    "semantic_hash": "faabc1c6d7367a38d292658430275867"
+  },
+  "src/index.js": {
+    "mtime": 1782745693.0654812,
+    "ast_hash": "7c496931b019d86df72fe7ef6f4db4d1",
+    "semantic_hash": "7c496931b019d86df72fe7ef6f4db4d1"
+  },
+  "src/reportWebVitals.js": {
+    "mtime": 1782745693.0664804,
+    "ast_hash": "b528fd380de9b503eb5c84973639cca4",
+    "semantic_hash": "b528fd380de9b503eb5c84973639cca4"
+  },
+  "src/setupTests.js": {
+    "mtime": 1782745693.0674798,
+    "ast_hash": "72158175c4ba432ede32a7c2ca4143e0",
+    "semantic_hash": "72158175c4ba432ede32a7c2ca4143e0"
+  }
+}

@@ -1,8 +1,21 @@
 @echo off
-echo Generating Antigravity Documentation...
-python generate_obsidian_kb.py
+echo Starting full documentation regeneration...
 
-echo Generating Graphify documentation...
+echo.
+echo ============================================
+echo Generating Obsidian Knowledge Base...
+echo ============================================
+python generate_obsidian_kb.py
+if %ERRORLEVEL% neq 0 (
+    echo [ERROR] generate_obsidian_kb.py failed.
+    pause
+    exit /b %ERRORLEVEL%
+)
+
+echo.
+echo ============================================
+echo Running Graphify graph generation...
+echo ============================================
 call .venv\Scripts\activate.bat
 
 echo Running graphify for the entire repository (AST only)...
@@ -28,4 +41,21 @@ if exist "frontend" (
 copy graphify-out\GRAPH_REPORT.md docs\graphify\reports\ 2>nul
 copy graphify-out\graph.json docs\graphify\graphs\ 2>nul
 
-echo Documentation generated in docs\graphify\
+echo.
+echo ============================================
+echo Generating Changelog Knowledge Base...
+echo ============================================
+python generate_changelog_kb.py
+if %ERRORLEVEL% neq 0 (
+    echo [ERROR] generate_changelog_kb.py failed with exit code %ERRORLEVEL%
+    echo Check the output above for the traceback.
+    pause
+    exit /b %ERRORLEVEL%
+)
+echo Changelog generation complete.
+
+echo.
+echo ============================================
+echo All documentation regenerated successfully!
+echo ============================================
+pause

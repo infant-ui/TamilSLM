@@ -12,3 +12,26 @@ Documentation for the `frontend` module.
 graph TD
     frontend --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

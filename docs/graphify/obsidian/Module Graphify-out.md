@@ -12,3 +12,26 @@ Documentation for the `graphify-out` module.
 graph TD
     graphify-out --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

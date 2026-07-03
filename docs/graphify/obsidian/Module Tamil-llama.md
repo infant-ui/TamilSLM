@@ -12,3 +12,26 @@ Documentation for the `tamil-llama` module.
 graph TD
     tamil-llama --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

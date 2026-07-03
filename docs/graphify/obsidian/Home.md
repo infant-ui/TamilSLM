@@ -35,6 +35,24 @@ graph TD
 ## Important Notes
 - Auto-generated via Graphify Documentation Pipeline.
 
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+
 ## Related Documentation
 - [[Home]]
 - [[Project Overview]]

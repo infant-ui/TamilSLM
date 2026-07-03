@@ -35,6 +35,28 @@ graph TD
 ## Important Notes
 - Auto-generated via Graphify Documentation Pipeline.
 
+## Manual Notes
+<!-- MANUAL:START -->
+- [ ] Add authentication to `generation-service/app.py` endpoints: `/generate/stream`, `/summarize-session`, `/router/intent`.
+- [ ] Monitor the O(N) linear scan performance inside `/corrections/lookup`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+
 ## Related Documentation
 - [[Home]]
 - [[Project Overview]]

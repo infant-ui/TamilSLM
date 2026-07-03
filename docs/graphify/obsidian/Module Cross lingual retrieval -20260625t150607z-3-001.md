@@ -12,3 +12,26 @@ Documentation for the `Cross Lingual Retrieval -20260625T150607Z-3-001` module.
 graph TD
     Cross Lingual Retrieval -20260625T150607Z-3-001 --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

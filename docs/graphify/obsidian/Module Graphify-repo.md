@@ -12,3 +12,26 @@ Documentation for the `graphify-repo` module.
 graph TD
     graphify-repo --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

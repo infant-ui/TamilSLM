@@ -1,0 +1,24 @@
+# Changelog: graphify-out/cache/ast/v0.9.5/7039a9b652c55b91f4af25f91f1acf4c278a7b1355288c3cb645ad7e28aa99df.json
+**Date:** 2026-07-03_10-58-05
+**Type:** Added
+
+## Summary of Changes
+### Structural Changes Detected (Best-Effort)
+- None detected
+
+## Diff
+```diff
+diff --git a/graphify-out/cache/ast/v0.9.5/7039a9b652c55b91f4af25f91f1acf4c278a7b1355288c3cb645ad7e28aa99df.json b/graphify-out/cache/ast/v0.9.5/7039a9b652c55b91f4af25f91f1acf4c278a7b1355288c3cb645ad7e28aa99df.json
+new file mode 100644
+index 0000000..1ea05b2
+--- /dev/null
++++ b/graphify-out/cache/ast/v0.9.5/7039a9b652c55b91f4af25f91f1acf4c278a7b1355288c3cb645ad7e28aa99df.json
+@@ -0,0 +1 @@
++{"nodes": [{"id": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "label": "__init__.py", "file_type": "code", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L1"}, {"id": "d_project_assistan_graphify_repo_graphify_extractors_init_rationale_1", "label": "Per-language extractors, incrementally migrated out of graphify/extract.py.  D", "file_type": "rationale", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L1"}], "edges": [{"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "pathlib", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L10", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "typing", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L11", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "graphify_extractors_blade", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L13", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "graphify_extractors_elixir", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L14", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "graphify_extractors_razor", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L15", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "target": "graphify_extractors_zig", "relation": "imports_from", "context": "import", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L16", "weight": 1.0}, {"source": "d_project_assistan_graphify_repo_graphify_extractors_init_rationale_1", "target": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "relation": "rationale_for", "confidence": "EXTRACTED", "source_file": "graphify-repo/graphify/extractors/__init__.py", "source_location": "L1", "weight": 1.0}], "raw_calls": [{"caller_nid": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "callee": "Path", "is_member_call": false, "indirect": true, "context": "collection", "source_file": "D:\\Project Assistan\\graphify-repo\\graphify\\extractors\\__init__.py", "source_location": "L18"}, {"caller_nid": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "callee": "extract_blade", "is_member_call": false, "indirect": true, "context": "collection", "source_file": "D:\\Project Assistan\\graphify-repo\\graphify\\extractors\\__init__.py", "source_location": "L19"}, {"caller_nid": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "callee": "extract_elixir", "is_member_call": false, "indirect": true, "context": "collection", "source_file": "D:\\Project Assistan\\graphify-repo\\graphify\\extractors\\__init__.py", "source_location": "L20"}, {"caller_nid": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "callee": "extract_razor", "is_member_call": false, "indirect": true, "context": "collection", "source_file": "D:\\Project Assistan\\graphify-repo\\graphify\\extractors\\__init__.py", "source_location": "L21"}, {"caller_nid": "d_project_assistan_graphify_repo_graphify_extractors_init_py", "callee": "extract_zig", "is_member_call": false, "indirect": true, "context": "collection", "source_file": "D:\\Project Assistan\\graphify-repo\\graphify\\extractors\\__init__.py", "source_location": "L22"}]}
+\ No newline at end of file  # Truncated to 5000 chars for readability if huge
+```
+
+## Related Links
+- [[Graphify-out]]
+- [[Home]]
+- [[Changelog Index]]

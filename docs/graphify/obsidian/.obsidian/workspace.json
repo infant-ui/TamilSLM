@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "965d7d73551a65d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ebde3276338deea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33d44acf1c6be58c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6c6df0b4616c0dbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad0e44608a20866e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "380a83b8c7227a8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8bb50a5dbebe6c44",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d0bb82e0cc8dd2bd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "643b0032e9980328",
+    "type": "split",
+    "children": [
+      {
+        "id": "85827e64f723a435",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5259ccc8e4f20724",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "d6849c84c29f3c06",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a1f61954e2c78c69",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c1734616bafe1829",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5e93163116beb461",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "33d44acf1c6be58c",
+  "lastOpenFiles": [
+    "changelog/Changelog - docs_graphify_obsidian_Video Processing.md - 2026-07-03_10-57-03.md",
+    "changelog/Changelog - docs_graphify_obsidian_Training Pipeline.md - 2026-07-03_10-29-56.md",
+    "changelog/Changelog - docs_graphify_obsidian_TODO.md - 2026-07-03_11-07-55.md",
+    "changelog/Changelog - backend_retrieval-service_app_evaluation_evaluator.py - 2026-07-03_11-12-07.md",
+    "changelog/Changelog - backend_generation-service_requirements.txt - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - backend_generation-service_requirements.txt - 2026-07-03_11-12-07.md",
+    "changelog/Changelog - backend_generation-service_requirements.txt - 2026-07-03_11-07-55.md",
+    "changelog/Changelog - .graphifyignore - 2026-07-03_10-57-03.md",
+    "changelog/Changelog - .graphifyignore - 2026-07-03_10-41-42.md",
+    "changelog/Changelog - .graphifyignore - 2026-07-03_10-29-56.md",
+    "changelog/Changelog - graphify-out_cache_ast_v0.9.5_c7a5d49f0d2a32fe9ca96265d4fcb40f1467e5571403becd144f53f2ac433506.json - 2026-07-03_10-29-56.md",
+    "changelog/Changelog - graphify-out_manifest.json - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - graphify-out_graph.json - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - graphify-out_cache_stat-index.json - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - graphify-out_GRAPH_REPORT.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - graphify-out_.graphify_labels.json.sig - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - graphify-out_.graphify_labels.json - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - generate_obsidian_kb.py - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - generate_docs.bat - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_reports_statistics.json - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_reports_GRAPH_REPORT.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_obsidian_Vision & Goals.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_obsidian_Video Processing.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_obsidian_Validation Report.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_obsidian_Utilities.md - 2026-07-03_11-13-10.md",
+    "changelog/Changelog - docs_graphify_obsidian_Training Pipeline.md - 2026-07-03_11-13-10.md"
+  ]
+}

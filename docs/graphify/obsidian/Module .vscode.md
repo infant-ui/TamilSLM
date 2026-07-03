@@ -12,3 +12,26 @@ Documentation for the `.vscode` module.
 graph TD
     .vscode --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

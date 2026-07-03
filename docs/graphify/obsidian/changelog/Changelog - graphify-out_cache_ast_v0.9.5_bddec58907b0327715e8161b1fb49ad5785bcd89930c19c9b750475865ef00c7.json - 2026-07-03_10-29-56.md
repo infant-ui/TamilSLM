@@ -1,0 +1,24 @@
+# Changelog: graphify-out/cache/ast/v0.9.5/bddec58907b0327715e8161b1fb49ad5785bcd89930c19c9b750475865ef00c7.json
+**Date:** 2026-07-03_10-29-56
+**Type:** Added
+
+## Summary of Changes
+### Structural Changes Detected (Best-Effort)
+- None detected
+
+## Diff
+```diff
+diff --git a/graphify-out/cache/ast/v0.9.5/bddec58907b0327715e8161b1fb49ad5785bcd89930c19c9b750475865ef00c7.json b/graphify-out/cache/ast/v0.9.5/bddec58907b0327715e8161b1fb49ad5785bcd89930c19c9b750475865ef00c7.json
+new file mode 100644
+index 0000000..9635c36
+--- /dev/null
++++ b/graphify-out/cache/ast/v0.9.5/bddec58907b0327715e8161b1fb49ad5785bcd89930c19c9b750475865ef00c7.json
+@@ -0,0 +1 @@
++{"nodes": [], "edges": [], "skipped": "data json (non-object root)"}
+\ No newline at end of file  # Truncated to 5000 chars for readability if huge
+```
+
+## Related Links
+- [[Graphify-out]]
+- [[Home]]
+- [[Changelog Index]]

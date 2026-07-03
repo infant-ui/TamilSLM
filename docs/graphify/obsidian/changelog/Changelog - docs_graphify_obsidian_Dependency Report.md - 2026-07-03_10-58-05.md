@@ -1,0 +1,197 @@
+# Changelog: docs/graphify/obsidian/Dependency Report.md
+**Date:** 2026-07-03_10-58-05
+**Type:** Added
+
+## Summary of Changes
+### Structural Changes Detected (Best-Effort)
+- None detected
+
+## Diff
+```diff
+diff --git a/docs/graphify/obsidian/Dependency Report.md b/docs/graphify/obsidian/Dependency Report.md
+new file mode 100644
+index 0000000..d58a8d8
+--- /dev/null
++++ b/docs/graphify/obsidian/Dependency Report.md	
+@@ -0,0 +1,248 @@
++# Dependency Report
++
++## Libraries
++- debugpy=1.6.7=py310h6a678d5_0
++- lazy-loader=0.3=pypi_0
++- ld_impl_linux-64=2.38=h1181459_1
++- threadpoolctl=3.2.0=pypi_0
++- fastapi=0.104.0=pypi_0
++- orjson=3.9.9=pypi_0
++- psutil=5.9.6=pypi_0
++- mpmath=1.3.0=pypi_0
++- libsodium=1.0.18=h36c2ea0_1
++- flash-attn=2.3.3=pypi_0
++- tensorboard=2.15.0=pypi_0
++- tokenizers=0.13.3=pypi_0
++- py-cpuinfo=9.0.0=pypi_0
++- kiwisolver=1.4.5=pypi_0
++- mdurl=0.1.2=pypi_0
++- aiohttp=3.8.6=pypi_0
++- libuuid=1.41.5=h5eee18b_0
++- nest-asyncio=1.5.8=pyhd8ed1ab_0
++- stack_data=0.6.2=pyhd8ed1ab_0
++- typing_extensions=4.8.0=pyha770c72_0
++- sympy=1.12=pypi_0
++- tqdm
++- tornado=6.1=py310h5764c6d_3
++- colorlog=6.7.0=pypi_0
++- bzip2=1.0.8=h7b6447c_0
++- nvidia-cufft-cu12=11.0.2.54=pypi_0
++- urllib3=2.0.7=pypi_0
++- requests
++- requests-oauthlib=1.3.1=pypi_0
++- ffmpy=0.3.1=pypi_0
++- requests>=2.31.0
++- grpcio=1.59.0=pypi_0
++- codecarbon=2.2.3=pypi_0
++- sentence-transformers
++- gradio
++- pygments=2.16.1=pyhd8ed1ab_0
++- certifi=2023.7.22=pypi_0
++- greenlet=3.0.0=pypi_0
++- numpy=1.26.1=pypi_0
++- tk=8.6.12=h1ccaba5_0
++- protobuf=4.23.4=pypi_0
++- gradio-client=0.5.0=pypi_0
++- pydantic>=2.0
++- matplotlib=3.8.0=pypi_0
++- referencing=0.30.2=pypi_0
++- toolz=0.12.0=pypi_0
++- _libgcc_mutex=0.1=main
++- h11=0.14.0=pypi_0
++- prompt_toolkit=3.0.39=hd8ed1ab_0
++- pyyaml=6.0.1=pypi_0
++- openssl=3.0.11=h7f8727e_2
++- pickleshare=0.7.5=py_1003
++- faiss-cpu
++- _openmp_mutex=5.1=1_gnu
++- markdown-it-py=3.0.0=pypi_0
++- altair=5.1.2=pypi_0
++- pandas=2.1.1=pypi_0
++- numpy
++- comm=0.1.4=pyhd8ed1ab_0
++- nvidia-nvjitlink-cu12=12.3.52=pypi_0
++- imageio=2.31.5=pypi_0
++- evaluate=0.3.0=pypi_0
++- rapidfuzz=2.13.7=pypi_0
++- docstring-parser=0.15=pypi_0
++- nvidia-cuda-nvrtc-cu12=12.1.105=pypi_0
++- nvidia-cudnn-cu12=8.9.2.26=pypi_0
++- absl-py=2.0.0=pypi_0
++- invisible-watermark=0.2.0=pypi_0
++- sqlalchemy=2.0.22=pypi_0
++- traitlets=5.12.0=pypi_0
++- cachetools=5.3.1=pypi_0
++- aiosignal=1.3.1=pypi_0
++- nvidia-nccl-cu12=2.18.1=pypi_0
++- opencv-python=4.8.1.78=pypi_0
++- click=8.1.7=pypi_0
++- pyzmq=25.1.0=py310h6a678d5_0
++- ipython=8.16.1=pyh0d859eb_0
++- oauthlib=3.2.2=pypi_0
++- cmaes=0.10.0=pypi_0
++- networkx=3.2=pypi_0
++- pyasn1-modules=0.3.0=pypi_0
++- pfzy=0.3.4=pypi_0
++- ca-certificates=2023.7.22=hbcca054_0
++- pytz=2023.3.post1=pypi_0
++- multidict=6.0.4=pypi_0
++- dill=0.3.7=pypi_0
++- ptyprocess=0.7.0=pyhd3deb0d_0
++- sqlite=3.41.2=h5eee18b_0
++- sniffio=1.3.0=pypi_0
++- zlib=1.2.13=h5eee18b_0
++- backports=1.0=pyhd8ed1ab_3
++- ninja=1.11.1.1=pypi_0
++- loguru=0.7.0=pypi_0
++- werkzeug=2.3.6=pypi_0
++- anyio=3.7.1=pypi_0
++- backports.functools_lru_cache=1.6.5=pyhd8ed1ab_0
++- typing-extensions=4.8.0=hd8ed1ab_0
++- joblib=1.3.1=pypi_0
++- python-dateutil=2.8.2=pyhd8ed1ab_0
++- nvidia-cuda-runtime-cu12=12.1.105=pypi_0
++- python-multipart=0.0.6=pypi_0
++- httpcore=0.18.0=pypi_0
++- async-timeout=4.0.3=pypi_0
++- deep-translator
++- peft=0.4.0=pypi_0
++- responses=0.18.0=pypi_0
++- pyasn1=0.5.0=pypi_0
++- qudida=0.0.4=pypi_0
++- charset-normalizer=3.3.0=pypi_0
++- contourpy=1.1.1=pypi_0
++- platformdirs=3.11.0=pyhd8ed1ab_0
++- trl=0.4.7=pypi_0
++- httpx=0.25.0=pypi_0
++- diffusers=0.21.4=pypi_0
++- matplotlib-inline=0.1.6=pyhd8ed1ab_0
++- langdetect
++- scikit-image=0.22.0=pypi_0
++- pydantic=1.10.11=pypi_0
++- jiwer=3.0.2=pypi_0
++- alembic=1.12.0=pypi_0
++- fsspec=2023.6.0=pypi_0
++- entrypoints=0.4=pyhd8ed1ab_0
++- sacremoses=0.0.53=pypi_0
++- websockets=11.0.3=pypi_0
++- accelerate=0.21.0=pypi_0
++- fuzzywuzzy=0.18.0=pypi_0
++- sentencepiece=0.1.99=pypi_0
++- autotrain-advanced=0.6.37=pypi_0
++- libstdcxx-ng=11.2.0=h1234567_1
++- nvidia-cuda-cupti-cu12=12.1.105=pypi_0
++- markdown=3.5=pypi_0
++- einops=0.6.1=pypi_0
++- google-auth=2.23.3=pypi_0
++- Pillow>=10.0.0
++- ipykernel=6.26.0=pyhf8b6a83_0
++- jinja2=3.1.2=pypi_0
++- prompt-toolkit=3.0.39=pyha770c72_0
++- xgboost=1.7.6=pypi_0
++- pymupdf
++- parso=0.8.3=pyhd8ed1ab_0
++- albumentations=1.3.1=pypi_0
++- safetensors=0.4.0=pypi_0
++- libgcc-ng=11.2.0=h1234567_1
++- nvidia-cusparse-cu12=12.1.0.106=pypi_0
++- importlib-metadata=6.8.0=pypi_0
++- gradio=3.41.0=pypi_0
++- ncurses=6.4=h6a678d5_0
++- zeromq=4.3.4=h2531618_0
++- pydub=0.25.1=pypi_0
++- arrow=1.3.0=pypi_0
++- nvidia-curand-cu12=10.3.2.106=pypi_0
++- xformers=0.0.22.post4=pypi_0
++- xxhash=3.4.1=pypi_0
++- wheel=0.41.2=py310h06a4308_0
++- aiofiles=23.2.1=pypi_0
++- scikit-learn=1.3.0=pypi_0
++- uvicorn=0.23.2=pypi_0
++- inquirerpy=0.3.4=pypi_0
++- ollama>=0.6.2
++- nvidia-cublas-cu12=12.1.3.1=pypi_0
++- rich=13.6.0=pypi_0
++- fonttools=4.43.1=pypi_0
++- jsonschema=4.19.1=pypi_0
++- pure_eval=0.2.2=pyhd8ed1ab_0
++- regex=2023.10.3=pypi_0
++- rpds-py=0.10.6=pypi_0
++- semantic-version=2.10.0=pypi_0
++- tzdata=2023.3=pypi_0
++- nvidia-cusolver-cu12=11.4.5.107=pypi_0
++- frozenlist=1.4.0=pypi_0
++- readline=8.2=h5eee18b_0
++- filelock=3.  # Truncated to 5000 chars for readability if huge
+```
+
+## Related Links
+- [[Docs]]
+- [[Home]]
+- [[Changelog Index]]

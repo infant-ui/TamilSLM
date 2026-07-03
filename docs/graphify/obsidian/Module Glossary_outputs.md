@@ -12,3 +12,26 @@ Documentation for the `glossary_outputs` module.
 graph TD
     glossary_outputs --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

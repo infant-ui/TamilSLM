@@ -12,3 +12,26 @@ Documentation for the `backend` module.
 graph TD
     backend --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

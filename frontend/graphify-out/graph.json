@@ -1,0 +1,1120 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "admin_review_app.py",
+      "file_type": "code",
+      "source_file": "admin_review_app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "admin_review_app",
+      "community": 8,
+      "norm_label": "admin_review_app.py"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 2,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 2,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 2,
+      "norm_label": "private"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_dependencies",
+      "community": 0,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "dagre",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_dependencies_dagre",
+      "community": 0,
+      "norm_label": "dagre"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_dependencies_lucide_react",
+      "community": 0,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "prismjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_dependencies_prismjs",
+      "community": 0,
+      "norm_label": "prismjs"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_dependencies_react",
+      "community": 0,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_dependencies_react_dom",
+      "community": 0,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "react-hot-toast",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "package_dependencies_react_hot_toast",
+      "community": 0,
+      "norm_label": "react-hot-toast"
+    },
+    {
+      "label": "react-markdown",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_dependencies_react_markdown",
+      "community": 0,
+      "norm_label": "react-markdown"
+    },
+    {
+      "label": "react-scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_dependencies_react_scripts",
+      "community": 0,
+      "norm_label": "react-scripts"
+    },
+    {
+      "label": "reactflow",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_dependencies_reactflow",
+      "community": 0,
+      "norm_label": "reactflow"
+    },
+    {
+      "label": "recharts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_dependencies_recharts",
+      "community": 0,
+      "norm_label": "recharts"
+    },
+    {
+      "label": "web-vitals",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_dependencies_web_vitals",
+      "community": 0,
+      "norm_label": "web-vitals"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 4,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_scripts_start",
+      "community": 4,
+      "norm_label": "start"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 4,
+      "norm_label": "build"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "package_scripts_test",
+      "community": 4,
+      "norm_label": "test"
+    },
+    {
+      "label": "eject",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "package_scripts_eject",
+      "community": 4,
+      "norm_label": "eject"
+    },
+    {
+      "label": "eslintConfig",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "package_eslintconfig",
+      "community": 2,
+      "norm_label": "eslintconfig"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "package_eslintconfig_extends",
+      "community": 2,
+      "norm_label": "extends"
+    },
+    {
+      "label": "browserslist",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "package_browserslist",
+      "community": 2,
+      "norm_label": "browserslist"
+    },
+    {
+      "label": "production",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "package_browserslist_production",
+      "community": 2,
+      "norm_label": "production"
+    },
+    {
+      "label": "development",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "package_browserslist_development",
+      "community": 2,
+      "norm_label": "development"
+    },
+    {
+      "label": "manifest.json",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "public_manifest",
+      "community": 3,
+      "norm_label": "manifest.json"
+    },
+    {
+      "label": "short_name",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "public_manifest_short_name",
+      "community": 3,
+      "norm_label": "short_name"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "public_manifest_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "public_manifest_icons",
+      "community": 3,
+      "norm_label": "icons"
+    },
+    {
+      "label": "start_url",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "public_manifest_start_url",
+      "community": 3,
+      "norm_label": "start_url"
+    },
+    {
+      "label": "display",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "public_manifest_display",
+      "community": 3,
+      "norm_label": "display"
+    },
+    {
+      "label": "theme_color",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "public_manifest_theme_color",
+      "community": 3,
+      "norm_label": "theme_color"
+    },
+    {
+      "label": "background_color",
+      "file_type": "code",
+      "source_file": "public/manifest.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "public_manifest_background_color",
+      "community": 3,
+      "norm_label": "background_color"
+    },
+    {
+      "label": "App.js",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app",
+      "community": 1,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "renderMath()",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_app_rendermath",
+      "community": 1,
+      "norm_label": "rendermath()"
+    },
+    {
+      "label": "renderMessageContent()",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "src_app_rendermessagecontent",
+      "community": 1,
+      "norm_label": "rendermessagecontent()"
+    },
+    {
+      "label": "SourcesList()",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "src_app_sourceslist",
+      "community": 1,
+      "norm_label": "sourceslist()"
+    },
+    {
+      "label": "MessageBubble()",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L277",
+      "_origin": "ast",
+      "id": "src_app_messagebubble",
+      "community": 1,
+      "norm_label": "messagebubble()"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.js",
+      "source_location": "L411",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 1,
+      "norm_label": "app()"
+    },
+    {
+      "label": "App.test.js",
+      "file_type": "code",
+      "source_file": "src/App.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app_test",
+      "community": 1,
+      "norm_label": "app.test.js"
+    },
+    {
+      "label": "MindmapGraph.js",
+      "file_type": "code",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_mindmapgraph",
+      "community": 1,
+      "norm_label": "mindmapgraph.js"
+    },
+    {
+      "label": "dagreGraph",
+      "file_type": "code",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_components_mindmapgraph_dagregraph",
+      "community": 1,
+      "norm_label": "dagregraph"
+    },
+    {
+      "label": "getLayoutedElements()",
+      "file_type": "code",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "src_components_mindmapgraph_getlayoutedelements",
+      "community": 1,
+      "norm_label": "getlayoutedelements()"
+    },
+    {
+      "label": "MindmapGraph()",
+      "file_type": "code",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "src_components_mindmapgraph_mindmapgraph",
+      "community": 1,
+      "norm_label": "mindmapgraph()"
+    },
+    {
+      "label": "imageApi.js",
+      "file_type": "code",
+      "source_file": "src/features/image-generation/api/imageApi.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_features_image_generation_api_imageapi",
+      "community": 7,
+      "norm_label": "imageapi.js"
+    },
+    {
+      "label": "generateImage()",
+      "file_type": "code",
+      "source_file": "src/features/image-generation/api/imageApi.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_features_image_generation_api_imageapi_generateimage",
+      "community": 7,
+      "norm_label": "generateimage()"
+    },
+    {
+      "label": "promptUtils.js",
+      "file_type": "code",
+      "source_file": "src/features/image-generation/utils/promptUtils.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_features_image_generation_utils_promptutils",
+      "community": 6,
+      "norm_label": "promptutils.js"
+    },
+    {
+      "label": "isImageGenerationPrompt()",
+      "file_type": "code",
+      "source_file": "src/features/image-generation/utils/promptUtils.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "src_features_image_generation_utils_promptutils_isimagegenerationprompt",
+      "community": 6,
+      "norm_label": "isimagegenerationprompt()"
+    },
+    {
+      "label": "extractImagePrompt()",
+      "file_type": "code",
+      "source_file": "src/features/image-generation/utils/promptUtils.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "src_features_image_generation_utils_promptutils_extractimageprompt",
+      "community": 6,
+      "norm_label": "extractimageprompt()"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "src/index.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_index",
+      "community": 5,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "src/index.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_index_root",
+      "community": 5,
+      "norm_label": "root"
+    },
+    {
+      "label": "reportWebVitals.js",
+      "file_type": "code",
+      "source_file": "src/reportWebVitals.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_reportwebvitals",
+      "community": 5,
+      "norm_label": "reportwebvitals.js"
+    },
+    {
+      "label": "reportWebVitals()",
+      "file_type": "code",
+      "source_file": "src/reportWebVitals.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_reportwebvitals_reportwebvitals",
+      "community": 5,
+      "norm_label": "reportwebvitals()"
+    },
+    {
+      "label": "setupTests.js",
+      "file_type": "code",
+      "source_file": "src/setupTests.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_setuptests",
+      "community": 9,
+      "norm_label": "setuptests.js"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_browserslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_eslintconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_dagre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_prismjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_hot_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_markdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_reactflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_recharts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_web_vitals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_eject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "package_eslintconfig",
+      "target": "package_eslintconfig_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "package_browserslist",
+      "target": "package_browserslist_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_browserslist",
+      "target": "package_browserslist_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_background_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_icons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_short_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_start_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/manifest.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "public_manifest",
+      "target": "public_manifest_theme_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L411",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_messagebubble",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_rendermath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_rendermessagecontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_sourceslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_components_mindmapgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_components_mindmapgraph_mindmapgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_test",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.js",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "src_app_messagebubble",
+      "target": "src_app_rendermessagecontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_test",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_mindmapgraph",
+      "target": "src_components_mindmapgraph_dagregraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_components_mindmapgraph",
+      "target": "src_components_mindmapgraph_getlayoutedelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MindmapGraph.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_components_mindmapgraph",
+      "target": "src_components_mindmapgraph_mindmapgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/image-generation/api/imageApi.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_features_image_generation_api_imageapi",
+      "target": "src_features_image_generation_api_imageapi_generateimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/image-generation/utils/promptUtils.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_features_image_generation_utils_promptutils",
+      "target": "src_features_image_generation_utils_promptutils_extractimageprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/image-generation/utils/promptUtils.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_features_image_generation_utils_promptutils",
+      "target": "src_features_image_generation_utils_promptutils_isimagegenerationprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_index_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_reportwebvitals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_reportwebvitals_reportwebvitals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reportWebVitals.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_reportwebvitals",
+      "target": "src_reportwebvitals_reportwebvitals",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "dcf0a78277e0035013d4ec24e033012b28388219"
+}

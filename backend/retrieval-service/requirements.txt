@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sentence-transformers
+numpy
+anyio
+pydantic
+python-multipart
+opencv-python-headless
+Pillow
+PyMuPDF
+layoutparser
+paddleocr
+psutil
+pytesseract
+requests
+scikit-learn
+torch

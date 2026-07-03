@@ -12,3 +12,26 @@ Documentation for the `Research_Papers-20260625T150702Z-3-001` module.
 graph TD
     Research_Papers-20260625T150702Z-3-001 --> Dependencies
 ```
+
+## Manual Notes
+<!-- MANUAL:START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MANUAL:END -->
+

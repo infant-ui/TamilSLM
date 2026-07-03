@@ -1,0 +1,149 @@
+{
+  "communities": {
+    "0": [
+      "package_dependencies",
+      "package_dependencies_dagre",
+      "package_dependencies_lucide_react",
+      "package_dependencies_prismjs",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_hot_toast",
+      "package_dependencies_react_markdown",
+      "package_dependencies_react_scripts",
+      "package_dependencies_reactflow",
+      "package_dependencies_recharts",
+      "package_dependencies_web_vitals"
+    ],
+    "1": [
+      "src_app",
+      "src_app_app",
+      "src_app_messagebubble",
+      "src_app_rendermath",
+      "src_app_rendermessagecontent",
+      "src_app_sourceslist",
+      "src_app_test",
+      "src_components_mindmapgraph",
+      "src_components_mindmapgraph_dagregraph",
+      "src_components_mindmapgraph_getlayoutedelements",
+      "src_components_mindmapgraph_mindmapgraph"
+    ],
+    "2": [
+      "package",
+      "package_browserslist",
+      "package_browserslist_development",
+      "package_browserslist_production",
+      "package_eslintconfig",
+      "package_eslintconfig_extends",
+      "package_name",
+      "package_private",
+      "package_version"
+    ],
+    "3": [
+      "public_manifest",
+      "public_manifest_background_color",
+      "public_manifest_display",
+      "public_manifest_icons",
+      "public_manifest_name",
+      "public_manifest_short_name",
+      "public_manifest_start_url",
+      "public_manifest_theme_color"
+    ],
+    "4": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_eject",
+      "package_scripts_start",
+      "package_scripts_test"
+    ],
+    "5": [
+      "src_index",
+      "src_index_root",
+      "src_reportwebvitals",
+      "src_reportwebvitals_reportwebvitals"
+    ],
+    "6": [
+      "src_features_image_generation_utils_promptutils",
+      "src_features_image_generation_utils_promptutils_extractimageprompt",
+      "src_features_image_generation_utils_promptutils_isimagegenerationprompt"
+    ],
+    "7": [
+      "src_features_image_generation_api_imageapi",
+      "src_features_image_generation_api_imageapi_generateimage"
+    ],
+    "8": [
+      "admin_review_app"
+    ],
+    "9": [
+      "src_setuptests"
+    ]
+  },
+  "cohesion": {
+    "0": 0.16666666666666666,
+    "1": 0.23636363636363636,
+    "2": 0.2222222222222222,
+    "3": 0.25,
+    "4": 0.4,
+    "5": 0.6666666666666666,
+    "6": 0.6666666666666666,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "package_browserslist",
+      "label": "browserslist",
+      "degree": 3
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 3
+    },
+    {
+      "id": "package_eslintconfig",
+      "label": "eslintConfig",
+      "degree": 2
+    },
+    {
+      "id": "src_app_rendermessagecontent",
+      "label": "renderMessageContent()",
+      "degree": 2
+    },
+    {
+      "id": "src_app_messagebubble",
+      "label": "MessageBubble()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_mindmapgraph_mindmapgraph",
+      "label": "MindmapGraph()",
+      "degree": 2
+    },
+    {
+      "id": "src_reportwebvitals_reportwebvitals",
+      "label": "reportWebVitals()",
+      "degree": 2
+    },
+    {
+      "id": "package_private",
+      "label": "private",
+      "degree": 1
+    },
+    {
+      "id": "package_dependencies_dagre",
+      "label": "dagre",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

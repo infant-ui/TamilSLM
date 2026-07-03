@@ -1,0 +1,509 @@
+{
+  "communities": {
+    "0": [
+      "retrieval_service_app_ingestion_chunker",
+      "retrieval_service_app_ingestion_chunker_chunkunit",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_chunk_guide_qa",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_chunk_textbook_blocks",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_clean_text",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_format_chunk_text",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_get_word_count",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_init",
+      "retrieval_service_app_ingestion_chunker_curriculumchunker_split_large_block",
+      "retrieval_service_app_ingestion_chunker_py_any",
+      "retrieval_service_app_ingestion_chunker_rationale_175",
+      "retrieval_service_app_ingestion_chunker_rationale_28",
+      "retrieval_service_app_ingestion_chunker_rationale_35",
+      "retrieval_service_app_ingestion_chunker_rationale_89",
+      "retrieval_service_app_ingestion_layout_analyzer",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer_analyze_layout_cpu",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer_analyze_layout_gpu",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer_init",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer_is_page_searchable",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutanalyzer_segment_page",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutblock",
+      "retrieval_service_app_ingestion_layout_analyzer_layoutblock_init",
+      "retrieval_service_app_ingestion_layout_analyzer_py_page",
+      "retrieval_service_app_ingestion_layout_analyzer_rationale_154",
+      "retrieval_service_app_ingestion_layout_analyzer_rationale_182",
+      "retrieval_service_app_ingestion_layout_analyzer_rationale_45",
+      "retrieval_service_app_ingestion_layout_analyzer_rationale_53",
+      "retrieval_service_app_ingestion_logical_block_builder",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblock",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblock_bboxes",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblock_init",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblock_text",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblockbuilder",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblockbuilder_build_logical_blocks",
+      "retrieval_service_app_ingestion_logical_block_builder_logicalblockbuilder_init",
+      "retrieval_service_app_ingestion_logical_block_builder_py_any",
+      "retrieval_service_app_ingestion_logical_block_builder_rationale_24"
+    ],
+    "1": [
+      "generation_service_app",
+      "generation_service_app_generate_image_endpoint",
+      "generation_service_app_generate_stream",
+      "generation_service_app_generatestreamrequest",
+      "generation_service_app_get_system_prompt",
+      "generation_service_app_imagegeneraterequest",
+      "generation_service_app_intentrequest",
+      "generation_service_app_route_intent",
+      "generation_service_app_serve_generated_image",
+      "generation_service_app_summarize_session",
+      "generation_service_app_verify_generation_admin_key",
+      "generation_service_image_db",
+      "generation_service_image_db_get_cached_image",
+      "generation_service_image_db_init_db",
+      "generation_service_image_db_log_image_generation",
+      "generation_service_image_db_rationale_37",
+      "generation_service_image_image_service",
+      "generation_service_image_image_service_generate_image",
+      "generation_service_image_image_service_get_today_image_dir",
+      "generation_service_image_image_service_rationale_19",
+      "generation_service_image_image_service_rationale_27",
+      "generation_service_image_prompt_enhancer",
+      "generation_service_image_prompt_enhancer_enhance_prompt",
+      "generation_service_image_prompt_enhancer_load_glossary",
+      "generation_service_image_prompt_enhancer_rationale_30",
+      "generation_service_image_safety_checker",
+      "generation_service_image_safety_checker_is_safe_prompt",
+      "generation_service_image_safety_checker_rationale_11",
+      "generation_service_image_text_overlay",
+      "generation_service_image_text_overlay_add_legend_to_image",
+      "generation_service_image_text_overlay_rationale_5"
+    ],
+    "2": [
+      "basemodel",
+      "fastapi",
+      "retrieval_service_app_api_schemas",
+      "retrieval_service_app_api_schemas_dashboardresponse",
+      "retrieval_service_app_api_schemas_feedbackrequest",
+      "retrieval_service_app_api_schemas_retrieveresponse",
+      "retrieval_service_app_ingestion_hardware_detector",
+      "retrieval_service_app_ingestion_hardware_detector_get_hardware_level",
+      "retrieval_service_app_ingestion_hardware_detector_log_ocr_status",
+      "retrieval_service_app_ingestion_hardware_detector_rationale_10",
+      "retrieval_service_app_ingestion_hardware_detector_rationale_19",
+      "retrieval_service_app_ingestion_hardware_detector_rationale_64",
+      "retrieval_service_app_ingestion_hardware_detector_run_diagnostics",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_init",
+      "retrieval_service_main",
+      "retrieval_service_main_evaluation_dashboard",
+      "retrieval_service_main_feedback",
+      "retrieval_service_main_get_system_resources",
+      "retrieval_service_main_lifespan",
+      "retrieval_service_main_load_unified_cache",
+      "retrieval_service_main_rationale_279",
+      "retrieval_service_main_rationale_292",
+      "retrieval_service_main_rationale_322",
+      "retrieval_service_main_rationale_43",
+      "retrieval_service_main_reload_cache",
+      "retrieval_service_main_retrieve",
+      "retrieval_service_main_retrieve_debug",
+      "retrieval_service_main_verify_retrieval_admin_key"
+    ],
+    "3": [
+      "retrieval_service_app_evaluation_evaluator",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_compute_deltas",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_init",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_load_caches",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_load_last_eval_run",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_run_evaluation",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_save_to_history",
+      "retrieval_service_app_evaluation_evaluator_ragevaluator_write_markdown_report",
+      "retrieval_service_app_evaluation_evaluator_rationale_226",
+      "retrieval_service_app_evaluation_evaluator_rationale_281",
+      "retrieval_service_app_evaluation_evaluator_rationale_40",
+      "retrieval_service_app_evaluation_evaluator_rationale_66",
+      "retrieval_service_app_evaluation_evaluator_run_auto_evaluation",
+      "retrieval_service_app_evaluation_metrics",
+      "retrieval_service_app_evaluation_metrics_calculate_mrr",
+      "retrieval_service_app_evaluation_metrics_calculate_ndcg_at_k",
+      "retrieval_service_app_evaluation_metrics_calculate_precision_at_k",
+      "retrieval_service_app_evaluation_metrics_calculate_recall_at_k",
+      "retrieval_service_app_evaluation_metrics_rationale_16",
+      "retrieval_service_app_evaluation_metrics_rationale_24",
+      "retrieval_service_app_evaluation_metrics_rationale_33",
+      "retrieval_service_app_evaluation_metrics_rationale_6",
+      "retrieval_service_app_retrieval_reranker",
+      "retrieval_service_app_retrieval_reranker_crossencoderreranker",
+      "retrieval_service_app_retrieval_reranker_crossencoderreranker_init",
+      "retrieval_service_app_retrieval_reranker_crossencoderreranker_rerank",
+      "retrieval_service_app_retrieval_reranker_rationale_32"
+    ],
+    "4": [
+      "retrieval_service_app_api_schemas_chunkresult",
+      "retrieval_service_app_api_schemas_retrieverequest",
+      "retrieval_service_app_retrieval_hybrid_retriever",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_detect_subjects",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_execute_retrieve_for_medium",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_filter_candidates",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_reciprocal_rank_fusion",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_retrieve",
+      "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever_retrieve_sync",
+      "retrieval_service_app_retrieval_hybrid_retriever_py_ndarray",
+      "retrieval_service_app_retrieval_hybrid_retriever_rationale_111",
+      "retrieval_service_app_retrieval_hybrid_retriever_rationale_16",
+      "retrieval_service_app_retrieval_hybrid_retriever_rationale_177",
+      "retrieval_service_app_retrieval_hybrid_retriever_rationale_217",
+      "retrieval_service_app_retrieval_hybrid_retriever_simplebm25",
+      "retrieval_service_app_retrieval_hybrid_retriever_simplebm25_get_scores",
+      "retrieval_service_app_retrieval_hybrid_retriever_simplebm25_init",
+      "retrieval_service_app_retrieval_hybrid_retriever_simplebm25_tokenize",
+      "retrieval_service_app_retrieval_priority_retriever",
+      "retrieval_service_app_retrieval_priority_retriever_priorityretriever",
+      "retrieval_service_app_retrieval_priority_retriever_priorityretriever_filter_and_rank",
+      "retrieval_service_app_retrieval_priority_retriever_priorityretriever_init",
+      "retrieval_service_app_retrieval_priority_retriever_priorityretriever_retrieve_by_priority",
+      "retrieval_service_app_retrieval_priority_retriever_priorityretriever_retrieve_for_medium",
+      "retrieval_service_app_retrieval_priority_retriever_py_ndarray",
+      "retrieval_service_app_retrieval_priority_retriever_rationale_55"
+    ],
+    "5": [
+      "retrieval_service_app_ingestion_chunk_validator",
+      "retrieval_service_app_ingestion_chunk_validator_chunkvalidator",
+      "retrieval_service_app_ingestion_chunk_validator_chunkvalidator_init",
+      "retrieval_service_app_ingestion_chunk_validator_chunkvalidator_validate_chunk",
+      "retrieval_service_app_ingestion_chunk_validator_py_any",
+      "retrieval_service_app_ingestion_chunk_validator_rationale_14",
+      "retrieval_service_app_ingestion_index_books",
+      "retrieval_service_app_ingestion_index_books_compile_indices",
+      "retrieval_service_app_ingestion_index_books_main",
+      "retrieval_service_app_ingestion_index_books_process_book_pipeline",
+      "retrieval_service_app_ingestion_index_books_rationale_33",
+      "retrieval_service_app_ingestion_ocr_cleaner",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner_clean_broken_words_and_hyphens",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner_filter_ocr_garbage",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner_init",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner_normalize_tamil_unicode",
+      "retrieval_service_app_ingestion_ocr_cleaner_ocrcleaner_perform_ocr_on_bbox",
+      "retrieval_service_app_ingestion_ocr_cleaner_py_page",
+      "retrieval_service_app_ingestion_ocr_cleaner_rationale_101",
+      "retrieval_service_app_ingestion_ocr_cleaner_rationale_131",
+      "retrieval_service_app_ingestion_ocr_cleaner_rationale_37",
+      "retrieval_service_app_ingestion_ocr_cleaner_rationale_63",
+      "retrieval_service_main_rationale_392",
+      "retrieval_service_main_upload_book",
+      "uploadfile"
+    ],
+    "6": [
+      "gateway_package",
+      "gateway_package_author",
+      "gateway_package_dependencies",
+      "gateway_package_dependencies_cors",
+      "gateway_package_dependencies_express",
+      "gateway_package_dependencies_ioredis",
+      "gateway_package_dependencies_multer",
+      "gateway_package_description",
+      "gateway_package_keywords",
+      "gateway_package_license",
+      "gateway_package_main",
+      "gateway_package_name",
+      "gateway_package_scripts",
+      "gateway_package_scripts_start",
+      "gateway_package_scripts_test",
+      "gateway_package_type",
+      "gateway_package_version"
+    ],
+    "7": [
+      "retrieval_service_app_ingestion_book_scanner",
+      "retrieval_service_app_ingestion_book_scanner_bookscanner",
+      "retrieval_service_app_ingestion_book_scanner_bookscanner_get_file_sha256",
+      "retrieval_service_app_ingestion_book_scanner_bookscanner_init",
+      "retrieval_service_app_ingestion_book_scanner_bookscanner_load_manifest",
+      "retrieval_service_app_ingestion_book_scanner_bookscanner_scan",
+      "retrieval_service_app_ingestion_book_scanner_scansummary",
+      "retrieval_service_app_ingestion_compile_offline",
+      "retrieval_service_app_ingestion_compile_offline_compile_offline",
+      "retrieval_service_app_ingestion_metadata_parser",
+      "retrieval_service_app_ingestion_metadata_parser_bookmetadata",
+      "retrieval_service_app_ingestion_metadata_parser_metadataparser",
+      "retrieval_service_app_ingestion_metadata_parser_metadataparser_init",
+      "retrieval_service_app_ingestion_metadata_parser_metadataparser_parse_from_filename"
+    ],
+    "8": [
+      "retrieval_service_app_ingestion_pdf_cleaner",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_clean_page_text_blocks",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_detect_qr_code_opencv",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_extract_figures_and_tables",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_init",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_is_blank_page",
+      "retrieval_service_app_ingestion_pdf_cleaner_pdfcleaner_is_copyright_page",
+      "retrieval_service_app_ingestion_pdf_cleaner_py_page",
+      "retrieval_service_app_ingestion_pdf_cleaner_rationale_153",
+      "retrieval_service_app_ingestion_pdf_cleaner_rationale_23",
+      "retrieval_service_app_ingestion_pdf_cleaner_rationale_37",
+      "retrieval_service_app_ingestion_pdf_cleaner_rationale_46",
+      "retrieval_service_app_ingestion_pdf_cleaner_rationale_78"
+    ],
+    "9": [
+      "retrieval_service_app_retrieval_prompt_builder",
+      "retrieval_service_app_retrieval_prompt_builder_meta_page",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_build_context_text",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_build_prompt",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_detect_difficulty",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_detect_language",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_init",
+      "retrieval_service_app_retrieval_prompt_builder_promptbuilder_is_student_confused",
+      "retrieval_service_app_retrieval_prompt_builder_rationale_11",
+      "retrieval_service_app_retrieval_prompt_builder_rationale_21",
+      "retrieval_service_app_retrieval_prompt_builder_rationale_36",
+      "retrieval_service_app_retrieval_prompt_builder_rationale_57",
+      "retrieval_service_app_retrieval_prompt_builder_rationale_69"
+    ],
+    "10": [
+      "gateway_app",
+      "gateway_app_app",
+      "gateway_app_cors",
+      "gateway_app_exec_execfile",
+      "gateway_app_express",
+      "gateway_app_fs",
+      "gateway_app_jobmap",
+      "gateway_app_memorycache",
+      "gateway_app_memoryhistory",
+      "gateway_app_multer",
+      "gateway_app_path",
+      "gateway_app_redis",
+      "gateway_app_upload"
+    ],
+    "11": [
+      "correction_service_main",
+      "correction_service_main_get_pending",
+      "correction_service_main_lookup_correction",
+      "correction_service_main_rationale_14",
+      "correction_service_main_rationale_23",
+      "correction_service_main_rationale_87",
+      "correction_service_main_report_correction",
+      "correction_service_main_reportrequest",
+      "correction_service_main_review_correction",
+      "correction_service_main_reviewrequest",
+      "correction_service_main_verify_admin_key",
+      "request"
+    ],
+    "12": [
+      "match",
+      "retrieval_service_app_ingestion_chapter_parser",
+      "retrieval_service_app_ingestion_chapter_parser_chapterparser",
+      "retrieval_service_app_ingestion_chapter_parser_chapterparser_detect_chapter_header",
+      "retrieval_service_app_ingestion_chapter_parser_chapterparser_init",
+      "retrieval_service_app_ingestion_chapter_parser_chapterparser_split_by_chapters",
+      "retrieval_service_app_ingestion_chapter_parser_py_any",
+      "retrieval_service_app_ingestion_chapter_parser_rationale_17",
+      "retrieval_service_app_ingestion_chapter_parser_rationale_26"
+    ],
+    "13": [
+      "correction_service_app_db_corrections_db",
+      "correction_service_app_db_corrections_db_create_report",
+      "correction_service_app_db_corrections_db_get_approved_corrections",
+      "correction_service_app_db_corrections_db_get_connection",
+      "correction_service_app_db_corrections_db_get_pending_reports",
+      "correction_service_app_db_corrections_db_init_db",
+      "correction_service_app_db_corrections_db_rationale_8",
+      "correction_service_app_db_corrections_db_review_report"
+    ],
+    "14": [
+      "retrieval_service_app_ingestion_section_parser",
+      "retrieval_service_app_ingestion_section_parser_py_any",
+      "retrieval_service_app_ingestion_section_parser_rationale_17",
+      "retrieval_service_app_ingestion_section_parser_rationale_28",
+      "retrieval_service_app_ingestion_section_parser_sectionparser",
+      "retrieval_service_app_ingestion_section_parser_sectionparser_build_section_hierarchy",
+      "retrieval_service_app_ingestion_section_parser_sectionparser_detect_section_header",
+      "retrieval_service_app_ingestion_section_parser_sectionparser_init"
+    ],
+    "15": [
+      "tests_test_api",
+      "tests_test_api_load_service_app",
+      "tests_test_api_rationale_9",
+      "tests_test_api_test_corrections_report_happy_path",
+      "tests_test_api_test_generate_stream_happy_path",
+      "tests_test_api_test_retrieve_happy_path"
+    ],
+    "16": [
+      "models_english1",
+      "models_english1_extract_text",
+      "models_english1_log",
+      "models_english1_process_query",
+      "models_english1_split_chunks"
+    ],
+    "17": [
+      "models_englishmodel",
+      "models_englishmodel_exec",
+      "models_englishmodel_getenglishanswer",
+      "models_englishmodel_path"
+    ],
+    "18": [
+      "models_tamilmodel",
+      "models_tamilmodel_exec",
+      "models_tamilmodel_gettamilanswer",
+      "models_tamilmodel_path"
+    ],
+    "19": [
+      "models_tamil1",
+      "models_tamil1_process_query",
+      "models_tamil1_split_chunks"
+    ],
+    "20": [
+      "retrieval_service_app_api_init"
+    ],
+    "21": [
+      "retrieval_service_app_evaluation_init"
+    ],
+    "22": [
+      "retrieval_service_app_ingestion_init"
+    ],
+    "23": [
+      "retrieval_service_app_init"
+    ],
+    "24": [
+      "retrieval_service_app_retrieval_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08097165991902834,
+    "1": 0.09032258064516129,
+    "2": 0.10317460317460317,
+    "3": 0.10052910052910052,
+    "4": 0.15669515669515668,
+    "5": 0.1076923076923077,
+    "6": 0.11764705882352941,
+    "7": 0.23076923076923078,
+    "8": 0.16483516483516483,
+    "9": 0.18681318681318682,
+    "10": 0.15384615384615385,
+    "11": 0.19696969696969696,
+    "12": 0.25,
+    "13": 0.42857142857142855,
+    "14": 0.2857142857142857,
+    "15": 0.5333333333333333,
+    "16": 0.4,
+    "17": 0.5,
+    "18": 0.5,
+    "19": 0.6666666666666666,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0
+  },
+  "gods": [
+    {
+      "id": "retrieval_service_app_api_schemas_retrieverequest",
+      "label": "RetrieveRequest",
+      "degree": 16
+    },
+    {
+      "id": "retrieval_service_app_api_schemas_chunkresult",
+      "label": "ChunkResult",
+      "degree": 16
+    },
+    {
+      "id": "retrieval_service_app_retrieval_hybrid_retriever_hybridretriever",
+      "label": "HybridRetriever",
+      "degree": 15
+    },
+    {
+      "id": "retrieval_service_app_ingestion_index_books_process_book_pipeline",
+      "label": "process_book_pipeline()",
+      "degree": 13
+    },
+    {
+      "id": "retrieval_service_main_upload_book",
+      "label": "upload_book()",
+      "degree": 13
+    },
+    {
+      "id": "retrieval_service_app_evaluation_evaluator_ragevaluator",
+      "label": "RAGEvaluator",
+      "degree": 12
+    },
+    {
+      "id": "retrieval_service_app_ingestion_layout_analyzer_layoutblock",
+      "label": "LayoutBlock",
+      "degree": 12
+    },
+    {
+      "id": "retrieval_service_app_ingestion_chunker_curriculumchunker",
+      "label": "CurriculumChunker",
+      "degree": 11
+    },
+    {
+      "id": "retrieval_service_app_ingestion_index_books_main",
+      "label": "main()",
+      "degree": 11
+    },
+    {
+      "id": "retrieval_service_app_ingestion_hardware_detector_get_hardware_level",
+      "label": "get_hardware_level()",
+      "degree": 10
+    }
+  ],
+  "surprises": [
+    {
+      "source": "generate_image_endpoint()",
+      "target": "log_image_generation()",
+      "source_files": [
+        "generation-service/app.py",
+        "generation-service/image/db.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `log_image_generation()` unexpectedly reaches hub `generate_image_endpoint()`"
+    },
+    {
+      "source": "RAGEvaluator",
+      "target": "RetrieveRequest",
+      "source_files": [
+        "retrieval-service/app/evaluation/evaluator.py",
+        "retrieval-service/app/api/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "meta_page()",
+      "target": "ChunkResult",
+      "source_files": [
+        "retrieval-service/app/retrieval/prompt_builder.py",
+        "retrieval-service/app/api/schemas.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities; peripheral node `meta_page()` unexpectedly reaches hub `ChunkResult`"
+    },
+    {
+      "source": "PromptBuilder",
+      "target": "ChunkResult",
+      "source_files": [
+        "retrieval-service/app/retrieval/prompt_builder.py",
+        "retrieval-service/app/api/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "CrossEncoderReranker",
+      "target": "ChunkResult",
+      "source_files": [
+        "retrieval-service/app/retrieval/reranker.py",
+        "retrieval-service/app/api/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
