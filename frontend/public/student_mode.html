@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TamilEdu-SLM | Student Mode</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#d3e4fe",
+                    "on-secondary-fixed": "#07006c",
+                    "on-secondary-container": "#fffbff",
+                    "on-tertiary-container": "#003d59",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#006c49",
+                    "on-surface": "#0b1c30",
+                    "tertiary": "#006591",
+                    "on-secondary-fixed-variant": "#2f2ebe",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#001e2f",
+                    "on-primary-container": "#00422b",
+                    "secondary-container": "#6063ee",
+                    "primary-container": "#10b981",
+                    "secondary-fixed-dim": "#c0c1ff",
+                    "surface-dim": "#cbdbf5",
+                    "surface-bright": "#f8f9ff",
+                    "tertiary-fixed": "#c9e6ff",
+                    "primary-fixed": "#6ffbbe",
+                    "tertiary-container": "#23acf1",
+                    "primary-fixed-dim": "#4edea3",
+                    "outline": "#6c7a71",
+                    "outline-variant": "#bbcabf",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#89ceff",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#3c4a42",
+                    "inverse-surface": "#213145",
+                    "on-primary-fixed": "#002113",
+                    "error-container": "#ffdad6",
+                    "background": "#f8f9ff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-fixed": "#e1e0ff",
+                    "surface-container-low": "#eff4ff",
+                    "surface-container": "#e5eeff",
+                    "on-primary-fixed-variant": "#005236",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#4edea3",
+                    "surface-container-highest": "#d3e4fe",
+                    "primary": "#006c49",
+                    "on-tertiary-fixed-variant": "#004c6e",
+                    "secondary": "#4648d4",
+                    "inverse-on-surface": "#eaf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "20px": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "md": "16px",
+                    "container-max": "1120px",
+                    "xl": "48px",
+                    "2xl": "80px",
+                    "base": "4px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "title-lg": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scroll-hide::-webkit-scrollbar { display: none; }
+        .scroll-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .math-diagram {
+            background-image: radial-gradient(circle at 2px 2px, #e2e8f0 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="text-on-surface overflow-hidden">
+<div class="flex h-screen w-full">
+<!-- Sidebar Navigation (Predicted Component: SideNavBar) -->
+<aside class="fixed left-0 top-0 h-screen w-[280px] bg-surface dark:bg-inverse-surface border-r border-outline-variant dark:border-outline flex flex-col py-lg px-md z-50">
+<div class="mb-xl px-sm">
+<h1 class="text-title-lg font-title-lg font-bold text-primary dark:text-inverse-primary tracking-tight">TamilEdu-SLM</h1>
+<p class="text-label-md font-label-md text-on-surface-variant">6-8th Grade Learning</p>
+</div>
+<button class="flex items-center justify-center gap-md bg-primary text-on-primary rounded-xl px-4 py-3 mb-lg hover:opacity-90 transition-all font-label-md">
+<span class="material-symbols-outlined">add_comment</span>
+                New Chat
+            </button>
+<nav class="flex-1 space-y-sm overflow-y-auto scroll-hide">
+<!-- Recent Conversations -->
+<div class="text-label-sm font-label-sm text-on-surface-variant px-4 py-2 uppercase tracking-wider">Recent</div>
+<a class="flex items-center gap-md bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-3 transition-transform active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-label-md font-label-md truncate">Pythagorean Theorem</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant dark:text-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-label-md font-label-md truncate">Tamil Poetry Intro</span>
+</a>
+<!-- Study Progress -->
+<div class="text-label-sm font-label-sm text-on-surface-variant px-4 py-2 mt-lg uppercase tracking-wider">Learning</div>
+<a class="flex items-center gap-md text-on-surface-variant dark:text-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-label-md font-label-md">Study Progress</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant dark:text-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-label-md font-label-md">Student Profile</span>
+</a>
+</nav>
+<div class="mt-auto border-t border-outline-variant pt-lg space-y-sm">
+<a class="flex items-center gap-md text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md">Settings</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="text-label-md">Help Center</span>
+</a>
+<div class="mt-md p-md bg-surface-container-low rounded-20px flex items-center gap-md border border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">AK</div>
+<div class="flex-1 overflow-hidden">
+<p class="text-label-md font-bold truncate">Arjun Kumar</p>
+<p class="text-label-sm text-on-surface-variant truncate">Class 7-B</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<main class="flex-1 ml-[280px] mr-[320px] flex flex-col h-screen relative bg-surface">
+<!-- Header (Predicted Component: TopAppBar) -->
+<header class="h-16 flex justify-between items-center px-gutter glass-panel sticky top-0 z-40">
+<div class="flex items-center gap-md">
+<div class="p-xs bg-secondary/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary">functions</span>
+</div>
+<div>
+<h2 class="text-title-lg font-headline-md text-on-surface">Maths - Chapter 4: Geometry</h2>
+<p class="text-label-sm text-on-surface-variant">Class 7 | Samacheer Kalvi</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-xl text-label-md font-bold hover:shadow-lg transition-all">
+                        Save Progress
+                    </button>
+</div>
+</header>
+<!-- Chat Content -->
+<div class="flex-1 overflow-y-auto px-gutter py-xl flex flex-col gap-xl max-w-container-max mx-auto w-full scroll-hide">
+<!-- Student Message -->
+<div class="flex flex-col items-end gap-sm max-w-[80%] self-end">
+<div class="px-md py-3 rounded-20px rounded-tr-none border-2 border-outline-variant text-body-md bg-surface-container-lowest">
+                        பிதாகரஸ் தேற்றம் (Pythagorean theorem) என்றால் என்ன? அதை எளிமையாக விளக்கவும்.
+                    </div>
+<span class="text-label-sm text-on-surface-variant">Arjun • 10:42 AM</span>
+</div>
+<!-- AI Response Card -->
+<div class="flex flex-col items-start gap-sm max-w-[90%] self-start">
+<div class="glass-panel p-lg rounded-20px shadow-sm bg-primary/5 border-primary/10 w-full">
+<div class="flex items-center gap-sm mb-md text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-title-lg font-bold">📘 Question: Pythagorean Theorem</span>
+</div>
+<hr class="border-primary/10 mb-md"/>
+<div class="space-y-md">
+<section>
+<div class="flex items-center gap-xs mb-sm">
+<span class="material-symbols-outlined text-secondary text-sm">auto_stories</span>
+<h4 class="font-bold text-label-md">📖 Explanation</h4>
+</div>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+                                    ஒரு செங்கோண முக்கோணத்தில் (Right-Angled Triangle), கர்ணத்தின் வர்க்கம் மற்ற இரு பக்கங்களின் வர்க்கங்களின் கூடுதலுக்குச் சமம்.
+                                </p>
+<!-- Diagram Placeholder -->
+<div class="my-md p-md rounded-xl math-diagram border border-outline-variant/30 flex justify-center items-center h-48 bg-white/50 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent"></div>
+<div class="relative w-32 h-32 border-l-4 border-b-4 border-primary">
+<div class="absolute -left-8 top-1/2 -translate-y-1/2 font-bold text-primary italic">a</div>
+<div class="absolute left-1/2 -bottom-10 -translate-x-1/2 font-bold text-primary italic">b</div>
+<div class="absolute top-1/2 left-1/2 rotate-[135deg] border-t-4 border-secondary w-[180px] -translate-x-1/2 -translate-y-1/2 origin-center"></div>
+<div class="absolute top-4 right-[-60px] font-bold text-secondary italic">c (Hypotenuse)</div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-t-2 border-r-2 border-primary"></div>
+</div>
+<div class="ml-xl bg-white p-3 rounded-lg border border-outline-variant shadow-sm">
+<code class="text-primary font-bold text-title-lg">a² + b² = c²</code>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="p-md rounded-xl bg-primary-container/10 border border-primary/20">
+<div class="flex items-center gap-xs mb-sm text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<span class="font-bold text-label-md">💡 Remember</span>
+</div>
+<p class="text-label-md">This theorem ONLY works for right-angled triangles (90°).</p>
+</div>
+<div class="p-md rounded-xl bg-error/5 border border-error/20">
+<div class="flex items-center gap-xs mb-sm text-error">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-bold text-label-md">⚠ Common Mistake</span>
+</div>
+<p class="text-label-md">Don't forget to square the numbers! It's a², not 2a.</p>
+</div>
+</div>
+<div class="p-md rounded-xl bg-secondary/5 border border-secondary/10 mt-md">
+<div class="flex justify-between items-center mb-sm">
+<div class="flex items-center gap-xs text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span class="font-bold text-label-md">📝 Practice Question</span>
+</div>
+<span class="text-label-sm font-bold text-secondary bg-secondary/10 px-2 py-1 rounded">Level 1</span>
+</div>
+<p class="text-body-md italic mb-sm">If a = 3cm and b = 4cm, what is the length of c?</p>
+<div class="flex gap-sm">
+<button class="bg-white border border-outline-variant px-4 py-1 rounded-full text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors">5 cm</button>
+<button class="bg-white border border-outline-variant px-4 py-1 rounded-full text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors">7 cm</button>
+<button class="bg-white border border-outline-variant px-4 py-1 rounded-full text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors">25 cm</button>
+</div>
+</div>
+</div>
+</div>
+<span class="text-label-sm text-on-surface-variant">TamilEdu Assistant • 10:43 AM</span>
+</div>
+</div>
+<!-- Chat Input Zone -->
+<div class="px-gutter pb-lg pt-sm glass-panel mt-auto">
+<!-- Suggestion Chips -->
+<div class="flex gap-sm mb-md overflow-x-auto scroll-hide">
+<button class="flex items-center gap-xs px-md py-2 bg-white border border-primary/30 text-primary rounded-full text-label-md hover:bg-primary/5 transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-sm">quiz</span> Quiz Me
+                    </button>
+<button class="flex items-center gap-xs px-md py-2 bg-white border border-primary/30 text-primary rounded-full text-label-md hover:bg-primary/5 transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-sm">summarize</span> Summarize
+                    </button>
+<button class="flex items-center gap-xs px-md py-2 bg-white border border-primary/30 text-primary rounded-full text-label-md hover:bg-primary/5 transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-sm">image</span> Show Diagram
+                    </button>
+<button class="flex items-center gap-xs px-md py-2 bg-white border border-primary/30 text-primary rounded-full text-label-md hover:bg-primary/5 transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-sm">translate</span> Translate
+                    </button>
+</div>
+<!-- Input Box -->
+<div class="relative max-w-container-max mx-auto group">
+<div class="absolute left-4 top-1/2 -translate-y-1/2 flex gap-sm items-center">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">mic</span>
+</button>
+</div>
+<input class="w-full bg-white border-2 border-outline-variant focus:border-secondary rounded-20px pl-14 pr-32 py-4 text-body-md outline-none transition-all shadow-sm group-focus-within:shadow-md" placeholder="Ask anything from your Samacheer Kalvi textbook..." type="text"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-xs">
+<button class="p-2 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">image</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">upload_file</span>
+</button>
+<button class="bg-primary text-white p-2 rounded-xl hover:scale-105 transition-transform ml-xs">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Right Sidebar (Tracker) -->
+<aside class="fixed right-0 top-0 h-screen w-[320px] bg-white border-l border-outline-variant flex flex-col z-40">
+<div class="p-lg">
+<!-- Tabs -->
+<div class="flex p-xs bg-surface-container-low rounded-xl mb-lg">
+<button class="flex-1 py-2 text-label-md font-bold bg-white text-primary shadow-sm rounded-lg">Study Tracker</button>
+<button class="flex-1 py-2 text-label-md text-on-surface-variant hover:bg-white/50 transition-colors rounded-lg">Resources</button>
+</div>
+<!-- Streak Card -->
+<div class="p-lg rounded-20px bg-gradient-to-br from-secondary to-secondary-container text-on-secondary mb-lg relative overflow-hidden shadow-lg shadow-secondary/20">
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-md">
+<div>
+<p class="text-label-sm opacity-80">Current Streak</p>
+<h3 class="text-headline-md font-bold">7 Days</h3>
+</div>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex gap-xs">
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full"></div>
+<div class="h-1 flex-1 bg-white rounded-full animate-pulse"></div>
+</div>
+<p class="text-label-sm mt-sm opacity-90">Keep it up, Arjun! You're in the top 5%.</p>
+</div>
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+</div>
+<!-- Progress Bar -->
+<div class="space-y-md mb-xl">
+<div class="flex justify-between items-center mb-xs">
+<span class="text-label-md font-bold">Chapter Progress</span>
+<span class="text-label-sm text-primary font-bold">64%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 64%"></div>
+</div>
+<p class="text-label-sm text-on-surface-variant">14/22 sub-topics completed</p>
+</div>
+<!-- Weak Topics -->
+<div>
+<h4 class="text-label-md font-bold mb-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-error text-sm">trending_down</span>
+                        Topics to Review
+                    </h4>
+<div class="space-y-sm">
+<div class="p-md rounded-xl border border-outline-variant bg-surface-container-lowest hover:border-secondary transition-colors cursor-pointer group">
+<div class="flex justify-between items-center">
+<span class="text-label-md">Area of Circles</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary">arrow_forward_ios</span>
+</div>
+</div>
+<div class="p-md rounded-xl border border-outline-variant bg-surface-container-lowest hover:border-secondary transition-colors cursor-pointer group">
+<div class="flex justify-between items-center">
+<span class="text-label-md">Simple Interest</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="mt-xl pt-lg border-t border-outline-variant">
+<button class="w-full flex items-center justify-between p-md rounded-xl bg-primary/5 text-primary hover:bg-primary/10 transition-colors">
+<span class="text-label-md font-bold">Generate Practice Quiz</span>
+<span class="material-symbols-outlined">bolt</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Simple interactivity for the practice question
+        document.querySelectorAll('.flex.gap-sm button').forEach(button => {
+            button.addEventListener('click', function() {
+                if(this.textContent.trim() === '5 cm') {
+                    this.classList.remove('bg-white', 'border-outline-variant');
+                    this.classList.add('bg-primary', 'text-white', 'border-primary');
+                    alert('Sariyana pathil! (Correct Answer!) 3² + 4² = 9 + 16 = 25. √25 = 5.');
+                } else {
+                    this.classList.add('bg-error/10', 'border-error', 'text-error');
+                    setTimeout(() => {
+                        this.classList.remove('bg-error/10', 'border-error', 'text-error');
+                    }, 1000);
+                }
+            });
+        });
+
+        // Hover animation for the fire icon
+        const fireIcon = document.querySelector('.material-symbols-outlined[style*="local_fire_department"]');
+        if (fireIcon) {
+            fireIcon.style.transition = 'transform 0.5s ease-in-out';
+            setInterval(() => {
+                fireIcon.style.transform = 'scale(1.1) translateY(-2px)';
+                setTimeout(() => {
+                    fireIcon.style.transform = 'scale(1) translateY(0)';
+                }, 500);
+            }, 2000);
+        }
+    </script>
+</body></html>

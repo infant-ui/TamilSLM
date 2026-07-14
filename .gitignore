@@ -5,6 +5,7 @@ __pycache__/
 
 # Environments
 .env
+.gemini/
 .venv/
 env/
 venv/
@@ -43,3 +44,4 @@ OllamaSetup (1).exe
 
 # Output/temp files
 temp_jobs/
+server_report.txt
