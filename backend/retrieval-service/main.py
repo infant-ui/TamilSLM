@@ -435,141 +435,42 @@ async def upload_book(
         if content_type is not None: meta.content_type = content_type.lower()
         if term is not None: meta.term = term
 
-        # 3. Create permanent destination folder
-        dest_rel_dir = os.path.dirname(meta.relative_path)
-        dest_abs_dir = os.path.join(data_root, dest_rel_dir)
-        os.makedirs(dest_abs_dir, exist_ok=True)
-        dest_abs_path = os.path.join(dest_abs_dir, file.filename)
+        # 3. Dispatch to Celery background task
+        from app.ingestion.tasks import process_upload_task
+        task = process_upload_task.delay(temp_path, meta.model_dump(), data_root)
         
-        # 4. Check OCRmyPDF availability and run it on scanned PDFs
-        ocr_temp_path = temp_path
-        # If ocrmypdf binary exists on PATH, try it
-        ocrmypdf_bin = shutil.which("ocrmypdf")
-        if ocrmypdf_bin:
-            try:
-                print(f"🚀 Running OCRmyPDF on {file.filename}...")
-                processed_pdf_path = os.path.join(temp_dir, f"ocr_{file.filename}")
-                ocr_lang = "tam" if meta.medium == "tamil" else "eng"
-                if meta.content_type == "guide": ocr_lang = "eng+tam"
-                
-                # Execute ocrmypdf subprocess
-                import subprocess
-                subprocess.run(
-                    ["ocrmypdf", "--skip-text", "--lang", ocr_lang, temp_path, processed_pdf_path],
-                    check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
-                )
-                if os.path.exists(processed_pdf_path):
-                    ocr_temp_path = processed_pdf_path
-                    print("✅ OCRmyPDF pre-processing complete!")
-            except Exception as e:
-                print(f"⚠️ OCRmyPDF failed: {e}. Falling back to standard ingestion pipeline...")
-                ocr_temp_path = temp_path
-                
-        # Move final PDF to destination
-        shutil.move(ocr_temp_path, dest_abs_path)
-        # Cleanup initial temp file if distinct
-        if ocr_temp_path != temp_path and os.path.exists(temp_path):
-            os.remove(temp_path)
-
-        # 5. Execute document chunking and indexing in the background thread
-        print(f"⚙️ Ingesting: {meta.filename}...")
-        cleaner = PDFCleaner(output_img_dir=os.path.join(data_root, "processed", "images"))
-        analyzer = LayoutAnalyzer()
-        ocr_cleaner = OCRCleaner()
-        validator = ChunkValidator()
-        chunker = CurriculumChunker()
-        
-        chunks, ocr_used = process_book_pipeline(
-            dest_abs_path, meta.model_dump(), cleaner, analyzer, ocr_cleaner, validator, chunker
-        )
-        
-        if not chunks:
-            raise ValueError("No valid textbook chunks could be extracted from PDF.")
-            
-        # 6. Encode chunks using model
-        model = services_cache.get("ta_model") # both models point to GTE Multilingual
-        if not model:
-            raise ValueError("Embedding model not loaded.")
-            
-        texts_to_embed = [c.text for c in chunks]
-        embeddings = model.encode(texts_to_embed, normalize_embeddings=True)
-        
-        # Save JSON chunks and embeddings
-        clean_rel_path = meta.relative_path.replace(".pdf", "")
-        chunks_dir = os.path.join(data_root, "processed", "chunks", os.path.dirname(clean_rel_path))
-        embeds_dir = os.path.join(data_root, "processed", "embeddings", os.path.dirname(clean_rel_path))
-        os.makedirs(chunks_dir, exist_ok=True)
-        os.makedirs(embeds_dir, exist_ok=True)
-        
-        chunks_file = os.path.join(chunks_dir, f"{os.path.basename(clean_rel_path)}_chunks.json")
-        embeds_file = os.path.join(embeds_dir, f"{os.path.basename(clean_rel_path)}_embeddings.npy")
-        
-        with open(chunks_file, "w", encoding="utf-8") as f:
-            json.dump([c.model_dump() for c in chunks], f, ensure_ascii=False, indent=2)
-        np.save(embeds_file, embeddings)
-
-        # 7. Update manifest
-        registry_path = os.path.join(data_root, "registry", "manifest.json")
-        os.makedirs(os.path.dirname(registry_path), exist_ok=True)
-        
-        manifest = {"last_updated": None, "total_documents": 0, "documents": {}}
-        if os.path.exists(registry_path):
-            try:
-                with open(registry_path, "r", encoding="utf-8") as f:
-                    manifest = json.load(f)
-            except Exception:
-                pass
-                
-        # Get hash
-        sha256 = re.sub(r"[^a-zA-Z0-9]", "_", file.filename)
-        manifest["documents"][sha256] = {
-            "document_id": sha256,
-            "file_path": meta.relative_path,
-            "filename": meta.filename,
-            "file_hash": sha256,
-            "modified_time": datetime.now().isoformat(),
-            "class_level": meta.class_level,
-            "subject": meta.subject,
-            "language": meta.language,
-            "medium": meta.medium,
-            "content_type": meta.content_type,
-            "term": meta.term,
-            "year": meta.year,
-            "publisher": meta.publisher,
-            "edition": meta.edition,
-            "indexed_status": "indexed",
-            "last_indexed_timestamp": datetime.utcnow().isoformat(),
-            "chunk_count": len(chunks),
-            "embedding_status": "completed",
-            "ocr_used": ocr_used or (ocr_temp_path != temp_path),
-            "errors": None
-        }
-        manifest["last_updated"] = datetime.utcnow().isoformat()
-        manifest["total_documents"] = len(manifest["documents"])
-        
-        with open(registry_path, "w", encoding="utf-8") as f:
-            json.dump(manifest, f, indent=2, ensure_ascii=False)
-
-        # 8. Rebuild caches and BM25 index on disk and reload in memory
-        compile_indices(data_root, registry_path)
-        load_unified_cache()
-        # Rebuild retriever BM25
-        services_cache["retriever"] = HybridRetriever(services_cache)
-
         return {
-            "status": "success",
-            "message": f"Book '{file.filename}' processed successfully.",
-            "metadata": meta.model_dump(),
-            "chunks_count": len(chunks),
-            "ocr_applied": ocr_used or (ocr_temp_path != temp_path)
+            "status": "queued",
+            "job_id": task.id,
+            "message": f"Book '{file.filename}' queued for processing.",
+            "metadata": meta.model_dump()
         }
     except Exception as e:
         # Cleanup temp file if exists on failure
         if os.path.exists(temp_path):
-            os.remove(temp_path)
+            try:
+                os.remove(temp_path)
+            except Exception:
+                pass
         import traceback
         traceback.print_exc()
-        raise HTTPException(status_code=500, detail=f"Ingestion failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Ingestion queueing failed: {str(e)}")
+
+@app.get("/upload/status/{job_id}")
+async def upload_status(job_id: str):
+    from app.ingestion.tasks import celery_app
+    task = celery_app.AsyncResult(job_id)
+    if task.state == 'PENDING':
+        return {"status": "queued"}
+    elif task.state == 'PROCESSING':
+        return {"status": "processing"}
+    elif task.state == 'SUCCESS':
+        return {"status": "completed", "result": task.result}
+    elif task.state == 'FAILED':
+        error_info = task.info.get('error', 'Unknown error') if isinstance(task.info, dict) else str(task.info)
+        return {"status": "failed", "error": error_info}
+    else:
+        return {"status": task.state.lower()}
 
 @app.post("/retrieve/debug")
 async def retrieve_debug(req: RetrieveRequest):

@@ -51,6 +51,23 @@ services:
       timeout: 5s
       retries: 5
 
+  # 3b. Celery Worker for Retrieval Service
+  retrieval-worker:
+    build:
+      context: ./backend/retrieval-service
+      dockerfile: Dockerfile
+    container_name: tamiledu-retrieval-worker
+    command: celery -A app.ingestion.tasks worker --loglevel=info --concurrency=1
+    volumes:
+      - ./data:/data
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+    restart: always
+
   # 4. FastAPI Correction Service
   correction-service:
     build:

@@ -15,3 +15,5 @@ pytesseract
 requests
 scikit-learn
 torch
+celery
+redis

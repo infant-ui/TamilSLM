@@ -1,3 +1,4 @@
+# pyrefly: ignore-all-errors
 from fpdf import FPDF
 from datetime import datetime
 import os

@@ -126,23 +126,22 @@ app.post("/query/stream", async (req, res) => {
     const activeFallbackAllowed = fallback_language_allowed !== undefined ? !!fallback_language_allowed : false;
     const activeTopK = top_k !== undefined ? parseInt(top_k) : 3;
 
-    // A.5 Intent Routing
+    // A.5 Intent Routing (Deterministic Keyword Classifier)
     let intent = "Chat";
+    
+    // 1. Honor explicit multimodal client intents
     if (explicit_intent === "image") {
         intent = "Image";
+    } else if (explicit_intent === "ocr") {
+        intent = "OCR";
+    } else if (explicit_intent === "voice") {
+        intent = "Voice";
     } else {
-        try {
-            const intentRes = await fetch("http://localhost:8001/router/intent", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ query })
-            });
-            if (intentRes.ok) {
-                const data = await intentRes.json();
-                intent = data.intent || "Chat";
-            }
-        } catch (err) {
-            console.error("❌ Intent Router failed:", err.message);
+        // 2. Keyword fallback logic for standard queries
+        const lowerQuery = query.toLowerCase();
+        if (lowerQuery.includes("வரைபடம்") || lowerQuery.includes("படம்") || lowerQuery.includes("diagram") || 
+            lowerQuery.includes("image") || lowerQuery.includes("picture") || lowerQuery.includes("draw")) {
+            intent = "Image";
         }
     }
 
@@ -613,6 +612,21 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
         }
     } catch (err) {
         console.error("Proxy upload error:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.get("/api/upload/status/:jobId", async (req, res) => {
+    try {
+        const response = await fetch(`http://127.0.0.1:8000/upload/status/${req.params.jobId}`);
+        const data = await response.json();
+        if (response.ok) {
+            res.json(data);
+        } else {
+            res.status(response.status).json(data);
+        }
+    } catch (err) {
+        console.error("Proxy upload status error:", err);
         res.status(500).json({ error: err.message });
     }
 });

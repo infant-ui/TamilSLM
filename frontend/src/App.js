@@ -906,16 +906,42 @@ export default function App() {
         body: formData
       });
       const data = await res.json();
-      if (res.ok) {
-        setUploadStatus(`Success! File Ingested: ${data.chunks_count} chunks generated.`);
-        setUploadFile(null);
-        fetchDashboardData();
-      } else {
-        setUploadStatus(`Ingestion failed: ${data.detail || "Server error"}`);
+      if (!res.ok) {
+        setUploadStatus(`Ingestion queueing failed: ${data.detail || "Server error"}`);
+        setUploading(false);
+        return;
       }
+      
+      const jobId = data.job_id;
+      setUploadStatus("Queued for processing. Waiting for worker...");
+      
+      const pollInterval = setInterval(async () => {
+        try {
+          const statusRes = await fetch(`http://localhost:5000/api/upload/status/${jobId}`);
+          const statusData = await statusRes.json();
+          
+          if (statusData.status === "completed") {
+            clearInterval(pollInterval);
+            setUploadStatus(`Success! File Ingested: ${statusData.result?.chunks_count || 0} chunks generated.`);
+            setUploadFile(null);
+            fetchDashboardData();
+            setUploading(false);
+          } else if (statusData.status === "failed") {
+            clearInterval(pollInterval);
+            setUploadStatus(`Ingestion failed: ${statusData.error || "Unknown error"}`);
+            setUploading(false);
+          } else if (statusData.status === "processing") {
+            setUploadStatus("Processing PDF in background worker...");
+          }
+        } catch (pollErr) {
+          clearInterval(pollInterval);
+          setUploadStatus(`Status check failed: ${pollErr.message}`);
+          setUploading(false);
+        }
+      }, 3000); // poll every 3 seconds
+
     } catch (err) {
       setUploadStatus(`Upload failed: ${err.message}`);
-    } finally {
       setUploading(false);
     }
   };
