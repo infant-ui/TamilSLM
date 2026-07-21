@@ -380,12 +380,12 @@ async def generate_image_endpoint(req: ImageGenerateRequest, user: str = Depends
         return {"success": True, "image_path": cached_path, "cached": True}
         
     # 3. Enhance Prompt
-    enhanced, labels = enhance_prompt(req.prompt, req.medium)
+    enhanced, labels, subject, language = enhance_prompt(req.prompt, req.medium)
     
     # 4. Generate Image
     try:
         # Placeholder for actual generation which is pending NVIDIA schema
-        image_path = generate_image(enhanced, labels)
+        image_path = generate_image(enhanced, labels, subject, language)
         log_image_generation(req.prompt, enhanced, req.medium, image_path, int((time.time() - start_time) * 1000), "success")
         return {"success": True, "image_path": image_path, "cached": False, "enhanced_prompt": enhanced, "labels": labels}
     except NotImplementedError as e:

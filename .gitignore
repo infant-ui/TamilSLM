@@ -45,3 +45,7 @@ OllamaSetup (1).exe
 # Output/temp files
 temp_jobs/
 server_report.txt
+*.dll
+*.html
+backend/generation-service/generated-images/
+backend/generation-service/scratch_calibration/
