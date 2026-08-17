@@ -967,11 +967,7 @@ export default function App() {
           <header className="header">
             <div className="header-left">
               <div className="logo-mark">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                  <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="var(--cyan)" strokeWidth="2" fill="none"/>
-                  <polygon points="16,8 24,13 24,19 16,24 8,19 8,13" stroke="var(--cyan)" strokeWidth="1.2" fill="var(--cyan)" fillOpacity="0.15"/>
-                  <circle cx="16" cy="16" r="3.5" fill="var(--cyan)"/>
-                </svg>
+                <img src="/custom-logo.jpg" alt="TamilEdu-SLM Logo" width="24" height="24" style={{objectFit: 'contain'}} />
               </div>
               <div>
                 <h1 className="app-title">TamilEdu-SLM</h1>
@@ -1017,10 +1013,7 @@ export default function App() {
             {messages.length === 0 && (
               <div className="welcome">
                 <div className="welcome-glow">
-                  <svg width="60" height="60" viewBox="0 0 32 32" fill="none">
-                    <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="var(--cyan)" strokeWidth="1" fill="var(--cyan)" fillOpacity="0.05"/>
-                    <circle cx="16" cy="16" r="5" fill="var(--cyan)" fillOpacity="0.15"/>
-                  </svg>
+                  <img src="/custom-logo.jpg" alt="Welcome Logo" width="80" height="80" style={{objectFit: 'contain'}} />
                 </div>
                 <h2 className="welcome-title">Ask your Curriculum Teacher</h2>
                 <p className="welcome-sub">Explore Classes 6, 7, and 8 Mathematics and Science textbooks. Your RAG answers are structured by a friendly AI Tutor.</p>

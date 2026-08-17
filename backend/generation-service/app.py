@@ -185,7 +185,7 @@ async def generate_image_endpoint(req: ImageGenerateRequest, user: str = Depends
         return {"success": True, "image_path": cached_path, "cached": True}
         
     # 3. Enhance Prompt
-    enhanced, labels = enhance_prompt(req.prompt, req.medium)
+    enhanced, labels, _, _ = enhance_prompt(req.prompt, req.medium)
     
     # 4. Generate Image
     try:
