@@ -1,7 +1,9 @@
 import os
 import time
+import secrets
 import logging
 from fastapi import FastAPI, HTTPException, Request, Header, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 import app.db.corrections_db as db
@@ -10,13 +12,33 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Correction Service")
 
+# ── CORS: restrict to configured origin(s) instead of allowing any origin ──
+_allowed_origins = [o.strip() for o in os.environ.get("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5000").split(",") if o.strip()]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Admin keys configuration
 # NOTE: CORRECTION_ADMIN_KEY is currently a single shared secret.
-# The `reviewed_by` field should be understood as "approved using the admin key" 
+# The `reviewed_by` field should be understood as "approved using the admin key"
 # rather than true per-person accountability.
+#
+# SECURITY: There is intentionally no hardcoded "test" key that's valid regardless
+# of configuration, and no fixed fallback string -- if CORRECTION_ADMIN_KEY isn't
+# set, a random per-process secret is generated instead, so nothing here is ever a
+# fixed, publicly-known credential.
+_env_admin_key = os.environ.get("CORRECTION_ADMIN_KEY", "").strip()
+if not _env_admin_key:
+    _env_admin_key = secrets.token_urlsafe(32)
+    logger.warning(f"CORRECTION_ADMIN_KEY not set. Generated a random per-process admin key for this run: {_env_admin_key}")
+    logger.warning("Set CORRECTION_ADMIN_KEY in the environment for a stable key across restarts/deployments.")
+
 ADMIN_KEYS = {
-    "test-key-123": "Test Admin",
-    os.environ.get("CORRECTION_ADMIN_KEY", "secret-admin-key"): "Super Admin"
+    _env_admin_key: "Super Admin"
 }
 
 # Simple in-memory rate limiting for reports
@@ -124,4 +146,4 @@ def lookup_correction(query: str):
 if __name__ == "__main__":
     import uvicorn
     # Standalone service on port 8002
-    uvicorn.run(app, host="127.0.0.1", port=8002)
+    uvicorn.run(app, host="0.0.0.0", port=8002)

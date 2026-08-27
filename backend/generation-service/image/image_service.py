@@ -9,7 +9,8 @@ from .text_overlay import add_legend_to_image
 
 # Load env vars
 NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", "")
-NVIDIA_API_URL = os.environ.get("NVIDIA_API_URL", "https://ai.api.nvidia.com/v1/genai/black-forest-labs/flux.1-dev")
+NVIDIA_API_URL = os.environ.get("NVIDIA_API_URL", "https://integrate.api.nvidia.com/v1/images/generations")
+NVIDIA_IMAGE_MODEL = os.environ.get("NVIDIA_IMAGE_MODEL", "alibaba/qwen-image")
 
 # Path relative to backend/generation-service/
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -42,9 +43,13 @@ def generate_image(prompt: str, labels: list[str] = None, subject: str = "unknow
     base_delay = 1
     
     for attempt in range(max_retries):
+        # NVIDIA NIM's /v1/images/generations endpoint is OpenAI-compatible:
+        # {model, prompt, n, response_format, seed, steps} in, {data: [{b64_json}]} out.
         payload = {
-            "text_prompts": [{"text": prompt, "weight": 1}],
-            "cfg_scale": 5,
+            "model": NVIDIA_IMAGE_MODEL,
+            "prompt": prompt,
+            "n": 1,
+            "response_format": "b64_json",
             "steps": 25,
             "seed": random.randint(0, 2**32 - 1)
         }
@@ -55,13 +60,13 @@ def generate_image(prompt: str, labels: list[str] = None, subject: str = "unknow
         }
 
         try:
-            print(f"DEBUG FINAL OUTBOUND PROMPT: '{prompt}' (seed: {payload['seed']})")
             response = requests.post(NVIDIA_API_URL, headers=headers, json=payload, timeout=60)
             response.raise_for_status()
-            
+
             data = response.json()
-            b64_data = data.get("artifacts", [])[0].get("base64", "")
-            
+            images = data.get("data", [])
+            b64_data = images[0].get("b64_json", "") if images else ""
+
             if not b64_data:
                 raise ValueError("NIM API returned an empty or invalid base64 response")
                 

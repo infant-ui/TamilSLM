@@ -6,12 +6,18 @@ import os
 
 logger = logging.getLogger("generation_service.text_detector")
 
-# Configure tesseract path if it was just installed via winget
-# The default install path for UB-Mannheim is usually C:\Program Files\Tesseract-OCR\tesseract.exe
-if os.name == 'nt':
+# Configure the tesseract binary path. Checked in order:
+# 1. TESSERACT_CMD env var, for explicit overrides (e.g. a non-standard install, or
+#    a specific developer machine) without hardcoding anyone's personal path in source.
+# 2. Common Windows install locations (UB-Mannheim installer default), for local dev.
+# 3. Otherwise, fall back to whatever `tesseract` resolves to on PATH (the normal
+#    case inside the Linux Docker image, where it's installed via the package manager).
+_env_tesseract_cmd = os.environ.get("TESSERACT_CMD", "").strip()
+if _env_tesseract_cmd:
+    pytesseract.pytesseract.tesseract_cmd = _env_tesseract_cmd
+elif os.name == 'nt':
     tesseract_paths = [
         r"C:\Program Files\Tesseract-OCR\tesseract.exe",
-        r"C:\Users\YAZHINI\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
     ]
     for p in tesseract_paths:
         if os.path.exists(p):

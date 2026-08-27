@@ -49,3 +49,10 @@ server_report.txt
 *.html
 backend/generation-service/generated-images/
 backend/generation-service/scratch_calibration/
+
+# Editor/manual backup copies -- rely on git history instead of a tracked duplicate
+*.backup.js
+*.backup.py
+
+# Ad-hoc test-run SQLite artifacts (e.g. backend/correction-service/test_corrections_*.db)
+test_*.db

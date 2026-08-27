@@ -8,8 +8,52 @@ const multer = require("multer");
 
 const app = express();
 
-app.use(cors());
+// ── SECURITY: Admin key used to authenticate to generation-service ──
+// No hardcoded fallback: if this isn't set, the image-generation code path will
+// fail closed (401 from generation-service) rather than silently shipping a
+// known dev secret that doubles as a real working credential.
+const GENERATION_SERVICE_ADMIN_KEY = process.env.GENERATION_ADMIN_KEY || "";
+if (!GENERATION_SERVICE_ADMIN_KEY) {
+    console.warn("⚠️ GENERATION_ADMIN_KEY is not set. Image generation requests to generation-service will be rejected (401) until this is configured.");
+}
+
+// ── CORS: restrict to configured origin(s) instead of allowing any origin ──
+// Set ALLOWED_ORIGINS to a comma-separated list in production (e.g. your frontend's URL).
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || "http://localhost:3000")
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean);
+app.use(cors({
+    origin: (origin, callback) => {
+        // Allow non-browser requests (no Origin header, e.g. curl/healthchecks)
+        if (!origin || ALLOWED_ORIGINS.includes(origin)) {
+            return callback(null, true);
+        }
+        return callback(new Error("Not allowed by CORS"));
+    }
+}));
 app.use(express.json());
+
+// ── Simple in-memory per-IP rate limiter (no new dependency required) ──
+// Mirrors the pattern already used in correction-service. Per-process/in-memory,
+// so it won't hold under multiple Node workers or behind a proxy that doesn't
+// forward a real client IP -- adequate as a first line of defense against casual abuse.
+function makeRateLimiter({ windowMs, max }) {
+    const hits = new Map();
+    return (req, res, next) => {
+        const key = req.ip || req.connection?.remoteAddress || "unknown";
+        const now = Date.now();
+        const timestamps = (hits.get(key) || []).filter((t) => now - t < windowMs);
+        if (timestamps.length >= max) {
+            return res.status(429).json({ error: "Rate limit exceeded. Try again later." });
+        }
+        timestamps.push(now);
+        hits.set(key, timestamps);
+        next();
+    };
+}
+const chatRateLimiter = makeRateLimiter({ windowMs: 60_000, max: 20 });
+const uploadRateLimiter = makeRateLimiter({ windowMs: 60_000, max: 5 });
 
 // Serve textbook PDF files statically from the data directory
 app.use("/pdf", express.static(path.join(__dirname, "..", "..", "data")));
@@ -19,8 +63,9 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // ── REDIS CONNECTION (WITH RESILIENT FALLBACK) ──
 const redis = new Redis({
-    host: "127.0.0.1",
-    port: 6379,
+    host: process.env.REDIS_HOST || "127.0.0.1",
+    port: parseInt(process.env.REDIS_PORT || "6379", 10),
+    password: process.env.REDIS_PASSWORD || undefined,
     maxRetriesPerRequest: 1,
     retryStrategy: () => null // Do not retry continuously, fail quickly and fallback
 });
@@ -40,12 +85,17 @@ const memoryCache = new Map();
 const memoryHistory = new Map();
 const jobMap = new Map();
 
-// Service Endpoints
-const RETRIEVAL_URL = "http://127.0.0.1:8000/retrieve";
-const GENERATION_STREAM_URL = "http://127.0.0.1:8001/generate/stream";
+// Service Endpoints. Configurable via env so this resolves correctly whether the
+// gateway is run bare on the host (defaults to 127.0.0.1) or as its own container
+// in docker-compose (set via RETRIEVAL_SERVICE_HOST / GENERATION_SERVICE_HOST to
+// the sibling containers' service names, e.g. "retrieval-service").
+const RETRIEVAL_SERVICE_BASE = `http://${process.env.RETRIEVAL_SERVICE_HOST || "127.0.0.1"}:${process.env.RETRIEVAL_SERVICE_PORT || "8000"}`;
+const GENERATION_SERVICE_BASE = `http://${process.env.GENERATION_SERVICE_HOST || "127.0.0.1"}:${process.env.GENERATION_SERVICE_PORT || "8001"}`;
+const RETRIEVAL_URL = `${RETRIEVAL_SERVICE_BASE}/retrieve`;
+const GENERATION_STREAM_URL = `${GENERATION_SERVICE_BASE}/generate/stream`;
 
 // ── 1. SSE STREAMING CHAT ROUTE ──
-app.post("/query/stream", async (req, res) => {
+app.post("/query/stream", chatRateLimiter, async (req, res) => {
     console.log("📥 SSE Stream Request Received:", req.body);
     const { 
         query, 
@@ -154,11 +204,11 @@ app.post("/query/stream", async (req, res) => {
     if (intent === "Image") {
         res.write(`data: ${JSON.stringify({ intent: "Image" })}\n\n`);
         try {
-            const imgRes = await fetch("http://localhost:8001/generate/image", {
+            const imgRes = await fetch(`${GENERATION_SERVICE_BASE}/generate/image`, {
                 method: "POST",
-                headers: { 
+                headers: {
                     "Content-Type": "application/json",
-                    "x-generation-service-admin-key": "dev-generation-secret-key-123"
+                    "x-generation-service-admin-key": GENERATION_SERVICE_ADMIN_KEY
                 },
                 body: JSON.stringify({ prompt: query, medium: language })
             });
@@ -338,7 +388,7 @@ app.post("/query/stream", async (req, res) => {
 });
 
 // ── 2. BACKWARD-COMPATIBLE SYNCHRONOUS ROUTE ──
-app.post("/query", async (req, res) => {
+app.post("/query", chatRateLimiter, async (req, res) => {
     console.log("📥 Sync Request Received:", req.body);
     const { 
         query, 
@@ -451,7 +501,7 @@ app.post("/query", async (req, res) => {
 });
 
 // ── 3. ASYNC MINDMAP GENERATION ROUTE ──
-app.post("/mindmap/generate", async (req, res) => {
+app.post("/mindmap/generate", chatRateLimiter, async (req, res) => {
     const { text, language } = req.body;
 
     if (!text) {
@@ -582,7 +632,7 @@ app.get("/mindmap/status/:jobId", async (req, res) => {
 });
 
 // ── 5. PROXIED RESOURCE UPLOAD ENDPOINT ──
-app.post("/api/upload", upload.single("file"), async (req, res) => {
+app.post("/api/upload", uploadRateLimiter, upload.single("file"), async (req, res) => {
     console.log("📥 Upload proxy request received.");
     try {
         if (!req.file) {
@@ -599,7 +649,7 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
         if (req.body.content_type) formData.append("content_type", req.body.content_type);
         if (req.body.term) formData.append("term", req.body.term);
 
-        const response = await fetch("http://127.0.0.1:8000/upload", {
+        const response = await fetch(`${RETRIEVAL_SERVICE_BASE}/upload`, {
             method: "POST",
             body: formData
         });
@@ -618,7 +668,7 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
 
 app.get("/api/upload/status/:jobId", async (req, res) => {
     try {
-        const response = await fetch(`http://127.0.0.1:8000/upload/status/${req.params.jobId}`);
+        const response = await fetch(`${RETRIEVAL_SERVICE_BASE}/upload/status/${req.params.jobId}`);
         const data = await response.json();
         if (response.ok) {
             res.json(data);
@@ -635,7 +685,7 @@ app.get("/api/upload/status/:jobId", async (req, res) => {
 app.post("/api/feedback", async (req, res) => {
     console.log("📥 Feedback proxy request received.");
     try {
-        const response = await fetch("http://127.0.0.1:8000/feedback", {
+        const response = await fetch(`${RETRIEVAL_SERVICE_BASE}/feedback`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(req.body)
@@ -655,7 +705,7 @@ app.post("/api/feedback", async (req, res) => {
 // ── 7. PROXIED EVALUATION DASHBOARD ENDPOINT ──
 app.get("/api/evaluation/dashboard", async (req, res) => {
     try {
-        const response = await fetch("http://127.0.0.1:8000/evaluation/dashboard");
+        const response = await fetch(`${RETRIEVAL_SERVICE_BASE}/evaluation/dashboard`);
         const data = await response.json();
         if (response.ok) {
             res.json(data);
@@ -669,7 +719,7 @@ app.get("/api/evaluation/dashboard", async (req, res) => {
 });
 
 // Start Server
-const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`🚀 API Gateway running on http://127.0.0.1:${PORT}`);
+const PORT = parseInt(process.env.PORT || "5000", 10);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`🚀 API Gateway running on http://0.0.0.0:${PORT}`);
 });

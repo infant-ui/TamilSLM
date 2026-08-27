@@ -4,7 +4,14 @@ import json
 import requests
 from typing import Dict, List
 
-GLOSSARY_PATH = r"d:\Project Assistan\glossary_all_classes.csv"
+# Configurable via GLOSSARY_PATH so this works both in local dev on this machine and
+# inside the Linux Docker image, where the old hardcoded "d:\..." path never existed --
+# it was silently failing to load (see load_glossary()) with no error or log line.
+# Defaults to a path relative to the repo root (three levels up from this file:
+# backend/generation-service/image/ -> repo root), matching where the file actually
+# lives in this project.
+_DEFAULT_GLOSSARY_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "glossary_all_classes.csv"))
+GLOSSARY_PATH = os.environ.get("GLOSSARY_PATH", _DEFAULT_GLOSSARY_PATH)
 OLLAMA_API_URL = os.environ.get("OLLAMA_HOST", "http://localhost:11434") + "/api/chat"
 OLLAMA_MODEL = "qwen2.5:7b-instruct-q4_k_m"
 
@@ -14,6 +21,8 @@ glossary_ta_to_en: Dict[str, str] = {}
 
 def load_glossary():
     if not os.path.exists(GLOSSARY_PATH):
+        print(f"⚠️ Glossary file not found at {GLOSSARY_PATH}. Image labels will fall back to English only. "
+              f"Set the GLOSSARY_PATH environment variable if the CSV lives elsewhere.")
         return
     with open(GLOSSARY_PATH, mode="r", encoding="utf-8") as f:
         reader = csv.DictReader(f)

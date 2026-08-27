@@ -5,12 +5,13 @@ import pickle
 import sys
 import json
 import re
+import secrets
 import numpy as np
 import shutil
 import anyio
 from datetime import datetime
 from typing import Optional, List
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Header, Depends
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Header, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from sentence_transformers import SentenceTransformer
 from contextlib import asynccontextmanager
@@ -177,17 +178,27 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-# Add CORS Middleware
+# ── CORS: restrict to configured origin(s) instead of allowing any origin ──
+_allowed_origins = [o.strip() for o in os.environ.get("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5000").split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=_allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# ── SECURITY: Admin key gating /reload-cache and /upload ──
+# No hardcoded fallback value. If RETRIEVAL_ADMIN_KEY isn't set, generate a random
+# per-process secret instead of shipping a fixed, publicly-known default.
+_env_admin_key = os.environ.get("RETRIEVAL_ADMIN_KEY", "").strip()
+if not _env_admin_key:
+    _env_admin_key = secrets.token_urlsafe(32)
+    print(f"⚠️ RETRIEVAL_ADMIN_KEY not set. Generated a random per-process admin key for this run: {_env_admin_key}")
+    print("⚠️ Set RETRIEVAL_ADMIN_KEY in the environment for a stable key across restarts/deployments.")
+
 RETRIEVAL_ADMIN_KEYS = {
-    os.environ.get("RETRIEVAL_ADMIN_KEY", "dev-retrieval-secret-key-123"): "Admin"
+    _env_admin_key: "Admin"
 }
 
 def verify_retrieval_admin_key(x_retrieval_service_admin_key: Optional[str] = Header(None)) -> str:
@@ -195,9 +206,26 @@ def verify_retrieval_admin_key(x_retrieval_service_admin_key: Optional[str] = He
         raise HTTPException(status_code=401, detail="Unauthorized - Invalid or missing admin key")
     return RETRIEVAL_ADMIN_KEYS[x_retrieval_service_admin_key]
 
+# ── Simple in-memory per-IP rate limiter for expensive/unauthenticated routes ──
+# Mirrors the pattern already used in correction-service. Per-process/in-memory,
+# so it won't hold under multiple workers or behind a proxy that doesn't forward
+# a real client IP -- adequate as a first line of defense against casual abuse.
+_rate_limit_hits: dict = {}
+
+def rate_limit(request, max_requests: int, window_seconds: int, bucket: str):
+    client_ip = request.client.host if request.client else "unknown"
+    key = f"{bucket}:{client_ip}"
+    now = time.time()
+    timestamps = [t for t in _rate_limit_hits.get(key, []) if now - t < window_seconds]
+    if len(timestamps) >= max_requests:
+        raise HTTPException(status_code=429, detail="Rate limit exceeded. Try again later.")
+    timestamps.append(now)
+    _rate_limit_hits[key] = timestamps
+
 
 @app.post("/retrieve", response_model=RetrieveResponse)
-async def retrieve(req: RetrieveRequest):
+async def retrieve(req: RetrieveRequest, request: Request):
+    rate_limit(request, max_requests=30, window_seconds=60, bucket="retrieve")
     t_start = time.time()
     
     preferred_medium = req.preferred_medium.lower()
@@ -213,8 +241,9 @@ async def retrieve(req: RetrieveRequest):
     
     # 0. Check Correction Service first (Emergency Override Path)
     try:
+        correction_service_url = f"http://{os.environ.get('CORRECTION_SERVICE_HOST', '127.0.0.1')}:{os.environ.get('CORRECTION_SERVICE_PORT', '8002')}/corrections/lookup"
         corr_res = await anyio.to_thread.run_sync(
-            lambda: requests.get(f"http://127.0.0.1:8002/corrections/lookup?query={req.question}", timeout=0.5)
+            lambda: requests.get(correction_service_url, params={"query": req.question}, timeout=0.5)
         )
         if corr_res.status_code == 200:
             match = corr_res.json().get("match")
@@ -258,7 +287,13 @@ async def retrieve(req: RetrieveRequest):
     t_end = time.time()
     execution_time_ms = int((t_end - t_start) * 1000)
     
-    lang_key = "ta" if (preferred_medium == "tamil" if not fallback_applied else preferred_medium != "tamil") else "en"
+    # Resolve which language was actually served: the requested medium, unless a
+    # fallback swapped it to the other language.
+    if not fallback_applied:
+        resolved_medium = preferred_medium
+    else:
+        resolved_medium = "english" if preferred_medium == "tamil" else "tamil"
+    lang_key = "ta" if resolved_medium == "tamil" else "en"
     total_scanned = len(services_cache.get(f"{lang_key}_chunks", []))
 
     return RetrieveResponse(
@@ -288,10 +323,11 @@ async def reload_cache(admin: str = Depends(verify_retrieval_admin_key)):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/feedback")
-async def feedback(req: FeedbackRequest):
+async def feedback(req: FeedbackRequest, request: Request):
     """
     Logs teacher evaluations, correction annotations, and citation flags.
     """
+    rate_limit(request, max_requests=30, window_seconds=60, bucket="feedback")
     data_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
     evals_dir = os.path.join(data_root, "processed", "evals")
     os.makedirs(evals_dir, exist_ok=True)
@@ -318,9 +354,11 @@ async def feedback(req: FeedbackRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/evaluation/dashboard", response_model=DashboardResponse)
-async def evaluation_dashboard():
+async def evaluation_dashboard(admin: str = Depends(verify_retrieval_admin_key)):
     """
     Returns aggregated evaluation metrics, teacher ratings, and current CPU/RAM/GPU usage.
+    Requires an admin key: this exposes internal system resource metrics and should
+    not be reachable by arbitrary/unauthenticated clients.
     """
     data_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
     evals_dir = os.path.join(data_root, "processed", "evals")
@@ -400,11 +438,22 @@ async def upload_book(
     """
     if not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF documents are supported.")
-        
+
     data_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
     temp_dir = os.path.join(data_root, "processed", "temp_uploads")
     os.makedirs(temp_dir, exist_ok=True)
-    temp_path = os.path.join(temp_dir, file.filename)
+
+    # SECURITY: file.filename comes from the client-supplied Content-Disposition
+    # header and must never be trusted as a path component -- a crafted filename
+    # like "../../../etc/whatever.pdf" would otherwise let an authenticated caller
+    # write outside temp_dir. Strip it down to a bare basename first.
+    safe_filename = os.path.basename(file.filename.replace("\\", "/"))
+    if not safe_filename or safe_filename in (".", ".."):
+        raise HTTPException(status_code=400, detail="Invalid filename.")
+    temp_path = os.path.join(temp_dir, safe_filename)
+    # Defense in depth: confirm the resolved path is still inside temp_dir.
+    if os.path.commonpath([os.path.abspath(temp_path), temp_dir]) != temp_dir:
+        raise HTTPException(status_code=400, detail="Invalid filename.")
     
     try:
         # 1. Save uploaded file to temp path
@@ -417,14 +466,14 @@ async def upload_book(
         mock_rel_path = f"books/class_{class_id or 6}/{subject or 'science'}/{medium or 'english'}/{content_type or 'textbook'}/"
         if term:
             mock_rel_path += f"term_{term}/"
-        mock_rel_path += file.filename
-        
-        meta = parser.parse_from_filename(file.filename, mock_rel_path)
+        mock_rel_path += safe_filename
+
+        meta = parser.parse_from_filename(safe_filename, mock_rel_path)
         if not meta:
             # Absolute fallback
             meta = parser.parse_from_filename("class6_science_term1_english_textbook.pdf", "books/class_6/science/english/textbook/term_1/class6_science_term1_english_textbook.pdf")
-            meta.filename = file.filename
-            meta.relative_path = f"books/class_6/science/english/textbook/term_1/{file.filename}"
+            meta.filename = safe_filename
+            meta.relative_path = f"books/class_6/science/english/textbook/term_1/{safe_filename}"
             
         # Overwrite form overrides if present
         if class_id is not None: meta.class_level = class_id
@@ -442,7 +491,7 @@ async def upload_book(
         return {
             "status": "queued",
             "job_id": task.id,
-            "message": f"Book '{file.filename}' queued for processing.",
+            "message": f"Book '{safe_filename}' queued for processing.",
             "metadata": meta.model_dump()
         }
     except Exception as e:
@@ -473,8 +522,10 @@ async def upload_status(job_id: str):
         return {"status": task.state.lower()}
 
 @app.post("/retrieve/debug")
-async def retrieve_debug(req: RetrieveRequest):
-    res = await retrieve(req)
+async def retrieve_debug(req: RetrieveRequest, request: Request, admin: str = Depends(verify_retrieval_admin_key)):
+    # Requires an admin key: this leaks internal diagnostics (system prompts, chunk
+    # counts, embedding dimensions) that shouldn't be visible to arbitrary clients.
+    res = await retrieve(req, request)
     pref_lang = req.preferred_medium.lower()
     lang_key = "ta" if pref_lang == "tamil" else "en"
     return {
@@ -488,4 +539,4 @@ async def retrieve_debug(req: RetrieveRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -2,6 +2,25 @@ import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import MindmapGraph from './components/MindmapGraph';
 
+// API Gateway base URL. Configurable via REACT_APP_GATEWAY_URL at build time so this
+// works both in local dev (defaults to localhost:5000) and when the gateway is reached
+// through its container/service DNS name in docker-compose or a real deployment.
+const GATEWAY_BASE_URL = process.env.REACT_APP_GATEWAY_URL || "http://localhost:5000";
+
+// Escape HTML special characters so untrusted text (LLM output, OCR'd textbook
+// content) can never be interpreted as markup when later injected via
+// dangerouslySetInnerHTML. Must run BEFORE any trusted-HTML transform (KaTeX,
+// our own **bold** -> <strong> replacement) is applied.
+const escapeHtml = (str) => {
+  if (!str) return str;
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+};
+
 // Render inline and block LaTeX equations using KaTeX if available
 const renderMath = (text) => {
   if (!window.katex || !text) return text;
@@ -59,8 +78,14 @@ const renderMessageContent = (text) => {
     }
     
     // Render inline bold elements and KaTeX LaTeX formulas
+    // SECURITY: txt can originate from LLM-generated answers, retrieved textbook
+    // context, or OCR'd PDF content -- none of it is trusted. We escape it to inert
+    // text FIRST, then apply only our own controlled transforms (KaTeX rendering,
+    // **bold** -> <strong>) on top of the escaped string, so nothing an attacker
+    // (or a prompt-injected model response) puts in the text can execute as HTML/JS.
     const parseBoldAndMath = (txt) => {
-      let htmlContent = renderMath(txt);
+      let htmlContent = escapeHtml(txt);
+      htmlContent = renderMath(htmlContent);
       // Parse markdown bold **text** -> <strong>text</strong>
       htmlContent = htmlContent.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
       return <span dangerouslySetInnerHTML={{ __html: htmlContent }} />;
@@ -180,7 +205,7 @@ const SourcesList = ({ sources, lang, onOpenPdf, role }) => {
                 <span className="ts-medium">{bookMedium}</span>
                 <span className="ts-confidence">Confidence: <span className="ts-stars">{ratingStars}</span></span>
                 <a 
-                  href={`http://localhost:5000/pdf/${src.source_path}#page=${src.page_number}`}
+                  href={`${GATEWAY_BASE_URL}/pdf/${src.source_path}#page=${src.page_number}`}
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="td-pdf-btn-sm"
@@ -217,7 +242,7 @@ const SourcesList = ({ sources, lang, onOpenPdf, role }) => {
           {isOpen && (
             <div className="tutor-sources-detail-list">
               {sources.map((src, idx) => {
-                const pdfUrl = `http://localhost:5000/pdf/${src.source_path}#page=${src.page_number}`;
+                const pdfUrl = `${GATEWAY_BASE_URL}/pdf/${src.source_path}#page=${src.page_number}`;
                 
                 return (
                   <div key={idx} className="tutor-source-detail-card">
@@ -501,7 +526,7 @@ export default function App() {
 
     let intervalId = setInterval(async () => {
       try {
-        const res = await fetch(`http://localhost:5000/mindmap/status/${mindmapJobId}`);
+        const res = await fetch(`${GATEWAY_BASE_URL}/mindmap/status/${mindmapJobId}`);
         if (!res.ok) return;
 
         const info = await res.json();
@@ -527,7 +552,7 @@ export default function App() {
   const fetchDashboardData = async () => {
     setLoadingDashboard(true);
     try {
-      const res = await fetch("http://localhost:5000/api/evaluation/dashboard");
+      const res = await fetch(`${GATEWAY_BASE_URL}/api/evaluation/dashboard`);
       if (res.ok) {
         const data = await res.json();
         setDashboardData(data);
@@ -689,7 +714,7 @@ export default function App() {
     setMessages(prev => [...prev, userMsg, aiMsg]);
 
     try {
-      const response = await fetch("http://localhost:5000/query/stream", {
+      const response = await fetch(`${GATEWAY_BASE_URL}/query/stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
@@ -836,7 +861,7 @@ export default function App() {
     setMindmapJobId(null);
 
     try {
-      const res = await fetch("http://localhost:5000/mindmap/generate", {
+      const res = await fetch(`${GATEWAY_BASE_URL}/mindmap/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, language: lang === "ta" ? "tamil" : "english" })
@@ -862,7 +887,7 @@ export default function App() {
   const submitFeedback = async () => {
     if (!activeFeedbackMsg) return;
     try {
-      const res = await fetch("http://localhost:5000/api/feedback", {
+      const res = await fetch(`${GATEWAY_BASE_URL}/api/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -901,7 +926,7 @@ export default function App() {
     formData.append("term", uploadTerm);
 
     try {
-      const res = await fetch("http://localhost:5000/api/upload", {
+      const res = await fetch(`${GATEWAY_BASE_URL}/api/upload`, {
         method: "POST",
         body: formData
       });
@@ -917,7 +942,7 @@ export default function App() {
       
       const pollInterval = setInterval(async () => {
         try {
-          const statusRes = await fetch(`http://localhost:5000/api/upload/status/${jobId}`);
+          const statusRes = await fetch(`${GATEWAY_BASE_URL}/api/upload/status/${jobId}`);
           const statusData = await statusRes.json();
           
           if (statusData.status === "completed") {
