@@ -10,6 +10,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -17,7 +19,8 @@
       "page_number": 1,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -31,6 +34,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -38,7 +43,8 @@
       "page_number": 2,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -52,6 +58,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -59,7 +67,8 @@
       "page_number": 3,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -73,6 +82,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -80,7 +91,8 @@
       "page_number": 4,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -94,6 +106,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -101,7 +115,38 @@
       "page_number": 5,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_6_5",
+    "text": "[Figure Reference (Page 6) Caption: ]\n[Diagram Text: Ce]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 6,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        499.5373840332031,
+        390.0279846191406,
+        541.787841796875,
+        763.970947265625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -115,6 +160,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -122,7 +169,38 @@
       "page_number": 6,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_7_7",
+    "text": "[Figure Reference (Page 7) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 7,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        86.08251953125,
+        450.59368896484375,
+        574.736328125,
+        802.6016845703125
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -136,6 +214,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -143,7 +223,8 @@
       "page_number": 7,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -157,6 +238,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -164,7 +247,8 @@
       "page_number": 8,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -178,6 +262,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -185,7 +271,8 @@
       "page_number": 9,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -199,6 +286,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -206,7 +295,8 @@
       "page_number": 10,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -220,6 +310,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -227,7 +319,68 @@
       "page_number": 11,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_12_13",
+    "text": "[Figure Reference (Page 12) Caption: ]\n[Diagram Text: a]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 12,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        486.0,
+        340.0,
+        539.0,
+        406.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_12_14",
+    "text": "[Figure Reference (Page 12) Caption: ]\n[Diagram Text: a]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 12,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        486.0,
+        340.0,
+        539.0,
+        406.0
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -241,6 +394,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -248,7 +403,188 @@
       "page_number": 12,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_16",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: _]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        106.0,
+        629.0,
+        290.0,
+        670.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_17",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: ly i]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        123.0,
+        345.0,
+        270.0,
+        639.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_18",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: _]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        107.0,
+        325.0,
+        292.0,
+        366.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_19",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: Vv]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        141.0,
+        384.0,
+        258.0,
+        481.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_20",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: lf]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        145.0,
+        385.0,
+        258.0,
+        438.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_13_21",
+    "text": "[Figure Reference (Page 13) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 13,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        132.0,
+        574.0,
+        264.0,
+        634.0
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -262,6 +598,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -269,7 +607,8 @@
       "page_number": 13,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -283,6 +622,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -290,7 +631,8 @@
       "page_number": 14,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -304,6 +646,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -311,7 +655,8 @@
       "page_number": 15,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -325,6 +670,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -332,7 +679,8 @@
       "page_number": 16,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -346,6 +694,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "43.65 km. Convert it into metre and cm.",
@@ -353,7 +703,8 @@
       "page_number": 16,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -367,6 +718,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -374,7 +727,8 @@
       "page_number": 18,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -388,6 +742,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -395,7 +751,8 @@
       "page_number": 19,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -409,6 +766,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "2.1 Motion and Rest",
@@ -416,7 +775,8 @@
       "page_number": 19,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -430,6 +790,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -437,7 +799,8 @@
       "page_number": 20,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -451,6 +814,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -458,7 +823,38 @@
       "page_number": 21,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_22_32",
+    "text": "[Figure Reference (Page 22) Caption: ]\n[Diagram Text: ) ae]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 22,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        68.49260711669922,
+        250.81399536132812,
+        271.9501647949219,
+        615.4530029296875
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -472,6 +868,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -479,7 +877,8 @@
       "page_number": 22,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -493,6 +892,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -500,7 +901,38 @@
       "page_number": 23,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_24_35",
+    "text": "[Figure Reference (Page 24) Caption: ]\n[Diagram Text: ARDS]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 24,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        66.0822982788086,
+        57.18736267089844,
+        274.0750732421875,
+        162.85159301757812
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -514,6 +946,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -521,7 +955,68 @@
       "page_number": 24,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_25_37",
+    "text": "[Figure Reference (Page 25) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 25,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        311.65899658203125,
+        566.8709716796875,
+        538.7470092773438,
+        682.010986328125
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_25_38",
+    "text": "[Figure Reference (Page 25) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 25,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        430.52801513671875,
+        242.99098205566406,
+        523.7348022460938,
+        329.22308349609375
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -535,6 +1030,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "2.2 . Types of motion",
@@ -542,7 +1039,8 @@
       "page_number": 25,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -556,6 +1054,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -563,7 +1063,8 @@
       "page_number": 26,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -577,6 +1078,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -584,7 +1087,8 @@
       "page_number": 27,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -598,6 +1102,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -605,7 +1111,8 @@
       "page_number": 28,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -619,6 +1126,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -626,7 +1135,8 @@
       "page_number": 29,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -640,6 +1150,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -647,7 +1159,8 @@
       "page_number": 30,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -661,6 +1174,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -668,7 +1183,38 @@
       "page_number": 31,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_32_46",
+    "text": "[Figure Reference (Page 32) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 32,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        367.70355224609375,
+        351.8134460449219,
+        529.4564208984375,
+        496.35699462890625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -682,6 +1228,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -689,7 +1237,98 @@
       "page_number": 32,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_33_48",
+    "text": "[Figure Reference (Page 33) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 33,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        402.0,
+        113.0,
+        457.0,
+        143.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_33_49",
+    "text": "[Figure Reference (Page 33) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 33,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        401.0,
+        70.0,
+        458.0,
+        114.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_33_50",
+    "text": "[Figure Reference (Page 33) Caption: ]\n[Diagram Text: 1 yi]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 33,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        356.614990234375,
+        588.4146118164062,
+        470.8809814453125,
+        724.2536010742188
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -703,6 +1342,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -710,7 +1351,8 @@
       "page_number": 33,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -724,6 +1366,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "2.3 Science Today - ­Robot",
@@ -731,7 +1375,38 @@
       "page_number": 33,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_34_53",
+    "text": "[Figure Reference (Page 34) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 34,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        111.36199951171875,
+        463.34307861328125,
+        234.33203125,
+        558.7949829101562
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -745,6 +1420,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -752,7 +1429,128 @@
       "page_number": 34,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_35_55",
+    "text": "[Figure Reference (Page 35) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 35,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        331.2909851074219,
+        473.84320068359375,
+        396.6309814453125,
+        520.6300048828125
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_35_56",
+    "text": "[Figure Reference (Page 35) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 35,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        331.2909851074219,
+        534.1629638671875,
+        385.9909973144531,
+        595.68798828125
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_35_57",
+    "text": "[Figure Reference (Page 35) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 35,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        331.2909851074219,
+        608.4310913085938,
+        389.4809875488281,
+        651.3519897460938
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_35_58",
+    "text": "[Figure Reference (Page 35) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 35,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        331.2909851074219,
+        720.1157836914062,
+        396.85040283203125,
+        764.1257934570312
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -766,6 +1564,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -773,7 +1573,8 @@
       "page_number": 35,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -787,6 +1588,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -794,7 +1597,8 @@
       "page_number": 36,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -808,6 +1612,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -815,7 +1621,8 @@
       "page_number": 38,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -829,6 +1636,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -836,7 +1645,8 @@
       "page_number": 39,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -850,6 +1660,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.1 Physical Nature of Matter",
@@ -857,7 +1669,308 @@
       "page_number": 39,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_64",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: bY]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        136.88600158691406,
+        458.1559753417969,
+        271.677001953125,
+        585.8939819335938
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_65",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: S]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        516.0,
+        138.0,
+        547.0,
+        177.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_66",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: es]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        424.0,
+        101.0,
+        487.0,
+        145.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_67",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: 38]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        450.0,
+        124.0,
+        481.0,
+        170.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_68",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: ae]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        476.1850891113281,
+        154.02955627441406,
+        538.368896484375,
+        197.3712158203125
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_69",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: eo]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        436.9471740722656,
+        150.669921875,
+        468.2879333496094,
+        186.3301239013672
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_70",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: yj]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        315.0,
+        109.0,
+        348.0,
+        144.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_71",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: ©]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        282.0,
+        108.0,
+        319.0,
+        145.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_72",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: Ne?]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        86.42487335205078,
+        139.86953735351562,
+        165.168701171875,
+        184.1712188720703
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_40_73",
+    "text": "[Figure Reference (Page 40) Caption: ]\n[Diagram Text: 3?]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 40,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        90.98487091064453,
+        136.26950073242188,
+        166.8487548828125,
+        182.01126098632812
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -871,6 +1984,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -878,7 +1993,8 @@
       "page_number": 40,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -892,6 +2008,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.2 \u0007Mass, Shape and Volume of",
@@ -899,7 +2017,8 @@
       "page_number": 40,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -913,6 +2032,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -920,7 +2041,8 @@
       "page_number": 41,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -934,6 +2056,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -941,7 +2065,8 @@
       "page_number": 42,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -955,6 +2080,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.3 Diffusion",
@@ -962,7 +2089,38 @@
       "page_number": 42,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_43_79",
+    "text": "[Figure Reference (Page 43) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 43,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        121.90899658203125,
+        194.56497192382812,
+        276.4859924316406,
+        304.30596923828125
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -976,6 +2134,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -983,7 +2143,8 @@
       "page_number": 43,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -997,6 +2158,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.4 \u0007Compressibility of gases compared to liquids and solids",
@@ -1004,7 +2167,8 @@
       "page_number": 43,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1018,6 +2182,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1025,7 +2191,68 @@
       "page_number": 44,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_45_83",
+    "text": "[Figure Reference (Page 45) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 45,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        86.166748046875,
+        641.2862548828125,
+        160.0802001953125,
+        671.502685546875
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_45_84",
+    "text": "[Figure Reference (Page 45) Caption: ]\n[Diagram Text: yy,]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 45,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        86.11912536621094,
+        676.6320190429688,
+        160.08023071289062,
+        707.2640991210938
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1039,6 +2266,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.5 \u0007Pure Substances and Mixtures",
@@ -1046,7 +2275,8 @@
       "page_number": 45,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1060,6 +2290,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1067,7 +2299,8 @@
       "page_number": 46,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1081,6 +2314,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1088,7 +2323,8 @@
       "page_number": 47,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1102,6 +2338,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.6 Separation of Mixtures",
@@ -1109,7 +2347,8 @@
       "page_number": 47,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1123,6 +2362,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1130,7 +2371,38 @@
       "page_number": 48,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_49_90",
+    "text": "[Figure Reference (Page 49) Caption: ]\n[Diagram Text: Ww,]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 49,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        370.24615478515625,
+        264.237060546875,
+        539.1558837890625,
+        447.718994140625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1144,6 +2416,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1151,7 +2425,8 @@
       "page_number": 49,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1165,6 +2440,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1172,7 +2449,68 @@
       "page_number": 50,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_51_93",
+    "text": "[Figure Reference (Page 51) Caption: ]\n[Diagram Text: —]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 51,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        120.0,
+        761.0,
+        172.0,
+        793.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_51_94",
+    "text": "[Figure Reference (Page 51) Caption: ]\n[Diagram Text: ray]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 51,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        192.0,
+        667.0,
+        246.0,
+        768.0
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1186,6 +2524,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1193,7 +2533,8 @@
       "page_number": 51,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1207,6 +2548,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1214,7 +2557,38 @@
       "page_number": 52,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_53_97",
+    "text": "[Figure Reference (Page 53) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 53,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        113.28370666503906,
+        261.07501220703125,
+        285.7911376953125,
+        382.1199951171875
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1228,6 +2602,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "3.7 Food Adulteration",
@@ -1235,7 +2611,8 @@
       "page_number": 53,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1249,6 +2626,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1256,7 +2635,8 @@
       "page_number": 54,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1270,6 +2650,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1277,7 +2659,38 @@
       "page_number": 55,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_56_101",
+    "text": "[Figure Reference (Page 56) Caption: Figure 2\nFigure 3]\n[Diagram Text: eS x]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 56,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        108.259765625,
+        553.8071899414062,
+        312.44927978515625,
+        708.7168579101562
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1291,6 +2704,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1298,7 +2713,8 @@
       "page_number": 56,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1312,6 +2728,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1319,7 +2737,8 @@
       "page_number": 57,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1333,6 +2752,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1340,7 +2761,8 @@
       "page_number": 58,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1354,6 +2776,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1361,7 +2785,98 @@
       "page_number": 59,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_60_106",
+    "text": "[Figure Reference (Page 60) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 60,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        390.0,
+        501.0,
+        432.0,
+        532.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_60_107",
+    "text": "[Figure Reference (Page 60) Caption: ]\n[Diagram Text: =)]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 60,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        345.0,
+        524.0,
+        395.0,
+        555.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_60_108",
+    "text": "[Figure Reference (Page 60) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 60,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        388.0,
+        520.0,
+        436.0,
+        559.0
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1375,6 +2890,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1382,7 +2899,8 @@
       "page_number": 60,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1396,6 +2914,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "4.1 Plant forms and functions",
@@ -1403,7 +2923,38 @@
       "page_number": 60,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_61_111",
+    "text": "[Figure Reference (Page 61) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 61,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        384.9909973144531,
+        543.6982421875,
+        516.240966796875,
+        630.60302734375
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1417,6 +2968,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1424,7 +2977,8 @@
       "page_number": 61,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1438,6 +2992,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1445,7 +3001,8 @@
       "page_number": 62,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1459,6 +3016,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1466,7 +3025,8 @@
       "page_number": 63,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1480,6 +3040,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "4.2 . Habitat",
@@ -1487,7 +3049,8 @@
       "page_number": 63,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1501,6 +3064,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1508,7 +3073,8 @@
       "page_number": 64,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1522,6 +3088,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1529,7 +3097,8 @@
       "page_number": 65,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1543,6 +3112,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1550,7 +3121,8 @@
       "page_number": 66,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1564,6 +3136,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1571,7 +3145,8 @@
       "page_number": 67,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1585,6 +3160,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "4.3 Plant Adaptations and ­Modifications",
@@ -1592,7 +3169,68 @@
       "page_number": 67,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_68_121",
+    "text": "[Figure Reference (Page 68) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 68,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        344.4705810546875,
+        77.69295501708984,
+        547.1513061523438,
+        198.81527709960938
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_68_122",
+    "text": "[Figure Reference (Page 68) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 68,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        332.42498779296875,
+        440.3188781738281,
+        443.4010009765625,
+        512.4693603515625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1606,6 +3244,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1613,7 +3253,8 @@
       "page_number": 68,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1627,6 +3268,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1634,7 +3277,8 @@
       "page_number": 69,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1648,6 +3292,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1655,7 +3301,8 @@
       "page_number": 70,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1669,6 +3316,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1676,7 +3325,8 @@
       "page_number": 71,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1690,6 +3340,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1697,7 +3349,8 @@
       "page_number": 72,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1711,6 +3364,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1718,7 +3373,8 @@
       "page_number": 73,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1732,6 +3388,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "5.1 Biodiversity",
@@ -1739,7 +3397,8 @@
       "page_number": 73,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1753,6 +3412,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1760,7 +3421,38 @@
       "page_number": 74,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_75_131",
+    "text": "[Figure Reference (Page 75) Caption: ]\n[Diagram Text: =, |]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 75,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        108.95757293701172,
+        310.5194091796875,
+        273.90142822265625,
+        474.9010009765625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1774,6 +3466,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1781,7 +3475,8 @@
       "page_number": 75,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1795,6 +3490,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "5.2 \u0007Unicellular and",
@@ -1802,7 +3499,8 @@
       "page_number": 75,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1816,6 +3514,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1823,7 +3523,8 @@
       "page_number": 76,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1837,6 +3538,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "5.3 Adatptation in ­Animals",
@@ -1844,7 +3547,38 @@
       "page_number": 77,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_78_136",
+    "text": "[Figure Reference (Page 78) Caption: ]\n[Diagram Text: --]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 78,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        341.7441101074219,
+        593.3170166015625,
+        549.8779296875,
+        755.7319946289062
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1858,6 +3592,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1865,7 +3601,38 @@
       "page_number": 78,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_79_138",
+    "text": "[Figure Reference (Page 79) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 79,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        368.2439880371094,
+        150.22299194335938,
+        524.1489868164062,
+        293.87298583984375
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -1879,6 +3646,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1886,7 +3655,8 @@
       "page_number": 79,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1900,6 +3670,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1907,7 +3679,8 @@
       "page_number": 80,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1921,6 +3694,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1928,7 +3703,8 @@
       "page_number": 81,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1942,6 +3718,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1949,7 +3727,8 @@
       "page_number": 82,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1963,6 +3742,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -1970,7 +3751,8 @@
       "page_number": 85,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -1984,6 +3766,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "6.1 Components of Food",
@@ -1991,7 +3775,8 @@
       "page_number": 85,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2005,6 +3790,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2012,7 +3799,8 @@
       "page_number": 86,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2026,6 +3814,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2033,7 +3823,68 @@
       "page_number": 87,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_88_147",
+    "text": "[Figure Reference (Page 88) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 88,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        372.32598876953125,
+        77.54621887207031,
+        520.0670166015625,
+        224.55276489257812
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_88_148",
+    "text": "[Figure Reference (Page 88) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 88,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        368.18377685546875,
+        253.00201416015625,
+        524.2091064453125,
+        376.2900085449219
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -2047,6 +3898,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2054,7 +3907,8 @@
       "page_number": 88,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2068,6 +3922,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2075,7 +3931,8 @@
       "page_number": 89,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2089,6 +3946,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2096,7 +3955,8 @@
       "page_number": 90,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2110,6 +3970,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2117,7 +3979,8 @@
       "page_number": 91,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2131,6 +3994,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2138,7 +4003,8 @@
       "page_number": 92,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2152,6 +4018,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "6.2 Health and Nutrients",
@@ -2159,7 +4027,8 @@
       "page_number": 93,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2173,6 +4042,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2180,7 +4051,8 @@
       "page_number": 94,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2194,6 +4066,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2201,7 +4075,8 @@
       "page_number": 95,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2215,6 +4090,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2222,7 +4099,8 @@
       "page_number": 96,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2236,6 +4114,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "6.3 Introduction to Microbes",
@@ -2243,7 +4123,8 @@
       "page_number": 96,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2257,6 +4138,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2264,7 +4147,8 @@
       "page_number": 97,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2278,6 +4162,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2285,7 +4171,8 @@
       "page_number": 98,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2299,6 +4186,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2306,7 +4195,638 @@
       "page_number": 99,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_162",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: A]]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        107.0,
+        331.0,
+        223.0,
+        409.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_163",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: 7]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        107.0,
+        331.0,
+        168.0,
+        374.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_164",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        110.0,
+        335.0,
+        220.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_165",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        110.0,
+        335.0,
+        220.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_166",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        110.0,
+        335.0,
+        220.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_167",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        110.0,
+        335.0,
+        219.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_168",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        110.0,
+        335.0,
+        219.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_169",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ¥]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        111.0,
+        336.0,
+        219.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_170",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: ¥]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        111.0,
+        336.0,
+        219.0,
+        392.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_171",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        111.0,
+        336.0,
+        218.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_172",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        111.0,
+        336.0,
+        218.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_173",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        112.0,
+        336.0,
+        218.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_174",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        112.0,
+        336.0,
+        218.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_175",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        112.0,
+        336.0,
+        217.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_176",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        112.0,
+        336.0,
+        217.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_177",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        113.0,
+        337.0,
+        217.0,
+        391.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_178",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        113.0,
+        337.0,
+        217.0,
+        390.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_179",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        113.0,
+        337.0,
+        216.0,
+        390.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_180",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        113.0,
+        337.0,
+        216.0,
+        390.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_181",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        114.0,
+        337.0,
+        216.0,
+        390.0
+      ],
+      "image_path": "",
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_100_182",
+    "text": "[Figure Reference (Page 100) Caption: ]\n[Diagram Text: \\]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 100,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        114.0,
+        337.0,
+        172.0,
+        390.0
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -2320,6 +4840,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2327,7 +4849,38 @@
       "page_number": 100,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
+    }
+  },
+  {
+    "chunk_id": "unknown_fig_101_184",
+    "text": "[Figure Reference (Page 101) Caption: ]\n[Diagram Text: ]",
+    "metadata": {
+      "class_level": 6,
+      "subject": "science",
+      "medium": "english",
+      "language": "en",
+      "content_type": "textbook",
+      "term": 1,
+      "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
+      "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
+      "page_number": 101,
+      "chapter_no": "0",
+      "chapter_title": "Tables and Diagrams",
+      "ocr_processed": true,
+      "content_role": "figure",
+      "bbox": [
+        87.34500122070312,
+        285.2139892578125,
+        311.82000732421875,
+        453.7349853515625
+      ],
+      "image_path": "",
+      "source": "textbook"
     }
   },
   {
@@ -2341,6 +4894,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2348,7 +4903,8 @@
       "page_number": 101,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2362,6 +4918,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2369,7 +4927,8 @@
       "page_number": 102,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2383,6 +4942,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2390,7 +4951,8 @@
       "page_number": 103,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2404,6 +4966,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2411,7 +4975,8 @@
       "page_number": 104,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2425,6 +4990,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2432,7 +4999,8 @@
       "page_number": 105,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2446,6 +5014,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2453,7 +5023,8 @@
       "page_number": 106,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   },
   {
@@ -2467,6 +5038,8 @@
       "content_type": "textbook",
       "term": 1,
       "year": 2024,
+      "publisher": "Tamil Nadu Textbook and Educational Services Corporation",
+      "edition": "2024 Edition",
       "filename": "Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "relative_path": "books\\class_6\\science\\english\\textbook\\term_1\\Class_6_Science_English_Science_-_Term_1_-_2025.pdf",
       "section_path": "General",
@@ -2474,7 +5047,8 @@
       "page_number": 107,
       "chapter_no": "0",
       "chapter_title": "Front Matter / Introduction",
-      "ocr_processed": false
+      "ocr_processed": false,
+      "source": "textbook"
     }
   }
 ]

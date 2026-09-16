@@ -1,0 +1,181 @@
+[2026-09-16 16:32:12,900] [ WARNING] layout_analyzer.py:41 - Failed to load GPU LayoutModel: module layoutparser has no attribute Detectron2LayoutModel. Falling back to CPU heuristics.
+
+--- TamilEdu-SLM Ingestion Startup Diagnostics ---
+Hardware Mode: LEVEL_2_GPU (GPU Acceleration Enabled)
+[FAIL] Tesseract Installed
+[FAIL] English Language Pack (eng)
+[FAIL] Tamil Language Pack (tam)
+[FAIL] OCR Ready (Fallback to direct text extraction only)
+[WARN] Tesseract OCR binary was not found on the system PATH.
+
+Setup Instructions:
+  - Install Tesseract-OCR for your system (Windows: download installers, Linux: sudo apt install tesseract-ocr)
+  - Ensure 'eng.traineddata' and 'tam.traineddata' are placed in the Tesseract 'tessdata' folder.
+  - Check that the TESSDATA_PREFIX environment variable is correctly configured.
+---------------------------------------------------
+
+📊 Scan Complete. New: 28, Modified: 0, Invalid: 0
+⏳ Loading Pipeline Engines...
+[2026/09/16 16:32:12] ppocr DEBUG: Namespace(help='==SUPPRESS==', use_gpu=False, use_xpu=False, use_npu=False, ir_optim=True, use_tensorrt=False, min_subgraph_size=15, precision='fp32', gpu_mem=500, gpu_id=0, image_dir=None, page_num=0, det_algorithm='DB', det_model_dir='C:\\Users\\YAZHINI/.paddleocr/whl\\det\\ml\\Multilingual_PP-OCRv3_det_infer', det_limit_side_len=960, det_limit_type='max', det_box_type='quad', det_db_thresh=0.3, det_db_box_thresh=0.6, det_db_unclip_ratio=1.5, max_batch_size=10, use_dilation=False, det_db_score_mode='fast', det_east_score_thresh=0.8, det_east_cover_thresh=0.1, det_east_nms_thresh=0.2, det_sast_score_thresh=0.5, det_sast_nms_thresh=0.2, det_pse_thresh=0, det_pse_box_thresh=0.85, det_pse_min_area=16, det_pse_scale=1, scales=[8, 16, 32], alpha=1.0, beta=1.0, fourier_degree=5, rec_algorithm='SVTR_LCNet', rec_model_dir='C:\\Users\\YAZHINI/.paddleocr/whl\\rec\\ta\\ta_PP-OCRv4_rec_infer', rec_image_inverse=True, rec_image_shape='3, 48, 320', rec_batch_num=6, max_text_length=25, rec_char_dict_path='D:\\Project Assistan\\.venv\\Lib\\site-packages\\paddleocr\\ppocr\\utils\\dict\\ta_dict.txt', use_space_char=True, vis_font_path='./doc/fonts/simfang.ttf', drop_score=0.5, e2e_algorithm='PGNet', e2e_model_dir=None, e2e_limit_side_len=768, e2e_limit_type='max', e2e_pgnet_score_thresh=0.5, e2e_char_dict_path='./ppocr/utils/ic15_dict.txt', e2e_pgnet_valid_set='totaltext', e2e_pgnet_mode='fast', use_angle_cls=True, cls_model_dir='C:\\Users\\YAZHINI/.paddleocr/whl\\cls\\ch_ppocr_mobile_v2.0_cls_infer', cls_image_shape='3, 48, 192', label_list=['0', '180'], cls_batch_num=6, cls_thresh=0.9, enable_mkldnn=False, cpu_threads=10, use_pdserving=False, warmup=False, sr_model_dir=None, sr_image_shape='3, 32, 128', sr_batch_num=1, draw_img_save_dir='./inference_results', save_crop_res=False, crop_res_save_dir='./output', use_mp=False, total_process_num=1, process_id=0, benchmark=False, save_log_path='./log_output/', show_log=True, use_onnx=False, output='./output', table_max_len=488, table_algorithm='TableAttn', table_model_dir=None, merge_no_span_structure=True, table_char_dict_path=None, layout_model_dir=None, layout_dict_path=None, layout_score_threshold=0.5, layout_nms_threshold=0.5, kie_algorithm='LayoutXLM', ser_model_dir=None, re_model_dir=None, use_visual_backbone=True, ser_dict_path='../train_data/XFUND/class_list_xfun.txt', ocr_order_method=None, mode='structure', image_orientation=False, layout=True, table=True, ocr=True, recovery=False, use_pdf2docx_api=False, invert=False, binarize=False, alphacolor=(255, 255, 255), lang='ta', det=True, rec=True, type='ocr', ocr_version='PP-OCRv4', structure_version='PP-StructureV2')
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-09-16 16:32:16,236] [ WARNING] _http.py:932 - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+⏳ Loading Embedding Model (Alibaba-NLP/gte-multilingual-base)...
+Loading weights:   0%|          | 0/136 [00:00<?, ?it/s]Loading weights: 100%|██████████| 136/136 [00:00<00:00, 4812.54it/s]
+[transformers] [1mNewModel LOAD REPORT[0m from: Alibaba-NLP/gte-multilingual-base
+Key               | Status     |  | 
+------------------+------------+--+-
+classifier.bias   | UNEXPECTED |  | 
+classifier.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+🔧 Successfully patched GTE Multilingual position_ids buffer!
+📄 Processing: Class_6_Mathematics_English_Mathematics_-_Term_1.pdf...
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+⚠️ Warning: Failed to extract tables/figures on Page 2: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[2026/09/16 16:32:28] ppocr DEBUG: dt_boxes num : 26, elapsed : 0.433866024017334
+[2026/09/16 16:32:28] ppocr DEBUG: cls num  : 26, elapsed : 0.1347484588623047
+[2026/09/16 16:32:29] ppocr DEBUG: rec_res num  : 26, elapsed : 1.309615135192871
+⚠️ Warning: Failed to extract tables/figures on Page 3: bad escape \e at position 97
+⚠️ Warning: Failed to extract tables/figures on Page 4: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Skipping invalid chunk on Page 4: Chunk text is too short (49 chars, min threshold is 50)
+⚠️ Skipping invalid chunk on Page 4: Chunk text is too short (49 chars, min threshold is 50)
+⚠️ Skipping invalid chunk on Page 4: Chunk text is too short (48 chars, min threshold is 50)
+⚠️ Skipping invalid chunk on Page 4: Chunk text is too short (39 chars, min threshold is 50)
+[2026/09/16 16:32:30] ppocr DEBUG: dt_boxes num : 0, elapsed : 0.14209318161010742
+[2026/09/16 16:32:30] ppocr DEBUG: cls num  : 0, elapsed : 0
+[2026/09/16 16:32:30] ppocr DEBUG: rec_res num  : 0, elapsed : 0.0
+[2026-09-16 16:32:30,271] [   ERROR] ocr_cleaner.py:192 - Tesseract OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+⚠️ Warning: Failed to extract tables/figures on Page 6: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 7: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 8: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 9: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 10: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 12: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 14: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 15: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 16: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[2026/09/16 16:32:32] ppocr DEBUG: dt_boxes num : 2, elapsed : 0.1770458221435547
+[2026/09/16 16:32:32] ppocr DEBUG: cls num  : 2, elapsed : 0.008002281188964844
+[2026/09/16 16:32:32] ppocr DEBUG: rec_res num  : 2, elapsed : 0.07666683197021484
+⚠️ Warning: Failed to extract tables/figures on Page 18: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 20: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[2026/09/16 16:32:34] ppocr DEBUG: dt_boxes num : 5, elapsed : 0.14654326438903809
+[2026/09/16 16:32:34] ppocr DEBUG: cls num  : 5, elapsed : 0.047171592712402344
+[2026/09/16 16:32:34] ppocr DEBUG: rec_res num  : 5, elapsed : 0.2703278064727783
+⚠️ Warning: Failed to extract tables/figures on Page 22: bad escape \e at position 97
+⚠️ Warning: Failed to extract tables/figures on Page 23: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 24: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 25: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 30: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 32: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 33: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 35: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 36: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 37: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 38: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 39: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 40: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 41: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 42: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 43: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 44: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 45: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 46: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 47: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 48: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 49: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 50: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 51: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 52: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 53: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 54: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 55: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 56: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 57: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 58: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 59: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 60: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 61: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 62: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 63: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 64: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 65: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 66: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 67: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 68: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 71: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 72: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Skipping invalid chunk on Page 72: Chunk text is too short (30 chars, min threshold is 50)
+⚠️ Warning: Failed to extract tables/figures on Page 73: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 75: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[2026/09/16 16:32:44] ppocr DEBUG: dt_boxes num : 0, elapsed : 0.10056018829345703
+[2026/09/16 16:32:44] ppocr DEBUG: cls num  : 0, elapsed : 0
+[2026/09/16 16:32:44] ppocr DEBUG: rec_res num  : 0, elapsed : 0.0
+[2026-09-16 16:32:44,751] [   ERROR] ocr_cleaner.py:192 - Tesseract OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+[transformers] Detected the usage of `get_extended_attention_mask`: This function is deprecated and will be removed in v5.12.0. Please use the new API in `transformers.masking_utils`
+⚠️ Warning: Failed to extract tables/figures on Page 78: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 79: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 80: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 81: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 82: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 83: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 85: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 87: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 88: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 89: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 91: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 92: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 93: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 94: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 95: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 96: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 97: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 98: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 99: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 100: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 101: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 102: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 103: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 104: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 105: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 106: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 107: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 108: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 109: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 110: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 111: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Skipping invalid chunk on Page 111: Contains extremely long word (64 characters) which points to OCR character gluing error
+⚠️ Warning: Failed to extract tables/figures on Page 112: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 113: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 114: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 115: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 116: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 117: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 118: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 119: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 120: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 121: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 122: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 123: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 124: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Skipping invalid chunk on Page 124: Contains extremely long word (76 characters) which points to OCR character gluing error
+⚠️ Warning: Failed to extract tables/figures on Page 125: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 126: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 127: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 128: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 129: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 130: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 131: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 132: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 133: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 134: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 135: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+⚠️ Warning: Failed to extract tables/figures on Page 136: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+✅ Indexed 231 chunks for Class_6_Mathematics_English_Mathematics_-_Term_1.pdf
+📄 Processing: Class_6_Mathematics_English_Mathematics_-_Term_2.pdf...
+[2026/09/16 16:33:10] ppocr DEBUG: dt_boxes num : 0, elapsed : 0.09235763549804688
+[2026/09/16 16:33:10] ppocr DEBUG: cls num  : 0, elapsed : 0
+[2026/09/16 16:33:10] ppocr DEBUG: rec_res num  : 0, elapsed : 0.0
+[2026-09-16 16:33:10,331] [   ERROR] ocr_cleaner.py:192 - Tesseract OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+(246, 0, 3) 32 256
