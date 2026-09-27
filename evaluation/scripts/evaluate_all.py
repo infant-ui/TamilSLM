@@ -55,6 +55,20 @@ def main():
     full = load_if_exists("retrieval_full_results.json")
     gen = load_if_exists("generation_results.json")
 
+    # FIX (2026-09-17): this orchestrator used to bundle whatever
+    # generation_results.json happened to be on disk with no success/failure
+    # check, so a crashed generation run's stale leftover file (or, after
+    # evaluate_generation.py's new incremental checkpointing, an in_progress
+    # partial file) would silently get combined with fresh bm25/full results
+    # as if they were all part of the same run. Only include it here if it
+    # actually finished.
+    gen_incomplete = bool(gen) and gen.get("status") != "complete"
+    if gen_incomplete:
+        print(f"\nWARNING: generation_results.json exists but status={gen.get('status')!r} "
+              f"(not 'complete') -- it will NOT be included in final_report.json. "
+              f"Rerun with --with-generation to resume from its checkpoint.")
+        gen = None
+
     report = {"retrieval_bm25": bm25, "retrieval_full": full, "generation": gen}
     os.makedirs(RESULTS_DIR, exist_ok=True)
     out_path = os.path.join(RESULTS_DIR, "final_report.json")
