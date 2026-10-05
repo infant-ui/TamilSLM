@@ -27,6 +27,6 @@ as unverified until replaced by the output of the real pipelines below.
 
 ## Use instead
 
-Use `run_actual_llm_judge.py` / `run_actual_llm_judge_large.py` +
-`analyze_messy.py` / `analyze_large.py` instead. See `/eval_results/` for
+Use `eval/run_actual_llm_judge.py` / `eval/run_actual_llm_judge_large.py` +
+`eval/analyze_messy.py` / `eval/analyze_large.py` instead. See `eval/results/` for
 the current recorded kappa values.

@@ -1,11 +1,12 @@
 @echo off
+cd /d "%~dp0\..\.."
 echo Starting full documentation regeneration...
 
 echo.
 echo ============================================
 echo Generating Obsidian Knowledge Base...
 echo ============================================
-python generate_obsidian_kb.py
+python scripts\docs\generate_obsidian_kb.py
 if %ERRORLEVEL% neq 0 (
     echo [ERROR] generate_obsidian_kb.py failed.
     pause
@@ -45,7 +46,7 @@ echo.
 echo ============================================
 echo Generating Changelog Knowledge Base...
 echo ============================================
-python generate_changelog_kb.py
+python scripts\docs\generate_changelog_kb.py
 if %ERRORLEVEL% neq 0 (
     echo [ERROR] generate_changelog_kb.py failed with exit code %ERRORLEVEL%
     echo Check the output above for the traceback.

@@ -7,7 +7,7 @@ import re
 from datetime import datetime
 from collections import defaultdict
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))  # repo root
 DOCS_DIR = os.path.join(BASE_DIR, 'docs', 'graphify')
 OBSIDIAN_DIR = os.path.join(DOCS_DIR, 'obsidian')
 CHANGELOG_DIR = os.path.join(OBSIDIAN_DIR, 'changelog')
