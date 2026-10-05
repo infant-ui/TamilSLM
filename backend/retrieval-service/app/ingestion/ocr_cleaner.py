@@ -138,6 +138,15 @@ class OCRCleaner:
         # Zoom in for better OCR accuracy (2x resolution)
         pix = page.get_pixmap(clip=rect, matrix=fitz.Matrix(2, 2))
         
+        # Guard against a degenerate (zero-width/zero-height) crop: a malformed
+        # or mis-detected bbox (e.g. from figure/table extraction on page 1 of
+        # Class_6_Mathematics_English_Mathematics_-_Term_2.pdf, confirmed via two
+        # reproductions) yields a pixmap with a zero dimension, which crashes
+        # PaddleOCR's native inference below at the C++ level with no catchable
+        # Python exception. Skip OCR entirely for a degenerate box instead.
+        if pix.width <= 0 or pix.height <= 0:
+            return "", 0.0
+        
         # Convert to PIL Image
         img_data = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
         

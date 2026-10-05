@@ -6,6 +6,7 @@ import numpy as np
 import fitz  # PyMuPDF
 from typing import List, Dict, Tuple, Optional
 import logging
+from app.ingestion.text_utils import normalize_tamil_unicode, strip_unrecoverable_artifacts
 
 logger = logging.getLogger(__name__)
 
@@ -100,7 +101,12 @@ class PDFCleaner:
 
         for block in raw_blocks:
             x0, y0, x1, y1, text, block_no, block_type = block
-            text_strip = text.strip()
+            # Repair Tamil text corruption from this PDF's embedded font encoding
+            # (split vowel signs, stray replacement/control-code glyphs) -- see
+            # text_utils.py docstring. NFC normalization and the replacement-char
+            # strip are no-ops for already-clean English text, so this is safe to
+            # apply unconditionally rather than threading medium/language through.
+            text_strip = normalize_tamil_unicode(strip_unrecoverable_artifacts(text.strip()))
             
             if not text_strip:
                 continue

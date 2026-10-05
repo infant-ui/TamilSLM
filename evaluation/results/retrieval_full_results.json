@@ -1,0 +1,2161 @@
+{
+  "n_questions": 49,
+  "per_item": [
+    {
+      "id": "EN_001",
+      "lang": "english",
+      "unit": "Measurement",
+      "expected_pages": [
+        5,
+        7
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 11.004447937011719,
+        "rerank_latency_ms": 12586.238622665405,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_002",
+      "lang": "english",
+      "unit": "Measurement",
+      "expected_pages": [
+        9
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "EN_003",
+      "lang": "english",
+      "unit": "Measurement",
+      "expected_pages": [
+        11
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.5898895263671875,
+        "rerank_latency_ms": 12187.653064727783,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "TA_001",
+      "lang": "tamil",
+      "unit": "Measurement",
+      "expected_pages": [
+        5,
+        7
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.9992332458496094,
+        "rerank_latency_ms": 10382.53402709961,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TA_002",
+      "lang": "tamil",
+      "unit": "Measurement",
+      "expected_pages": [
+        12
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.115581512451172,
+        "rerank_latency_ms": 10306.585550308228,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "BI_001",
+      "lang": "bilingual",
+      "unit": "Measurement",
+      "expected_pages": [
+        9
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_001",
+      "lang": "tanglish",
+      "unit": "Measurement",
+      "expected_pages": [
+        5,
+        7
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.003358840942383,
+        "rerank_latency_ms": 12136.796951293945,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 2.992391586303711,
+        "rerank_latency_ms": 10397.387742996216,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "EN_004",
+      "lang": "english",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        20
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.008220672607422,
+        "rerank_latency_ms": 12166.932582855225,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_005",
+      "lang": "english",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        23
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.509304046630859,
+        "rerank_latency_ms": 12167.516469955444,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_006",
+      "lang": "english",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        26,
+        27
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 7.68733024597168,
+        "rerank_latency_ms": 12221.51231765747,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "TA_003",
+      "lang": "tamil",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        20
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.004240036010742,
+        "rerank_latency_ms": 10331.531524658203,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TA_004",
+      "lang": "tamil",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        23
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.004716873168945,
+        "rerank_latency_ms": 10464.152574539185,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "BI_002",
+      "lang": "bilingual",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        20
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 7.537603378295898,
+        "rerank_latency_ms": 12261.10291481018,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          107
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.005598068237305,
+        "rerank_latency_ms": 10474.4873046875,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "BI_003",
+      "lang": "bilingual",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        26,
+        27
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 9.000539779663086,
+        "rerank_latency_ms": 11269.744396209717,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.073143005371094,
+        "rerank_latency_ms": 10577.842235565186,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "TG_002",
+      "lang": "tanglish",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        20
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.27301025390625,
+        "rerank_latency_ms": 11258.70132446289,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.9996166229248047,
+        "rerank_latency_ms": 10475.13484954834,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_003",
+      "lang": "tanglish",
+      "unit": "Force and Motion",
+      "expected_pages": [
+        23
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.0694007873535156,
+        "rerank_latency_ms": 12148.231267929077,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.9993782043457031,
+        "rerank_latency_ms": 10439.698934555054,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "EN_007",
+      "lang": "english",
+      "unit": "Matter",
+      "expected_pages": [
+        38,
+        39
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.526376724243164,
+        "rerank_latency_ms": 12671.33903503418,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_008",
+      "lang": "english",
+      "unit": "Matter",
+      "expected_pages": [
+        40
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.00035285949707,
+        "rerank_latency_ms": 12542.67692565918,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "EN_009",
+      "lang": "english",
+      "unit": "Matter",
+      "expected_pages": [
+        45,
+        46,
+        47
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.9986114501953125,
+        "rerank_latency_ms": 5523.93102645874,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "TA_005",
+      "lang": "tamil",
+      "unit": "Matter",
+      "expected_pages": [
+        38,
+        39
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.9992332458496094,
+        "rerank_latency_ms": 3128.159284591675,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "TA_006",
+      "lang": "tamil",
+      "unit": "Matter",
+      "expected_pages": [
+        45
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 2.998828887939453,
+        "rerank_latency_ms": 3108.1321239471436,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "BI_004",
+      "lang": "bilingual",
+      "unit": "Matter",
+      "expected_pages": [
+        40
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.01470947265625,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_004",
+      "lang": "tanglish",
+      "unit": "Matter",
+      "expected_pages": [
+        38,
+        39
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.0024051666259766,
+        "rerank_latency_ms": 4505.271196365356,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 2.1619796752929688,
+        "rerank_latency_ms": 3056.030511856079,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "EN_010",
+      "lang": "english",
+      "unit": "Plants",
+      "expected_pages": [
+        61
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "EN_011",
+      "lang": "english",
+      "unit": "Plants",
+      "expected_pages": [
+        62
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.010128021240234,
+        "rerank_latency_ms": 4417.926073074341,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_012",
+      "lang": "english",
+      "unit": "Plants",
+      "expected_pages": [
+        67
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.323099136352539,
+        "rerank_latency_ms": 4519.2553997039795,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "TA_007",
+      "lang": "tamil",
+      "unit": "Plants",
+      "expected_pages": [
+        61
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.1070709228515625,
+        "rerank_latency_ms": 3039.8800373077393,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TA_008",
+      "lang": "tamil",
+      "unit": "Plants",
+      "expected_pages": [
+        66
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.086971282958984,
+        "rerank_latency_ms": 3130.75852394104,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "BI_005",
+      "lang": "bilingual",
+      "unit": "Plants",
+      "expected_pages": [
+        61
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.0182857513427734,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "BI_006",
+      "lang": "bilingual",
+      "unit": "Plants",
+      "expected_pages": [
+        62
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.999326705932617,
+        "rerank_latency_ms": 4422.5969314575195,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.0083656311035156,
+        "rerank_latency_ms": 3078.036308288574,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_005",
+      "lang": "tanglish",
+      "unit": "Plants",
+      "expected_pages": [
+        61
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_006",
+      "lang": "tanglish",
+      "unit": "Plants",
+      "expected_pages": [
+        67
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.13203239440918,
+        "rerank_latency_ms": 3872.675895690918,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.9927024841308594,
+        "rerank_latency_ms": 3238.4772300720215,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "EN_013",
+      "lang": "english",
+      "unit": "Animals",
+      "expected_pages": [
+        76
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.0105113983154297,
+        "rerank_latency_ms": 4579.479217529297,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_014",
+      "lang": "english",
+      "unit": "Animals",
+      "expected_pages": [
+        79
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.064176559448242,
+        "rerank_latency_ms": 4536.618947982788,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "TA_009",
+      "lang": "tamil",
+      "unit": "Animals",
+      "expected_pages": [
+        76
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.008127212524414,
+        "rerank_latency_ms": 3216.057538986206,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "TA_010",
+      "lang": "tamil",
+      "unit": "Animals",
+      "expected_pages": [
+        80
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.000425338745117,
+        "rerank_latency_ms": 3152.228832244873,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "BI_007",
+      "lang": "bilingual",
+      "unit": "Animals",
+      "expected_pages": [
+        79
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.554603576660156,
+        "rerank_latency_ms": 4683.921813964844,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.9980411529541016,
+        "rerank_latency_ms": 3192.662000656128,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "TG_007",
+      "lang": "tanglish",
+      "unit": "Animals",
+      "expected_pages": [
+        76
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.034996032714844,
+        "rerank_latency_ms": 4430.418968200684,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 3.003358840942383,
+        "rerank_latency_ms": 3038.1433963775635,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "EN_015",
+      "lang": "english",
+      "unit": "Nutrients",
+      "expected_pages": [
+        89
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.001306533813477,
+        "rerank_latency_ms": 4557.881116867065,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_016",
+      "lang": "english",
+      "unit": "Nutrients",
+      "expected_pages": [
+        97
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 9.001493453979492,
+        "rerank_latency_ms": 4867.710113525391,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "EN_017",
+      "lang": "english",
+      "unit": "Nutrients",
+      "expected_pages": [
+        94
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 6.006717681884766,
+        "rerank_latency_ms": 4944.636344909668,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "TA_011",
+      "lang": "tamil",
+      "unit": "Nutrients",
+      "expected_pages": [
+        89
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.001140594482422,
+        "rerank_latency_ms": 3262.4166011810303,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TA_012",
+      "lang": "tamil",
+      "unit": "Nutrients",
+      "expected_pages": [
+        97
+      ],
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.000663757324219,
+        "rerank_latency_ms": 3518.704414367676,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "BI_008",
+      "lang": "bilingual",
+      "unit": "Nutrients",
+      "expected_pages": [
+        89
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 0.0,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 1.0001659393310547,
+        "rerank_latency_ms": 0.0,
+        "n_candidates_before_rerank": 0,
+        "n_candidates_after_rerank": 0,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "TG_008",
+      "lang": "tanglish",
+      "unit": "Nutrients",
+      "expected_pages": [
+        94
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 4.001379013061523,
+        "rerank_latency_ms": 4921.67067527771,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 2.998828887939453,
+        "rerank_latency_ms": 3629.784107208252,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": []
+      }
+    },
+    {
+      "id": "EN_018",
+      "lang": "english",
+      "unit": "Changes Around Us",
+      "expected_pages": [
+        40
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 29.1597843170166,
+        "rerank_latency_ms": 126.59120559692383,
+        "n_candidates_before_rerank": 4,
+        "n_candidates_after_rerank": 4,
+        "top10_pages_after_rerank": [
+          67,
+          100,
+          67,
+          95
+        ]
+      }
+    },
+    {
+      "id": "EN_019",
+      "lang": "english",
+      "unit": "Atmosphere",
+      "expected_pages": [
+        50
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 56.281328201293945,
+        "rerank_latency_ms": 162.83798217773438,
+        "n_candidates_before_rerank": 4,
+        "n_candidates_after_rerank": 4,
+        "top10_pages_after_rerank": [
+          67,
+          67,
+          100,
+          95
+        ]
+      }
+    },
+    {
+      "id": "EN_020",
+      "lang": "english",
+      "unit": "Matter+Plants",
+      "expected_pages": [
+        38,
+        61
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 36.71741485595703,
+        "rerank_latency_ms": 2481.320381164551,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96,
+          107
+        ]
+      }
+    },
+    {
+      "id": "BI_009",
+      "lang": "bilingual",
+      "unit": "Measurement+Motion",
+      "expected_pages": [
+        9,
+        29
+      ],
+      "against_english_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 12.012004852294922,
+        "rerank_latency_ms": 4391.976594924927,
+        "n_candidates_before_rerank": 20,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          96
+        ]
+      },
+      "against_tamil_corpus": {
+        "before_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "after_rerank": {
+          "recall_1": 0.0,
+          "recall_3": 0.0,
+          "recall_5": 0.0,
+          "recall_10": 0.0,
+          "precision_5": 0.0,
+          "mrr": 0.0,
+          "ndcg_5": 0.0
+        },
+        "pre_rerank_latency_ms": 5.007743835449219,
+        "rerank_latency_ms": 3477.1976470947266,
+        "n_candidates_before_rerank": 17,
+        "n_candidates_after_rerank": 10,
+        "top10_pages_after_rerank": [
+          106
+        ]
+      }
+    }
+  ]
+}

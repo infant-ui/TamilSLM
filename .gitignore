@@ -67,3 +67,6 @@ docs/graphify/
 /tree*.txt
 /clean_tree*.txt
 /diff.txt
+nul 
+evaluation/results/*.json
+evaluation/results/archive/

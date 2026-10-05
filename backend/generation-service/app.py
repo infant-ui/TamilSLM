@@ -44,7 +44,16 @@ app.add_middleware(
 )
 
 OLLAMA_API_URL = os.environ.get("OLLAMA_API_URL", os.environ.get("OLLAMA_HOST", "http://localhost:11434") + "/api/chat")
-OLLAMA_MODEL = "qwen2.5:7b-instruct-q4_k_m"
+# Overridable so the SAME pipeline (retrieval + prompt template + this service)
+# can be re-run against a different generation model for comparison evals
+# (e.g. OLLAMA_MODEL=tamil-llama-7b-instruct-v0.2 or OLLAMA_MODEL=sarvam-m),
+# without touching code -- restart this service with the env var set.
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:7b-instruct-q4_k_m")
+# Context window sent to Ollama. Default 4096 (unchanged). A prompt longer than this is SILENTLY
+# truncated by Ollama's own engine (only the last ~half window is kept, dropping the instruction
+# block at the start of the system prompt), so long Tamil-script prompts need it raised, e.g.
+# OLLAMA_NUM_CTX=12000 for Qwen2.5 (Tamil-context prompts run to ~10.7K tokens with its tokenizer).
+OLLAMA_NUM_CTX = int(os.environ.get("OLLAMA_NUM_CTX", "4096"))
 
 def get_system_prompt(lang: str, context: str, history_summary: str) -> str:
     if lang.lower() == "tamil":
@@ -95,7 +104,7 @@ async def generate_stream(req: GenerateStreamRequest):
         "options": {
             "temperature": 0.2,
             "num_predict": 1000,
-            "num_ctx": 4096
+            "num_ctx": OLLAMA_NUM_CTX
         },
         "stream": True
     }
@@ -115,8 +124,19 @@ async def generate_stream(req: GenerateStreamRequest):
                     try:
                         data = json.loads(decoded)
                         token = data.get("message", {}).get("content", "")
+                        event = {'token': token}
+                        if data.get("done"):
+                            # Final Ollama chunk: expose what was ACTUALLY evaluated so callers can
+                            # detect silent prompt truncation (prompt_eval_count << true prompt length).
+                            event.update({
+                                'done': True,
+                                'prompt_eval_count': data.get('prompt_eval_count'),
+                                'eval_count': data.get('eval_count'),
+                                'done_reason': data.get('done_reason'),
+                                'num_ctx': OLLAMA_NUM_CTX,
+                            })
                         # Yield in standard Server-Sent Events structure
-                        yield f"data: {json.dumps({'token': token})}\n\n"
+                        yield f"data: {json.dumps(event)}\n\n"
                     except json.JSONDecodeError:
                         continue
         except requests.exceptions.RequestException as re:
