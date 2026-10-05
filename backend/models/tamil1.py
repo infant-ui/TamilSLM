@@ -30,8 +30,8 @@ embedding_model = SentenceTransformer("intfloat/multilingual-e5-base")
 # =======================
 possible_paths = [
     os.path.join(os.path.dirname(__file__), "tamil_science_textbook.txt"),
-    os.path.join(os.path.dirname(__file__), "..", "..", "..", "Cross Lingual Retrieval -20260625T150607Z-3-001", "Cross Lingual Retrieval", "data", "texts", "tamil_science_textbook.txt"),
-    os.path.join(os.path.dirname(__file__), "..", "..", "Embedding-20260625T150608Z-3-001", "Embedding", "data", "tamil_book_output.txt")
+    os.path.join(os.path.dirname(__file__), "..", "..", "research", "cross-lingual-retrieval", "data", "texts", "tamil_science_textbook.txt"),
+    os.path.join(os.path.dirname(__file__), "..", "..", "research", "embedding", "data", "tamil_book_output.txt")
 ]
 
 tamil_text_path = None

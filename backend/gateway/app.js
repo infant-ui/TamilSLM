@@ -526,7 +526,7 @@ app.post("/mindmap/generate", chatRateLimiter, async (req, res) => {
     if (!fs.existsSync(pythonPath)) {
         pythonPath = path.join(__dirname, "..", "..", ".venv", "bin", "python");
     }
-    const scriptPath = path.join(__dirname, "..", "..", "Mindmap-20260625T150611Z-3-001", "Mindmap", "predict_json.py");
+    const scriptPath = path.join(__dirname, "..", "..", "research", "mindmap", "predict_json.py");
     const cacheDir = path.join(__dirname, "temp_jobs");
     
     if (!fs.existsSync(cacheDir)){
