@@ -56,3 +56,6 @@ backend/generation-service/scratch_calibration/
 
 # Ad-hoc test-run SQLite artifacts (e.g. backend/correction-service/test_corrections_*.db)
 test_*.db
+nul 
+evaluation/results/*.json
+evaluation/results/archive/

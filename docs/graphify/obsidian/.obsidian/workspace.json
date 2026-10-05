@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9ebde3276338deea",
+        "id": "f509aa3ff0e0a437",
         "type": "tabs",
         "children": [
           {
-            "id": "33d44acf1c6be58c",
+            "id": "18895de4e9fbec0a",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -37,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -176,8 +178,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "33d44acf1c6be58c",
+  "active": "18895de4e9fbec0a",
   "lastOpenFiles": [
+    "APIs.md",
     "changelog/Changelog - graphify-out_cache_ast_v0.9.5_e53149e4b1f32286c7b7c76a824aa33b1c2a83bb6037e88d729d4a2ff4a25497.json - 2026-07-03_10-58-05.md",
     "Changelog - docs_graphify_obsidian_OCR Pipeline - 2026-07-03_13-18-39.md",
     "Docker.md",
@@ -202,7 +205,6 @@
     "changelog/Changelog - generate_docs.bat - 2026-07-03_11-13-10.md",
     "changelog/Changelog - docs_graphify_reports_statistics.json - 2026-07-03_11-13-10.md",
     "changelog/Changelog - docs_graphify_reports_GRAPH_REPORT.md - 2026-07-03_11-13-10.md",
-    "changelog/Changelog - docs_graphify_obsidian_Vision & Goals.md - 2026-07-03_11-13-10.md",
-    "changelog/Changelog - docs_graphify_obsidian_Video Processing.md - 2026-07-03_11-13-10.md"
+    "changelog/Changelog - docs_graphify_obsidian_Vision & Goals.md - 2026-07-03_11-13-10.md"
   ]
 }
