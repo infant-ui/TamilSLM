@@ -56,3 +56,14 @@ backend/generation-service/scratch_calibration/
 
 # Ad-hoc test-run SQLite artifacts (e.g. backend/correction-service/test_corrections_*.db)
 test_*.db
+
+# Generated knowledge-graph output (regenerate with scripts/docs/generate_docs.bat)
+graphify-out/
+backend/graphify-out/
+docs/graphify/
+
+# Run output and directory dumps
+*.log
+/tree*.txt
+/clean_tree*.txt
+/diff.txt

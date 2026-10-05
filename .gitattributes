@@ -1,1 +1,10 @@
 *.pdf filter=lfs diff=lfs merge=lfs -text
+# Research binaries (embeddings, FAISS index, pickles, archives) via Git LFS.
+# Applies to files added or re-added from now on; to convert the existing ones run
+#   git add --renormalize research && git commit && git push   (needs LFS upload access)
+# Not applied to research/mindmap, whose .pkl models are loaded directly by the gateway.
+research/embedding/**/*.npy filter=lfs diff=lfs merge=lfs -text
+research/cross-lingual-retrieval/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+research/cross-lingual-retrieval/**/*.index filter=lfs diff=lfs merge=lfs -text
+research/cross-lingual-retrieval/**/*.zip filter=lfs diff=lfs merge=lfs -text
+research/embedding/**/tokenizer.json filter=lfs diff=lfs merge=lfs -text
