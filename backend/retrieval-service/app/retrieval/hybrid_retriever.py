@@ -205,6 +205,171 @@ class HybridRetriever:
             
         return valid_indices
 
+    # ---------------------------------------------------------------------
+    # Phase 2: cross-corpus fusion for bilingual/code-mixed queries.
+    #
+    # There was no existing cross-corpus merge logic anywhere in this codebase
+    # to "fix" -- the original audit (and a re-check before writing this)
+    # confirmed that bilingual/Tanglish queries only ever reach ONE corpus in
+    # production, chosen by the client-side preferred_medium toggle; a
+    # same-request fallback to the OTHER corpus only fires if the primary
+    # search returns literally zero results, which is a full swap, not a
+    # fusion. This section is new capability, not a bug fix to existing code.
+    #
+    # Design note on "normalize before fusing": dense cosine scores come from
+    # the SAME shared multilingual embedding space for both corpora, so they
+    # are already comparable across corpora without normalization -- raw
+    # cosine similarity is used directly. BM25 scores are NOT comparable
+    # across corpora (each corpus has its own IDF statistics, vocabulary, and
+    # document-length distribution), so they need normalization -- but
+    # per-query min-max normalization (map this query's own candidate-pool
+    # min/max to [0,1]) was deliberately NOT used: it would always map the
+    # weakest candidate pool's best match to the same ceiling (1.0) as the
+    # strongest pool's best match, which defeats the explicit requirement
+    # that "if one corpus's candidates are uniformly stronger, the fused
+    # ranking should reflect that" (see test_cross_corpus_fusion.py). Instead,
+    # BM25 scores are passed through a fixed, query-independent saturating
+    # squash (score / (1 + score)) that preserves relative magnitude across
+    # queries and corpora while still bounding the output to [0, 1).
+    # ---------------------------------------------------------------------
+
+    @staticmethod
+    def _squash_bm25(raw_score: float) -> float:
+        """Fixed, query-independent saturating transform -- NOT per-query min-max.
+        Maps [0, inf) -> [0, 1) monotonically, so a corpus whose matches genuinely
+        score higher on raw BM25 keeps a higher value after squashing, unlike
+        per-query min-max normalization which would erase that signal."""
+        s = max(0.0, float(raw_score))
+        return s / (1.0 + s)
+
+    def _score_candidates_for_fusion(self, req: RetrieveRequest, medium: str,
+                                      dense_query_vector: np.ndarray, bm25_query_text: str,
+                                      pool_label: str) -> List[dict]:
+        """
+        Standalone scoring routine for the cross-corpus fusion path ONLY -- deliberately
+        NOT sharing code with _execute_retrieve_for_medium (which Phase 1 just fixed and
+        verified; duplicating ~15 lines here is a conscious trade-off to keep that proven
+        single-corpus path at zero risk of regression from Phase 2 changes).
+        Returns a list of dicts: {chunk, dense_score, bm25_norm, combined_score, pool_label}.
+        """
+        lang_key = "ta" if medium == "tamil" else "en"
+        all_chunks = self.cache.get(f"{lang_key}_chunks", [])
+        all_embeddings = self.cache.get(f"{lang_key}_embeddings")
+        if not all_chunks or all_embeddings is None or len(all_chunks) == 0:
+            return []
+
+        available_subjects = list(set(c["metadata"].get("subject", "science").lower()
+                                       for c in all_chunks if c.get("metadata")))
+        if req.subject and req.subject != "auto":
+            req_sub = req.subject.lower()
+            allowed_subjects = ["maths", "math", "mathematics"] if req_sub in ("math", "maths", "mathematics") else [req_sub]
+        else:
+            allowed_subjects = self.detect_subjects(bm25_query_text, available_subjects)
+
+        is_assessment = any(kw in bm25_query_text.lower() for kw in
+                             ["quiz", "test", "practice", "exercise", "exam", "questions", "pyq",
+                              "தேர்வு", "பயிற்சி", "வினாடி வினா"])
+        active_content_types = list(req.allowed_content_types)
+        if is_assessment:
+            for t in ["previous_year", "teacher_notes", "firecrawl_education", "textbook", "guide"]:
+                if t not in active_content_types:
+                    active_content_types.append(t)
+
+        filtered_pairs = self.filter_candidates(all_chunks, req, medium, allowed_subjects, active_content_types)
+        if not filtered_pairs:
+            return []
+        filtered_indices = [p[0] for p in filtered_pairs]
+        filtered_chunks = [p[1] for p in filtered_pairs]
+
+        filtered_embeddings = all_embeddings[filtered_indices]
+        dense_sims = cosine_similarity(dense_query_vector.reshape(1, -1), filtered_embeddings)[0]
+
+        bm25_scores_raw = self.bm25_indices[lang_key].get_scores(bm25_query_text)
+        filtered_bm25 = [bm25_scores_raw[idx] for idx in filtered_indices]
+
+        out = []
+        for chunk, dense_sim, bm25_raw in zip(filtered_chunks, dense_sims, filtered_bm25):
+            dense_clipped = max(0.0, float(dense_sim))  # cosine can be slightly negative; clip for the blend
+            bm25_norm = self._squash_bm25(bm25_raw)
+            combined = 0.5 * dense_clipped + 0.5 * bm25_norm
+            out.append({
+                "chunk": chunk, "dense_score": float(dense_sim), "bm25_score_raw": float(bm25_raw),
+                "bm25_norm": bm25_norm, "combined_score": combined, "pool_label": pool_label,
+                "medium": medium,
+            })
+        return out
+
+    def retrieve_cross_corpus_sync(self, req: RetrieveRequest, query_vector: np.ndarray,
+                                    transliterated_query_text: str = None,
+                                    transliterated_query_vector: np.ndarray = None) -> Tuple[List[ChunkResult], dict]:
+        """
+        Phase 2 entry point: retrieves from BOTH corpora (and, for Tanglish queries, a
+        THIRD leg against the Tamil corpus using a transliterated query) and fuses them
+        into one ranked list using normalized scores (see _score_candidates_for_fusion),
+        rather than requiring the caller to pick one corpus via preferred_medium.
+
+        Returns (final_results, diagnostics) where diagnostics reports how many of the
+        final results came from each pool (en_original / ta_original / ta_transliterated),
+        for provenance and for the Phase 2 eval's reporting.
+        """
+        pools = [
+            self._score_candidates_for_fusion(req, "english", query_vector, req.question, "en_original"),
+            self._score_candidates_for_fusion(req, "tamil", query_vector, req.question, "ta_original"),
+        ]
+        if transliterated_query_text is not None and transliterated_query_vector is not None:
+            pools.append(self._score_candidates_for_fusion(
+                req, "tamil", transliterated_query_vector, transliterated_query_text, "ta_transliterated"))
+
+        all_scored = [item for pool in pools for item in pool]
+        if not all_scored:
+            return [], {"pool_counts": {}, "n_total": 0}
+
+        # De-duplicate: the ta_original and ta_transliterated legs search the SAME Tamil
+        # corpus, so the same chunk can legitimately appear in both pools. Keep the
+        # higher-scoring occurrence (and record which pool actually won it).
+        best_by_chunk_id: Dict[str, dict] = {}
+        for item in all_scored:
+            cid = item["chunk"]["chunk_id"]
+            if cid not in best_by_chunk_id or item["combined_score"] > best_by_chunk_id[cid]["combined_score"]:
+                best_by_chunk_id[cid] = item
+
+        ranked = sorted(best_by_chunk_id.values(), key=lambda x: x["combined_score"], reverse=True)
+
+        primary_results, secondary_results = [], []
+        for item in ranked:
+            chunk, meta = item["chunk"], item["chunk"]["metadata"]
+            c_type = meta.get("content_type", "textbook")
+            medium = item["medium"]
+            result = ChunkResult(
+                chunk_id=chunk["chunk_id"], text=chunk["text"], score=float(item["combined_score"]),
+                source_filename=meta.get("filename", "unknown"), source_path=meta.get("relative_path", "unknown"),
+                class_level=int(meta.get("class_level", req.class_id or 6)), term=int(meta.get("term", req.term or 0)),
+                content_type=c_type, chapter_title=meta.get("chapter_title", "Unknown Chapter"),
+                retrieval_tier=c_type, page_number=int(meta.get("page_number", 0)),
+                section_no=str(meta.get("section_no", "unknown")), subject=meta.get("subject", "science"),
+                language=meta.get("language", "en" if medium == "english" else "ta"), rank=1,
+                source=meta.get("source", c_type),
+                publisher=meta.get("publisher", "Tamil Nadu Textbook and Educational Services Corporation"),
+                edition=meta.get("edition", "Unknown Edition"),
+                dense_score=item["dense_score"], bm25_score_raw=item["bm25_score_raw"], fusion_pool=item["pool_label"],
+            )
+            (primary_results if c_type in ("textbook", "guide") else secondary_results).append(result)
+
+        final_results = list(primary_results)
+        needed = (req.top_k * 2) - len(final_results)
+        if needed > 0 and secondary_results:
+            final_results.extend(secondary_results[:needed])
+        for idx, res in enumerate(final_results):
+            res.rank = idx + 1
+        final_results = final_results[:req.top_k * 2]
+
+        pool_counts = {}
+        for r in final_results:
+            pool_counts[r.fusion_pool] = pool_counts.get(r.fusion_pool, 0) + 1
+        diagnostics = {"pool_counts": pool_counts, "n_total": len(final_results),
+                        "n_candidates_before_dedup": len(all_scored), "n_after_dedup": len(ranked)}
+        return final_results, diagnostics
+
     def reciprocal_rank_fusion(self, dense_results: List[str], sparse_results: List[str], k: int = 60) -> List[Tuple[str, float]]:
         rrf_scores = {}
         for rank, chunk_id in enumerate(dense_results):

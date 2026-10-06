@@ -13,6 +13,15 @@ class RetrieveRequest(BaseModel):
     include_previous_years: bool = Field(False, description="Search previous year materials")
     fallback_language_allowed: bool = Field(False, description="Fallback if target medium lacks hits")
     top_k: int = Field(3, description="Chunks count to return")
+    # Phase 2: opt-in genuine cross-corpus fusion for bilingual/code-mixed queries,
+    # replacing the previous behaviour of picking exactly one corpus via preferred_medium
+    # (there was no fixed-interleave or other cross-corpus merge to "fix" here -- the
+    # original audit found, and this phase re-confirmed, that no such logic existed
+    # anywhere in this codebase; this is new capability, not a patch). Default False so
+    # the existing single-corpus path (preferred_medium) is completely unchanged unless
+    # a caller opts in.
+    cross_corpus_fusion: bool = Field(False, description="Retrieve from BOTH corpora and "
+                                       "fuse via normalized scores instead of picking one via preferred_medium")
 
 class ChunkResult(BaseModel):
     chunk_id: str
@@ -34,6 +43,15 @@ class ChunkResult(BaseModel):
     source: Optional[str] = Field("textbook", description="Source content category")
     publisher: Optional[str] = Field("Tamil Nadu Textbook and Educational Services Corporation", description="Publisher name")
     edition: Optional[str] = Field("Unknown Edition", description="Edition information")
+    # Phase 2: raw per-signal scores, populated by the cross-corpus fusion path so the
+    # normalization that combines them is inspectable/testable rather than opaque.
+    # Both default to 0.0 for the existing single-corpus path, which doesn't set them.
+    dense_score: float = Field(0.0, description="Raw cosine similarity (shared embedding space, "
+                                "comparable across corpora without normalization)")
+    bm25_score_raw: float = Field(0.0, description="Raw BM25 score before the saturating "
+                                   "squash used to make it comparable across corpora")
+    fusion_pool: Optional[str] = Field(None, description="Provenance tag for cross-corpus "
+                                        "fusion: 'en_original', 'ta_original', or 'ta_transliterated'")
 
 class RetrieveResponse(BaseModel):
     query: str
