@@ -58,4 +58,5 @@ backend/generation-service/scratch_calibration/
 test_*.db
 nul 
 evaluation/results/*.json
+!evaluation/results/phase*_results.json
 evaluation/results/archive/
