@@ -49,24 +49,16 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), "..", "results")
 
 
 def build_query_encoder():
-    """Loads the REAL production embedding model with the same position_ids
-    patch main.py applies, so results reflect exactly what's deployed."""
-    import torch
-    from sentence_transformers import SentenceTransformer
+    """Loads the REAL production embedding model via the shared encoder_utils loader
+    (Phase 1: position_ids patch + rotary buffers zeroed), so eval results reflect
+    exactly what's deployed -- and never drift from it, since main.py/index_books.py
+    import this same function instead of each carrying their own copy of the patch."""
     from app.ingestion.hardware_detector import get_hardware_level
+    from app.ingestion.encoder_utils import load_patched_encoder
 
     device = "cuda" if get_hardware_level() == "LEVEL_2_GPU" else "cpu"
     print(f"Loading Alibaba-NLP/gte-multilingual-base on {device} ...")
-    model = SentenceTransformer("Alibaba-NLP/gte-multilingual-base", device=device, trust_remote_code=True)
-    try:
-        embeddings_module = model[0].auto_model.embeddings
-        if hasattr(embeddings_module, "position_ids"):
-            dev = embeddings_module.position_ids.device
-            correct_pos_ids = torch.arange(embeddings_module.position_ids.size(0), dtype=torch.long, device=dev)
-            embeddings_module.position_ids.copy_(correct_pos_ids)
-    except Exception as e:
-        print(f"Warning: position_ids patch failed (non-fatal): {e}")
-    return model
+    return load_patched_encoder(device)
 
 
 def build_services_cache():

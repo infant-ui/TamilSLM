@@ -15,6 +15,7 @@ except AttributeError:
 # Set path and import SimpleBM25
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from app.retrieval.hybrid_retriever import SimpleBM25
+from app.ingestion.encoder_utils import load_patched_encoder
 
 def compile_offline():
     data_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "data"))
@@ -57,18 +58,10 @@ def compile_offline():
                 print(f"⚠️ Dimension mismatch in {file} (got {file_embeds.shape[1] if file_embeds.ndim > 1 else '1D'}, expected 768). Re-generating on-the-fly...")
                 if embed_model is None:
                     print("⏳ Loading GTE Multilingual model...")
-                    from sentence_transformers import SentenceTransformer
-                    embed_model = SentenceTransformer('Alibaba-NLP/gte-multilingual-base', device='cpu', trust_remote_code=True)
-                    try:
-                        import torch
-                        embeddings_module = embed_model[0].auto_model.embeddings
-                        if hasattr(embeddings_module, "position_ids"):
-                            correct_pos_ids = torch.arange(embeddings_module.position_ids.size(0), dtype=torch.long, device=embeddings_module.position_ids.device)
-                            embeddings_module.position_ids.copy_(correct_pos_ids)
-                            print("🔧 Successfully patched GTE Multilingual position_ids buffer!")
-                    except Exception as e:
-                        print(f"⚠️ Failed to patch: {e}")
-                
+                    # Phase 1: shared loader -- see encoder_utils.py. Must match whatever
+                    # encoder state is used everywhere else (main.py, index_books.py).
+                    embed_model = load_patched_encoder("cpu")
+
                 texts = [c["text"] for c in file_chunks]
                 file_embeds = embed_model.encode(texts, normalize_embeddings=True)
                 np.save(embeds_file, file_embeds)

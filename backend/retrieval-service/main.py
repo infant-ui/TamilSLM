@@ -38,6 +38,7 @@ from app.ingestion.layout_analyzer import LayoutAnalyzer
 from app.ingestion.ocr_cleaner import OCRCleaner
 from app.ingestion.chunk_validator import ChunkValidator
 from app.ingestion.chunker import CurriculumChunker, ChunkUnit
+from app.ingestion.encoder_utils import load_patched_encoder
 from app.ingestion.index_books import process_book_pipeline, compile_indices
 
 def load_unified_cache():
@@ -148,18 +149,11 @@ async def lifespan(app: FastAPI):
     device = "cuda" if hw_level == "LEVEL_2_GPU" else "cpu"
     print(f"Loading GTE Multilingual model on {device}...")
     
-    gte_model = SentenceTransformer('Alibaba-NLP/gte-multilingual-base', device=device, trust_remote_code=True)
-    try:
-        import torch
-        embeddings_module = gte_model[0].auto_model.embeddings
-        if hasattr(embeddings_module, "position_ids"):
-            dev = embeddings_module.position_ids.device
-            correct_pos_ids = torch.arange(embeddings_module.position_ids.size(0), dtype=torch.long, device=dev)
-            embeddings_module.position_ids.copy_(correct_pos_ids)
-            print("🔧 Patched GTE Multilingual position_ids in API server.")
-    except Exception as e:
-        print(f"⚠️ Failed to patch GTE Multilingual position_ids: {e}")
-        
+    # Phase 1: shared loader -- see encoder_utils.py. MUST stay identical to whatever
+    # encoder built the corpus cache (data/processed/cache/*), or query vectors and
+    # corpus vectors are produced by different encoder states, which is exactly the
+    # bug that made the live index's own self-retrieval fail before this fix.
+    gte_model = load_patched_encoder(device)
     services_cache["en_model"] = gte_model
     services_cache["ta_model"] = gte_model
 
