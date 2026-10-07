@@ -370,12 +370,36 @@ class HybridRetriever:
                         "n_candidates_before_dedup": len(all_scored), "n_after_dedup": len(ranked)}
         return final_results, diagnostics
 
-    def reciprocal_rank_fusion(self, dense_results: List[str], sparse_results: List[str], k: int = 60) -> List[Tuple[str, float]]:
+    # Phase 2 follow-up: per-language RRF weighting. MITIGATION on top of a disclosed
+    # data-quality limitation, not a repair of it -- the Tamil corpus itself is not being
+    # fixed here. Diagnosis (separate pass, not this commit's code): Tamil dense-only
+    # retrieval is weak in absolute terms (R@5 0.200 vs Tamil BM25-only's 0.600, vs a
+    # healthy English dense-only R@5 of 0.760 on a matched sample), traced to pervasive
+    # OCR/font-encoding corruption in ~88% of Tamil gold-item source chunks by a
+    # duplicated-consonant/matra heuristic -- the same "no known text-level fix"
+    # corruption documented in the original audit, not a fusion-weight bug and not
+    # evidence that the embedding model understands Tamil less well in the abstract.
+    # Equal RRF weighting lets that unreliable dense signal pull real BM25 answers out of
+    # the top ranks for Tamil specifically; English dense-only is healthy (0.760 R@5) and
+    # must not be reweighted away from equal weighting.
+    RRF_LANGUAGE_WEIGHTS = {
+        "tamil": {"dense": 1.0, "sparse": 3.0},  # tuned empirically against Tamil-only pre-rerank R@5 (see commit)
+        "english": {"dense": 1.0, "sparse": 1.0},  # unchanged -- dense-only is healthy here, don't touch
+    }
+
+    def _rrf_weights_for_medium(self, medium: str) -> Tuple[float, float]:
+        w = self.RRF_LANGUAGE_WEIGHTS.get(medium, {"dense": 1.0, "sparse": 1.0})
+        return w["dense"], w["sparse"]
+
+    def reciprocal_rank_fusion(self, dense_results: List[str], sparse_results: List[str], k: int = 60,
+                                w_dense: float = 1.0, w_sparse: float = 1.0) -> List[Tuple[str, float]]:
+        """w_dense/w_sparse default to 1.0 (the original, unweighted behavior) -- existing
+        callers that don't pass them are unaffected."""
         rrf_scores = {}
         for rank, chunk_id in enumerate(dense_results):
-            rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0.0) + (1.0 / (k + rank + 1))
+            rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0.0) + w_dense * (1.0 / (k + rank + 1))
         for rank, chunk_id in enumerate(sparse_results):
-            rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0.0) + (1.0 / (k + rank + 1))
+            rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0.0) + w_sparse * (1.0 / (k + rank + 1))
         return sorted(rrf_scores.items(), key=lambda item: item[1], reverse=True)
 
     async def retrieve(self, req: RetrieveRequest, query_vector: np.ndarray) -> Tuple[List[ChunkResult], bool]:
@@ -460,8 +484,10 @@ class HybridRetriever:
         )
         sparse_ranked_ids = [pair[0]["chunk_id"] for pair in sparse_ranked_pairs]
 
-        # 4. RRF Score Fusion
-        fused_rankings = self.reciprocal_rank_fusion(dense_ranked_ids, sparse_ranked_ids, k=60)
+        # 4. RRF Score Fusion (per-language weighting -- see RRF_LANGUAGE_WEIGHTS docstring)
+        w_dense, w_sparse = self._rrf_weights_for_medium(medium)
+        fused_rankings = self.reciprocal_rank_fusion(dense_ranked_ids, sparse_ranked_ids, k=60,
+                                                       w_dense=w_dense, w_sparse=w_sparse)
         chunk_map = {c["chunk_id"]: c for c in filtered_chunks}
         
         # 5. Source Prioritization & Supplemental Merging
