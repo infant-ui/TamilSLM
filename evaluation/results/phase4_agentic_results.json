@@ -1,0 +1,378 @@
+{
+  "status": "complete",
+  "failures": [
+    {
+      "id": "TA_001",
+      "error": "ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out."
+    },
+    {
+      "id": "BI_001",
+      "error": "ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out."
+    },
+    {
+      "id": "SYN_EN_COMPOUND_1",
+      "error": "ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out."
+    },
+    {
+      "id": "SYN_TA_COMPOUND_1",
+      "error": "ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out."
+    },
+    {
+      "id": "TA_001",
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:8001/generate/verified"
+    }
+  ],
+  "git_commit": "8e6b830",
+  "hardware_caveat": "This machine had heavy, unrelated concurrent CPU load during this run (multiple IDE instances, Steam, Epic Games Launcher, uTorrent all observed competing for CPU via Get-Process at the time of the initial /generate/verified smoke test, which measured ~350s for one generation+judge call on a trivial English question). Absolute latency numbers below are NOT a clean CPU-only-hardware benchmark. The relative agentic ON-vs-OFF comparison is still meaningful: both conditions for a given item ran back-to-back under the same contention.",
+  "method": "6 hand-picked items (not the full 156-item gold set -- infeasible at ~350s/generation+judge call on this machine): 3 natural gold-set items (EN_003, TA_001, BI_001, all single-hop by the decomposition heuristic) + 3 synthesized genuinely-compound questions (the gold set was not authored with multi-hop questions in mind, so decomposition needed synthetic examples to exercise it at all). agentic_off = current production default (single-pass retrieval, streamed generation, harness-side judging via judge_answer(), mirroring evaluate_generation.py's inline-judge mode). agentic_on = query decomposition + confidence-gated retrieval (top_k=6 so ranks 4-6 are available as alt_context) + /generate/verified (verify=True, same judge_answer() function, called server-side this time as the live guardrail).",
+  "items": [
+    {
+      "id": "EN_003",
+      "lang": "english",
+      "q": "How would you measure the length of a curved line using a divider?",
+      "off": {
+        "condition": "agentic_off",
+        "answer": "Good attempt! Let's solve it together. Based on the available textbook information, measuring the length of a curved line directly with a divider or a ruler isn't straightforward because these tools are designed for straight lines. However, we can approximate the length of a curved line by dividing it into many small straight segments and then measuring each segment.\n\nImagine you have a piece of string that follows the curve of a circle. You can carefully lay the string out straight and then measure its length with a ruler. This gives you the length of the curved line.\n\nFor example, if you have a semicircle with a diameter of 10 cm, you can approximate its length by dividing the semicircle into smaller straight lines, measure each one, and then add them up. The formula for the circumference of a circle is \\(C = \\pi d\\), where \\(d\\) is the diameter. For a semicircle, the length would be half of that, so \\(C/2 = \\pi d/2\\). Using \\(\\pi \\approx 3.14\\), the length would be about \\(3.14 \\times 10 / 2 = 15.7\\) cm.\n\nThis method gives us a good approximation, but it's not exact. The more segments you divide the curve into, the closer your approximation will be to the actual length.",
+        "judge": {
+          "correctness": 4,
+          "relevance": 5,
+          "completeness": 4,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 4,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "english",
+          "_judge_retried_for": null,
+          "_judge_prompt_eval_count": 1286
+        },
+        "composite_score": 4.666666666666667,
+        "retrieval_latency_ms": 3423.341989517212,
+        "generation_latency_ms": 160894.23155784607,
+        "verify_latency_ms": 318796.67472839355,
+        "total_latency_ms": 483114.24827575684,
+        "n_chunks": 3,
+        "agentic_diagnostics": null,
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      },
+      "on": {
+        "condition": "agentic_on",
+        "answer": "Good attempt! Let's solve it together. To measure the length of a curved line using a divider, follow these steps:\n\n1. **Prepare the Divider**: Make sure your divider is set to a comfortable width, which will be the unit of measurement you'll use.\n\n2. **Align the Divider**: Place the point of the divider at the starting point of the curved line.\n\n3. **Mark the Divider**: Open the divider to fit snugly along the curved line, ensuring it follows the curve closely.\n\n4. **Transfer to a Straight Edge**: Carefully transfer the divider to a straight edge, like a ruler or a piece of paper, and mark the point where the divider's point and pencil meet.\n\n5. **Repeat the Process**: Move the divider along the curved line, marking each point on the straight edge. Each mark represents the length of the divider.\n\n6. **Count the Marks**: Count the number of marks you've made. This will give you the length of the curved line in the units of your divider.\n\n7. **Measure the Divider**: Finally, measure the length of the divider using a ruler or scale to get the actual length.\n\nFor example, if you used a 1 cm divider and made 15 marks, the length of the curved line would be 15 cm.\n\nThis method is a bit more manual and requires careful attention to detail, but it can be very effective for measuring curved lines!",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 4,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 5,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "english",
+          "_judge_prompt_eval_count": 1690
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 7122.026205062866,
+        "generation_latency_ms": 309789.65640068054,
+        "verify_latency_ms": 353633.4376335144,
+        "retry_latency_ms": null,
+        "total_latency_ms": 670744.6286678314,
+        "n_chunks": 3,
+        "agentic_diagnostics": {
+          "decomposed": false,
+          "sub_questions": null,
+          "extra_round_triggered_for": [],
+          "per_subquestion_confidence": [
+            0.25
+          ],
+          "fallback_applied": false
+        },
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      }
+    },
+    {
+      "id": "SYN_EN_COMPOUND_2",
+      "lang": "english",
+      "q": "1. What is friction? 2. What is the boiling point of water in Celsius?",
+      "off": {
+        "condition": "agentic_off",
+        "answer": "It seems like the question about friction and the boiling point of water are not directly related to the textbook context provided, which is about the volume of irregularly shaped objects. However, I will answer both questions to the best of my knowledge.\n\n📘 Question\n1. What is friction?\n2. What is the boiling point of water in Celsius?\n\n━━━━━━━━━━━━━━━━━━━━\n📖 Definition\n1. Friction: Friction is a force that resists the relative motion of surfaces sliding against each other.\n2. Boiling Point of Water: The boiling point of water is the temperature at which water changes from a liquid to a gas at a given pressure.\n\n━━━━━━━━━━━━━━━━━━━━\n🔬 Explanation\n1. Friction: Imagine you're trying to push a heavy box across the floor. The force that opposes your push is friction. It's like the box is trying to stick to the floor. The rougher the surfaces, the more friction there is.\n2. Boiling Point of Water: Think of a pot of water on a stove. When the temperature reaches 100 degrees Celsius (or 212 degrees Fahrenheit) at sea level, the water starts to boil. This means the water turns into steam, and you can see the bubbles forming and rising to the surface.\n\n━━━━━━━━━━━━━━━━━━━━\n🌍 Real-Life Example\n1. Friction: When you walk on a carpet, you feel your shoes stick a bit. That's friction. It's why you can walk without slipping.\n2. Boiling Point of Water: When you make tea or cook pasta, you bring water to a boil. The temperature at which this happens is the boiling point of water.\n\n━━━━━━━━━━━━━━━━━━━━\n⭐ Key Points\n• Friction is a force that resists motion.\n• The boiling point of water is 100 degrees Celsius at sea level.\n\n━━━━━━━━━━━━━━━━━━━━\n🌟 Did You Know?\nDid you know that the boiling point of water can change based on the altitude? At higher altitudes, the boiling point is lower because the air pressure is lower.\n\n━━━━━━━━━━━━━━━━━━━━\n💡 Remember\n• Friction is the force that resists motion.\n• Water boils at 100 degrees Celsius at sea level.\n\n━━━━━━━━━━━━━━━━━━━━\n🎯 Learning Tip\nTo remember the boiling point of water, think of the number 100 as a special number in science. It's the temperature at which water changes state from liquid to gas.\n\n━━━━━━━━━━━━━━━━━━━━\n📖 New Word\nWord: Friction | Tamil: விரிவு | Meaning: The force that resists the motion of one surface against another.\n━━━━━━━━━━━━━━━━━━━━\n📝 Practice\nWhat happens to the water in a pot when it reaches its boiling point?",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 4,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "mixed",
+          "_judge_retried_for": null,
+          "_judge_prompt_eval_count": 1233
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 5211.184501647949,
+        "generation_latency_ms": 506399.11222457886,
+        "verify_latency_ms": 274645.43986320496,
+        "total_latency_ms": 786255.7365894318,
+        "n_chunks": 1,
+        "agentic_diagnostics": null,
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      },
+      "on": {
+        "condition": "agentic_on",
+        "answer": "Based on the available textbook information,\n\n📘 Question\n1. What is friction?\n2. What is the boiling point of water in Celsius?\n\n━━━━━━━━━━━━━━━━━━━━\n📖 Definition\n1. Friction is a force that resists the relative motion of surfaces sliding against each other.\n2. The boiling point of water in Celsius is 100°C.\n\n━━━━━━━━━━━━━━━━━━━━\n🔬 Explanation\n1. Imagine you're trying to slide a heavy box across the floor. The force that opposes your push is friction. It's like the box is trying to stay in place, resisting your effort to move it. Friction is everywhere, from the soles of your shoes to the wheels of a car.\n2. The boiling point of water is the temperature at which water changes from a liquid to a gas. At 100°C (212°F) under standard atmospheric pressure, water starts to boil and turn into steam.\n\n━━━━━━━━━━━━━━━━━━━━\n🌍 Real-Life Example\n1. Think about when you're walking on a carpet. You might feel a slight resistance when you try to slide your feet. That's friction!\n2. When you boil water in a pot, you see bubbles forming and rising to the surface. That's because the water is reaching its boiling point and turning into steam.\n\n━━━━━━━━━━━━━━━━━━━━\n⭐ Key Points\n• Friction is a force that resists motion.\n• The boiling point of water is 100°C.\n\n━━━━━━━━━━━━━━━━━━━━\n🌟 Did You Know?\nDid you know that the boiling point of water can change depending on the altitude? At higher altitudes, where the atmospheric pressure is lower, water boils at a lower temperature.\n\n━━━━━━━━━━━━━━━━━━━━\n💡 Remember\nFriction is the force that resists motion, and water boils at 100°C.\n\n━━━━━━━━━━━━━━━━━━━━\n🎯 Learning Tip\nTo remember the boiling point of water, think of a hot summer day when you might want to cool off with an ice-cold drink. The temperature at which water turns into steam is like the temperature at which you might want to cool off!\n\n━━━━━━━━━━━━━━━━━━━━\n📖 New Word\nWord: Friction | Tamil: நிலவு | Meaning: The force that resists the relative motion of surfaces sliding against each other.\n━━━━━━━━━━━━━━━━━━━━\n📝 Practice\n1. Explain how friction helps you walk without slipping.\n2. What happens to the boiling point of water if you heat it in a place with lower atmospheric pressure?",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 5,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "mixed",
+          "_judge_prompt_eval_count": 1376
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 11774.166584014893,
+        "generation_latency_ms": 328272.6345062256,
+        "verify_latency_ms": 292476.1998653412,
+        "retry_latency_ms": null,
+        "total_latency_ms": 632642.8692340851,
+        "n_chunks": 1,
+        "agentic_diagnostics": {
+          "decomposed": true,
+          "sub_questions": [
+            "1. What is friction?",
+            "2. What is the boiling point of water in Celsius?"
+          ],
+          "extra_round_triggered_for": [
+            "1. What is friction?",
+            "2. What is the boiling point of water in Celsius?"
+          ],
+          "per_subquestion_confidence": [
+            0.0,
+            0.0
+          ],
+          "fallback_applied": false
+        },
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      }
+    },
+    {
+      "id": "BI_001",
+      "lang": "bilingual",
+      "q": "SI unit-ல் metre-க்கு பயன்படுத்தப்படும் prefix-கள் இரண்டை கூறி, அவை எதைக் குறிக்கும் என்று விளக்குக.",
+      "off": {
+        "condition": "agentic_off",
+        "answer": "📘 கேள்வி\nSI தளத்தில் metre என்பது பயன்படுத்தப்படும் மீட்ர் அலகை விதித்துள்ளது. இது மீட்ர் அலகை வெளியே அல்லது குறைந்து விதித்துள்ளது. இரண்டு பெரிய பெரிமாற்றங்களை கூறவும், அவை எதைக் குறிக்கும் என்று விளக்கவும்.\n\n━━━━━━━━━━━━━━━━━━━━\n🧠 புரிந்துகொள்வோம்\nநாம் இந்த கேள்வியில் SI தளத்தில் metre அலகை வெளியே அல்லது குறைந்து விதித்துள்ள பெரிமாற்றங்களை கணக்கிடுவோம். இரண்டு பெரிய பெரிமாற்றங்கள் கூறப்படுவது தவறு மாற்றங்களை விளக்குவது உதவும்.\n\n━━━━━━━━━━━━━━━━━━━━\n✏️ படி 1: பெரிய பெரிமாற்றங்கள்\n1. Kilo (K) - இது 1000 ஐ விதிக்கும். மீட்ர் கிலோ (km) என்பது 1000 மீட்ர்களைக் குறிக்கும்.\n2. Mega (M) - இது 1,000,000 ஐ விதிக்கும். மீட்ர் மேகா (Mm) என்பது 1,000,000 மீட்ர்களைக் குறிக்கும்.\n\n━━━━━━━━━━━━━━━━━━━━\n✅ இறுதி விடை\n1. Kilo (K) - 1000 ஐ விதிக்கும்.\n2. Mega (M) - 1,000,000 ஐ விதிக்கும்.\n\n━━━━━━━━━━━━━━━━━━━━\n💡 நினைவில் கொள்ளுங்கள்\nவெளியே அல்லது குறைந்து விதிக்கும் பெரிமாற்றங்களும், அதாவது Kilo மற்றும் Mega என்பன மீட்ர் அலகை வெளியே அல்லது குறைந்து விதித்துள்ளன.\n\n━━━━━━━━━━━━━━━━━━━━\n⚠️ மாணவர்கள் பொதுவாக செய்யும் தவறு\nமாணவர்கள் மீட",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 5,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "tamil",
+          "_judge_prompt_eval_count": 2080
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 3700.8705139160156,
+        "generation_latency_ms": 870396.0950374603,
+        "verify_latency_ms": 411756.5941810608,
+        "total_latency_ms": 1285853.5597324371,
+        "n_chunks": 3,
+        "agentic_diagnostics": null,
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      },
+      "on": {
+        "condition": "agentic_on",
+        "answer": "📘 கேள்வி\nSI அலகுகளில் மீட்ரிக்கு பயன்படுத்தப்படும் இரண்டு பிரெக்சி஫்கள் என்ன குறிக்கும்?\n\n━━━━━━━━━━━━━━━━━━━━\n🧠 புரிந்துகொள்வோம்\nSI அலகுகளில் மீட்ரிக்கு பயன்படுத்தப்படும் இரண்டு பிரெக்சி஫்கள் என்பது 'கெக்டோ' மற்றும் 'மீக்டோ'. இந்த பிரெக்சி஫்கள் மீட்ரிக்கு மூன்று மற்றும் ஒரு ஆயிரம் மீட்ரிக்கு மூன்று விலக்கும் என்று கூறலாம்.\n\n━━━━━━━━━━━━━━━━━━━━\n✏️ படி 1: பிரெக்சி஫்கள் என்ன குறிக்கும்?\n'கெக்டோ' என்பது மீட்ரிக்கு மூன்று விலக்கும் என்று கூறலாம். இது மீட்ரிக்கு 1,000 மீட்ரிக்கு சமமாகும்.\n\n━━━━━━━━━━━━━━━━━━━━\n✏️ படி 2: பிரெக்சி஫்கள் என்ன குறிக்கும்?\n'மீக்டோ' என்பது மீட்ரிக்கு ஒரு ஆயிரம் விலக்கும் என்று கூறலாம். இது மீட்ரிக்கு 0.001 மீட்ரிக்கு சமமாகும்.\n\n━━━━━━━━━━━━━━━━━━━━\n✅ இறுதி விடை\n'கெக்டோ' என்பது மீட்ரிக்கு 1,000 மீட்ரிக்கு சமமாகும், மீதும் 'மீக்டோ' என்பது மீட்ரிக்கு 0.001 மீட்ரிக்கு சமமாகும்.\n\n━━━━━━━━━━━━━━━━━━━━\n💡 நினைவில் கொள்ளுங்கள்\nவிலக்கு என்பது எந்த அளவை குறிக்கும் என்று நினைவு செய்யவும்.\n\n━━━━━━━━━━━━━━━━━━━━\n⚠️ மாணவர்கள் பொதுவாக செய்யும் தவறு\nமாணவர்கள் பிரெக்சி஫்களை எண்களின் மூலம் கணக்க",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 5,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "tamil",
+          "_judge_prompt_eval_count": 2244
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 7958.107233047485,
+        "generation_latency_ms": 965765.5408382416,
+        "verify_latency_ms": 447696.41494750977,
+        "retry_latency_ms": null,
+        "total_latency_ms": 1421664.876461029,
+        "n_chunks": 3,
+        "agentic_diagnostics": {
+          "decomposed": false,
+          "sub_questions": null,
+          "extra_round_triggered_for": [],
+          "per_subquestion_confidence": [
+            0.1111111111111111
+          ],
+          "fallback_applied": false
+        },
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      }
+    },
+    {
+      "id": "SYN_EN_COMPOUND_1",
+      "lang": "english",
+      "q": "What is photosynthesis and what is the SI unit of force?",
+      "off": {
+        "condition": "agentic_off",
+        "answer": "📘 Question\nWhat is photosynthesis and what is the SI unit of force?\n\n━━━━━━━━━━━━━━━━━━━━\n📖 Definition\nPhotosynthesis is a process used by plants, algae, and some bacteria to convert light energy into chemical energy stored in glucose. The SI unit of force is the newton (N).\n\n━━━━━━━━━━━━━━━━━━━━\n🔬 Explanation\nPhotosynthesis is like a recipe that plants use to make their food. They take sunlight, water, and carbon dioxide and turn them into glucose (a type of sugar) and oxygen. This process helps plants grow and also provides us with oxygen to breathe.\n\nThe force is a push or pull that can change the motion of an object. In the International System of Units (SI), the unit of force is the newton (N). Just like how we measure distance in meters or time in seconds, we measure force in newtons.\n\nThink of it this way: if you push a toy car, you are applying a force. The harder you push, the more force you are applying. The newton is the standard way scientists measure this force.\n\n━━━━━━━━━━━━━━━━━━━━\n🌍 Real-Life Example\nImagine you're playing with a ball. When you throw the ball, you're applying a force to it. The harder you throw, the more force you're using. If you measure the force in newtons, you can compare how hard you threw the ball each time.\n\nIn a plant, the force of sunlight helps the leaves perform photosynthesis. The leaves catch the sunlight and use it to make food for the plant.\n\n━━━━━━━━━━━━━━━━━━━━\n⭐ Key Points\n• Photosynthesis is a process where plants make their food using sunlight.\n• The SI unit of force is the newton (N).\n\n━━━━━━━━━━━━━━━━━━━━\n🌟 Did You Know?\nDid you know that the name \"newton\" comes from Sir Isaac Newton, the famous scientist who formulated the laws of motion and universal gravitation?\n\n━━━━━━━━━━━━━━━━━━━━\n💡 Remember\nPhotosynthesis is the process of making food using sunlight, and the force is measured in newtons.\n\n━━━━━━━━━━━━━━━━━━━━\n🎯 Learning Tip\nTo remember the SI unit of force, think of it as the unit that measures how hard you push or pull something. Just like you might say \"I pushed the door with a lot of force,\" in science, we say \"I applied a force of 10 newtons.\"\n\n━━━━━━━━━━━━━━━━━━━━\n📖 New Word\nWord: Photosynthesis | Tamil: விதிவிகிதம் | Meaning: The process by which green plants make their own food using sunlight.\n\n━━━━━━━━━━━━━━━━━━━━\n📝 Practice\n1. What is the process by which plants make their own food using sunlight called?",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 4,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "mixed",
+          "_judge_prompt_eval_count": 1972
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 3782.6786041259766,
+        "generation_latency_ms": 426298.198223114,
+        "verify_latency_ms": 414666.4137840271,
+        "total_latency_ms": 844747.2906112671,
+        "n_chunks": 3,
+        "agentic_diagnostics": null,
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      },
+      "on": {
+        "condition": "agentic_on",
+        "answer": "📘 Question\nWhat is photosynthesis and what is the SI unit of force?\n\n━━━━━━━━━━━━━━━━━━━━\n📖 Definition\nPhotosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce oxygen and energy in the form of sugar. The SI unit of force is the newton.\n\n━━━━━━━━━━━━━━━━━━━━\n🔬 Explanation\nPhotosynthesis is like a magic recipe that plants use to make their own food. They take sunlight, which is like the energy ingredient, carbon dioxide from the air, and water from the soil. With the help of a green pigment called chlorophyll, they mix these ingredients to make sugar, which is their food, and release oxygen, which is the air we breathe. It's a beautiful cycle that helps plants grow and gives us fresh air.\n\nThe SI unit of force is the newton. Imagine you're pushing a heavy box. The newton measures how hard you're pushing that box. If you push really hard, you're using more newtons than if you just give it a gentle nudge.\n\n━━━━━━━━━━━━━━━━━━━━\n🌍 Real-Life Example\nThink of a sunny day in your backyard. The sun's light is the energy that helps the plants in your garden make their food. When you water the plants, you're giving them the water they need. The leaves are like little solar panels that catch the sunlight and turn it into food for the plant. And when you see a plant growing taller, that's the result of photosynthesis happening inside the plant.\n\n━━━━━━━━━━━━━━━━━━━━\n⭐ Key Points\n• Photosynthesis is the process by which plants make their own food using sunlight, water, and carbon dioxide.\n• The SI unit of force is the newton.\n\n━━━━━━━━━━━━━━━━━━━━\n🌟 Did You Know?\nDid you know that the first person to describe photosynthesis in a scientific way was a scientist named Jan van Helmont in the 17th century?\n\n━━━━━━━━━━━━━━━━━━━━\n💡 Remember\nPhotosynthesis is the process of making food using sunlight, and the force is measured in newtons.\n\n━━━━━━━━━━━━━━━━━━━━\n🎯 Learning Tip\nTo remember the SI unit of force, think of it as the unit that measures how hard you push or pull something, just like when you push a toy car.\n\n━━━━━━━━━━━━━━━━━━━━\n📖 New Word\nWord: Photosynthesis | Tamil: போதோசென்றைச் செயல் | Meaning: The process by which green plants use sunlight, carbon dioxide, and water to produce oxygen and energy in the form of sugar.\n\n━━━━━━━━━━━━━━━━━━━━\n📝 Practice\nWhat are the main ingredients used in photosynthesis?",
+        "judge": {
+          "correctness": 5,
+          "relevance": 5,
+          "completeness": 5,
+          "groundedness": 5,
+          "faithfulness": 5,
+          "language_quality": 4,
+          "educational_suitability": 5,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "mixed",
+          "_judge_prompt_eval_count": 2175
+        },
+        "composite_score": 5.0,
+        "retrieval_latency_ms": 10299.201011657715,
+        "generation_latency_ms": 457423.9935874939,
+        "verify_latency_ms": 422811.0909461975,
+        "retry_latency_ms": null,
+        "total_latency_ms": 890690.5672550201,
+        "n_chunks": 3,
+        "agentic_diagnostics": {
+          "decomposed": true,
+          "sub_questions": [
+            "What is photosynthesis",
+            "what is the SI unit of force?"
+          ],
+          "extra_round_triggered_for": [],
+          "per_subquestion_confidence": [
+            0.25,
+            0.25
+          ],
+          "fallback_applied": false
+        },
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      }
+    },
+    {
+      "id": "SYN_TA_COMPOUND_1",
+      "lang": "tamil",
+      "q": "ஒளிச்சேர்க்கை என்றால் என்ன, மற்றும் நீரின் கொதிநிலை என்ன?",
+      "off": {
+        "condition": "agentic_off",
+        "answer": "ஓளிச்சேர்க்கை என்பது ஒரு பொருள் அளவு மாற்றத்தின் ஒரு பங்கு. இது நீரின் வெப்பத்தை மாற்றும் போது நீரின் அளவு மாறும் என்பதைக் குறிக்கிறது. நீரின் கொதிநிலை என்பது 4°C ஆகும், இது நீரின் அதிகபட்ச அளவு வைத்துள்ளது.\n\n📘 கேள்வி\nஒளிச்சேர்க்கை என்றால் என்ன, மற்றும் நீரின் கொதிநிலை என்ன?\n\n━━━━━━━━━━━━━━━━━━━━\n📖 வரையறை\nஒளிச்சேர்க்கை என்பது நீரின் வெப்பத்தை மாற்றும் போது நீரின் அளவு மாறும் என்பதைக் குறிக்கிறது. நீரின் கொதிநிலை என்பது 4°C ஆகும், இது நீரின் அதிகபட்ச அளவு வைத்துள்ளது.\n\n━━━━━━━━━━━━━━━━━━━━\n🔬 விளக்கம்\nஒளிச்சேர்க்கை என்பது நீரின் வெப்பத்தை மாற்றுவதால் நீரின் அளவு மாறும் என்பதை எளிய வாய்பாடாக விளங்கலாம். நீரின் கொதிநிலை 4°C ஆகும் என்பது என்னைப் பொறுத்து இது நீரின் அதிகபட்ச அளவு வைத்துள்ளது என்று கூறலாம்.\n\n🌍 நிஜ வாழ்க்கை உதாரணம்\nநீ தாவரங்களில் நீரின் வெப்பத்தை மாற்றுவதால் நீரின் அளவு மாறும் என்ற விளக்கம் வெளியிடுவோம். நீ தாவரங்களில் நீரின் வெப்பத்தை மாற்றுவதால் நீரின் அளவு மாறும் என்று கூறலாம். இது ஒரு வெப்ப மாற்றத்தின் போ",
+        "judge": {
+          "_judge_invalid": "correctness is missing or not numeric (None)",
+          "_raw_reply": {
+            "விடை": "ஒளிச்சேர்க்கை என்பது ஒரு பொருள் அளவு மாற்றத்தின் ஒரு பங்கு. இது நீரின் வெப்பத்தை மாற்றும் போது நீரின் அளவு மாறும் என்பதைக் குறிக்கிறது. நீரின் கொதிநிலை என்பது 4°C ஆகும், இது நீரின் அதிகபட்ச அளவு வைத்துள்ளது."
+          },
+          "_judge_prompt_eval_count": 2050
+        },
+        "composite_score": null,
+        "retrieval_latency_ms": 7987.437725067139,
+        "generation_latency_ms": 1825523.79322052,
+        "verify_latency_ms": 2216902.949333191,
+        "total_latency_ms": 4050414.180278778,
+        "n_chunks": 3,
+        "agentic_diagnostics": null,
+        "retried_with_alt_context": false,
+        "low_confidence_flag": false
+      },
+      "on": {
+        "condition": "agentic_on",
+        "answer": "ஓளிச்சேர்க்கை என்பது நீரின் விதியான மாற்றங்களில் ஒன்று. இது நீரின் தொகையில் வெவ்வேறு பொருட்களை அணிக்க வேண்டும் போது உபயோகிக்கப்படுகிறது. நீரின் கொதிநிலை என்பது நீரின் தொகையில் உள்ள வெவ்வேறு பொருட்களின் தொகையை குறிக்கும் ஒரு மாறியாகும்.\n\n📘 கேள்வி\nஒளிச்சேர்க்கை என்றால் என்ன, மற்றும் நீரின் கொதிநிலை என்ன?\n━━━━━━━━━━━━━━━━━━━━\n📖 வரையறை\nஒளிச்சேர்க்கை என்பது நீரின் விதியான மாற்றங்களில் ஒன்று. இது நீரின் தொகையில் வெவ்வேறு பொருட்களை அணிக்க வேண்டும் போது உபயோகிக்கப்படுகிறது. நீரின் கொதிநிலை என்பது நீரின் தொகையில் உள்ள வெவ்வேறு பொருட்களின் தொகையை குறிக்கும் ஒரு மாறியாகும்.\n━━━━━━━━━━━━━━━━━━━━\n🔬 விளக்கம்\nநீரின் கொதிநிலை என்பது நீரின் தொகையில் உள்ள வெவ்வேறு பொருட்களின் தொகையை குறிக்கும் ஒரு மாறியாகும். இது நீரின் விதியான மாற்றங்களில் ஒன்று என்பதால், நீரின் கொதிநிலை மாறும் போது அதன் விதியும் மாறும். ஒளிச்சேர்க்கை என்பது இந்த மாற்றங்களை உபயோகிக்க வேண்டும் போது உபயோகிக்கப்படுகிறது. உதாரணத்தாக, நீரின் கொதிநிலை மா",
+        "judge": {
+          "correctness": 1,
+          "relevance": 1,
+          "completeness": 1,
+          "groundedness": 1,
+          "faithfulness": 1,
+          "language_quality": 1,
+          "educational_suitability": 1,
+          "hallucination": 0,
+          "abstained": 0,
+          "response_language": "தமிழ்",
+          "_judge_prompt_eval_count": 2050
+        },
+        "composite_score": 1.0,
+        "retrieval_latency_ms": 17923.619985580444,
+        "generation_latency_ms": 1732687.3710155487,
+        "verify_latency_ms": 407917.44470596313,
+        "retry_latency_ms": 1039236.1557483673,
+        "total_latency_ms": 3197863.8401031494,
+        "n_chunks": 3,
+        "agentic_diagnostics": {
+          "decomposed": true,
+          "sub_questions": [
+            "ஒளிச்சேர்க்கை என்றால் என்ன,",
+            "நீரின் கொதிநிலை என்ன?"
+          ],
+          "extra_round_triggered_for": [],
+          "per_subquestion_confidence": [
+            0.0,
+            0.0
+          ],
+          "fallback_applied": false
+        },
+        "retried_with_alt_context": true,
+        "low_confidence_flag": false
+      }
+    }
+  ],
+  "git_commit_note": "Points at the Phase 4 code commit (query decomposition, confidence-gated retrieval, /generate/verified post-generation verification). Committed as the NEXT commit after this code, pushed immediately, same convention as Phases 1/2/2b.",
+  "ta_001_final_disposition": "Not pursued further after failing at every timeout tested (600s, 900s, 1800s). Likely cause already on record from earlier work in this rebuild: Tamil tokenizer efficiency is worse than English's, so Tamil prompts/completions run longer per answer on this CPU-only hardware; /generate/verified's non-streaming design (needed so the full answer exists before judge_answer() can score it) simply removes the one thing that made that slowness tolerable before -- token-by-token streaming to the user. SYN_TA_COMPOUND_1 (the other Tamil item) corroborates this: its generation calls took 1,732,687ms and 1,825,524ms, right at the edge of the 1800s per-call budget, and its OFF-condition judge call separately failed for a different reason (the judge model answered the question instead of grading it -- a Tamil-specific judge-reliability issue, not a timeout).",
+  "shipping_recommendation": {
+    "steps_1_2_query_decomposition_and_confidence_gated_retrieval": "DEFAULT ON. Added only ~5-10s of retrieval overhead in every measured case -- noise against 150-4,000,000+ms generation times -- and behaved correctly: decomposition fired only on genuinely compound questions, the extra retrieval round fired only on sub-questions with low dense/sparse agreement, never gated on language.",
+    "step_3_post_generation_verification": "OPT-IN, Tamil-only diagnostic. NOT a default. It roughly doubles total latency for English items that already scored 4.67-5.0 without it -- an easy no there. The one case where it had something to prove was Tamil (SYN_TA_COMPOUND_1): it correctly scored a hallucinated answer 1/1/1/1/1 and triggered the capped retry, but the retry was equally wrong because the defect is upstream corpus corruption (same root cause as the pre-rerank gap and the cross-corpus split, both disclosed earlier in this rebuild), not something a different retrieved context can repair. Legitimate value as a flagging tool on the language where generation quality is actually in question; no demonstrated value as a universal gate.",
+    "future_design_note_not_scoped_now": "The real fix for the TA_001-style timeout is not a longer timeout -- it is decoupling verification from the response path: stream the answer to the user as normal, run judge_answer() asynchronously afterward, and surface a late low-confidence flag rather than blocking delivery on it. That is a real architecture change (an async job plus a way to surface a late flag), not a tweak, and is intentionally not part of this commit."
+  }
+}
