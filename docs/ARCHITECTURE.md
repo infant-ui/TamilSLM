@@ -47,6 +47,7 @@ flowchart TD
 Four backend services, each a separate process, plus an offline pipeline that builds the search index they query. Confirmed against the actual code in this repo — `backend/gateway`, `backend/retrieval-service`, `backend/generation-service`, `backend/correction-service` are the full current list; there is no fifth backend service.
 
 ```mermaid
+%%{init: {'themeVariables': {'fontSize': '18px'}}}%%
 flowchart TD
     FE["Frontend (React)\nfrontend/"]
 
@@ -125,6 +126,8 @@ flowchart TD
 ```
 
 ![Technical architecture diagram](diagram3-technical.png)
+
+A higher-resolution [SVG version](diagram3-technical.svg) is also available — stays crisp at any zoom level, unlike the PNG above.
 
 **Why the ingestion branch matters:** `is_page_searchable()` (`app/ingestion/layout_analyzer.py`) checks whether PyMuPDF's native text extraction returns more than 100 characters. If yes, OCR never runs on that page at all — the text comes straight from the PDF's embedded font encoding. A corpus-wide scan (Phase 5 of this rebuild) found this is true for 3,992 of 4,016 pages (99.4%). This matters because the Tamil corruption found throughout this rebuild turned out to come almost entirely from *this* native-extraction path, not from OCR quality — see Section 6.
 
