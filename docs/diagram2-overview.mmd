@@ -1,0 +1,12 @@
+flowchart TD
+    A["Student asks a question\n(English, Tamil, or mixed)"] --> B["Search English textbooks\n(meaning-based + exact-word)"]
+    A --> C["Search Tamil textbooks\n(meaning-based + exact-word)"]
+    B --> D["Combine and re-check\nthe best matching pages"]
+    C --> D
+    D --> E{"Was the question\nreally two questions?"}
+    E -->|No - normal case| F["Write an answer grounded\nin those specific pages"]
+    E -->|Yes - rare| G["Search each part separately,\nthen combine before writing"]
+    G --> F
+    F --> H["Show the answer\nand which pages it came from"]
+    F -.->|only when a developer\nturns this on| I["Fact-check the answer\nagainst the pages"]
+    I -.-> H

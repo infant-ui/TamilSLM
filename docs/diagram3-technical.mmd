@@ -1,0 +1,75 @@
+flowchart TD
+    FE["Frontend (React)\nfrontend/"]
+
+    subgraph GW["Gateway -- Node/Express, port 5000 -- backend/gateway/app.js"]
+        direction LR
+        GW_STREAM["/query/stream\n/query"]
+        GW_MINDMAP["/mindmap/generate\n/mindmap/status/:jobId"]
+        GW_PROXY["/api/upload\n/api/feedback\n/api/evaluation/dashboard\n(proxies to retrieval-service)"]
+    end
+
+    FE -->|HTTP/SSE| GW
+
+    subgraph RS["Retrieval Service -- FastAPI, port 8000 -- backend/retrieval-service/main.py"]
+        direction TB
+        RS_RETRIEVE["POST /retrieve"]
+        HYBRID["HybridRetriever\napp/retrieval/hybrid_retriever.py\n(dense + BM25 + RRF fusion,\nper-language weights)"]
+        AGENTIC["agentic.py\nquery decomposition,\nconfidence-gated retry\n(opt-in, see Sec. 4)"]
+        RERANK["CrossEncoderReranker\napp/retrieval/reranker.py"]
+        PROMPT["PromptBuilder\napp/retrieval/prompt_builder.py"]
+        RS_OTHER["POST /upload\n/feedback, /evaluation/dashboard,\n/reload-cache, /retrieve/debug"]
+        RS_RETRIEVE --> HYBRID --> RERANK --> PROMPT
+        HYBRID -.opt-in.-> AGENTIC
+    end
+
+    subgraph GS["Generation Service -- FastAPI, port 8001 -- backend/generation-service/app.py"]
+        direction TB
+        GS_STREAM["POST /generate/stream\n(default, SSE streaming)"]
+        GS_VERIFIED["POST /generate/verified\n(opt-in, non-streaming +\njudge_answer() guardrail)"]
+        GS_IMG["POST /generate/image\n(admin-key gated)"]
+    end
+
+    subgraph CS["Correction Service -- FastAPI, port 8002 -- backend/correction-service/main.py"]
+        direction LR
+        CS_LOOKUP["GET /corrections/lookup"]
+        CS_REPORT["POST /corrections/report\nGET /corrections/pending\nPOST /corrections/review/:id"]
+    end
+
+    OLLAMA[("Ollama\nlocalhost:11434\nqwen2.5:7b-instruct\n+ llama3.1 (judge)")]
+    MM["predict_json.py\n(subprocess)"]
+
+    GW_STREAM -->|POST /retrieve| RS_RETRIEVE
+    GW_STREAM -->|POST /generate/stream| GS_STREAM
+    GW_PROXY --> RS_OTHER
+    GW_MINDMAP -.->|spawns subprocess\nKNOWN BROKEN, see Sec. 6| MM
+    RS_RETRIEVE -.emergency override check.-> CS_LOOKUP
+    GS_STREAM --> OLLAMA
+    GS_VERIFIED --> OLLAMA
+
+    subgraph ING["Offline ingestion pipeline (not a running service)"]
+        direction TB
+        PDF["Source PDFs\ndata/books/**/*.pdf"]
+        SCAN["book_scanner.py\n(file hashing, registry)"]
+        SEARCHABLE{"Page has an embedded\ntext layer?\nlayout_analyzer.py\nis_page_searchable()"}
+        NATIVE["pdf_cleaner.py\nclean_page_text_blocks()\nnative PyMuPDF extraction"]
+        OCR_STEP["ocr_cleaner.py\nTesseract / PaddleOCR\n(only ~0.6% of pages)"]
+        REPAIR["text_utils.py\nnormalize_tamil_unicode()\nstrip_unrecoverable_artifacts()"]
+        PARSE["chapter_parser.py, section_parser.py,\nlogical_block_builder.py"]
+        CHUNK["chunker.py\nCurriculumChunker"]
+        VALIDATE["chunk_validator.py"]
+        EMBED["encoder_utils.py\nload_patched_encoder()\nAlibaba-NLP/gte-multilingual-base"]
+        COMPILE["index_books.py\ncompile_indices()"]
+        GATE{"self_retrieval_gate()\npass >= 95%?"}
+        CACHE[("data/processed/cache/\nenglish_chunks.pkl, tamil_chunks.pkl,\n*_embeddings.npy, bm25_index.pkl")]
+
+        PDF --> SCAN --> SEARCHABLE
+        SEARCHABLE -->|yes, ~99.4%| NATIVE
+        SEARCHABLE -->|no, ~0.6%| OCR_STEP
+        NATIVE --> REPAIR
+        OCR_STEP --> REPAIR
+        REPAIR --> PARSE --> CHUNK --> VALIDATE --> EMBED --> COMPILE --> GATE
+        GATE -->|pass| CACHE
+        GATE -.fail: refuse to ship.-> COMPILE
+    end
+
+    CACHE ==loaded at startup==> RS_RETRIEVE
