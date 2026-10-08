@@ -1,0 +1,63 @@
+{
+  "status": "pilot_complete_pending_go_no_go",
+  "git_commit": "TODO -- fill in after committing Phase 5 step 1 pilot code; this results file is committed as the immediate next commit referencing that hash",
+  "scope": "Step 1 of 2 (legacy-font forced-OCR pilot). Step 2 (duplication-pattern characterization) not started.",
+  "method": "Corpus-wide scan of every page in every book PDF under data/books/ (dedup'd for case-insensitive-filesystem glob duplicates). A page is flagged if its native-extracted text (page.get_text('text'), only on pages PyMuPDF already considers 'searchable' -- len>100 chars) has a mojibake_ratio > 0.25: the fraction of non-whitespace characters in U+00A0-U+02FF (Latin-1 Supplement/Latin Extended-A, excluding common legitimate symbols), which is the diagnostic signature of a legacy pre-Unicode Tamil font being decoded as Latin-1. Forced OCR renders each flagged page at 300 DPI and runs Tesseract (lang=tam+eng, --oem 3 --psm 6) directly on the image, bypassing the native text layer entirely.",
+  "font_name_detector_rejected": "Tried first: flag any page using a font whose name contains 'tamelango'. Found 18 such pages corpus-wide, but only 4 are actually severely corrupted (22% precision) -- the same nominal font family can have a working ToUnicode CMap in one PDF's embedded subset and a broken one in another's (PDF font subsetting embeds a per-document glyph table even for the 'same' font), or be broken only for specific glyphs that don't dominate the page. Rejected in favor of the content-based mojibake_ratio signal above.",
+  "n_flagged": 4,
+  "n_total_pages_scanned_approx": 4016,
+  "pilot_results": [
+    {
+      "pdf": "data\\books\\class_7\\Science\\Tamil\\textbooks\\term_1\\Class_7_Science_Tamil_Science_-_Term_1_-_2025.pdf",
+      "page_number": 92,
+      "mojibake_ratio": 0.5493,
+      "fonts": [
+        "AAAABF+MinionPro-Regular",
+        "ZLXPZF+B002TAMElangoAbiramiBold",
+        "BKSOIY+MinionPro-Regular"
+      ],
+      "native_text_sample": "88\nÞó£µõ ió˜èO¡ ñ¼ˆ¶õ‚°¿MŸ° \nî¬ôõó£è çH÷Iƒ GI‚èŠð†ì£˜\nÜªô‚ê£‡ì˜ çH÷Iƒ  \n(1881 & 1955)\nÜªô‚ê£‡ì˜ çH÷Iƒ î¡Â¬ìò \nðœOŠ ð®Š¬ð ô‡ìQ½œ÷ \nªêJ¡† «ñKv ðœOJ™ ðJ¡ø£˜\nñ¼ˆ¶õˆ¶¬øJ™ I°‰î Ý˜õ‹ ªè£‡ìî£™  \nî¡Â¬ìò 20Ý‹ õ",
+      "forced_ocr_text": "மருந்துகளின்‌ இராணி - பென்சிலின்‌ =\nத! =a நன்‌ ait\n< 4 i ; 2. =a JI fe — -\nP ae ந ்‌ =\" il 4 = இ\n4 யப ne ட்ப A ae\nன பப prt ae யம யய\n; 0 On & a es அலெக்சாண்டர்‌ ஃபிளமிங்‌ தன்னுடைய\n(Rascals விபட அலெக்சாண்டர்‌ wee eld பள்ளிப்‌ படிப்பை லண்டனிலுள்ள\n( - PINT) Geufert. மேரிஸ்‌ பள்ளியில்‌ பயின்றார்‌\n[தித்த A\nLi Se a ie ந ணத : ரர்‌\n4 ie lug | றி லு டவ அதக ~ வட\n4 A | 4 = pee 1 ட 4 hi al —\n| மருத்துவத்துறையில்‌ மிகுந்த ஆர்வம்‌ கொண்டதால்‌ )\nதன்னுடைய 20ஆம்‌ வயதில்‌ மாமா உதவியுடன்‌ ்‌ இன்‌\nசெயின்ட்‌ மேரிஸ்‌ மருத்துவக்‌ கல்லூரி =\nமருத்துவமனையில்‌ மருத்துவப்படிப்பினைப்‌ பயின்றார்‌ 8 | ந _— ன ந்‌\n, க இராணுவ வீரர்களின்‌ மருத்துவக்குழுவிற்கு\nமுதல உலகப்‌ போரின்போது இராணுவ வீரர்கள்‌ தலைவராக பிளமிங்‌ நிமிக்கப்பட்டார்‌\nபலர்‌ காயமடைந்து அதனால்‌ ஏற்பட்ட\nதொற்று நோய்க்கிருமிகளால்‌ க்‌\nபாதிக்கப்பட்டு இருந்தனர்‌\nன்‌ | i] | ர \\\n. = = = | ன த்‌\n—\" !\nc=\nase ந்‌\n88\n| | VII Std Science Term-1 TM Unit 6.indd 88 11-11-2022 20:32:23 | |\n"
+    },
+    {
+      "pdf": "data\\books\\class_7\\Science\\Tamil\\textbooks\\term_1\\Class_7_Science_Tamil_Science_-_Term_1_-_2025.pdf",
+      "page_number": 93,
+      "mojibake_ratio": 0.5718,
+      "fonts": [
+        "AAAABF+MinionPro-Regular",
+        "ZLXPZF+B002TAMElangoAbiramiBold",
+        "BKSOIY+MinionPro-Regular"
+      ],
+      "native_text_sample": "89\nÞ‚A¼Ièœ ñŸøõ˜èÀ‚°‹ ðóM»œ÷«î! \nâ¡ù? Þ‰î õ÷˜ áìèˆF™ Ì…¬ê ðì˜‰¶œ÷¶. \nÝù£™ ÞF™ àœ÷ v¬ì¬ð«ô£è£‚èv \nð£‚¯Kò£¬õ‚ è£«í£«ñ!\nâ¡ù MòŠ¹! (Ýó£Œ„C‚°Š H¡) ªðQCLò‹ \nªï£†«ì†ì‹ â¡ø Ì…¬ê à¼õ£‚Aò \nªð¡CL¡ â¡ø ªð£¼œî£¡ \n",
+      "forced_ocr_text": "a rng\n= ந\nட | உ\n| ்‌ க (fe ரட்ணம்‌ ப,\nர்‌ a! ஓம்‌ னி ர்‌ ரீ. = bs\n| த ட த «| Ee :\n7 = a 4 - | = 1\nப்‌ நோயாளிகளுக்குக்‌ கிருமிநாசினி மருந்து ‘a\nகொடுத்தும்‌ இன்னும்‌ நோய்‌ குணமாகவில்லை, இக்கிருமிகள்‌ மற்றவர்களுக்கும்‌ பரவியுள்ளதே !\nஇ காயங்களும்‌ ஆறவில்லை று லு\ner ்‌ 5 5\n4 i = — ட\nந்‌ r ்‌ ஹு க\n11 ரு ந ்‌. அஃ] = a | 5\nஇக்கிருமிநாசினிகள்‌ அவர்களின்‌ நோய்‌ | | 7 ர Ai\nஎதிர்ப்புசக்தியை குறைக்கிறது. இவை ’ I\nபாக்டீரியாக்களை பரப்புகின்றன. எனவே | of r= இதோ இந்த வளர்‌ ஊடகங்களில்‌\nபாக்டீரியாக்களை அழிக்கும்‌ பொருளைக்‌ | தட்‌ ஸ்டைபலோகாக்கஸ்‌ எனும்‌ |\nகண்டறிய வேண்டும்‌ னு | * : = பாக்டீரியாக்கள்‌ வளர்க்கிறேன்‌ |\n(J ண அ\n, 4 ts i\n௯ aq\nட . . ae . wee என்ன வியப்பு! (ஆராய்ச்சிக்குப்‌ பின்‌) பெனிசிலியம்‌\n்‌ ; பென்சிலின்‌ என்ற பொருள்தான்‌ |\nபாக்டீரியாவைக்‌ காணோமே ! பாக்டீரியாக்களை அழித்திருக்கின்றது\nண | ந ட |]\n4\\ / ட்‌ ae = 4 \" == =\n| / |\n= 1 =, ea = wits \"\n% oS ண tT பென்சிலின்‌ எனும்‌ நோய்எதிர்ப்பு மருந்து 1.\n= . gets x 1 மானியா, டிப்தீரியா போன்ற பல்வே\n“1928 ள்‌ ——— AG 58 os : நோய்கள்‌ மற்றும்‌ காயங்களைக்‌\nஆம்‌ ஆண்டு உலகிலேயே முதன்முதலை குணமாக்கியது. அலெக்சாண்டரின்‌ |\nகண்டறியப்பட்ட நோய்‌ எதிர்ப்பு சக்தி மருந்து  டுபியுட்‌ ்‌ ்‌ 9a |\nபென்சிலின்‌ தான்‌. நாங்கள்‌ நோபல்‌ பரிசு பெறும்‌ கண்டு டிப்பு மருத்துவத்துறை ல்‌ :\nமகிழ்ச்சியை விட, எண்ணற்றோரின்‌ உயிரைக்‌ மிகப்பெரிய பயனைத்‌ தந்ததால்‌, 8\nகாப்பாற்றியது தான்‌ எங்களுக்கு மிகவும்‌ இதனை என்று ம்‌\nமகிழ்ச்சியான தருணமாகும்‌ அழைக்கிறோம்‌.\n89\n| | VII Std Science Term-1 TM Unit 6.indd 89 11-11-2022 20:32:27 | |\n"
+    },
+    {
+      "pdf": "data\\books\\class_7\\Science\\Tamil\\textbooks\\term_2\\Class_7_Science_Tamil_Science_-_Term_2.pdf",
+      "page_number": 40,
+      "mojibake_ratio": 0.4823,
+      "fonts": [
+        "QSDLRU+TAU-Paalai",
+        "VMBOEL+B068TAMElangoPanchaliBold",
+        "RYTLEP+ArialMT",
+        "HWKPBK+TAU-Paalai-Bold",
+        "TGKJBV+MinionPro-Regular",
+        "WQNBBS+Helvetica"
+      ],
+      "native_text_sample": "36\nî£ñv Ý™õ£ â®ê¡, CÁõòF«ô«ò vè£˜ô† â¡ø è£Œ„êô£™ ð£F‚èŠð†´ \nâ†´ õòF™î£¡ ÜªñK‚è£M™ àœ÷ «ð£˜† ý¨ó¡ ðœO‚°„ ªê¡ø£˜.\nðœO ÝCKòó£ù â®êQ¡ î£ò£˜ \nðœO ÝCKòó£ù â®êQ¡ î£ò£˜ \nÍ¡Á Ý‡´èœ i†®«ô«ò Üõ¼‚°Š \nÍ¡Á Ý‡´èœ i†",
+      "forced_ocr_text": "| @ ணா ட\nவெளிச்சத்திற்கு வந்த உலகம்‌\nதாமஸ்‌ ஆல்வா எடிசன்‌ (1847-1931)\nசிறுவயதிலேயே காதுகேட்கும்‌ திறன்‌ —“@ க ு\nகுறைவாக இருந்தது. அதனால்‌ ஒரு இ r (aan\nநாள்‌ ஆசிரியர்‌ அவரை கருமையாக ஹ்‌. A\nம] விட அவ!\nதிட்டியதால்‌ அவர்‌ பள்ளியிலிருந்து y | ண\nபாதியிலேயே நின்றுவிட்டார்‌. Ap ¢ / aq 4 eA) ™\n\\ ன பள்ளி ஆசிரியரான எடிசனின்‌ தாயார்‌\na f Bs மூன்று ஆண்டுகள்‌ வீட்டிலேயே அவருக்குப்‌\nLA அ பள்ளிப்பாடங்களைச்‌ சொல்லிக்‌ கொடுத்தார்‌.\nதமது ஏழாவது வயது முதல்‌ வீட்டில்‌ ட ; ்‌\nபயன்படுத்தும்‌ மின்சாதனங்களின்‌ aa ரீ\nமீது எடிசனுக்கு ஆர்வம்‌ எற்பட்டது. ஓ. 6)\n\nஓ ஒன்பது வயதில்‌ ரிச்சர்டு பார்க்கர்‌ ior AY. ay ஓ\n(Richard Parker) எழுதிய 'இயற்கை 11 1011 of £ 7\nமற்றும்‌ சோதனைத்‌ தத்துவம்‌ (Natural Femme one a ‘“\n& Experimental Philosophy) என்ற ஙி ட Wee\nநூலைப்‌ படித்து முடித்தார்‌. 21 ஆம்‌ 1] ம NY\nவயதில்‌, 'மின்சக்தியின்‌ சோதனை ஸ்ட oS\nஆராய்ச்சிகள்‌' என்ற பகுதியை ஆழ்ந்து ண்‌ ஹு \\\\\nபடித்தார்‌. | \\\n\n: > | a fi\n- - முதன்முதலில்‌ எடிசனுக்கு இரயில்‌\nட டட வு நிலையத்தில்‌ தந்தி இயக்கும்‌\n4 + a4 l Bg Came கிடைத்தது; அதிவேகத்‌\nXK J p>!) | a\" TD) தந்தி இயக்குதலுக்குப்‌ புகழ்பெற்றவர்‌\n/ < 1 த்‌ . டவ எடிசன்‌. இவரது முதல்‌ கண்டுபிடிப்பு\nLy ஒவ்‌ = ° | ° |\n= இதி e மின்தந்தி போன்ற தந்தி\nஇ “a * ரீ] தொடர்பான கருவிகளேயாகும்‌.\nOV வவ\nக\n| | VII Std Science Term-2 TM Unit 2.indd 36 6 27/06/2023 1606 | |\n"
+    },
+    {
+      "pdf": "data\\books\\class_7\\Science\\Tamil\\textbooks\\term_2\\Class_7_Science_Tamil_Science_-_Term_2.pdf",
+      "page_number": 41,
+      "mojibake_ratio": 0.4911,
+      "fonts": [
+        "VMBOEL+B068TAMElangoPanchaliBold",
+        "RYTLEP+ArialMT",
+        "TGKJBV+MinionPro-Regular",
+        "WQNBBS+Helvetica"
+      ],
+      "native_text_sample": "37\n1877 Ý‹ Ý‡´ âF˜ð£ó£îõ£Á, \n1877 Ý‹ Ý‡´ âF˜ð£ó£îõ£Á, \nâ®ê¡ è‡´ H®ˆî ªî£N™¸†ð \nâ®ê¡ è‡´ H®ˆî ªî£N™¸†ð \nº¡«ù£®„ ê£îù‹, åLõ¬óM \nº¡«ù£®„ ê£îù‹, åLõ¬óM \n(Aó£ñç«ð£¡) Ý°‹.\n(Aó£ñç«ð£¡) Ý°‹.\nH÷£†®ù‹ è‹H„²¼¬÷ ",
+      "forced_ocr_text": "| ® ணா ட\nந = உல்‌ 2 =e\n4 wi நீ ft பிளாட்டினம்‌ கம்பிச்சுருளை வெற்றிடக்குமிழி ஒன்றில்‌ YY\n‘SS = உபயோகித்துக்‌ கட்டுப்படுத்திய மின்னோட்டத்தில்‌\nஎ ஒளிர வைத்தார்‌. இதுதான்‌ எடிசன்‌ 1879 ஆம்‌\n1877 ஆம்‌ ஆண்டு எதிர்பாராதவாறு, ஆண்டு கண்டுபிடித்த முதல்‌ மின்‌ விளக்கு.\nந கண்டு பிடித்த nen எடிசன்‌ விரைவில்‌ எரியக்கூடிய மின்‌\nமுன்னோடிச்‌ சாதன, ஒலிவரை விளக்கினைக்‌ கண்டுபிடித்தார்‌. இது 1897 0 ண\n(கிராமஃபோன்‌) ஆகும்‌. ஆம்‌ ஆண்டு காட்சிப்படுத்தப்பட்டது. ழா\nஇயந்திர ஆற்றலால்‌ இயங்கும்‌ மின்சார சேமிப்புக்கலனில்‌ மின்னழுத்தம்‌ [Voltage] உண்டாகி, ட\nகம்பி முனையில்‌ மின்திறன்‌ [Electric Power] கிடைக்கிறது. எதிர்மறையாக மின்சார of க்‌ ij\nசேமிப்புக்கலன்‌ முனைகளில்‌, மின்னழுத்தம்‌ செலுத்தினால்‌, அதே கருவி இயந்திர che த்‌\nசக்தியைத்தரும்‌ மின்சார மோட்டார்‌ [Electric Motor] ஆனதை எடிசன்‌ நிரூபித்துக்‌ @ 1\nகாட்டினார்‌. =\n® . ®\nஎடிசன்‌ ஒரு கண்டுபிடிப்பாளரும்‌,\nதொழிலதிபரும்‌ ஆவார்‌. இவர்‌ ஒளி\n| விளக்கு, மின்சார மோட்டார்‌, ஒலிவரைவி,\nh. fy திரைப்படபடப்பிடிப்புக்கருவி உள்ளிட்ட பல\n| ன்‌ = (i: Yi | கருவிகளைக்‌ கண்டுபிடித்தார்‌. வாழ்க்கையில்‌\nஅன பிது 0, பல இன்னல்களைத்‌ தாண்டி இருளிலிருந்து\na Be ல | இந்த உலகை வெளிச்சத்திற்குக்‌\nEE SEEN அ (. கொண்டுவந்தவர்‌ என்ற பெருமைக்குரியவர்‌\nட்ட ன்‌ ee eel A இவரே.\n| | VII Std Science Term-2 TM Unit 2.indd 37 6 27/06/2023 கலக] |\n"
+    }
+  ]
+}
