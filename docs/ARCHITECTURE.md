@@ -74,7 +74,7 @@ flowchart TD
     subgraph GS["Generation Service -- FastAPI, port 8001 -- backend/generation-service/app.py"]
         direction TB
         GS_STREAM["POST /generate/stream\n(default, SSE streaming)"]
-        GS_VERIFIED["POST /generate/verified\n(opt-in, non-streaming +\njudge_answer() guardrail)"]
+        GS_VERIFIED["POST /generate/verified\n(opt-in, non-streaming +\njudge_answer() guardrail --\nnot called by gateway)"]
         GS_IMG["POST /generate/image\n(admin-key gated)"]
     end
 
