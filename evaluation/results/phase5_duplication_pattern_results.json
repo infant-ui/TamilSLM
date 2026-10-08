@@ -1,6 +1,6 @@
 {
   "status": "characterization_complete_pending_go_no_go",
-  "git_commit": "TODO -- fill in after committing this script; results file committed as the immediate next commit",
+  "git_commit": "f3a187c",
   "scope": "Step 2 of 2 (duplication-pattern characterization, steps 2a-2d). Step 3 (go/no-go gate: re-chunk/re-embed affected pages through the self-retrieval gate, re-run the full 156-item eval + Tamil dense-only R@5 isolation metric) has NOT been run -- this is a characterization report only, no corpus fix applied.",
   "vocabulary_validation": {
     "vocab_size": 68414,
