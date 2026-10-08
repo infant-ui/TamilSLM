@@ -269,7 +269,13 @@ async def retrieve(req: RetrieveRequest, request: Request):
     query_vector = model.encode([req.question], normalize_embeddings=True)[0]
 
     # 2. Query hybrid search (Dense + BM25 + Priority filtering + Language fallback)
-    candidates, fallback_applied = await retriever.retrieve(req, query_vector)
+    agentic_diagnostics = None
+    if req.agentic:
+        candidates, agentic_diagnostics = await anyio.to_thread.run_sync(
+            retriever.retrieve_agentic_sync, req, query_vector)
+        fallback_applied = agentic_diagnostics.get("fallback_applied", False)
+    else:
+        candidates, fallback_applied = await retriever.retrieve(req, query_vector)
     
     # 3. Cross-Encoder Rerank with confidence thresholding (0.35)
     reranked_results = await anyio.to_thread.run_sync(reranker.rerank, req.question, candidates, req.top_k)
@@ -299,7 +305,8 @@ async def retrieve(req: RetrieveRequest, request: Request):
             "execution_time_ms": execution_time_ms,
             "scanned_nodes_count": total_scanned,
             "system_prompt": system_prompt,
-            "user_prompt": user_msg
+            "user_prompt": user_msg,
+            **({"agentic": agentic_diagnostics} if agentic_diagnostics is not None else {}),
         }
     )
 

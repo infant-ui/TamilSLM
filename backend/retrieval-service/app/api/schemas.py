@@ -22,6 +22,12 @@ class RetrieveRequest(BaseModel):
     # a caller opts in.
     cross_corpus_fusion: bool = Field(False, description="Retrieve from BOTH corpora and "
                                        "fuse via normalized scores instead of picking one via preferred_medium")
+    # Phase 4: opt-in query decomposition (compound questions only, detected by a cheap
+    # heuristic) + confidence-gated one-extra-round retrieval. Default False so the
+    # existing single-pass path is completely unchanged unless a caller opts in -- same
+    # convention as cross_corpus_fusion above.
+    agentic: bool = Field(False, description="Decompose compound questions and allow one "
+                           "confidence-gated extra retrieval round. No LLM calls either way.")
 
 class ChunkResult(BaseModel):
     chunk_id: str

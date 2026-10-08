@@ -29,6 +29,23 @@ class GenerateStreamRequest(BaseModel):
     history_summary: str = ""
     system_prompt: Optional[str] = None
 
+class GenerateVerifiedRequest(BaseModel):
+    query: str
+    context: str
+    language: str
+    history_summary: str = ""
+    system_prompt: Optional[str] = None
+    # Phase 4, step 3: post-generation verification as a live guardrail. False by default
+    # -- see the module-level comment above generate_verified() for why this is NOT wired
+    # into /generate/stream's default path.
+    verify: bool = False
+    key_facts: list = []
+    judge_model: Optional[str] = None
+    verify_threshold: float = 3.0
+    # Next-best retrieved context (e.g. the retrieval-service caller's rank-4..6 chunks,
+    # not used in the primary top_k) for the ONE allowed retry when verification scores low.
+    alt_context: Optional[str] = None
+
 app = FastAPI()
 
 # ── CORS: restrict to configured origin(s) instead of allowing any origin ──
@@ -75,22 +92,26 @@ def get_system_prompt(lang: str, context: str, history_summary: str) -> str:
             f"2. Explain concepts step by step in simple, age-appropriate language."
         )
 
+def assemble_system_prompt(system_prompt: Optional[str], context: str, language: str, history_summary: str) -> str:
+    """Single source of truth for system-prompt assembly, used by both /generate/stream
+    and /generate/verified so the verified path is judging the SAME prompt a real request
+    would get, not a reimplementation of it."""
+    if system_prompt:
+        out = system_prompt
+        if "Textbook Context" not in out and "பாடப் புத்தகப் பகுதி" not in out:
+            if language.lower() == "tamil":
+                out = f"{out}\n\nபாடப் புத்தகப் பகுதி (Textbook Context):\n{context}"
+            else:
+                out = f"{out}\n\nTextbook Context:\n{context}"
+        if history_summary:
+            out = f"{out}\n\nConversation Summary:\n{history_summary}"
+        return out
+    return get_system_prompt(language, context, history_summary)
+
+
 @app.post("/generate/stream")
 async def generate_stream(req: GenerateStreamRequest):
-    if req.system_prompt:
-        system_prompt = req.system_prompt
-        # Safe check: if context text is missing from the incoming system_prompt, append it
-        if "Textbook Context" not in system_prompt and "பாடப் புத்தகப் பகுதி" not in system_prompt:
-            if req.language.lower() == "tamil":
-                system_prompt = f"{system_prompt}\n\nபாடப் புத்தகப் பகுதி (Textbook Context):\n{req.context}"
-            else:
-                system_prompt = f"{system_prompt}\n\nTextbook Context:\n{req.context}"
-
-        # Append history summary if provided
-        if req.history_summary:
-            system_prompt = f"{system_prompt}\n\nConversation Summary:\n{req.history_summary}"
-    else:
-        system_prompt = get_system_prompt(req.language, req.context, req.history_summary)
+    system_prompt = assemble_system_prompt(req.system_prompt, req.context, req.language, req.history_summary)
 
     # Use unified Ollama model configured globally
     model = OLLAMA_MODEL
@@ -145,6 +166,124 @@ async def generate_stream(req: GenerateStreamRequest):
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
+
+
+# ---------------------------------------------------------------------------
+# Phase 4, step 3: post-generation verification as a live guardrail.
+#
+# This is a NEW, separate, non-streaming endpoint -- NOT a change to /generate/stream's
+# default behaviour. Verification needs the full answer text before it can be judged, which
+# is fundamentally incompatible with token-by-token SSE streaming to the client; bolting it
+# onto the streaming path would mean either buffering every answer before the user sees
+# anything (defeating the point of streaming) or judging after the fact and being unable to
+# act on a bad score. /generate/stream is therefore left exactly as it was. Whether THIS
+# endpoint should become the gateway's default path is an open question gated on the
+# latency numbers in evaluate_agentic.py -- see that script's docstring and the Phase 4
+# report for the actual measured cost of verify=True before deciding.
+#
+# judge_answer() is imported directly from evaluate_generation.py (not reimplemented here),
+# per the explicit Phase 4 instruction to reuse the SAME function used for offline eval --
+# an online answer is judged by identical logic to an offline one, and a change to the
+# rubric only ever needs to happen in one place.
+# ---------------------------------------------------------------------------
+import importlib.util as _importlib_util
+
+_EVAL_GEN_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
+                               "evaluation", "scripts", "evaluate_generation.py")
+_judge_module = None
+
+
+def _load_judge_module():
+    global _judge_module
+    if _judge_module is None:
+        spec = _importlib_util.spec_from_file_location("evaluate_generation_judge", os.path.abspath(_EVAL_GEN_PATH))
+        mod = _importlib_util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        _judge_module = mod
+    return _judge_module
+
+
+def _composite_judge_score(judgement: dict) -> Optional[float]:
+    """Mean of the three dimensions most directly about 'is this answer trustworthy to
+    show as-is': correctness, groundedness, faithfulness. (Not all 7 rubric dimensions --
+    e.g. language_quality/educational_suitability are about polish, not whether the
+    answer should be retried or flagged.) None if the judge call itself failed/was invalid
+    (distinct from a low score: a failed judge call should not silently pass verification)."""
+    if not isinstance(judgement, dict):
+        return None
+    if judgement.get("_judge_call_failed") or judgement.get("_judge_parse_error") or judgement.get("_judge_invalid"):
+        return None
+    keys = ("correctness", "groundedness", "faithfulness")
+    if not all(k in judgement for k in keys):
+        return None
+    return sum(judgement[k] for k in keys) / len(keys)
+
+
+def _call_ollama_chat_blocking(model: str, system_prompt: str, query: str) -> str:
+    """Non-streaming equivalent of /generate/stream's Ollama call, for verification (which
+    needs the complete answer text to judge, not a token stream)."""
+    payload = {
+        "model": model,
+        "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": query}],
+        "options": {"temperature": 0.2, "num_predict": 1000, "num_ctx": OLLAMA_NUM_CTX},
+        "stream": False,
+    }
+    # 1800s read timeout: this machine's concurrent unrelated load (other apps observed
+    # competing for CPU during this eval) pushed single calls past even 900s intermittently
+    # (see evaluate_agentic.py's hardware-load caveat), and unlike judge_answer() below, a
+    # plain Ollama generation call has no built-in retry -- one timeout here is fatal.
+    r = requests.post(OLLAMA_API_URL, json=payload, timeout=(5, 1800))
+    r.raise_for_status()
+    return r.json().get("message", {}).get("content", "")
+
+
+@app.post("/generate/verified")
+async def generate_verified(req: GenerateVerifiedRequest):
+    import time
+    t0 = time.time()
+    system_prompt = assemble_system_prompt(req.system_prompt, req.context, req.language, req.history_summary)
+    answer = await run_in_threadpool(_call_ollama_chat_blocking, OLLAMA_MODEL, system_prompt, req.query)
+    gen_latency_ms = (time.time() - t0) * 1000
+
+    out = {
+        "answer": answer, "verify_used": req.verify,
+        "gen_latency_ms": gen_latency_ms, "judge_latency_ms": None, "retry_latency_ms": None,
+        "judge": None, "composite_score": None, "retried_with_alt_context": False,
+        "low_confidence_flag": False,
+    }
+    if not req.verify or not answer.strip():
+        out["total_latency_ms"] = gen_latency_ms
+        return out
+
+    judge_mod = _load_judge_module()
+    judge_model = req.judge_model or judge_mod.pick_judge_model(None)
+    t1 = time.time()
+    # timeout_s=600, not judge_answer's own 240s default: under this machine's measured
+    # load a single call often exceeds 240s on the first attempt anyway (see the
+    # generation-timeout comment above), so the lower default just burns one guaranteed
+    # retry instead of usually succeeding on the first attempt.
+    judgement = await run_in_threadpool(judge_mod.judge_answer, judge_model, req.query, req.context, answer,
+                                         req.key_facts, 2, 1800)
+    judge_latency_ms = (time.time() - t1) * 1000
+    score = _composite_judge_score(judgement)
+    out.update(judge=judgement, judge_latency_ms=judge_latency_ms, composite_score=score)
+
+    if score is not None and score < req.verify_threshold:
+        if req.alt_context:
+            t2 = time.time()
+            alt_system_prompt = assemble_system_prompt(req.system_prompt, req.alt_context, req.language, req.history_summary)
+            retry_answer = await run_in_threadpool(_call_ollama_chat_blocking, OLLAMA_MODEL, alt_system_prompt, req.query)
+            retry_latency_ms = (time.time() - t2) * 1000
+            out.update(answer=retry_answer, retried_with_alt_context=True, retry_latency_ms=retry_latency_ms)
+            # Capped at ONE retry (explicit Phase 4 instruction): the retried answer is NOT
+            # re-judged -- that would double the judge cost again for an open-ended loop.
+            # It is served as-is, flagged so the caller knows a retry happened.
+        else:
+            out["low_confidence_flag"] = True
+
+    out["total_latency_ms"] = (time.time() - t0) * 1000
+    return out
+
 
 @app.post("/summarize-session")
 async def summarize_session(history_text: str):

@@ -408,6 +408,81 @@ class HybridRetriever:
         """
         return await anyio.to_thread.run_sync(self._retrieve_sync, req, query_vector)
 
+    # ---------------------------------------------------------------------
+    # Phase 4, steps 1-2: query decomposition + confidence-gated iterative retrieval.
+    # Built on top of _execute_retrieve_for_medium (UNCHANGED code path for every
+    # existing caller) rather than replacing it, for the same reason Phase 2's fusion
+    # scoring was kept separate from the proven single-corpus path: zero risk of
+    # regressing Phases 1-2b's verified behaviour. No LLM calls anywhere in this method
+    # -- see app/retrieval/agentic.py's module docstring for why.
+    # ---------------------------------------------------------------------
+    def retrieve_agentic_sync(self, req: RetrieveRequest, query_vector: np.ndarray) -> Tuple[List[ChunkResult], dict]:
+        from app.retrieval.agentic import detect_compound_question, expand_query_cheap
+
+        preferred_medium = req.preferred_medium.lower()
+        encoder = self.cache.get("ta_model")
+        sub_questions = detect_compound_question(req.question)
+        diagnostics = {"decomposed": sub_questions is not None, "sub_questions": sub_questions,
+                        "extra_round_triggered_for": [], "per_subquestion_confidence": []}
+
+        # Single-hop (the common case): behave exactly like _retrieve_sync's primary leg,
+        # just with the confidence signal attached, so the gate below still has something
+        # to check. This is the only extra cost a single-hop query pays: one dict allocation
+        # and the overlap computation, both already-computed-data lookups, not new retrieval.
+        question_vector_pairs = [(req.question, query_vector)]
+        if sub_questions is not None:
+            question_vector_pairs = [(sq, encoder.encode([sq], normalize_embeddings=True)[0]) for sq in sub_questions]
+
+        merged: Dict[str, ChunkResult] = {}
+        for sub_q, vec in question_vector_pairs:
+            sub_req = req.model_copy(update={"question": sub_q})
+            conf = {}
+            results = self._execute_retrieve_for_medium(sub_req, vec, preferred_medium, confidence_out=conf)
+            diagnostics["per_subquestion_confidence"].append(conf.get("confidence"))
+
+            # Confidence gate (step 2): ONE extra round, per sub-question, only when this
+            # sub-question's own signal is low -- gating on the actual per-query overlap,
+            # not on language, so the Tamil bucket doesn't eat an extra round on every
+            # query just because it is noisier on average (explicit Phase 4 instruction).
+            if conf.get("confidence", 1.0) < self.AGENTIC_CONFIDENCE_THRESHOLD:
+                expanded_q = expand_query_cheap(sub_q, conf.get("top_dense_chunk_header"))
+                if expanded_q != sub_q:
+                    expanded_vec = encoder.encode([expanded_q], normalize_embeddings=True)[0]
+                    expanded_req = req.model_copy(update={"question": expanded_q})
+                    extra_results = self._execute_retrieve_for_medium(expanded_req, expanded_vec, preferred_medium)
+                    results = results + extra_results  # merged/deduped below like any other candidates
+                    diagnostics["extra_round_triggered_for"].append(sub_q)
+
+            for r in results:
+                existing = merged.get(r.chunk_id)
+                if existing is None or r.score > existing.score:
+                    merged[r.chunk_id] = r
+
+        final_results = sorted(merged.values(), key=lambda r: r.score, reverse=True)
+        for idx, r in enumerate(final_results):
+            r.rank = idx + 1
+        final_results = final_results[:req.top_k * 2]
+
+        fallback_applied = False
+        if not final_results and req.fallback_language_allowed:
+            # Agentic mode does not re-run decomposition/confidence-gating on the fallback
+            # leg -- a plain single fallback pass, same as _retrieve_sync's fallback. This
+            # is a deliberate scope limit (documented, not silently dropped): combining
+            # both would add complexity disproportionate to a path that only fires when
+            # the primary medium returns literally nothing.
+            fallback_medium = "english" if preferred_medium == "tamil" else "tamil"
+            final_results = self._execute_retrieve_for_medium(req, query_vector, fallback_medium)
+            fallback_applied = bool(final_results)
+
+        return final_results, {**diagnostics, "fallback_applied": fallback_applied}
+
+    # Tuned qualitatively, not swept like the Tamil RRF weight: 0.2 overlap of top-5
+    # dense/sparse ids is a low bar (a shared system with totally independent signals
+    # would land well below this most of the time), so this gate is meant to catch only
+    # the cases with essentially NO agreement between dense and sparse, not to fire on
+    # ordinary partial disagreement. See evaluate_agentic.py for the measured trigger rate.
+    AGENTIC_CONFIDENCE_THRESHOLD = 0.2
+
     def _retrieve_sync(self, req: RetrieveRequest, query_vector: np.ndarray) -> Tuple[List[ChunkResult], bool]:
         preferred_medium = req.preferred_medium.lower()
         
@@ -424,7 +499,8 @@ class HybridRetriever:
                 
         return results, fallback_applied
 
-    def _execute_retrieve_for_medium(self, req: RetrieveRequest, query_vector: np.ndarray, medium: str) -> List[ChunkResult]:
+    def _execute_retrieve_for_medium(self, req: RetrieveRequest, query_vector: np.ndarray, medium: str,
+                                      confidence_out: dict = None) -> List[ChunkResult]:
         lang_key = "ta" if medium == "tamil" else "en"
         
         all_chunks = self.cache.get(f"{lang_key}_chunks", [])
@@ -483,6 +559,16 @@ class HybridRetriever:
             reverse=True
         )
         sparse_ranked_ids = [pair[0]["chunk_id"] for pair in sparse_ranked_pairs]
+
+        # Phase 4: optional confidence signal for the caller (retrieve_agentic_sync), computed
+        # from ranked id lists that already exist above -- no extra retrieval call. Left None for
+        # every existing caller that doesn't pass confidence_out, so this is zero-cost/zero-risk
+        # for the proven single-corpus path.
+        if confidence_out is not None:
+            from app.retrieval.agentic import retrieval_confidence, extract_context_header
+            confidence_out["confidence"] = retrieval_confidence(dense_ranked_ids, sparse_ranked_ids)
+            confidence_out["top_dense_chunk_header"] = (
+                extract_context_header(dense_ranked_pairs[0][0]["text"]) if dense_ranked_pairs else None)
 
         # 4. RRF Score Fusion (per-language weighting -- see RRF_LANGUAGE_WEIGHTS docstring)
         w_dense, w_sparse = self._rrf_weights_for_medium(medium)
