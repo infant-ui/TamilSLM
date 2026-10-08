@@ -1,0 +1,481 @@
+{
+  "status": "characterization_complete_pending_go_no_go",
+  "git_commit": "TODO -- fill in after committing this script; results file committed as the immediate next commit",
+  "scope": "Step 2 of 2 (duplication-pattern characterization, steps 2a-2d). Step 3 (go/no-go gate: re-chunk/re-embed affected pages through the self-retrieval gate, re-run the full 156-item eval + Tamil dense-only R@5 isolation metric) has NOT been run -- this is a characterization report only, no corpus fix applied.",
+  "vocabulary_validation": {
+    "vocab_size": 68414,
+    "n_vocab_words_with_doubled_combining_mark": 0,
+    "n_vocab_words_with_doubled_base_consonant": 1991,
+    "sample_doubled_base_consonant_real_words": [
+      "அர்த்தத்தில்",
+      "அழுத்தத்திற்கு",
+      "பூதத்தாழ்வார்",
+      "காமம்",
+      "துரியோதனனின்",
+      "பப்புவா",
+      "இருந்திருக்கக்",
+      "வந்ததாக",
+      "டி00",
+      "added",
+      "outlook",
+      "தகர்ந்தது",
+      "நம்பப்பட்டது",
+      "akka",
+      "இணைந்தது",
+      "வாதத்திற்கு",
+      "மறந்தது",
+      "என்னன்னு",
+      "நேராகக்",
+      "நடக்காதது",
+      "possible",
+      "accounts",
+      "வீரரான",
+      "கிடைத்ததை",
+      "வந்ததை",
+      "supply",
+      "அடைத்தது",
+      "வெகுவாகக்",
+      "கண்டுபிடித்தது",
+      "போவதாகக்"
+    ],
+    "interpretation": "Zero real Tamil words contain a doubled combining mark -- that pattern is structurally invalid in the language, safe to collapse unconditionally. 1,991 real words legitimately contain a doubled BASE consonant (overwhelmingly standard past-tense verb morphology, e.g. the sample words above) -- collapsing that pattern is NOT safe as a general rule."
+  },
+  "edit_distance_candidate_search": {
+    "n_chunks_analyzed": 3135,
+    "counts_by_class": {
+      "dedup_combining_SAFE": 13581,
+      "other": 14580,
+      "dedup_base_consonant_RISKY": 5566,
+      "other_single_delete": 5675
+    },
+    "examples_by_class": {
+      "dedup_combining_SAFE": [
+        {
+          "token": "ஆறாாம்",
+          "correction": "ஆறாம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 1
+        },
+        {
+          "token": "பாாடத்திட்டத்தின்",
+          "correction": "பாடத்திட்டத்தின்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "விற்்பனைக்கு",
+          "correction": "விற்பனைக்கு",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "பாாடநூல்",
+          "correction": "பாடநூல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "உருவாாக்கமும்",
+          "correction": "உருவாக்கமும்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "மாாநிலக்",
+          "correction": "மாநிலக்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "ஆராாய்ச்சி",
+          "correction": "ஆராய்ச்சி",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "பாாடநூல்",
+          "correction": "பாடநூல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "உங்்கள்",
+          "correction": "உங்கள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "எண்்கள்",
+          "correction": "எண்கள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "குழந்்தைத்",
+          "correction": "குழந்தைத்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "குழந்்தைத்",
+          "correction": "குழந்தைத்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "துன்புறுத்்தலுக்கு",
+          "correction": "துன்புறுத்தலுக்கு",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "அழையுங்்கள்",
+          "correction": "அழையுங்கள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "உங்்கள்",
+          "correction": "உங்கள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        }
+      ],
+      "other": [
+        {
+          "token": "௧ணக்கு",
+          "correction": "கணக்கு",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 1
+        },
+        {
+          "token": "ொள்ளுதல்",
+          "correction": "கொள்ளுதல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 3
+        },
+        {
+          "token": "செயலிகளைப்",
+          "correction": "செயல்களைப்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "ொள்ளுதல்",
+          "correction": "கொள்ளுதல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "செயலிகளைப்",
+          "correction": "செயல்களைப்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "ொள்ளுதல்",
+          "correction": "கொள்ளுதல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "கூற்றுகளை",
+          "correction": "கூற்றுகள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "கூற்றுகளை",
+          "correction": "கூற்றுகள்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "ஆகஸ்ஸ்",
+          "correction": "ஆகஸ்ட்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "ஆகஸ்ஸ்",
+          "correction": "ஆகஸ்ட்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "தரவுகளைக்",
+          "correction": "தரவுகளைப்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "தரவுகளைக்",
+          "correction": "தரவுகளைப்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "மின்நூல்",
+          "correction": "மின்னூல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "ொள்ளுதல்",
+          "correction": "கொள்ளுதல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 5
+        },
+        {
+          "token": "ோராய",
+          "correction": "ஆராய",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 5
+        }
+      ],
+      "dedup_base_consonant_RISKY": [
+        {
+          "token": "உடடல்",
+          "correction": "உடல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "பபாலியல்",
+          "correction": "பாலியல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "உடடல்",
+          "correction": "உடல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "பபாலியல்",
+          "correction": "பாலியல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "வழிககாட்டுதல்",
+          "correction": "வழிகாட்டுதல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 2
+        },
+        {
+          "token": "அன்றறாட",
+          "correction": "அன்றாட",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 3
+        },
+        {
+          "token": "அன்றறாட",
+          "correction": "அன்றாட",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 3
+        },
+        {
+          "token": "விளளக்கம்",
+          "correction": "விளக்கம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "விளளக்கம்",
+          "correction": "விளக்கம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "அன்றறாட",
+          "correction": "அன்றாட",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "அன்றறாட",
+          "correction": "அன்றாட",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "விளளக்கம்",
+          "correction": "விளக்கம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "மூலலம்",
+          "correction": "மூலம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "மூலலம்",
+          "correction": "மூலம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "மூலலம்",
+          "correction": "மூலம்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        }
+      ],
+      "other_single_delete": [
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 3
+        },
+        {
+          "token": "வடிவியல்",
+          "correction": "வடிவில்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 4
+        },
+        {
+          "token": "திரளில்",
+          "correction": "திரில்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 6
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 6
+        },
+        {
+          "token": "பதிலாககச்",
+          "correction": "பதிலாகக்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 7
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 7
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 9
+        },
+        {
+          "token": "ஐநூற்று",
+          "correction": "நூற்று",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 9
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 11
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 12
+        },
+        {
+          "token": "ஐநூற்று",
+          "correction": "நூற்று",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 12
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 14
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 15
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 16
+        },
+        {
+          "token": "முயல்க",
+          "correction": "முயல்",
+          "pdf": "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf",
+          "page": 17
+        }
+      ]
+    }
+  },
+  "direct_prevalence_and_false_positive_check": {
+    "n_token_occurrences_with_doubled_combining_mark": 41078,
+    "n_false_positives_already_a_real_word_as_written": 0,
+    "false_positive_rate": 0.0,
+    "by_pdf_occurrence_counts": {
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 5083,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 116,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 349,
+      "Class_6_Science_Tamil_Science_-_Term_1.pdf": 4306,
+      "Class_6_Science_Tamil_Science_-_Term_2_.pdf": 3180,
+      "Class_6_Science_Tamil_Science_-_Term_3.pdf": 405,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 4520,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 91,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 79,
+      "Class_7_Science_Tamil_Science_-_Term_1_-_2025.pdf": 2467,
+      "Class_7_Science_Tamil_Science_-_Term_2.pdf": 186,
+      "Class_7_Science_Tamil_Science_-_Term_3.pdf": 1533,
+      "Class_8_Mathematics_Tamil_2025.pdf": 9120,
+      "Class_8_Science_Tamil_2024.pdf": 9643
+    },
+    "by_pdf_chunks_affected": {
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 205,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 21,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 61,
+      "Class_6_Science_Tamil_Science_-_Term_1.pdf": 110,
+      "Class_6_Science_Tamil_Science_-_Term_2_.pdf": 150,
+      "Class_6_Science_Tamil_Science_-_Term_3.pdf": 104,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 182,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 23,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 42,
+      "Class_7_Science_Tamil_Science_-_Term_1_-_2025.pdf": 165,
+      "Class_7_Science_Tamil_Science_-_Term_2.pdf": 70,
+      "Class_7_Science_Tamil_Science_-_Term_3.pdf": 141,
+      "Class_8_Mathematics_Tamil_2025.pdf": 440,
+      "Class_8_Science_Tamil_2024.pdf": 456
+    },
+    "by_pdf_chunks_total": {
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 234,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 187,
+      "Class_6_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 139,
+      "Class_6_Science_Tamil_Science_-_Term_1.pdf": 178,
+      "Class_6_Science_Tamil_Science_-_Term_2_.pdf": 276,
+      "Class_6_Science_Tamil_Science_-_Term_3.pdf": 189,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_1.pdf": 190,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_2.pdf": 170,
+      "Class_7_Mathematics_Tamil_Mathematics_-_Term_3.pdf": 233,
+      "Class_7_Science_Tamil_Science_-_Term_1_-_2025.pdf": 215,
+      "Class_7_Science_Tamil_Science_-_Term_2.pdf": 233,
+      "Class_7_Science_Tamil_Science_-_Term_3.pdf": 204,
+      "Class_8_Mathematics_Tamil_2025.pdf": 538,
+      "Class_8_Science_Tamil_2024.pdf": 857
+    },
+    "font_correlation": "Affects all 14 Tamil PDFs (not isolated to specific fonts/pages the way Phase 5 step 1's severe-mojibake pages were), with intensity varying widely by book (9%-82% of chunks per book). The fix's safety case rests on the structural invalidity of the pattern itself (see vocabulary_validation), not on isolating it to a narrow signature."
+  },
+  "recommendation": {
+    "dedup_combining_SAFE": "Proceed to the step-3 go/no-go gate (re-chunk/re-embed affected pages through the self-retrieval gate, re-run the full eval) -- validated safe, zero false positives found against an external 68k-word vocabulary across 41,078 occurrences.",
+    "dedup_base_consonant_RISKY": "Do NOT apply. Legitimately occurs in common past-tense verb forms.",
+    "other_and_other_single_delete": "Do NOT apply. Mix of a possibly-real secondary pattern (missing leading consonant before an orphaned vowel sign, e.g. 'ொள்ளுதல்' -> 'கொள்ளுதல்') and clear false positives from the edit-distance method matching an unrelated real word (e.g. 'வடிவியல்' geometry -> 'வடிவில்' in-shape). Worth a narrower follow-up investigation later; out of scope now."
+  }
+}
